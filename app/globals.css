@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* --- Paper / Ink design tokens --------------------------------------------
+   Light theme is "Paper": warm bone, near-black ink, hairline rules, oxidized
+   iron-blue accent. Dark theme is "Ink": deep near-black, warm bone ink.
+   Colors expressed as OKLCH for perceptual consistency.
+---------------------------------------------------------------------------- */
+:root {
+  --bg: oklch(0.955 0.012 85);       /* #F6F3EC — warm bone paper */
+  --surface: oklch(0.975 0.010 85);  /* #FBF9F3 */
+  --ink: oklch(0.180 0.008 60);      /* #1A1815 — warm near-black */
+  --ink-muted: oklch(0.500 0.012 70);/* #6B655A */
+  --rule: oklch(0.865 0.014 85);     /* #DDD7C7 — hairline */
+  --accent: oklch(0.365 0.045 240);  /* #2E4057 — oxidized iron blue */
+  --accent-ink: oklch(0.975 0.010 85);
+}
+
+.dark {
+  --bg: oklch(0.155 0.006 60);       /* #12110F */
+  --surface: oklch(0.180 0.008 60);  /* #1A1815 */
+  --ink: oklch(0.910 0.014 85);      /* #EDE7D6 */
+  --ink-muted: oklch(0.605 0.012 70);/* #8A8478 */
+  --rule: oklch(0.245 0.008 60);     /* #2A2622 */
+  --accent: oklch(0.680 0.070 240);  /* #7E9FBD — softer iron blue for dark */
+  --accent-ink: oklch(0.155 0.006 60);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* --- Base typography -------------------------------------------------------- */
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "ss02", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tabular, high-contrast mono for dates and metadata */
+.font-mono,
+[class*="font-mono"] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "ss01", "zero", "tnum";
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* Hairline rule utility */
+.rule {
+  border-color: var(--rule);
+}
+
+/* Focus ring — restrained iron-blue */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
