@@ -13,7 +13,7 @@ export function SiteHeader() {
           className="group inline-flex items-center gap-3"
           aria-label="Therestory — home"
         >
-          <Wordmark size={28} />
+          <Wordmark size={48} />
           <span className="font-mono text-[11px] tabular-nums text-ink-muted">
             /3500 BCE → 2026
           </span>
