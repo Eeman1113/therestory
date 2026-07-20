@@ -1,5 +1,6 @@
 import { MonoDate } from "@/components/common/mono-date";
 import { MicroCaps } from "@/components/common/micro-caps";
+import { SafeImage } from "@/components/common/safe-image";
 import { markerColor } from "@/lib/timeline/categories";
 import type { EventDoc } from "@/lib/content/schema";
 import { getEra, getCategory } from "@/lib/content/loader";
@@ -43,13 +44,12 @@ export function EventHero({ event }: { event: EventDoc }) {
 
       {hero && (
         <figure className="lg:col-span-5">
-          {/* Unoptimized static export — plain <img> avoids next/image complexity */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <SafeImage
             src={hero.url}
             alt={hero.caption}
             loading="eager"
-            className="w-full border border-rule bg-surface object-cover"
+            className="w-full border border-rule object-cover"
+            aspectRatio="4 / 5"
           />
           <figcaption className="mt-3 text-xs leading-5 text-ink-muted">
             <span className="text-ink">{hero.caption}</span> ·{" "}

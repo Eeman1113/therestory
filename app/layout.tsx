@@ -7,6 +7,7 @@ import { TimelineStrip } from "@/components/timeline/timeline-strip";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { CommandPaletteMount } from "@/components/command-palette-mount";
+import { SkipToContent } from "@/components/skip-to-content";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -29,11 +30,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full bg-bg text-ink flex flex-col">
+        <SkipToContent />
         <ThemeProvider>
           <TimelineViewProvider>
             <TimelineStrip />
             <SiteHeader />
-            <main className="flex-1">{children}</main>
+            <main id="main-content" className="flex-1" tabIndex={-1}>
+              {children}
+            </main>
             <SiteFooter />
             <CommandPaletteMount />
           </TimelineViewProvider>

@@ -9,6 +9,7 @@ import { ImageGallery } from "@/components/event/image-gallery";
 import { SourcesList } from "@/components/event/sources-list";
 import { PrevNextNav } from "@/components/event/prev-next-nav";
 import { YearCrossref } from "@/components/event/year-crossref";
+import { EventJsonLd } from "@/components/event/event-jsonld";
 import { HairlineRule } from "@/components/common/hairline-rule";
 import { parseStartYear } from "@/lib/timeline/scale";
 
@@ -54,6 +55,7 @@ export default async function EventPage({
 
   return (
     <article className="mx-auto w-full max-w-[1400px] px-8">
+      <EventJsonLd event={event} />
       <EventHero event={event} />
       <HairlineRule />
       <EventBody sections={event.sections} />

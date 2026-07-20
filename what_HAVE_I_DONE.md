@@ -74,6 +74,19 @@ Format:
 - Total event count now **79**. Total content pages **110** (5 static + 79 events + 15 years + 8 eras + 3 static sitemap/404/etc).
 - Build clean.
 
+## 2026-07-20 — Phase 6: polish + SEO + a11y + resilience
+- Built shared `lib/og/template.tsx` — `next/og` `ImageResponse` producing 1200×630 museum-plaque OG cards on Paper background: mono-date top-left, category eyebrow in iron blue, editorial title (dynamically sized so long titles never crash into the footer), hairline rule, footer with domain + "Wikipedia · by time", accent bar top-right. Loads real Geist Sans + Geist Mono from `node_modules/geist/dist/fonts/*.ttf`.
+- Per-route OG images: `app/opengraph-image.tsx` (home), `app/event/[slug]/opengraph-image.tsx`, `app/year/[year]/opengraph-image.tsx`, `app/eras/[era]/opengraph-image.tsx`. Each declares `dynamic = "force-static"` and inherits `generateStaticParams` from the page. Result: **103 OG PNGs** rendered at build time.
+- Added schema.org Event JSON-LD (`components/event/event-jsonld.tsx`) to every event page — dates normalised for BCE, images, sources, publisher.
+- A11y: skip-to-content link (visible on focus, first tabbable), `id="main-content"` landmark, main tabIndex=-1 so the skip link actually lands focus, aria labels retained on decorative icons.
+- Custom `/404` page — mono `404`, editorial copy, links back to timeline / events / eras.
+- `robots.ts` generator pointing at the sitemap.
+- Global `error.tsx` + `loading.tsx` for client-side route transitions and boundary safety.
+- Built `SafeImage` client component — shows a quiet "Image temporarily unavailable" placeholder in the same aspect ratio if any Wikimedia URL 404s upstream. Applied to `EventHero` and `ImageGallery` so a bad link never leaves raw alt-text or a broken-image icon on the page.
+- Audited all 79 hero image URLs: 14 hard 404s. Spawned an Image-Fixer subagent that replaced each with a verified Wikimedia Commons file (author + licence checked on each Commons file page, direct upload URL confirmed HTTP 200): Fort Sumter (Perine), Hiroshima atomic cloud (NARA), Bishop Odo at Hastings (Bayeux Tapestry), Kongokonferenz (Roessler), Doutielt3 plague scene (Pierart dou Tielt), Congress of Vienna (Isabey), U-2 Cuban Missile Crisis photo, Origin of Species title page, La Rendición de Granada (Pradilla), 1099 Siege of Jerusalem miniature, Duncan's Nemesis destroying war junks, Lamartine at the Paris Town Hall (Philippoteaux), Winter Palace 26 October 1917, Nyamata Memorial (Schertzer, CC BY-SA 3.0).
+- Verified in dark mode across event/year/eras/about pages — Paper/Ink tokens hold; iron-blue accent softens correctly for dark backgrounds.
+- Build clean. Lint clean. **113 static pages** (110 content + 3 static sitemap/404/robots).
+
 ## 2026-07-20 — Phase 5 UI wiring
 - Built `/year/[year]` route with `generateStaticParams` + slug convention `1789` for CE, `776-bce` for BCE. Layout: mono XL year headline, editorial summary, seven regional snapshots (canonical region order), featured events (explicit + ±1 year window auto-detected), sources.
 - Built `/events` catalogue with events grouped by era, sorted chronologically, category-coloured dots, sidebar legend.

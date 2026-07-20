@@ -1,5 +1,6 @@
 import { MicroCaps } from "@/components/common/micro-caps";
 import { HairlineRule } from "@/components/common/hairline-rule";
+import { SafeImage } from "@/components/common/safe-image";
 import type { Image as ImageDoc } from "@/lib/content/schema";
 
 export function ImageGallery({ images }: { images: ImageDoc[] }) {
@@ -14,12 +15,11 @@ export function ImageGallery({ images }: { images: ImageDoc[] }) {
       <ul className="grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2">
         {gallery.map((img) => (
           <li key={img.url}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <SafeImage
               src={img.url}
               alt={img.caption}
-              loading="lazy"
-              className="w-full border border-rule bg-surface object-cover"
+              className="w-full border border-rule object-cover"
+              aspectRatio="4 / 3"
             />
             <p className="mt-3 text-xs leading-5 text-ink-muted">
               <span className="text-ink">{img.caption}</span> · {img.credit} ·{" "}
