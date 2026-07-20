@@ -1,25 +1,13 @@
 "use client";
 
 /**
- * TimelineCanvas — the full-page interactive timeline (homepage hero).
- *
- * Layout inside the canvas (top to bottom):
- *   0..24px    Era band strip
- *   24..64px   Year ticks
- *   64..~end   Marker plane with stacked category-colored dots
- *
- * Interactions:
- *   - drag body        → pan
- *   - wheel            → zoom around cursor (with ctrl/meta or over ruler)
- *   - + / -            → zoom (keyboard)
- *   - arrow left/right → focus previous / next marker (auto-scrolls in view)
- *   - Home / End       → focus first / last marker
- *   - Enter            → open focused marker
- *   - hover a marker   → shows preview card with title, date, category, summary
+ * TimelineCanvas — the interactive timeline hero, rebuilt to match the
+ * "You are here" reference mockup: italic-serif year header, filter chips,
+ * tinted era zones, axis at the bottom with three above-axis lanes for
+ * event dots, a plumb line marking the current view centre, and a
+ * tint-strip hover card with a serif year watermark.
  */
 
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import {
   useCallback,
   useEffect,
@@ -27,288 +15,122 @@ import {
   useMemo,
   useRef,
   useState,
-  type MouseEvent as ReactMouseEvent,
-  type WheelEvent as ReactWheelEvent,
 } from "react";
-import { Minus, Plus, RotateCcw } from "lucide-react";
-import type { EventDoc } from "@/lib/content/schema";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Minus, Plus, RotateCcw, X } from "lucide-react";
+import type { Category, CategoryMeta, EventDoc } from "@/lib/content/schema";
 import { cn } from "@/lib/utils";
 import { MonoDate } from "@/components/common/mono-date";
-import { MicroCaps } from "@/components/common/micro-caps";
-import { SafeImage } from "@/components/common/safe-image";
-import {
-  generateTicks,
-  parseStartYear,
-  yearToPosition,
-  positionToYear,
-  MIN_YEAR,
-  MAX_YEAR,
-} from "@/lib/timeline/scale";
-import { minSignificanceFor } from "@/lib/timeline/density";
-import { markerColor, markerRadius } from "@/lib/timeline/categories";
-import { useTimelineView } from "./timeline-view";
+import { parseStartYear } from "@/lib/timeline/scale";
+import { CATEGORY_COLORS, markerColor } from "@/lib/timeline/categories";
 
-const CANVAS_HEIGHT_MOBILE = 360;
-const CANVAS_HEIGHT_DESKTOP = 420;
-const ERA_BAND_H = 24;
-const RULER_H = 40;
-const MARKER_TOP = ERA_BAND_H + RULER_H;
-const AXIS_Y = 170;      // vertical position of the main horizontal backbone inside the marker plane
-const TRACK_H = 22;      // vertical distance between stacked-track slots away from the axis
+/* ---------------------------------------------------------------------------
+   Layout constants (px)
+--------------------------------------------------------------------------- */
+const TRACK_H = 404;
+const TRACK_H_MOBILE = 372;
+const AXIS_BOTTOM = 66;
+const LANES = [54, 96, 138]; // stem heights above axis for the three lanes
+const TICK_BOTTOM = 40;
+const ZOOMS = [1, 1.35, 1.8, 2.4];
 
-const ERAS = [
-  { key: "prehistory", label: "Prehistory", start: -3500, end: -800 },
-  { key: "ancient", label: "Ancient", start: -800, end: 500 },
-  { key: "classical", label: "Classical", start: 500, end: 1000 },
-  { key: "post-classical", label: "Post-classical", start: 1000, end: 1500 },
-  { key: "early-modern", label: "Early Modern", start: 1500, end: 1800 },
-  { key: "long-19th", label: "Long 19th c.", start: 1800, end: 1914 },
-  { key: "20th-century", label: "20th Century", start: 1914, end: 1991 },
-  { key: "contemporary", label: "Contemporary", start: 1991, end: 2026 },
+/* ---------------------------------------------------------------------------
+   Era zones. Widths are relative weights — they sum to define the total
+   scale. Matches the reference mockup so post-classical and 20th century
+   get the room they earn.
+--------------------------------------------------------------------------- */
+interface Era {
+  label: string;
+  start: number;
+  end: number;
+  weight: number;
+}
+const ERAS: Era[] = [
+  { label: "Prehistory",     start: -3500, end: -800, weight: 12 },
+  { label: "Ancient",        start:  -800, end: -200, weight: 11 },
+  { label: "Classical",      start:  -200, end:  500, weight: 10 },
+  { label: "Post-classical", start:   500, end: 1500, weight: 16 },
+  { label: "Early modern",   start:  1500, end: 1800, weight: 13 },
+  { label: "Long 19th c.",   start:  1800, end: 1914, weight: 11 },
+  { label: "20th century",   start:  1914, end: 1991, weight: 14 },
+  { label: "Contemporary",   start:  1991, end: 2026, weight: 13 },
 ];
+const TOTAL_WEIGHT = ERAS.reduce((s, e) => s + e.weight, 0);
+const CUMULATIVE: number[] = (() => {
+  const out: number[] = [];
+  let acc = 0;
+  for (const e of ERAS) {
+    out.push(acc);
+    acc += (e.weight / TOTAL_WEIGHT) * 100;
+  }
+  return out;
+})();
+
+/** year → normalised position 0..100 across the piecewise era scale */
+function xOf(year: number): number {
+  for (let i = 0; i < ERAS.length; i++) {
+    const era = ERAS[i];
+    if (year >= era.start && year <= era.end) {
+      const eraWidth = (era.weight / TOTAL_WEIGHT) * 100;
+      return CUMULATIVE[i] + ((year - era.start) / (era.end - era.start)) * eraWidth;
+    }
+  }
+  return year < ERAS[0].start ? 0 : 100;
+}
+
+/** normalised position 0..100 → year */
+function yearAt(pos: number): number {
+  const clamped = Math.min(100, Math.max(0, pos));
+  for (let i = 0; i < ERAS.length; i++) {
+    const era = ERAS[i];
+    const eraWidth = (era.weight / TOTAL_WEIGHT) * 100;
+    const eraLeft = CUMULATIVE[i];
+    if (clamped >= eraLeft && clamped <= eraLeft + eraWidth) {
+      const t = eraWidth === 0 ? 0 : (clamped - eraLeft) / eraWidth;
+      return Math.round(era.start + t * (era.end - era.start));
+    }
+  }
+  return ERAS[ERAS.length - 1].end;
+}
+
+function fmtYear(y: number): string {
+  const rounded = Math.round(y);
+  if (rounded < 0) return `${-rounded} BCE`;
+  if (rounded === 0) return "1 CE";
+  return `${rounded}`;
+}
 
 function eraOf(year: number): string {
   const era = ERAS.find((e) => year >= e.start && year < e.end) ?? ERAS[ERAS.length - 1];
   return era.label;
 }
 
-function formatYearShort(year: number): string {
-  if (year < 0) return `${Math.abs(year)} BCE`;
-  if (year === 0) return "1 CE";
-  return `${year}`;
-}
-
-/** Greedy multi-track marker layout: each marker gets the lowest track where
- *  it does not overlap the previous marker on that track. */
-function layoutTracks(
-  markers: Array<{ id: string; xPx: number }>,
-  minGapPx: number,
-): Map<string, number> {
-  const tracks: number[] = []; // stores last-used rightEdge px per track
-  const assignment = new Map<string, number>();
-  const sorted = [...markers].sort((a, b) => a.xPx - b.xPx);
-  for (const m of sorted) {
-    let placed = false;
-    for (let i = 0; i < tracks.length; i++) {
-      if (m.xPx - tracks[i] >= minGapPx) {
-        tracks[i] = m.xPx;
-        assignment.set(m.id, i);
-        placed = true;
-        break;
-      }
-    }
-    if (!placed) {
-      tracks.push(m.xPx);
-      assignment.set(m.id, tracks.length - 1);
-    }
-  }
-  return assignment;
-}
-
+/* ---------------------------------------------------------------------------
+   Component
+--------------------------------------------------------------------------- */
 interface Props {
   events: EventDoc[];
+  categories: CategoryMeta[];
+  initialYear?: number;
 }
 
-export function TimelineCanvas({ events }: Props) {
-  const {
-    viewStart,
-    viewEnd,
-    focusedEventId,
-    setView,
-    zoomAt,
-    resetView,
-    setFocusedEvent,
-  } = useTimelineView();
+export function TimelineCanvas({ events, categories, initialYear = 1629 }: Props) {
   const router = useRouter();
+  const vpRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
-  const [isSmall, setIsSmall] = useState(false);
-  const [hoverId, setHoverId] = useState<string | null>(null);
-  const dragRef = useRef<{ startX: number; startView: [number, number] } | null>(null);
-  const pinchRef = useRef<{
-    startDist: number;
-    startView: [number, number];
-    startCenterFrac: number;
-  } | null>(null);
-  const pointerMoved = useRef(false);
-  // Track live pointers so we can detect 2-finger pinch on touch devices.
-  const activePointers = useRef(new Map<number, { x: number; y: number }>());
+  const [zi, setZi] = useState(0);
+  const [vpPx, setVpPx] = useState(0);
+  const [smallScreen, setSmallScreen] = useState(false);
+  const [activeCat, setActiveCat] = useState<Category | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [pinnedIndex, setPinnedIndex] = useState<number | null>(null);
+  const [currentYear, setCurrentYear] = useState<number>(initialYear);
 
-  /* --- observe container size ------------------------------------------ */
-  useLayoutEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const observe = () => {
-      const w = el.getBoundingClientRect().width;
-      // Never regress to 0 — an intermittent 0 (during hydration or transitions)
-      // would collapse every marker onto the same track. Wait for a real width.
-      if (w > 0) {
-        setWidth(w);
-        setIsSmall(w < 640);
-      }
-    };
-    observe();
-    const ro = new ResizeObserver(observe);
-    ro.observe(el);
-    // Belt-and-braces: recheck after the first paint in case layout was
-    // pending when useLayoutEffect first ran.
-    const raf = requestAnimationFrame(observe);
-    return () => {
-      ro.disconnect();
-      cancelAnimationFrame(raf);
-    };
-  }, []);
-
-  /* --- derive per-render positions ------------------------------------- */
-  const viewWidth = viewEnd - viewStart;
-  // Raise the significance floor by one notch on small viewports so the marker
-  // plane never feels crowded on a phone. Capped so we always show something.
-  const minSig = Math.min(5, minSignificanceFor(viewWidth) + (isSmall ? 1 : 0));
-
-  /** Convert a normalized 0..1 timeline position to pixel X inside the canvas. */
-  const posToPx = useCallback(
-    (pos: number) => ((pos - viewStart) / viewWidth) * width,
-    [viewStart, viewWidth, width],
-  );
-
-  const visibleEvents = useMemo(() => {
-    return events
-      .map((e) => {
-        const y = parseStartYear(e.date.start);
-        const pos = yearToPosition(y);
-        return { event: e, year: y, pos, xPx: posToPx(pos) };
-      })
-      .filter(
-        (m) =>
-          m.event.significance >= minSig &&
-          m.xPx >= -40 &&
-          m.xPx <= width + 40,
-      );
-  }, [events, minSig, posToPx, width]);
-
-  const trackFor = useMemo(
-    () => layoutTracks(visibleEvents.map((m) => ({ id: m.event.id, xPx: m.xPx })), 36),
-    [visibleEvents],
-  );
-
-  const ticks = useMemo(
-    () => generateTicks(width, viewStart, viewEnd, isSmall ? 72 : 56),
-    [width, viewStart, viewEnd, isSmall],
-  );
-
-  const eraBands = useMemo(
-    () =>
-      ERAS.map((era) => {
-        const left = posToPx(yearToPosition(era.start));
-        const right = posToPx(yearToPosition(era.end));
-        return { ...era, left, width: right - left };
-      }).filter((b) => b.left + b.width > 0 && b.left < width),
-    [posToPx, width],
-  );
-
-  const centeredYear = positionToYear((viewStart + viewEnd) / 2);
-
-  /* --- pointer drag → pan (+ two-finger pinch → zoom on touch) --------- */
-  const onPointerDown = useCallback(
-    (e: ReactMouseEvent<HTMLDivElement>) => {
-      const pe = e as unknown as PointerEvent;
-      if ((e.target as HTMLElement).closest("[data-marker]")) return;
-      activePointers.current.set(pe.pointerId, { x: e.clientX, y: e.clientY });
-      (e.currentTarget as HTMLElement).setPointerCapture?.(pe.pointerId);
-
-      if (activePointers.current.size === 2) {
-        // Enter pinch mode: cancel any single-finger drag.
-        dragRef.current = null;
-        const pts = [...activePointers.current.values()];
-        const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
-        const el = containerRef.current;
-        const rect = el?.getBoundingClientRect();
-        const centerX = (pts[0].x + pts[1].x) / 2;
-        const centerFrac = rect && rect.width > 0
-          ? Math.min(1, Math.max(0, (centerX - rect.left) / rect.width))
-          : 0.5;
-        pinchRef.current = {
-          startDist: dist,
-          startView: [viewStart, viewEnd],
-          startCenterFrac: centerFrac,
-        };
-        return;
-      }
-
-      dragRef.current = {
-        startX: e.clientX,
-        startView: [viewStart, viewEnd],
-      };
-      pointerMoved.current = false;
-    },
-    [viewStart, viewEnd],
-  );
-
-  const onPointerMove = useCallback(
-    (e: ReactMouseEvent<HTMLDivElement>) => {
-      const pe = e as unknown as PointerEvent;
-      if (activePointers.current.has(pe.pointerId)) {
-        activePointers.current.set(pe.pointerId, { x: e.clientX, y: e.clientY });
-      }
-
-      // Two-finger pinch: recompute view around the anchor point.
-      const pinch = pinchRef.current;
-      if (pinch && activePointers.current.size === 2 && width > 0) {
-        const pts = [...activePointers.current.values()];
-        const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
-        if (dist > 0 && pinch.startDist > 0) {
-          const scale = pinch.startDist / dist; // pinch out → dist grows → scale < 1 → view shrinks (zoom in)
-          const [s0, e0] = pinch.startView;
-          const w0 = e0 - s0;
-          const newW = Math.max(0.002, Math.min(1, w0 * scale));
-          const anchorPos = s0 + pinch.startCenterFrac * w0;
-          const newStart = anchorPos - pinch.startCenterFrac * newW;
-          const newEnd = newStart + newW;
-          setView(newStart, newEnd);
-        }
-        pointerMoved.current = true;
-        return;
-      }
-
-      const drag = dragRef.current;
-      if (!drag || width === 0) return;
-      const dx = e.clientX - drag.startX;
-      if (Math.abs(dx) > 3) pointerMoved.current = true;
-      const [s0, e0] = drag.startView;
-      const w = e0 - s0;
-      const delta = -(dx / width) * w;
-      setView(s0 + delta, e0 + delta);
-    },
-    [setView, width],
-  );
-
-  const onPointerUp = useCallback((e: ReactMouseEvent<HTMLDivElement>) => {
-    const pe = e as unknown as PointerEvent;
-    activePointers.current.delete(pe.pointerId);
-    if (activePointers.current.size < 2) pinchRef.current = null;
-    if (activePointers.current.size === 0) dragRef.current = null;
-  }, []);
-
-  /* --- wheel → zoom (anchored at cursor) ------------------------------- */
-  const onWheel = useCallback(
-    (e: ReactWheelEvent<HTMLDivElement>) => {
-      const el = containerRef.current;
-      if (!el || width === 0) return;
-      e.preventDefault();
-      const rect = el.getBoundingClientRect();
-      const cursorFrac = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width));
-      const anchorPos = viewStart + cursorFrac * viewWidth;
-      // Trackpad pinch emits ctrlKey with small deltaY; wheel spins are larger.
-      const intensity = e.ctrlKey || e.metaKey ? 0.02 : 0.0015;
-      const factor = Math.exp(e.deltaY * intensity);
-      zoomAt(anchorPos, factor);
-    },
-    [viewStart, viewWidth, width, zoomAt],
-  );
-
-  /* --- keyboard --------------------------------------------------------- */
-  const eventsByYear = useMemo(
+  // Sort events chronologically so lane assignment (index % 3) is stable.
+  const sortedEvents = useMemo(
     () =>
       [...events].sort(
         (a, b) => parseStartYear(a.date.start) - parseStartYear(b.date.start),
@@ -316,327 +138,556 @@ export function TimelineCanvas({ events }: Props) {
     [events],
   );
 
-  const focusMarker = useCallback(
-    (id: string) => {
-      setFocusedEvent(id);
-      const target = events.find((e) => e.id === id);
-      if (!target) return;
-      const pos = yearToPosition(parseStartYear(target.date.start));
-      if (pos < viewStart + 0.03 || pos > viewEnd - 0.03) {
-        const width = viewWidth;
-        setView(pos - width / 2, pos + width / 2);
+  /* --- viewport size observer --- */
+  useLayoutEffect(() => {
+    const vp = vpRef.current;
+    if (!vp) return;
+    const measure = () => {
+      const w = vp.getBoundingClientRect().width;
+      if (w > 0) {
+        setVpPx(w);
+        setSmallScreen(window.innerWidth < 640);
+      }
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(vp);
+    const raf = requestAnimationFrame(measure);
+    return () => {
+      ro.disconnect();
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
+  /* --- track width is derived from viewport width + zoom stop --- */
+  const trackPx = useMemo(() => {
+    if (vpPx === 0) return 0;
+    return Math.max(vpPx * ZOOMS[zi], vpPx, 1080);
+  }, [vpPx, zi]);
+
+  /* --- centre the view on initialYear once we know the track width --- */
+  const didInitialCentre = useRef(false);
+  useEffect(() => {
+    if (!vpRef.current || trackPx === 0 || didInitialCentre.current) return;
+    const target = (trackPx * xOf(initialYear)) / 100 - vpPx / 2;
+    vpRef.current.scrollLeft = Math.max(0, target);
+    didInitialCentre.current = true;
+  }, [trackPx, vpPx, initialYear]);
+
+  /* --- update the "you are here" year as user pans --- */
+  const handleScroll = useCallback(() => {
+    const vp = vpRef.current;
+    if (!vp || trackPx === 0) return;
+    const centerPx = vp.scrollLeft + vp.clientWidth / 2;
+    const pos = (centerPx / trackPx) * 100;
+    setCurrentYear(yearAt(pos));
+  }, [trackPx]);
+
+  useEffect(() => {
+    const vp = vpRef.current;
+    if (!vp) return;
+    vp.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => vp.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
+  /* --- pointer-drag pan --- */
+  const drag = useRef<{ startX: number; scrollLeft: number; moved: boolean } | null>(null);
+  const onPointerDown = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    if (target.closest("[data-marker]") || target.closest("[data-card]") || target.closest("button")) {
+      return;
+    }
+    const vp = vpRef.current;
+    if (!vp) return;
+    drag.current = { startX: e.clientX, scrollLeft: vp.scrollLeft, moved: false };
+    vp.setPointerCapture(e.pointerId);
+    vp.classList.add("cursor-grabbing");
+  }, []);
+  const onPointerMove = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    const d = drag.current;
+    const vp = vpRef.current;
+    if (!d || !vp) return;
+    const dx = e.clientX - d.startX;
+    if (Math.abs(dx) > 4) d.moved = true;
+    vp.scrollLeft = d.scrollLeft - dx;
+  }, []);
+  const endDrag = useCallback(() => {
+    drag.current = null;
+    vpRef.current?.classList.remove("cursor-grabbing");
+  }, []);
+
+  /* --- keyboard nav --- */
+  const eventsByYear = sortedEvents;
+  const focusEvent = useCallback(
+    (idx: number, opts?: { scroll?: boolean; pin?: boolean }) => {
+      if (idx < 0 || idx >= eventsByYear.length) return;
+      setHoveredIndex(idx);
+      if (opts?.pin) setPinnedIndex(idx);
+      if (opts?.scroll && trackPx > 0 && vpRef.current) {
+        const px = (trackPx * xOf(parseStartYear(eventsByYear[idx].date.start))) / 100;
+        vpRef.current.scrollTo({ left: px - vpPx / 2, behavior: "smooth" });
       }
     },
-    [events, setFocusedEvent, setView, viewStart, viewEnd, viewWidth],
+    [eventsByYear, trackPx, vpPx],
   );
 
   const onKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>) => {
       if (e.target !== e.currentTarget) return;
-      const currentIndex = focusedEventId
-        ? eventsByYear.findIndex((x) => x.id === focusedEventId)
-        : -1;
-
-      switch (e.key) {
-        case "ArrowRight": {
-          e.preventDefault();
-          const next = eventsByYear[Math.min(eventsByYear.length - 1, currentIndex + 1)];
-          if (next) focusMarker(next.id);
-          break;
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        const dir = e.key === "ArrowRight" ? 1 : -1;
+        const cursor = hoveredIndex ?? nearestEventIndex(eventsByYear, currentYear);
+        let next = cursor + dir;
+        while (
+          next >= 0 &&
+          next < eventsByYear.length &&
+          activeCat &&
+          !eventsByYear[next].categories.includes(activeCat)
+        ) {
+          next += dir;
         }
-        case "ArrowLeft": {
-          e.preventDefault();
-          const prev = eventsByYear[Math.max(0, currentIndex - 1)];
-          if (prev) focusMarker(prev.id);
-          break;
+        if (next >= 0 && next < eventsByYear.length) {
+          focusEvent(next, { scroll: true });
         }
-        case "Home": {
-          e.preventDefault();
-          if (eventsByYear[0]) focusMarker(eventsByYear[0].id);
-          break;
-        }
-        case "End": {
-          e.preventDefault();
-          const last = eventsByYear[eventsByYear.length - 1];
-          if (last) focusMarker(last.id);
-          break;
-        }
-        case "+":
-        case "=": {
-          e.preventDefault();
-          zoomAt((viewStart + viewEnd) / 2, 0.75);
-          break;
-        }
-        case "-":
-        case "_": {
-          e.preventDefault();
-          zoomAt((viewStart + viewEnd) / 2, 1.35);
-          break;
-        }
+      } else if (e.key === "Enter" && hoveredIndex != null) {
+        e.preventDefault();
+        setPinnedIndex((p) => (p === hoveredIndex ? null : hoveredIndex));
+      } else if (e.key === "Escape") {
+        setPinnedIndex(null);
+        setHoveredIndex(null);
       }
     },
-    [eventsByYear, focusMarker, focusedEventId, viewEnd, viewStart, zoomAt],
+    [activeCat, currentYear, eventsByYear, focusEvent, hoveredIndex],
   );
 
-  /* --- prevent wheel scroll on page while over canvas ------------------ */
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const wheelBlock = (ev: WheelEvent) => {
-      if (Math.abs(ev.deltaY) > 0) ev.preventDefault();
-    };
-    el.addEventListener("wheel", wheelBlock, { passive: false });
-    return () => el.removeEventListener("wheel", wheelBlock);
-  }, []);
+  /* --- zoom actions --- */
+  const zoomTo = useCallback(
+    (delta: number) => {
+      const vp = vpRef.current;
+      if (!vp) return;
+      const before = vp.scrollLeft + vp.clientWidth / 2;
+      const beforeFrac = trackPx === 0 ? 0.5 : before / trackPx;
+      const nextZi = Math.max(0, Math.min(ZOOMS.length - 1, zi + delta));
+      setZi(nextZi);
+      requestAnimationFrame(() => {
+        if (!vpRef.current) return;
+        const newTrack = Math.max(vpPx * ZOOMS[nextZi], vpPx, 1080);
+        vpRef.current.scrollLeft = beforeFrac * newTrack - vpPx / 2;
+      });
+    },
+    [trackPx, vpPx, zi],
+  );
 
-  /* --- render ---------------------------------------------------------- */
-  const focused = focusedEventId
-    ? visibleEvents.find((m) => m.event.id === focusedEventId)
-    : null;
-  const hovered = hoverId
-    ? visibleEvents.find((m) => m.event.id === hoverId)
-    : null;
-  const cardFor = hovered ?? focused ?? null;
+  const resetView = useCallback(() => {
+    setZi(0);
+    requestAnimationFrame(() => {
+      if (!vpRef.current) return;
+      const newTrack = Math.max(vpPx, 1080);
+      vpRef.current.scrollLeft = (newTrack * xOf(initialYear)) / 100 - vpPx / 2;
+    });
+  }, [initialYear, vpPx]);
+
+  /* --- render helpers --- */
+  const shownEvent =
+    pinnedIndex != null ? eventsByYear[pinnedIndex] : hoveredIndex != null ? eventsByYear[hoveredIndex] : null;
+  const shownIdx = pinnedIndex ?? hoveredIndex;
+
+  const visibleCount = activeCat
+    ? eventsByYear.filter((e) => e.categories.includes(activeCat)).length
+    : eventsByYear.length;
 
   return (
-    <div className="relative select-none">
-      {/* You are here + controls */}
-      <div className="mb-3 flex items-baseline justify-between gap-3">
-        <div className="flex min-w-0 flex-wrap items-baseline gap-x-3 gap-y-1">
-          <MicroCaps>You are here</MicroCaps>
-          <span className="font-mono text-sm tabular-nums text-ink">
-            {formatYearShort(centeredYear)}
-          </span>
-          <span className="truncate text-xs text-ink-muted">
-            — {eraOf(centeredYear)}
-          </span>
+    <section className="not-prose">
+      {/* Header row — "You are here" + zoom controls */}
+      <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:mb-8 sm:flex-row sm:items-end">
+        <div>
+          <p className="font-mono text-[11px] font-medium uppercase tracking-[0.24em] text-ink-muted">
+            You are here
+          </p>
+          <div className="mt-2 flex items-baseline gap-4">
+            <h2 className="font-serif text-[56px] italic leading-[0.88] tracking-[-0.015em] text-ink sm:text-[78px]">
+              {fmtYear(currentYear)}
+            </h2>
+            <span className="inline-block rounded-full border border-rule/80 bg-surface/50 px-3 py-1.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+              {eraOf(currentYear)}
+            </span>
+          </div>
         </div>
-        <div className="flex shrink-0 items-center gap-1">
-          <ControlButton onClick={() => zoomAt((viewStart + viewEnd) / 2, 1.35)} label="Zoom out">
-            <Minus size={18} strokeWidth={1.5} className="sm:hidden" />
-            <Minus size={14} strokeWidth={1.5} className="hidden sm:block" />
-          </ControlButton>
-          <ControlButton onClick={() => zoomAt((viewStart + viewEnd) / 2, 0.75)} label="Zoom in">
-            <Plus size={18} strokeWidth={1.5} className="sm:hidden" />
-            <Plus size={14} strokeWidth={1.5} className="hidden sm:block" />
-          </ControlButton>
-          <ControlButton onClick={resetView} label="Reset view">
-            <RotateCcw size={18} strokeWidth={1.5} className="sm:hidden" />
-            <RotateCcw size={14} strokeWidth={1.5} className="hidden sm:block" />
-          </ControlButton>
+        <div className="flex gap-1.5">
+          <ZoomButton onClick={() => zoomTo(-1)} disabled={zi === 0} label="Zoom out">
+            <Minus size={14} strokeWidth={1.5} />
+          </ZoomButton>
+          <ZoomButton onClick={() => zoomTo(1)} disabled={zi === ZOOMS.length - 1} label="Zoom in">
+            <Plus size={14} strokeWidth={1.5} />
+          </ZoomButton>
+          <ZoomButton onClick={resetView} label="Reset view">
+            <RotateCcw size={14} strokeWidth={1.5} />
+          </ZoomButton>
         </div>
       </div>
 
+      {/* Category filter chips */}
+      <div className="mb-5 flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+        <FilterChip
+          active={activeCat == null}
+          onClick={() => {
+            setActiveCat(null);
+            setPinnedIndex(null);
+          }}
+          label="All eras of everything"
+        />
+        {categories.map((cat) => {
+          const c = CATEGORY_COLORS[cat.id];
+          return (
+            <FilterChip
+              key={cat.id}
+              active={activeCat === cat.id}
+              onClick={() =>
+                setActiveCat((prev) => {
+                  if (prev === cat.id) return null;
+                  return cat.id;
+                })
+              }
+              label={cat.label}
+              swatch={`light-dark(${c.light}, ${c.dark})`}
+            />
+          );
+        })}
+      </div>
+
+      {/* Viewport */}
       <div
-        ref={containerRef}
-        role="region"
-        aria-label="Interactive timeline"
+        ref={vpRef}
         tabIndex={0}
+        role="region"
+        aria-label="Timeline — drag to pan, arrow keys to browse events"
+        className="relative select-none overflow-x-auto overflow-y-hidden border-y border-rule outline-none cursor-grab focus-visible:shadow-[inset_0_0_0_2px_var(--accent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        style={{ touchAction: "pan-x" }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}
-        onWheel={onWheel}
+        onPointerUp={endDrag}
+        onPointerCancel={endDrag}
         onKeyDown={onKeyDown}
-        className={cn(
-          "relative w-full cursor-grab border-y border-rule bg-surface/40 outline-none",
-          "active:cursor-grabbing",
-          "focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-0",
-        )}
-        style={{
-          height: isSmall ? CANVAS_HEIGHT_MOBILE : CANVAS_HEIGHT_DESKTOP,
-          // Block browser pan/zoom on touch — we handle it ourselves.
-          touchAction: "none",
-        }}
       >
-        {/* Era band strip */}
-        <div className="absolute inset-x-0 top-0" style={{ height: ERA_BAND_H }}>
-          {eraBands.map((band, i) => (
-            <div
-              key={band.key}
-              className={cn(
-                "absolute top-0 h-full",
-                i % 2 === 0
-                  ? "bg-ink/[0.025] dark:bg-ink/[0.05]"
-                  : "bg-transparent",
-              )}
-              style={{ left: band.left, width: band.width }}
-            >
-              {band.width > 60 && (
-                <span className="absolute left-2 top-1.5 text-[10px] uppercase tracking-[0.14em] text-ink-muted/80">
-                  {band.label}
-                </span>
-              )}
-            </div>
-          ))}
-          <div className="absolute inset-x-0 bottom-0 h-px bg-rule" />
-        </div>
-
-        {/* Ruler */}
         <div
-          className="absolute inset-x-0"
-          style={{ top: ERA_BAND_H, height: RULER_H }}
+          ref={trackRef}
+          className="relative"
+          style={{
+            height: smallScreen ? TRACK_H_MOBILE : TRACK_H,
+            width: trackPx || "100%",
+          }}
         >
-          {ticks.map((t) => (
-            <div
-              key={`${t.year}-${t.major}`}
-              className="absolute top-0 flex flex-col items-center"
-              style={{ left: posToPx(t.pos), transform: "translateX(-50%)" }}
-            >
+          {/* Era zones */}
+          {ERAS.map((era, i) => {
+            const left = CUMULATIVE[i];
+            const width = (era.weight / TOTAL_WEIGHT) * 100;
+            return (
               <div
+                key={era.label}
                 className={cn(
-                  "w-px",
-                  t.major ? "h-4 bg-ink/60" : "h-1 bg-rule/60",
+                  "absolute top-0 bottom-0",
+                  i > 0 && "border-l border-ink/[0.05]",
+                  i % 2 === 1 && "bg-ink/[0.022] dark:bg-ink/[0.04]",
                 )}
-              />
-              <span
-                className={cn(
-                  "mt-1 font-mono tabular-nums",
-                  t.major
-                    ? "text-[11px] font-medium text-ink"
-                    : "text-[10px] text-ink-muted/70",
-                )}
+                style={{ left: `${left}%`, width: `${width}%` }}
               >
-                {formatYearShort(t.year)}
-              </span>
-            </div>
-          ))}
-          <div className="absolute inset-x-0 bottom-0 h-px bg-rule" />
-        </div>
+                <span className="absolute left-3 top-4 whitespace-nowrap font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-ink-muted/70">
+                  {era.label}
+                </span>
+              </div>
+            );
+          })}
 
-        {/* Marker plane */}
-        <div
-          className="absolute inset-x-0"
-          style={{ top: MARKER_TOP, bottom: 0 }}
-        >
-          {/* Era separator verticals — stronger than tick marks */}
-          {eraBands.map((band) => (
-            <div
-              key={`sep-${band.key}`}
-              className="pointer-events-none absolute top-0 bottom-0 w-px bg-rule/70 dark:bg-rule"
-              style={{ left: band.left }}
-              aria-hidden
-            />
-          ))}
-
-          {/* The backbone — a 2px horizontal axis with a subtle gradient */}
+          {/* Axis line at the bottom */}
           <div
-            className="pointer-events-none absolute inset-x-0"
-            style={{
-              top: AXIS_Y - 1,
-              height: 2,
-              background:
-                "linear-gradient(to right, transparent 0%, var(--rule) 4%, var(--ink-muted) 50%, var(--rule) 96%, transparent 100%)",
-              opacity: 0.75,
-            }}
-            aria-hidden
+            className="absolute right-0 left-0 h-px bg-rule"
+            style={{ bottom: AXIS_BOTTOM }}
           />
 
-          {visibleEvents.map((m) => {
-            const track = trackFor.get(m.event.id) ?? 0;
-            const level = Math.floor(track / 2) + 1;
-            const above = track % 2 === 0;
-            const y = AXIS_Y + (above ? -1 : 1) * level * TRACK_H;
-            const c = markerColor(m.event.categories);
-            const isFocused = focusedEventId === m.event.id;
-            const isHovered = hoverId === m.event.id;
-            const r = markerRadius(m.event.significance, isFocused || isHovered);
-            const stemStart = above ? y + r : y - r;
-            const stemLen = Math.max(0, Math.abs(AXIS_Y - stemStart) - 1);
+          {/* Era boundary ticks below axis */}
+          {ERAS.reduce<number[]>((acc, e, i) => {
+            acc.push(e.start);
+            if (i === ERAS.length - 1) acc.push(e.end);
+            return acc;
+          }, []).map((y, i, arr) => {
+            const isLeftEdge = i === 0;
+            const isRightEdge = i === arr.length - 1;
+            const transform = isLeftEdge
+              ? "translateX(8px)"
+              : isRightEdge
+                ? "translateX(calc(-100% - 8px))"
+                : "translateX(-50%)";
             return (
-              <div key={m.event.id}>
-                {/* Stem connecting the marker to the axis */}
-                <div
-                  className="pointer-events-none absolute w-px"
-                  style={{
-                    left: m.xPx,
-                    top: above ? stemStart : AXIS_Y + 1,
-                    height: stemLen,
-                    background: `light-dark(${c.light}, ${c.dark})`,
-                    opacity: isFocused || isHovered ? 0.9 : 0.45,
-                  }}
-                  aria-hidden
+              <span
+                key={`tick-${y}`}
+                className="absolute whitespace-nowrap font-mono text-[10.5px] text-ink-muted/70"
+                style={{ bottom: TICK_BOTTOM, left: `${xOf(y)}%`, transform }}
+              >
+                {fmtYear(y)}
+              </span>
+            );
+          })}
+
+          {/* "You are here" plumb line — pinned to viewport centre */}
+          {trackPx > 0 && (
+            <div
+              className="pointer-events-none absolute w-0 border-l border-dashed border-accent/60"
+              style={{
+                left: `${xOf(currentYear)}%`,
+                bottom: AXIS_BOTTOM,
+                top: 46,
+              }}
+              aria-hidden
+            >
+              <span
+                className="absolute font-mono text-[10px] font-medium tracking-[0.2em] text-accent"
+                style={{ top: -26, left: 0, transform: "translateX(-50%)" }}
+              >
+                {fmtYear(currentYear)}
+              </span>
+              <span
+                className="absolute rounded-full bg-accent"
+                style={{ bottom: -4, left: -4.5, width: 8, height: 8 }}
+              />
+              <span
+                className="absolute rounded-full border border-accent/70 [animation:tl-ping_2.8s_ease-out_infinite] motion-reduce:hidden"
+                style={{ bottom: -9, left: -9.5, width: 18, height: 18 }}
+              />
+            </div>
+          )}
+
+          {/* Events */}
+          {sortedEvents.map((event, i) => {
+            const year = parseStartYear(event.date.start);
+            const cat = markerColor(event.categories);
+            const laneH = LANES[i % 3];
+            const isDimmed =
+              activeCat != null && !event.categories.includes(activeCat);
+            const isActive = shownIdx === i;
+            return (
+              <div
+                key={event.id}
+                className={cn(
+                  "absolute w-0 transition-[opacity,filter] duration-200",
+                  isDimmed && "pointer-events-none opacity-[0.12] saturate-[0.35]",
+                )}
+                style={{
+                  left: `${xOf(year)}%`,
+                  bottom: AXIS_BOTTOM,
+                  height: laneH,
+                  color: `light-dark(${cat.light}, ${cat.dark})`,
+                }}
+              >
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-0 h-full w-px bg-current transition-opacity duration-200",
+                    isActive ? "opacity-70" : "opacity-25",
+                  )}
                 />
                 <button
                   type="button"
                   data-marker
-                  aria-label={`${m.event.title}, ${m.event.date.display ?? m.event.date.start}`}
-                  onMouseEnter={() => setHoverId(m.event.id)}
-                  onMouseLeave={() =>
-                    setHoverId((cur) => (cur === m.event.id ? null : cur))
-                  }
-                  onFocus={() => setFocusedEvent(m.event.id)}
+                  aria-label={`${event.title}, ${event.date.display ?? fmtYear(year)}`}
+                  onMouseEnter={() => {
+                    if (pinnedIndex == null) setHoveredIndex(i);
+                  }}
+                  onMouseLeave={() => {
+                    if (pinnedIndex == null) setHoveredIndex((cur) => (cur === i ? null : cur));
+                  }}
+                  onFocus={() => setHoveredIndex(i)}
                   onClick={(evt) => {
-                    if (pointerMoved.current) {
+                    if (drag.current?.moved) {
                       evt.preventDefault();
                       return;
                     }
-                    router.push(`/event/${m.event.slug}`);
+                    setPinnedIndex((p) => (p === i ? null : i));
+                    setHoveredIndex(i);
                   }}
                   className={cn(
-                    "absolute -translate-x-1/2 -translate-y-1/2 rounded-full transition-[width,height,box-shadow] duration-150",
-                    "outline-none",
+                    "absolute rounded-full bg-current outline-none transition-transform duration-200",
+                    "cursor-pointer",
+                    isActive
+                      ? "scale-[1.55]"
+                      : "hover:scale-[1.55] focus-visible:scale-[1.55]",
                   )}
                   style={{
-                    left: m.xPx,
-                    top: y,
-                    width: r * 2,
-                    height: r * 2,
-                    background: `light-dark(${c.light}, ${c.dark})`,
-                    boxShadow: isFocused
-                      ? `0 0 0 2px var(--bg), 0 0 0 3px light-dark(${c.light}, ${c.dark})`
-                      : undefined,
+                    top: -4,
+                    left: -4,
+                    width: 8,
+                    height: 8,
+                    boxShadow: "0 0 0 3px var(--bg)",
                   }}
                 />
               </div>
             );
           })}
 
-          {/* Hover / focus preview card */}
-          {cardFor && (() => {
-            const track = trackFor.get(cardFor.event.id) ?? 0;
-            const level = Math.floor(track / 2) + 1;
-            const above = track % 2 === 0;
-            const y = AXIS_Y + (above ? -1 : 1) * level * TRACK_H;
-            return (
-              <HoverCard
-                event={cardFor.event}
-                xPx={cardFor.xPx}
-                containerWidth={width}
-                trackY={y}
-              />
-            );
-          })()}
+          {/* Hover / pinned card */}
+          {shownEvent && shownIdx != null && trackPx > 0 && (
+            <HoverCard
+              ref={cardRef}
+              event={shownEvent}
+              laneH={LANES[shownIdx % 3]}
+              xPercent={xOf(parseStartYear(shownEvent.date.start))}
+              trackPx={trackPx}
+              pinned={pinnedIndex === shownIdx}
+              onClose={() => {
+                setPinnedIndex(null);
+                setHoveredIndex(null);
+              }}
+              onNavigate={(slug) => router.push(`/event/${slug}`)}
+            />
+          )}
         </div>
-
-        {/* "Center" indicator line — quiet accent */}
-        <div
-          className="pointer-events-none absolute w-px bg-accent/40"
-          style={{ left: width / 2, top: ERA_BAND_H, bottom: 0 }}
-          aria-hidden
-        />
       </div>
 
-      <p className="mt-3 hidden text-xs text-ink-muted sm:block">
-        Drag to pan · scroll to zoom · <kbd className="font-mono">←</kbd>{" "}
-        <kbd className="font-mono">→</kbd> between markers ·{" "}
-        <kbd className="font-mono">Enter</kbd> to open · showing {visibleEvents.length} of {events.length} events
-      </p>
-      <p className="mt-3 text-xs text-ink-muted sm:hidden">
-        Drag to pan · pinch or use +/− to zoom · showing {visibleEvents.length} of {events.length} events
-      </p>
-    </div>
+      {/* Hints */}
+      <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink-muted">
+        <span className="inline-flex items-center gap-1.5">
+          <Kbd>drag</Kbd> pan
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <Kbd>←</Kbd>
+          <Kbd>→</Kbd> browse
+        </span>
+        <span className="hidden sm:inline-flex items-center gap-1.5">
+          <Kbd>enter</Kbd> pin
+        </span>
+        <span className="hidden sm:inline-flex items-center gap-1.5">
+          <Kbd>esc</Kbd> close
+        </span>
+        <span className="ml-auto font-mono text-[11px] tracking-wider text-ink-muted/70">
+          showing {visibleCount} of {sortedEvents.length} events
+        </span>
+      </div>
+
+      {/* Ping keyframes — scoped */}
+      <style jsx>{`
+        @keyframes tl-ping {
+          0% { transform: scale(0.35); opacity: 0.9; }
+          70%, 100% { transform: scale(1.8); opacity: 0; }
+        }
+      `}</style>
+    </section>
   );
 }
 
-function ControlButton({
-  children,
+/* ---------------------------------------------------------------------------
+   HoverCard
+--------------------------------------------------------------------------- */
+
+interface HoverCardProps {
+  event: EventDoc;
+  laneH: number;
+  xPercent: number;
+  trackPx: number;
+  pinned: boolean;
+  onClose: () => void;
+  onNavigate: (slug: string) => void;
+}
+
+const HoverCard = ({
+  event,
+  laneH,
+  xPercent,
+  trackPx,
+  pinned,
+  onClose,
+  onNavigate,
+}: HoverCardProps & { ref?: React.Ref<HTMLDivElement> }) => {
+  const cat = markerColor(event.categories);
+  const CARD_W = 302;
+  const px = (trackPx * xPercent) / 100;
+  const left = Math.max(10, Math.min(px - CARD_W / 2, trackPx - CARD_W - 10));
+
+  return (
+    <div
+      role="dialog"
+      data-card
+      className={cn(
+        "pointer-events-auto absolute z-20 overflow-hidden rounded-2xl border border-rule bg-surface shadow-[0_14px_34px_rgb(0_0_0_/_0.09),0_2px_6px_rgb(0_0_0_/_0.05)]",
+        "transition-[opacity,transform] duration-200",
+      )}
+      style={{
+        left,
+        width: CARD_W,
+        bottom: AXIS_BOTTOM + laneH + 18,
+      }}
+    >
+      {/* Tinted strip with italic serif year watermark */}
+      <div
+        className="relative h-[52px] overflow-hidden"
+        style={{ background: cat.tint }}
+      >
+        <span
+          className="pointer-events-none absolute font-serif italic leading-none tracking-[-0.02em]"
+          style={{
+            right: 12,
+            bottom: -24,
+            fontSize: 76,
+            color: cat.light,
+            opacity: 0.28,
+          }}
+        >
+          {fmtYear(parseStartYear(event.date.start))}
+        </span>
+      </div>
+
+      <div className="px-4 pt-3 pb-4">
+        <div className="flex items-center gap-2">
+          <MonoDate date={event.date} size="sm" className="text-ink-muted" />
+          <span
+            className="rounded-full px-2.5 py-[3px] font-mono text-[9.5px] font-medium uppercase tracking-[0.14em]"
+            style={{ background: cat.tint, color: cat.deep }}
+          >
+            {categoryLabel(event.categories[0])}
+          </span>
+        </div>
+        <Link
+          href={`/event/${event.slug}`}
+          onClick={(e) => {
+            e.preventDefault();
+            onNavigate(event.slug);
+          }}
+          className="mt-2 block text-[15.5px] font-semibold leading-snug tracking-[-0.01em] text-ink hover:text-accent"
+        >
+          {event.title}
+        </Link>
+        <p className="mt-1 line-clamp-3 text-[12.8px] leading-[1.58] text-ink-muted">
+          {event.summary}
+        </p>
+      </div>
+
+      {pinned && (
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute top-2 right-2 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-surface/80 text-ink-muted transition-colors hover:bg-surface hover:text-ink"
+        >
+          <X size={13} strokeWidth={1.5} />
+        </button>
+      )}
+    </div>
+  );
+};
+
+/* ---------------------------------------------------------------------------
+   Bits & pieces
+--------------------------------------------------------------------------- */
+
+function ZoomButton({
   onClick,
+  disabled,
   label,
+  children,
 }: {
-  children: React.ReactNode;
   onClick: () => void;
+  disabled?: boolean;
   label: string;
+  children: React.ReactNode;
 }) {
   return (
     <button
@@ -644,78 +695,84 @@ function ControlButton({
       aria-label={label}
       title={label}
       onClick={onClick}
-      className="inline-flex h-11 w-11 items-center justify-center text-ink-muted transition-colors hover:text-ink sm:h-7 sm:w-7"
+      disabled={disabled}
+      className={cn(
+        "inline-flex items-center justify-center rounded-[10px] border border-rule/80 text-ink-muted transition-colors",
+        "h-11 w-11 sm:h-[34px] sm:w-[34px]",
+        "hover:bg-surface hover:border-rule hover:text-ink",
+        "disabled:cursor-not-allowed disabled:opacity-40",
+      )}
     >
       {children}
     </button>
   );
 }
 
-function HoverCard({
-  event,
-  xPx,
-  containerWidth,
-  trackY,
+function FilterChip({
+  active,
+  onClick,
+  label,
+  swatch,
 }: {
-  event: EventDoc;
-  xPx: number;
-  containerWidth: number;
-  trackY: number;
+  active: boolean;
+  onClick: () => void;
+  label: string;
+  swatch?: string;
 }) {
-  // On narrow viewports, shrink the card so it never overflows the canvas.
-  const CARD_W = Math.min(300, Math.max(220, containerWidth - 24));
-  const half = CARD_W / 2;
-  let left = xPx - half;
-  if (left < 8) left = 8;
-  if (left + CARD_W > containerWidth - 8) left = containerWidth - CARD_W - 8;
-  const above = trackY > 160;
-  const c = markerColor(event.categories);
-  const hero = event.images[0];
-
   return (
-    <div
-      role="tooltip"
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
       className={cn(
-        "pointer-events-none absolute z-10 border border-rule bg-surface shadow-[0_2px_16px_-8px_rgb(0_0_0_/_0.25)]",
+        "inline-flex items-center gap-2 rounded-full border px-3.5 py-[7px] text-[12.5px] font-medium transition-colors",
+        active
+          ? "border-rule bg-surface text-ink shadow-[0_1px_3px_rgb(28_27_24_/_0.06)]"
+          : "border-rule/70 bg-transparent text-ink-muted hover:border-rule hover:text-ink",
       )}
-      style={{
-        left,
-        top: above ? trackY - 12 : trackY + 20,
-        width: CARD_W,
-        transform: above ? "translateY(-100%)" : undefined,
-      }}
     >
-      {hero && (
-        <SafeImage
-          src={hero.url}
-          alt={hero.caption}
-          className="w-full border-b border-rule object-cover"
-          aspectRatio="16 / 9"
-          loading="eager"
-        />
-      )}
-      <div className="p-4">
-        <div className="flex items-baseline justify-between gap-3">
-          <MonoDate date={event.date} size="sm" className="text-ink-muted" />
-          <span
-            className="text-[10px] uppercase tracking-[0.14em]"
-            style={{ color: `light-dark(${c.light}, ${c.dark})` }}
-          >
-            {event.categories[0].replace("-", " · ")}
-          </span>
-        </div>
-        <Link
-          href={`/event/${event.slug}`}
-          className="pointer-events-auto mt-1 block text-sm font-medium leading-snug text-ink hover:text-accent"
-        >
-          {event.title}
-        </Link>
-        <p className="mt-2 line-clamp-3 text-xs leading-5 text-ink-muted">
-          {event.summary}
-        </p>
-      </div>
-    </div>
+      <span
+        className="inline-block h-[7px] w-[7px] rounded-full"
+        style={{ background: swatch ?? "var(--rule)" }}
+        aria-hidden
+      />
+      {label}
+    </button>
   );
 }
 
-export { MIN_YEAR, MAX_YEAR };
+function Kbd({ children }: { children: React.ReactNode }) {
+  return (
+    <kbd className="rounded-md border border-rule/80 border-b-2 bg-surface px-[7px] py-[2px] font-mono text-[10.5px] font-medium text-ink-muted">
+      {children}
+    </kbd>
+  );
+}
+
+function categoryLabel(id: Category): string {
+  const labels: Record<Category, string> = {
+    "war-conflict": "War & conflict",
+    "politics-empires": "Empires & politics",
+    "science-technology": "Science & technology",
+    "religion-ideas": "Belief & ideas",
+    "art-culture": "Arts & culture",
+    "economy-trade": "Economy & trade",
+    "exploration": "Exploration",
+    "disaster-disease": "Disaster & disease",
+  };
+  return labels[id];
+}
+
+function nearestEventIndex(events: EventDoc[], year: number): number {
+  let best = 0;
+  let bestDist = Infinity;
+  for (let i = 0; i < events.length; i++) {
+    const y = parseStartYear(events[i].date.start);
+    const d = Math.abs(y - year);
+    if (d < bestDist) {
+      bestDist = d;
+      best = i;
+    }
+  }
+  return best;
+}

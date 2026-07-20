@@ -4,7 +4,7 @@ import { MicroCaps } from "@/components/common/micro-caps";
 import { MonoDate } from "@/components/common/mono-date";
 import { HairlineRule } from "@/components/common/hairline-rule";
 import { TimelineCanvas } from "@/components/timeline/timeline-canvas";
-import { allEvents, allYears } from "@/lib/content/loader";
+import { allCategories, allEvents, allYears } from "@/lib/content/loader";
 import { parseStartYear } from "@/lib/timeline/scale";
 import { markerColor } from "@/lib/timeline/categories";
 
@@ -21,6 +21,7 @@ function yearLabel(y: number): string {
 export default function HomePage() {
   const events = allEvents();
   const years = allYears();
+  const categories = allCategories();
 
   // Featured anchor events: pick a curated set spanning eras.
   // Sort by date, then take one from each era (max 12).
@@ -80,7 +81,7 @@ export default function HomePage() {
 
       {/* Interactive timeline — the hero */}
       <section className="pb-12 sm:pb-16">
-        <TimelineCanvas events={events} />
+        <TimelineCanvas events={events} categories={categories} />
       </section>
 
       <HairlineRule />
