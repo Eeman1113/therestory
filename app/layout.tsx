@@ -6,6 +6,7 @@ import { TimelineViewProvider } from "@/components/timeline/timeline-view";
 import { TimelineStrip } from "@/components/timeline/timeline-strip";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { CommandPaletteMount } from "@/components/command-palette-mount";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
+            <CommandPaletteMount />
           </TimelineViewProvider>
         </ThemeProvider>
       </body>

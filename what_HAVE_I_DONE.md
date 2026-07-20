@@ -50,3 +50,12 @@ Format:
 - Promoted the interactive timeline into the homepage hero position (per SPEC §Information architecture). The intro text tightened, canvas below, then the anchor-events jump list.
 - Verified in browser: hover shows the Constantinople preview card, zoom + / − updates the visible-marker count, drag pan re-centers the "you are here" readout, minimap highlight follows the view window.
 
+## 2026-07-20 — Phase 4: detail pages + eras + about + ⌘K
+- Installed `react-markdown` + `remark-gfm` for section bodies and `cmdk` for the command palette.
+- Built `/event/[slug]` with `generateStaticParams` over all seed events. Layout: `EventHero` (mono XL date, era + category chips in category color, title, summary, hero image with caption/credit/licence/source), `EventBody` (§01/§02/§03 numbered sections with sidebar heading), `MeanwhileSection` (the signature — region plaques with focus regions ordered first), `FiguresGrid` (grayscale portraits), `ImageGallery`, `SourcesList` (numbered, external-link icon, accessed date), `PrevNextNav` (previous/later in time).
+- Built `Markdown` renderer with editorial component overrides.
+- Built `/eras` index and `/eras/[era]` detail pages listing anchor events in each era.
+- Built `/about` page — mission, sourcing standard, imagery & credits, colophon.
+- Built ⌘K command palette using `cmdk`: searches events, eras, regions, keyboard-navigable, editorial styled (mono middle-dot dates, micro-caps group headers, hairline dividers, Esc/↵/↑↓ hints). Global keyboard shortcut + clickable header trigger via custom event.
+- Verified end-to-end: search "cons" → Fall of Constantinople bubbled to top → Enter → event page loads with hero image (Fausto Zonaro painting), full sections, "meanwhile" plaques for East Asia / South & Central Asia / Africa / Europe / Americas, complete sources list.
+

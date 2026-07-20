@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { MicroCaps } from "@/components/common/micro-caps";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { HairlineRule } from "@/components/common/hairline-rule";
+import { PaletteTrigger } from "@/components/palette-trigger";
 
 export function SiteHeader() {
   return (
@@ -31,7 +31,7 @@ export function SiteHeader() {
           >
             About
           </Link>
-          <MicroCaps className="hidden sm:inline">⌘K</MicroCaps>
+          <PaletteTrigger className="hidden sm:inline" />
           <ThemeToggle />
         </nav>
       </header>
