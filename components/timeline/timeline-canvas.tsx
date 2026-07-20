@@ -22,6 +22,7 @@ import { Minus, Plus, RotateCcw, X } from "lucide-react";
 import type { Category, CategoryMeta, EventDoc } from "@/lib/content/schema";
 import { cn } from "@/lib/utils";
 import { MonoDate } from "@/components/common/mono-date";
+import { SafeImage } from "@/components/common/safe-image";
 import { parseStartYear } from "@/lib/timeline/scale";
 import { CATEGORY_COLORS, markerColor } from "@/lib/timeline/categories";
 
@@ -115,7 +116,7 @@ interface Props {
   initialYear?: number;
 }
 
-export function TimelineCanvas({ events, categories, initialYear = 1629 }: Props) {
+export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props) {
   const router = useRouter();
   const vpRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -502,8 +503,7 @@ export function TimelineCanvas({ events, categories, initialYear = 1629 }: Props
                       evt.preventDefault();
                       return;
                     }
-                    setPinnedIndex((p) => (p === i ? null : i));
-                    setHoveredIndex(i);
+                    router.push(`/event/${event.slug}`);
                   }}
                   className={cn(
                     "absolute rounded-full bg-current outline-none transition-transform duration-200",
@@ -598,17 +598,24 @@ const HoverCard = ({
   onNavigate,
 }: HoverCardProps & { ref?: React.Ref<HTMLDivElement> }) => {
   const cat = markerColor(event.categories);
-  const CARD_W = 302;
+  const CARD_W = 320;
   const px = (trackPx * xPercent) / 100;
   const left = Math.max(10, Math.min(px - CARD_W / 2, trackPx - CARD_W - 10));
+  const hero = event.images[0];
 
   return (
-    <div
-      role="dialog"
+    <Link
+      href={`/event/${event.slug}`}
+      onClick={(e) => {
+        e.preventDefault();
+        onNavigate(event.slug);
+      }}
       data-card
       className={cn(
-        "pointer-events-auto absolute z-20 overflow-hidden rounded-2xl border border-rule bg-surface shadow-[0_14px_34px_rgb(0_0_0_/_0.09),0_2px_6px_rgb(0_0_0_/_0.05)]",
-        "transition-[opacity,transform] duration-200",
+        "pointer-events-auto absolute z-20 block overflow-hidden rounded-2xl border border-rule bg-surface",
+        "shadow-[0_14px_34px_rgb(0_0_0_/_0.09),0_2px_6px_rgb(0_0_0_/_0.05)]",
+        "transition-[transform,box-shadow] duration-200",
+        "hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgb(0_0_0_/_0.12),0_2px_6px_rgb(0_0_0_/_0.06)]",
       )}
       style={{
         left,
@@ -616,24 +623,56 @@ const HoverCard = ({
         bottom: AXIS_BOTTOM + laneH + 18,
       }}
     >
-      {/* Tinted strip with italic serif year watermark */}
-      <div
-        className="relative h-[52px] overflow-hidden"
-        style={{ background: cat.tint }}
-      >
-        <span
-          className="pointer-events-none absolute font-serif italic leading-none tracking-[-0.02em]"
-          style={{
-            right: 12,
-            bottom: -24,
-            fontSize: 76,
-            color: cat.light,
-            opacity: 0.28,
-          }}
+      {/* Hero image with italic-serif year watermark overlaid */}
+      {hero ? (
+        <div
+          className="relative h-[132px] overflow-hidden"
+          style={{ background: cat.tint }}
         >
-          {fmtYear(parseStartYear(event.date.start))}
-        </span>
-      </div>
+          <SafeImage
+            src={hero.url}
+            alt={hero.caption}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          {/* Bottom-fade so the watermark reads over any image */}
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to top, rgb(0 0 0 / 0.35) 0%, transparent 55%)",
+            }}
+          />
+          <span
+            className="pointer-events-none absolute font-serif italic leading-none tracking-[-0.02em] text-white/85"
+            style={{
+              right: 12,
+              bottom: 6,
+              fontSize: 44,
+              textShadow: "0 2px 12px rgb(0 0 0 / 0.45)",
+            }}
+          >
+            {fmtYear(parseStartYear(event.date.start))}
+          </span>
+        </div>
+      ) : (
+        <div
+          className="relative h-[52px] overflow-hidden"
+          style={{ background: cat.tint }}
+        >
+          <span
+            className="pointer-events-none absolute font-serif italic leading-none tracking-[-0.02em]"
+            style={{
+              right: 12,
+              bottom: -24,
+              fontSize: 76,
+              color: cat.light,
+              opacity: 0.28,
+            }}
+          >
+            {fmtYear(parseStartYear(event.date.start))}
+          </span>
+        </div>
+      )}
 
       <div className="px-4 pt-3 pb-4">
         <div className="flex items-center gap-2">
@@ -645,16 +684,9 @@ const HoverCard = ({
             {categoryLabel(event.categories[0])}
           </span>
         </div>
-        <Link
-          href={`/event/${event.slug}`}
-          onClick={(e) => {
-            e.preventDefault();
-            onNavigate(event.slug);
-          }}
-          className="mt-2 block text-[15.5px] font-semibold leading-snug tracking-[-0.01em] text-ink hover:text-accent"
-        >
+        <div className="mt-2 text-[15.5px] font-semibold leading-snug tracking-[-0.01em] text-ink">
           {event.title}
-        </Link>
+        </div>
         <p className="mt-1 line-clamp-3 text-[12.8px] leading-[1.58] text-ink-muted">
           {event.summary}
         </p>
@@ -663,14 +695,18 @@ const HoverCard = ({
       {pinned && (
         <button
           type="button"
-          onClick={onClose}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            onClose();
+          }}
           aria-label="Close"
-          className="absolute top-2 right-2 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-surface/80 text-ink-muted transition-colors hover:bg-surface hover:text-ink"
+          className="absolute top-2 right-2 inline-flex h-7 w-7 items-center justify-center rounded-lg bg-surface/85 text-ink-muted backdrop-blur transition-colors hover:bg-surface hover:text-ink"
         >
-          <X size={13} strokeWidth={1.5} />
+          <X size={14} strokeWidth={1.5} />
         </button>
       )}
-    </div>
+    </Link>
   );
 };
 
