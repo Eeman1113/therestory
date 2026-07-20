@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/theme-provider";
+import { TimelineViewProvider } from "@/components/timeline/timeline-view";
 import { TimelineStrip } from "@/components/timeline/timeline-strip";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -28,10 +29,12 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-bg text-ink flex flex-col">
         <ThemeProvider>
-          <TimelineStrip />
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
+          <TimelineViewProvider>
+            <TimelineStrip />
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </TimelineViewProvider>
         </ThemeProvider>
       </body>
     </html>

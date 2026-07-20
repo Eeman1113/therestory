@@ -39,3 +39,14 @@ Format:
 - Wired homepage to load events from the content loader (proves the pipeline end-to-end at build time). Replaced hardcoded pivotal-years list with a live "Anchor events" grid.
 - Trimmed `display` overrides on CE day-precision events so the mono middle-dot signature (`1453·05·29`, `1969·07·20`) renders consistently; kept `display` on BCE dates ("221 BCE", "c. 3100 BCE") where it reads more naturally.
 
+## 2026-07-20 — Phase 3: the interactive timeline
+- Built `lib/timeline/scale.ts`: piecewise `yearToPosition` / `positionToYear` mapping (ancient millennia compressed, recent centuries expanded), `parseStartYear` that handles BCE + month/day fractions, and a `generateTicks` tick generator that adapts density and always keeps era boundaries.
+- Built `lib/timeline/density.ts`: `minSignificanceFor(windowSize)` — controls which markers show at each zoom level so the timeline stays readable at every scale.
+- Built `lib/timeline/categories.ts`: muted historic palette (one color per category, light + dark variants) used to color the marker dots.
+- Built `components/timeline/timeline-view.tsx`: React context that carries `viewStart`, `viewEnd`, `focusedEventId` plus `pan`, `zoomAt`, `resetView`, `setView`. Consumed by both the strip and the canvas.
+- Built `components/timeline/timeline-canvas.tsx`: the full-page interactive surface. Era band strip, mono ruler with adaptive ticks, greedy multi-track marker layout so dots never overlap, hover cards with mono date + category chip + summary + link, keyboard nav (←/→/Home/End/Enter/+/−), pointer-drag pan, wheel/pinch zoom anchored at the cursor, focus ring, `prefers-reduced-motion` respected via CSS.
+- Rewired `components/timeline/timeline-strip.tsx` to consume the shared view state — now doubles as a minimap that highlights the currently visible window from the canvas.
+- Wrapped `<TimelineViewProvider>` in the root layout so the strip and canvas share state across the whole app.
+- Promoted the interactive timeline into the homepage hero position (per SPEC §Information architecture). The intro text tightened, canvas below, then the anchor-events jump list.
+- Verified in browser: hover shows the Constantinople preview card, zoom + / − updates the visible-marker count, drag pan re-centers the "you are here" readout, minimap highlight follows the view window.
+
