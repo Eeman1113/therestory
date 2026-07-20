@@ -37,27 +37,69 @@
   "worldContext": [
     {
       "region": "americas",
-      "text": "The United States was in the second year of Reconstruction under President Andrew Johnson, who narrowly survived impeachment in the Senate on 26 May 1868. On 28 July 1868 the Fourteenth Amendment guaranteeing citizenship and equal protection was proclaimed ratified. In Canada, the first prime minister Sir John A. Macdonald was consolidating the Confederation that had come into being on 1 July 1867. In Latin America, the War of the Triple Alliance between Paraguay and the combined forces of Brazil, Argentina and Uruguay was in its final devastating phase."
+      "text": "The United States was in the second year of Reconstruction under President Andrew Johnson, the Tennessee unionist who had succeeded the assassinated Lincoln in April 1865 and who narrowly survived impeachment in the Senate on 26 May 1868 by a single vote after his removal of Secretary of War Edwin Stanton violated the Tenure of Office Act. On 28 July 1868 the Fourteenth Amendment guaranteeing citizenship and equal protection for freedmen was proclaimed ratified by Secretary of State William Seward, who had negotiated the purchase of Alaska from Russia for 7.2 million dollars the previous year. In November 1868 Ulysses S. Grant defeated Horatio Seymour to win the presidency. In Canada, the first prime minister Sir John A. Macdonald was consolidating the Dominion of Canada that had come into being on 1 July 1867 under the British North America Act, with an intercontinental railway pledge that would bring British Columbia into Confederation in 1871. In Latin America, the War of the Triple Alliance between Paraguay under Francisco Solano Lopez and the combined forces of Brazil, Argentina and Uruguay was in its final devastating phase; by its conclusion in 1870 perhaps half the Paraguayan population had perished. In Mexico, Benito Juarez had defeated the French-imposed Emperor Maximilian at Queretaro in 1867 and was rebuilding the Republic.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/President_Andrew_Johnson.jpg",
+        "caption": "US President Andrew Johnson, whose Reconstruction policies and impeachment defined 1868 in Washington. Portrait photograph by Mathew Brady, before 1875. Library of Congress.",
+        "credit": "Mathew Brady, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:President_Andrew_Johnson.jpg"
+      }
     },
     {
       "region": "europe",
-      "text": "The German unification project was accelerating under Otto von Bismarck; the North German Confederation had been formed after the Austro-Prussian War of 1866, and the Franco-Prussian War that would produce the German Empire lay only three years ahead. In Britain the second Reform Act of 1867 had roughly doubled the electorate. In Spain the Glorious Revolution of September 1868 overthrew Queen Isabella II. The First International, the International Workingmen's Association founded in London in 1864 with Karl Marx as its most active member, held its third congress in Brussels in September 1868."
+      "text": "The German unification project was accelerating under the Prussian minister-president Otto von Bismarck; the North German Confederation had been formed after the Austro-Prussian War of 1866, in which Helmuth von Moltke's needle-gun infantry had crushed the Habsburgs at Koniggratz on 3 July 1866, and the Franco-Prussian War that would produce the German Empire lay only three years ahead. In Britain William Gladstone became prime minister in December 1868 after the second Reform Act of 1867, forced through by his rival Benjamin Disraeli, had roughly doubled the electorate to include most urban male householders. In Spain the Glorious Revolution of September 1868, led by Generals Prim and Serrano, overthrew Queen Isabella II and began six years of turmoil. In France, Napoleon III's Second Empire was in its liberal phase, presiding over the Suez Canal opening and Haussmann's completion of Parisian boulevards. Karl Marx, working in the British Museum, had published the first volume of Das Kapital in Hamburg in September 1867; the First International (the International Workingmen's Association he had helped found in London in September 1864) held its third congress at Brussels in September 1868. In Russia, Tsar Alexander II's Great Reforms continued after the 1861 emancipation of the serfs.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Otto_von_Bismarck_portrait_1873.jpg",
+        "caption": "Otto von Bismarck, Prussian minister-president and chief architect of German unification, in a portrait engraving of 1873.",
+        "credit": "From Evert A. Duykinck's Portrait Gallery of Eminent Men and Women of Europe and America (New York, 1873), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otto_von_Bismarck_portrait_1873.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "British India was under the viceroyalty of Sir John Lawrence and, from January 1869, Lord Mayo. The Sirhind Canal system and the network of trunk railways were being extended; the Punjab and North-West Frontier were being consolidated. The Second Anglo-Afghan War lay ahead in 1878. In the princely states, Ranjit Singh's Punjab empire had long been absorbed but the Kashmiri, Hyderabad, Baroda and Mysore states remained under indirect rule."
+      "text": "British India was under the viceroyalty of Sir John Lawrence (1864 to 1869) and, from January 1869, the Earl of Mayo, who would be assassinated by an Afghan convict in the Andaman Islands in 1872. A decade after the Indian Rebellion of 1857 had ended Company rule and put the subcontinent under the direct sovereignty of Queen Victoria, the Sirhind Canal system in Punjab and the network of trunk railways were being rapidly extended: the Great Indian Peninsula Railway from Bombay reached Nagpur in 1867 and Jabalpur in 1870, meeting the East India Railway from Calcutta. The Punjab and North-West Frontier were being consolidated with the Afghan frontier still uncertain; the Second Anglo-Afghan War lay ahead in 1878. In the princely states, Maharaja Ranjit Singh's Punjab empire had long been absorbed after the Sikh Wars but the Kashmiri Dogras, Hyderabad Nizams, Baroda Gaekwads, and Mysore Wadiyars remained under indirect rule as major sub-imperial actors. The Bengal Renaissance flourished around Ramakrishna at Dakshineshwar and the young Rabindranath Tagore. The 1866 Orissa Famine had killed perhaps a million people.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Coin%2C_one_rupee%2C_Victoria_Queen%2C_India%2C_1862%2C_obv.png",
+        "caption": "One-rupee silver coin of British India, 1862, bearing the crowned bust of Queen Victoria; the currency of the new Crown Raj after 1858. Staatliche Museen zu Berlin.",
+        "credit": "Staatliche Museen zu Berlin, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coin,_one_rupee,_Victoria_Queen,_India,_1862,_obv.png"
+      }
     },
     {
       "region": "middle-east-north-africa",
-      "text": "The Ottoman Empire under Sultan Abdulaziz was still in the Tanzimat reforming period, though the sultan's foreign debts and lavish palace-building were beginning the fiscal crisis that would erupt in 1875 in default. Egypt under Isma'il Pasha was pushing the Suez Canal, opened in November 1869, toward completion. In Ethiopia the emperor Tewodros II died at the storming of his mountain fortress of Magdala by a British expeditionary force on 13 April 1868 in an early example of a European punitive expedition into the African interior."
+      "text": "The Ottoman Empire under Sultan Abdulaziz (r. 1861 to 1876), a physically imposing and lavish spender who was the first sultan to make a state visit to Christian Europe in 1867, was still in the Tanzimat reforming period initiated in 1839; though the sultan's foreign debts and expensive palace-building at Beylerbeyi and Ciragan were beginning the fiscal crisis that would erupt in default in 1875 and end in his deposition and suspicious death in 1876. Egypt under the Khedive Isma'il Pasha, grandson of Muhammad Ali, was pushing Ferdinand de Lesseps's Suez Canal, which would open in November 1869 with a great imperial jamboree attended by the Empress Eugenie and the premiere of Verdi's Aida commissioned for the Cairo Opera House. In Ethiopia, the reformist emperor Tewodros II died by his own hand at the storming of his mountain fortress of Magdala by a British expeditionary force under Sir Robert Napier on 13 April 1868, sent to free European hostages, one of the earliest and most technically ambitious European punitive expeditions into the African interior. In Tunisia the Bey Muhammad al-Sadiq faced European bond-holders. In Iran the long reign of Naser al-Din Shah continued.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg",
+        "caption": "Commemorative medal for the inauguration of the Suez Canal on 17 November 1869 under the Khedive Isma'il Pasha, featuring Ferdinand de Lesseps. Musee Carnavalet, Paris.",
+        "credit": "Charles Trotin (medal engraver), via Wikimedia Commons",
+        "license": "CC0 Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez,_17_novembre_1869,_ND314.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "In West Africa the Sokoto Caliphate continued to dominate the Hausa and Fulani lands. The discovery of the first great diamonds on the Vaal River in 1867 was drawing prospectors into southern Africa and would within a decade transform the sleepy Cape Colony and the Boer republics into contested economic prizes. King Cetshwayo consolidated power among the Zulu; Basotholand became a British protectorate in March 1868 under King Moshoeshoe I to escape Boer encroachment. Portuguese, French, British and German traders operated coastal enclaves from Cape Verde to Zanzibar."
+      "text": "In West Africa the Sokoto Caliphate under the successor Sultans of Muhammadu Bello continued to dominate the Hausa and Fulani lands, exchanging kola nuts, salt, textiles, and enslaved captives across the Sahel; the Tukulor Empire of al-Hajj Umar Tall was still consolidating along the upper Niger. The discovery of the first great diamonds along the Vaal and Orange Rivers in 1867 (Erasmus Jacobs's Eureka Diamond) was drawing prospectors into southern Africa and would within a decade produce the mining boom at Kimberley that transformed the sleepy Cape Colony and the Boer republics of the Transvaal and Orange Free State into contested economic prizes. King Cetshwayo kaMpande was consolidating power among the Zulu and was formally crowned at Ulundi in 1873. On 12 March 1868 Basutoland became a British protectorate under King Moshoeshoe I to escape Boer encroachment from the Orange Free State. On the East African coast, Sultan Majid bin Said of Zanzibar oversaw a clove-plantation slave economy while David Livingstone was pushing inland; Portuguese, French, British and German traders operated coastal enclaves from Cape Verde to Zanzibar.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Cetshwayo%2C_King_of_the_Zulus_%28d._1884%29%2C_Carl_Rudolph_Sohn%2C_1882.jpg",
+        "caption": "Cetshwayo kaMpande, King of the Zulus, painted in oil in 1882 during his London visit by the German painter Carl Rudolph Sohn for Queen Victoria. Royal Collection.",
+        "credit": "Carl Rudolph Sohn (1845 to 1908), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cetshwayo,_King_of_the_Zulus_(d._1884),_Carl_Rudolph_Sohn,_1882.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "In New Zealand the Land Wars between the settler government and various Maori communities continued. The prophet-general Titokowaru led a Maori campaign in south Taranaki that inflicted a series of defeats on the colonial forces in 1868. In eastern Australia, transportation of British convicts to Western Australia ended on 10 January 1868 with the arrival of the last convict ship, the Hougoumont. The Australian colonies were increasingly self-governing and were beginning the conversations that would produce federation in 1901."
+      "text": "In Aotearoa New Zealand the Land Wars between the settler government under Premier Edward Stafford and various Maori communities continued through their most intense phase. Riwha Titokowaru, the prophet-general of the Ngati Ruanui and Ngaruahine of south Taranaki, led a devastating campaign that inflicted a series of defeats on Colonel Thomas McDonnell's colonial forces at Te Ngutu-o-te-Manu (7 September 1868) and Moturoa (7 November 1868), forcing an armed constabulary retreat toward Wanganui, only to see his following collapse in early 1869 for reasons still debated. Meanwhile Te Kooti Arikirangi, having escaped from imprisonment on the Chatham Islands in July 1868, opened a second front on the East Coast. In eastern Australia, transportation of British convicts to Western Australia ended on 10 January 1868 with the arrival of the last convict ship, the Hougoumont, closing eighty years of penal history begun with the First Fleet in 1788. The Australian colonies were increasingly self-governing under Westminster-style parliaments, and were beginning the intercolonial conferences that would produce federation as the Commonwealth of Australia in January 1901. In Fiji, Ratu Seru Cakobau's kingdom struggled with debt and unrest.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Tito_Kowaura_%28Titokowaru%29_-_Illustrated_Australian_News_%281869%29.jpg",
+        "caption": "The Maori leader Riwha Titokowaru, whose 1868 campaign in south Taranaki inflicted a series of sharp defeats on New Zealand colonial forces. Illustrated Australian News, 11 October 1869. State Library Victoria.",
+        "credit": "Unknown artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tito_Kowaura_(Titokowaru)_-_Illustrated_Australian_News_(1869).jpg"
+      }
     }
   ],
   "figures": [

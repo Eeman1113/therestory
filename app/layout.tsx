@@ -3,7 +3,6 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TimelineViewProvider } from "@/components/timeline/timeline-view";
-import { TimelineStrip } from "@/components/timeline/timeline-strip";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { CommandPaletteMount } from "@/components/command-palette-mount";
@@ -33,7 +32,6 @@ export default function RootLayout({
         <SkipToContent />
         <ThemeProvider>
           <TimelineViewProvider>
-            <TimelineStrip />
             <SiteHeader />
             <main id="main-content" className="flex-1" tabIndex={-1}>
               {children}

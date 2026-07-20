@@ -37,23 +37,58 @@
   "worldContext": [
     {
       "region": "europe",
-      "text": "The Eastern Roman emperor Heraclius, exhausted by a decade of losing wars against the Sasanian Persians, was preparing the counter-offensive that would eventually recover Jerusalem in 630. Constantinople itself would be besieged by Avars and Persians in 626. In the west, Visigothic Spain had recently completed its conversion from Arianism to Nicene Christianity, and the Merovingian Frankish kingdoms of Chlothar II were consolidating around Paris. Italy remained divided between Byzantine provinces and a patchwork of Lombard duchies."
+      "text": "The Eastern Roman emperor Heraclius, exhausted by more than a decade of losing wars against the Sasanian Shahanshah Khosrow II, was preparing the counter-offensive that would eventually recover Jerusalem and the True Cross in 630. Sasanian armies under Shahrbaraz had taken Damascus in 613, Jerusalem in 614 (carrying off the True Cross), and Alexandria in 619; the Persians now held Egypt, Syria, Palestine, and much of Anatolia. Constantinople itself would be besieged by an Avar and Persian coalition in the summer of 626, its defence attributed by the Byzantines to the Virgin's intercession and the tactical skill of the Patriarch Sergius and the general Bonus. In the west, Visigothic Spain under King Sisebut had recently completed its conversion from Arianism to Nicene Christianity, and the Merovingian Frankish kingdoms of Chlothar II were consolidating around Paris after his 613 reunification of Neustria, Austrasia, and Burgundy. Italy remained divided between shrinking Byzantine exarchates centred on Ravenna and Rome (where Pope Boniface V occupied the see) and a patchwork of Lombard duchies under King Adaloald. In the British Isles the Northumbrian king Edwin was preparing to receive baptism from the Roman missionary Paulinus in 627.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Interior_of_Hagia_Sophia.jpg",
+        "caption": "The interior of Hagia Sophia in Constantinople, the great domed church consecrated by Justinian in 537 and still the coronation and religious centre of the Byzantine empire in the seventh century.",
+        "credit": "Dean Strelau, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_Hagia_Sophia.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "In China the young Tang dynasty, founded by Li Yuan only four years earlier, was still fighting rival warlords. In 626 the crown prince Li Shimin would murder his brothers at the Xuanwu Gate incident and take the throne as Emperor Taizong, inaugurating the long reign that carried Tang power into Central Asia. In Japan the reforms of the recently deceased Prince Shotoku were being consolidated by Empress Suiko's regents, and Korean politics were dominated by the rivalry of Goguryeo, Baekje and Silla."
+      "text": "In China the young Tang dynasty, founded by Li Yuan (Emperor Gaozu) only four years earlier in 618 after the collapse of the short-lived Sui, was still fighting rival warlords such as Liu Heita on the north China plain. In 626 the crown prince Li Shimin would murder his elder brother Li Jiancheng and younger brother Li Yuanji at the Xuanwu Gate of the imperial palace at Chang'an and force his father to abdicate, taking the throne as Emperor Taizong, inaugurating the long reign (626 to 649) that carried Tang power across the Tarim Basin into Central Asia through the destruction of the Eastern Turk Khaganate in 630. The Tang capital Chang'an was already the largest city in the world, laid out on a rectilinear grid stretching over eight kilometres. In Japan the reforms of the recently deceased Prince Shotoku were being consolidated by Empress Suiko's regents, and Buddhism was spreading through the Asuka period court. Korean politics were dominated by the rivalry of Goguryeo (which had just repelled Sui invasions), Baekje, and Silla, whose eventual unification of the peninsula would come in 668.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/TangTaizong.jpg",
+        "caption": "Standing portrait of Emperor Taizong (Li Shimin, 598 to 649), second sovereign of the Tang dynasty. Later imperial copy, National Palace Museum, Taipei.",
+        "credit": "Unknown Chinese artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TangTaizong.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "Northern India was ruled by the emperor Harsha from his capital at Kannauj, one of the last great pan-Indian sovereigns before the medieval fragmentation. The Buddhist university at Nalanda was preparing to receive the Chinese pilgrim Xuanzang, who would spend years there in the 630s. In the Deccan the Chalukyas of Badami under Pulakeshin II were extending their power, and along the Silk Road the Western Turk Khaganate still controlled the passes into Sogdiana."
+      "text": "Northern India was ruled by the emperor Harshavardhana from his capital at Kannauj on the Ganges, one of the last great pan-Indian sovereigns before the medieval fragmentation; his court poet Bana composed the Harshacharita, and the emperor himself wrote three Sanskrit plays including the Nagananda. The Buddhist university at Nalanda in Magadha, then flourishing under the abbot Silabhadra, was preparing to receive the Chinese pilgrim Xuanzang, who arrived overland from Chang'an in 630 and would spend some five years there studying Yogacara philosophy and Mahayana texts, later carrying back to China more than six hundred manuscripts. In the Deccan the Chalukyas of Badami under Pulakeshin II were extending their power northward, and in 618 to 619 Pulakeshin famously halted Harsha's southward advance at the Narmada river; his ambassadors reached the Sasanian court of Khosrow II around 625. Along the Silk Road the Western Turk Khaganate under Tong Yabghu still controlled the passes into Sogdiana. In south India the Pallavas of Kanchipuram under Mahendravarman I were beginning the great rock-cut temple traditions at Mamallapuram.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nalanda_University_India_ruins.jpg",
+        "caption": "The excavated ruins of the Buddhist mahavihara at Nalanda in Bihar, whose seventh-century form the Chinese pilgrim Xuanzang described in detail after his years of study there.",
+        "credit": "Prince Roy, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nalanda_University_India_ruins.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "The Christian kingdom of Aksum, then ruled by King Armah, had recently sheltered a small group of Muslim refugees sent by Muhammad himself from Mecca in what tradition calls the First Hijra to Abyssinia around 615. In Nubia the kingdoms of Nobatia and Makuria were consolidating around a Miaphysite Christianity linked to Alexandria. In North Africa Byzantine exarchs still ruled from Carthage over a countryside where Berber confederations were reasserting local power."
+      "text": "The Christian kingdom of Aksum, then ruled by King Armah (whose gold coinage bearing crosses circulated across the Red Sea), had recently sheltered a small group of Muslim refugees sent by Muhammad himself from Mecca in what tradition calls the First Hijra to Abyssinia around 615, granting them protection against Qurayshi demands for extradition. In Nubia the kingdoms of Nobatia and Makuria (soon to be united by King Merkurios around 707) were consolidating around a Miaphysite Christianity linked to the Coptic Orthodox patriarchate of Alexandria, and were raising the mud-brick churches whose remains at Faras and Old Dongola have preserved striking wall paintings. Further south lay the third Nubian kingdom, Alwa (Alodia), with its capital at Soba. In North Africa Byzantine exarchs still ruled from Carthage over a countryside where Berber confederations under leaders such as Kusaila were reasserting local power; the whole region would fall to Arab-Muslim armies within seventy years, after the fall of Carthage in 698. Along the West African Sahel a network of trading polities was already channelling gold, salt, and slaves across the desert.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Stela_aksum.jpg",
+        "caption": "King Ezana's Stele at Aksum in the northern Ethiopian highlands, one of the great granite monoliths raised by the Christian kingdom of Aksum in late antiquity.",
+        "credit": "Pzbinden7, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stela_aksum.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "In the Maya lowlands the Classic period was at its dazzling height. Palenque was ruled by K'inich Janaab Pakal, then a small child, who would go on to reign for nearly seventy years and commission the celebrated tomb at the Temple of the Inscriptions. Tikal and Calakmul were locked in the great regional rivalry that would define seventh-century Maya politics. In the central Andes the Wari state was extending its terraced administrative centres across the highlands, while the Tiwanaku empire dominated the Lake Titicaca basin."
+      "text": "In the Maya lowlands the Classic period was at its dazzling height. Palenque, in the western jungle of what is now Chiapas, was ruled at the moment of the Hijra by Muwaan Mat during a difficult regency; K'inich Janaab Pakal, born in March 603, was a small child and would only take the throne in 615. He would go on to reign for nearly seventy years, until his death in 683, and commission the celebrated tomb at the Temple of the Inscriptions where his sarcophagus lid was discovered by Alberto Ruz Lhuillier in 1952. Tikal in the Peten and Calakmul in the southern Yucatan were locked in the great regional rivalry, mediated through allied vassals such as Caracol and Naranjo, that would define seventh-century Maya politics. In the central Andes the Wari state, centred on its highland capital near modern Ayacucho, was extending its terraced administrative centres and orthogonal town plans across the mountains, while the contemporary Tiwanaku empire dominated the Lake Titicaca basin at its own great ceremonial capital. On the north coast of Peru the Moche remained locally powerful. In North America the Mississippian tradition of maize-based agriculture was still centuries away.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Palenque%2C_Temple_of_the_Inscriptions_%2820498755918%29.jpg",
+        "caption": "The Temple of the Inscriptions at Palenque in Chiapas, the tomb-pyramid of K'inich Janaab Pakal, who was a small child at the time of the Hijra and would reign until 683.",
+        "credit": "Arian Zwegers, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palenque,_Temple_of_the_Inscriptions_(20498755918).jpg"
+      }
     }
   ],
   "figures": [

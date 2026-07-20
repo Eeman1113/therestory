@@ -34,23 +34,58 @@
   "worldContext": [
     {
       "region": "europe",
-      "text": "The Hundred Years' War ended in the same summer. On 17 July 1453 a French army destroyed the last major English field force at Castillon in Gascony; within weeks English rule in France was reduced to the town of Calais. In central Europe the young Ladislaus the Posthumous was recognised as king of Bohemia, and Muscovy under Vasily II tightened its grip over the Russian principalities."
+      "text": "The Hundred Years' War ended in the same summer as the fall of Constantinople. On 17 July 1453 a French army under Jean Bureau, using field artillery to devastating effect, destroyed the last major English field force at Castillon in Gascony; the English commander John Talbot, Earl of Shrewsbury, was killed. Within weeks Bordeaux surrendered to Charles VII and English rule in France was reduced to the town of Calais, ending three centuries of Angevin and Plantagenet claims. In England the news accelerated the mental collapse of Henry VI in August 1453 and helped ignite the Wars of the Roses two years later. In central Europe the twelve-year-old Habsburg Ladislaus the Posthumous was recognised as king of Bohemia after his coronation manoeuvres of 1453; Hungary's regent Janos Hunyadi, who would soon relieve Belgrade from Ottoman siege in 1456, watched the fall of Constantinople with alarm. In the east Muscovy under Vasily II the Blind was tightening its grip over the Russian principalities and would soon claim, through his son Ivan III, the mantle of the Third Rome. Johannes Gutenberg's press at Mainz was that same year printing the folios of the forty-two-line Bible, quietly rewiring European culture.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Fran%C3%A7ais_5054%2C_fol._229v%2C_Bataille_de_Castillon_1453_-_d%C3%A9tail.jpg",
+        "caption": "The death of John Talbot, Earl of Shrewsbury, at the Battle of Castillon on 17 July 1453, from Martial d'Auvergne's Vigiles de Charles VII (c. 1484). Bibliotheque nationale de France, MS Francais 5054.",
+        "credit": "Unknown artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ais_5054,_fol._229v,_Bataille_de_Castillon_1453_-_d%C3%A9tail.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "Ming China, ruled by the Jingtai Emperor after the Tumu Crisis of 1449 had seen his brother captured by the Mongols, was recovering from a difficult year: catastrophic Yellow River flooding devastated Henan and an unusually harsh winter caused widespread deaths. A mysterious tropical volcanic eruption in late 1452 or early 1453 had begun a fifteen-year cold snap across the northern hemisphere."
+      "text": "Ming China in 1453 was ruled by the Jingtai Emperor (Zhu Qiyu), who had taken the throne in 1449 after his elder brother the Zhengtong Emperor was captured by Esen Taishi of the Oirat Mongols at the catastrophic Battle of Tumu. The court, moved back into a defensive posture behind the reinforced walls of Beijing that the great minister Yu Qian had successfully held against Esen's siege, was recovering from a difficult year: catastrophic Yellow River flooding in the summer of 1453 devastated Henan and Shandong, and an unusually harsh winter caused widespread famine in the north. A mysterious tropical volcanic eruption in late 1452 or early 1453, later attributed to Kuwae in the New Hebrides, had begun what modern climatologists identify as a fifteen-year cold snap across the northern hemisphere. In Korea the Joseon dynasty was in the sixth year of the reign of King Danjong, whose uncle Prince Suyang would seize the throne in a coup in 1455 as King Sejo. In Japan the Ashikaga shogunate under Yoshimasa presided over a brilliant but fractious Muromachi court whose growing tensions would erupt in the Onin War of 1467 and inaugurate a century of civil war.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Forbidden_City_Beijing_Shenwumen_Gate.JPG",
+        "caption": "The Shenwumen Gate of the Forbidden City in Beijing; the imperial complex begun by the Yongle Emperor in 1406 was, by 1453, the Ming political and ritual centre from which the Jingtai Emperor governed.",
+        "credit": "Wikimedia Commons user kallgan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forbidden_City_Beijing_Shenwumen_Gate.JPG"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "The Timurid inheritance of Tamerlane, ruled from Herat by Shah Rukh until 1447 and now fragmenting under his descendants, still dominated eastern Persia and Transoxiana. In northern India the Lodi dynasty of Afghans was consolidating control of the Delhi Sultanate, while the Bahmani Sultanate ran a rival court in the Deccan and Vijayanagara ruled the south."
+      "text": "The Timurid inheritance of Tamerlane, ruled from Herat by Shah Rukh until his death in 1447 and now fragmenting under his descendants, still dominated eastern Persia and Transoxiana; Ulugh Beg's great astronomical observatory at Samarkand had been razed by his son in 1449, but the scholarly tables it had produced were spreading across the Islamic world and would in time reach Kepler in Prague. Abu Sa'id Mirza, backed by the Uzbek Abu'l-Khayr Khan, was consolidating power in Transoxiana while the Qara Qoyunlu Turkmen dynasty under Jahan Shah pressed westward from Tabriz. In northern India Bahlul Lodi, an Afghan governor, had just seized the throne of the Delhi Sultanate in April 1451, founding the Lodi dynasty that would rule until Panipat in 1526; his court oversaw a modest revival of Islamic power in the Ganges plain. The Bahmani Sultanate under Alauddin Ahmad Shah II ran a rival court at Bidar in the Deccan, while the Hindu empire of Vijayanagara, ruled from a colossal capital on the Tungabhadra, dominated the south and controlled the pepper and textile trades that fed Venetian and Genoese fortunes.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Samarkand_observatoire_ulugh_beg.jpg",
+        "caption": "Ruins of the astronomical observatory built at Samarkand by the Timurid prince Ulugh Beg (1394 to 1449); the mural sextant was one of the largest instruments of its kind ever constructed.",
+        "credit": "Michel Benoist, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samarkand_observatoire_ulugh_beg.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "In West Africa the Mali Empire was in long decline and Songhai was rising along the middle Niger under the future conqueror Sunni Ali. Portuguese caravels sponsored by Prince Henry the Navigator had been feeling their way down the Atlantic coast and would round Cape Verde within a few years, drawing Africa into a new maritime world."
+      "text": "In West Africa the Mali Empire, whose fourteenth-century emperor Mansa Musa had famously destabilised the Cairo gold market with his hajj, was in long decline under Mansa Uli II, its provinces slipping toward independence and its trans-Saharan revenues diverted eastward. The Songhai power along the middle Niger was rising under the crown prince and future conqueror Sunni Ali, who would seize Timbuktu in 1468 and turn Gao into the greatest city of the Sahel. Timbuktu itself, home to the Sankore and Djinguereber mosques and the growing library culture that would produce the sixteenth-century Tarikh al-Sudan, remained a Malian outpost for another decade. In East Africa, the Ethiopian emperor Zara Yaqob, a scholarly monarch who had convened the Council of Debre Mitmaq in 1450 to enforce Sabbath observance, was rebuilding church discipline; on the Swahili coast, Kilwa's sultanate handled the gold trade from Great Zimbabwe. Portuguese caravels sponsored by Prince Henry the Navigator had reached Cape Verde in 1444 and were feeling their way down the Atlantic coast, drawing Africa into a new maritime world.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sankore_Madrasah.jpg",
+        "caption": "The Sankore Mosque and madrasa at Timbuktu, one of the great centres of Islamic learning in the Sahel during the fifteenth century.",
+        "credit": "Dr Ondrej Havelka (HistoriaSalutis), via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "In the Valley of Mexico the Aztec Triple Alliance under Moctezuma I was in the middle of a devastating multi-year drought and famine that had begun around 1450 and drove people to sell themselves into servitude. On the Peruvian sierra the Inca ruler Pachacuti was in the middle of the campaigns that would turn Cuzco's regional kingdom into the largest empire of the pre-Columbian Americas."
+      "text": "In the Valley of Mexico the Aztec Triple Alliance of Tenochtitlan, Texcoco and Tlacopan under the tlatoani Moctezuma I Ilhuicamina was in the middle of a devastating multi-year drought and famine that had begun around 1450, killing thousands, driving families to sell themselves into servitude in the Totonac lowlands, and prompting the great expansion of chinampa agriculture and aqueducts. The famine strengthened the ritual demand for captives and helped drive the Flower Wars against Tlaxcala and Huejotzingo that would define central Mexican politics until the Spanish arrival. Nezahualcoyotl, the philosopher king of Texcoco, was completing his codes of law and hydraulic projects. On the Peruvian sierra the Inca ruler Pachacuti (Cusi Yupanqui), who had defeated the Chanca around 1438 and refounded the state on new principles, was in the middle of the campaigns that would turn Cuzco's regional kingdom into the Tawantinsuyu, the largest empire of the pre-Columbian Americas, with its four quarters and its extraordinary road system stretching eventually from present-day Colombia to Chile. Elsewhere the Chimor kingdom of the Peruvian coast, centred on the vast adobe city of Chan Chan, still held its ancient tribute network but was drawing toward Inca conquest.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Model_of_Tenochtitlan.jpg",
+        "caption": "Museum model of the Aztec capital Tenochtitlan showing the sacred precinct and causeways; the city under Moctezuma I in the 1450s was already the largest urban centre in the Americas.",
+        "credit": "Steve Cadman (from London, UK), via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Model_of_Tenochtitlan.jpg"
+      }
     }
   ],
   "figures": [

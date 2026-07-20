@@ -1,6 +1,7 @@
 import { MicroCaps } from "@/components/common/micro-caps";
 import { HairlineRule } from "@/components/common/hairline-rule";
 import { Markdown } from "@/components/common/markdown";
+import { SafeImage } from "@/components/common/safe-image";
 import { getRegion } from "@/lib/content/loader";
 import type { WorldContext } from "@/lib/content/schema";
 
@@ -51,6 +52,28 @@ export function YearWorldSnapshot({
                     <p className="mt-3 text-xs leading-5 text-ink-muted/80">
                       {region.description}
                     </p>
+                  )}
+                  {snap.image && (
+                    <figure className="mt-4">
+                      <SafeImage
+                        src={snap.image.url}
+                        alt={snap.image.caption}
+                        className="w-full border border-rule object-cover"
+                        aspectRatio="4 / 3"
+                      />
+                      <figcaption className="mt-2 text-[11px] leading-4 text-ink-muted/80">
+                        <span className="text-ink-muted">{snap.image.caption}</span>{" "}
+                        · {snap.image.credit} · {snap.image.license} ·{" "}
+                        <a
+                          href={snap.image.sourceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline decoration-ink-muted/40 underline-offset-2 hover:decoration-ink-muted"
+                        >
+                          src
+                        </a>
+                      </figcaption>
+                    </figure>
                   )}
                 </div>
                 <div className="max-w-[65ch] lg:col-span-9">

@@ -44,27 +44,69 @@
   "worldContext": [
     {
       "region": "europe",
-      "text": "Europe entered 2020 preoccupied with Brexit: the United Kingdom formally left the European Union on 31 January 2020, forty days before the pandemic declaration. Northern Italy became the first Western epicentre; hospitals in Bergamo and Brescia were overwhelmed by early March. The European Central Bank under Christine Lagarde, appointed the previous November, launched a 750-billion-euro Pandemic Emergency Purchase Programme on 18 March. In July, member states agreed a landmark 750-billion-euro Next Generation EU recovery fund, financed by joint EU borrowing, a step long deemed politically impossible."
+      "text": "Europe entered 2020 preoccupied with Brexit: the United Kingdom under Prime Minister Boris Johnson formally left the European Union at 23:00 GMT on 31 January 2020, forty days before the WHO pandemic declaration, entering an eleven-month transition. Northern Italy became the first Western epicentre after the 21 February 2020 discovery of cluster cases in Codogno, Lombardy; hospitals in Bergamo and Brescia were overwhelmed by early March, and army trucks carried coffins out of Bergamo on 18 March 2020 in scenes broadcast worldwide. Prime Minister Giuseppe Conte imposed the first nationwide lockdown in the West on 9 March. The European Central Bank under Christine Lagarde, appointed president the previous November after her IMF tenure, launched a 750-billion-euro (later 1.85 trillion euro) Pandemic Emergency Purchase Programme on 18 March 2020. In July, member states at a marathon four-day summit agreed to a landmark 750-billion-euro Next Generation EU recovery fund on 21 July 2020, financed by joint EU borrowing, a fiscal step long deemed politically impossible after Angela Merkel's pivot from her earlier austerity line. France's Emmanuel Macron and Spain's Pedro Sanchez had pushed hardest for common debt.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Lagarde_ECB_Portrait_2019.jpg",
+        "caption": "Christine Lagarde, President of the European Central Bank, whose Pandemic Emergency Purchase Programme launched on 18 March 2020 stabilised eurozone bond markets during the first wave. Official ECB portrait, October 2019.",
+        "credit": "Lemrich / European Central Bank, via Wikimedia Commons",
+        "license": "Attribution (ECB)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lagarde_ECB_Portrait_2019.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "Africa's initial experience of the pandemic surprised many observers. Early lockdowns, young populations, and lessons drawn from the 2014-2016 Ebola crisis in West Africa limited early mortality, though undercounting was extensive. The African Union under South African President Cyril Ramaphosa coordinated vaccine procurement through the African Vaccine Acquisition Trust from late 2020. Longer-term costs, in disrupted schooling, tuberculosis and HIV programmes, and economic damage from collapsed tourism, weighed heavily. In late 2021 the Omicron variant was first identified and sequenced by South African scientists."
+      "text": "Africa's initial experience of the pandemic surprised many observers. Early lockdowns imposed by governments from Ghana to South Africa, young populations (median age around 20), lessons drawn from the 2014 to 2016 Ebola crisis in West Africa, and possibly cross-reactive immunity from earlier coronavirus exposures limited early mortality, though undercounting owing to weak vital-registration systems was extensive; excess-mortality studies later suggested African deaths were substantially higher than the roughly 260,000 confirmed by 2023. The African Union under its chair, South African President Cyril Ramaphosa, in office since February 2018, coordinated vaccine procurement through the African Vaccine Acquisition Trust launched in November 2020 under Ramaphosa's envoy Strive Masiyiwa. Longer-term costs, in disrupted schooling of hundreds of millions of children, interrupted tuberculosis and HIV programmes, and economic damage from collapsed tourism to Kenya, Tanzania, and Egypt, weighed heavily. In late November 2021 the Omicron variant was first identified and sequenced by a Botswanan-South African team (Tulio de Oliveira in Durban and Sikhulile Moyo in Gaborone) and rapidly reported to WHO; the world's response was to close borders to southern African travellers rather than to reward the transparency.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Cyril_Ramaphosa_2015.jpg",
+        "caption": "Cyril Ramaphosa, then Deputy President and later President of South Africa, in Geneva in June 2015; as African Union chair in 2020 he coordinated the African Vaccine Acquisition Trust.",
+        "credit": "ITU Pictures (Geneva), via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyril_Ramaphosa_2015.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "China's authoritarian mobilisation, mass testing, contact tracing, sealed-off compounds, kept confirmed deaths astonishingly low through 2020-2022 but at the price of extraordinary economic and social disruption. Xi Jinping, general secretary since 2012, was awarded a third term as CCP leader in October 2022 while 'zero-COVID' was still in force. South Korea and Taiwan mounted highly successful test-and-trace responses; Japan avoided the harshest lockdowns but postponed its Tokyo Olympics from 2020 to 2021, held without spectators."
+      "text": "China's authoritarian mobilisation, mass testing (hundreds of millions of PCR tests weekly), contact tracing through the ubiquitous health-code app, and physically sealed-off compounds, kept confirmed deaths astonishingly low (around 5,200 through late 2022) at the price of extraordinary economic and social disruption. Wuhan's 76-day lockdown from 23 January to 8 April 2020 was followed by rolling city lockdowns as far as Shanghai (April to June 2022) and Xi'an (December 2021 to January 2022). Xi Jinping, CCP general secretary since November 2012, was awarded a third term as party leader on 23 October 2022 while zero-COVID was still in force; the November 2022 Urumqi fire and subsequent A4 white paper protests in Shanghai, Beijing, and elsewhere forced the abrupt policy reversal of 7 December 2022, unleashing a huge wave. South Korea under Moon Jae-in and Taiwan under Tsai Ing-wen mounted highly successful early test-and-trace responses; Japan under Shinzo Abe (assassinated in July 2022) and successors avoided the harshest lockdowns but postponed its Tokyo Olympics from July 2020 to July 2021, held without spectators. North Korea, sealed shut, only publicly acknowledged its first outbreak in May 2022.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Xi_Jinping_2022_%28cropped%29.jpg",
+        "caption": "Xi Jinping at the APEC leaders meeting in Bangkok in November 2022, weeks before China abandoned its zero-COVID policy under mounting public pressure.",
+        "credit": "Department of Foreign Affairs (Philippines), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xi_Jinping_2022_(cropped).jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "The United States under President Donald Trump had a badly coordinated federal response and ultimately recorded more than one million confirmed COVID deaths. Trump lost the November 2020 election to Joe Biden. Brazil under President Jair Bolsonaro, who dismissed the virus as a 'little flu', suffered a devastating epidemic; a Manaus outbreak in early 2021 produced the P.1/Gamma variant. Argentina, Chile, Mexico, and Peru all faced severe waves. Canada's borders were closed for extended periods, and its vaccination rollout, one of the fastest in the G7 by mid-2021, contrasted with an uneven US programme."
+      "text": "The United States under President Donald Trump had a badly coordinated federal response, with the president publicly disputing his own scientific advisers Anthony Fauci and Deborah Birx and pushing unproven remedies such as hydroxychloroquine; the country ultimately recorded more than 1.1 million confirmed COVID deaths (some 1.4 million by excess-mortality estimates). Trump lost the November 2020 election to Joe Biden by 306 to 232 electoral votes; his refusal to concede culminated in the 6 January 2021 attack on the Capitol. Operation Warp Speed had, however, delivered mRNA vaccines at unprecedented speed. Brazil under President Jair Bolsonaro, who dismissed the virus as a 'gripezinha' (little flu), suffered a devastating epidemic with over 700,000 confirmed deaths; a Manaus outbreak in January 2021 produced the P.1 (Gamma) variant amid oxygen shortages. Argentina, Chile, Mexico (over 300,000 confirmed deaths under President AMLO), and Peru (the world's highest per-capita death rate) all faced severe waves. Canada under Justin Trudeau closed borders for extended periods; its vaccination rollout was one of the fastest in the G7 by mid-2021.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/President_Trump_Delivers_Remarks_at_the_White_House_Coronavirus_Task_Force_Briefing_%2849717055097%29.jpg",
+        "caption": "US President Donald Trump returning to the Oval Office after a White House Coronavirus Task Force briefing, 29 March 2020.",
+        "credit": "Andrea Hanks / Executive Office of the President, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:President_Trump_Delivers_Remarks_at_the_White_House_Coronavirus_Task_Force_Briefing_(49717055097).jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "India's April-June 2021 Delta wave produced scenes of collapse in Delhi, Mumbai, and smaller cities: hospitals ran out of oxygen; funeral pyres burned in car parks. Official deaths were widely believed to be a fraction of the true toll, which excess-mortality studies have put in the millions. Pakistan and Bangladesh faced parallel waves; both had launched vaccination programmes with mixtures of Chinese, Western, and, in Bangladesh's case, locally produced Indian AstraZeneca shots. Sri Lanka's economic collapse of 2022 was in part a delayed consequence of pandemic-era policies and tourism losses."
+      "text": "India's Prime Minister Narendra Modi imposed one of the world's strictest lockdowns on 25 March 2020 with only four hours' notice, stranding millions of migrant workers who then walked hundreds of kilometres back to their villages in scenes of humanitarian catastrophe. The April to June 2021 Delta wave produced further scenes of collapse in Delhi, Mumbai, Ahmedabad, Lucknow and smaller cities: hospitals ran out of medical oxygen, families searched for cylinders on WhatsApp, funeral pyres burned continuously in parking lots along the Yamuna. Official confirmed deaths (around 530,000 through 2023) were widely believed to be a fraction of the true toll, which excess-mortality studies from The Lancet and WHO have put at around 4 to 5 million. Pakistan under Prime Minister Imran Khan and Bangladesh under Sheikh Hasina faced parallel waves; both had launched vaccination programmes with mixtures of Chinese Sinopharm/Sinovac, Indian Covishield (AstraZeneca), and Pfizer supplied later through COVAX. Sri Lanka's economic collapse of 2022, which brought down the Rajapaksa government, was in part a delayed consequence of pandemic-era policies (agro-chemical bans, tourism losses) and mounting foreign debt.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/PM_Modi_conference_on_COVID-19_India_lockdown.jpg",
+        "caption": "Indian Prime Minister Narendra Modi holds a video conference with print media journalists on the COVID-19 challenge, New Delhi, 24 March 2020, the day before he ordered a nationwide 21-day lockdown.",
+        "credit": "Press Information Bureau, Government of India, via Wikimedia Commons",
+        "license": "Government Open Data License India (GODL)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PM_Modi_conference_on_COVID-19_India_lockdown.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "Australia and New Zealand pursued elimination strategies through 2020 and much of 2021, closing borders, quarantining returning citizens in hotels, and mounting some of the world's longest lockdowns (Melbourne accumulating more than 260 days). Vaccination rollouts began later than in the US and UK, in part because of low case numbers. Both countries eventually pivoted to living with the virus in late 2021 and 2022. Pacific island nations, dependent on tourism, faced severe economic damage even where infections were kept out."
+      "text": "Australia and New Zealand pursued elimination strategies through 2020 and much of 2021, closing international borders (New Zealand closed to non-citizens on 19 March 2020; Australia the next day), quarantining returning citizens in hotels, and mounting some of the world's longest lockdowns; Victoria's capital Melbourne accumulated 262 lockdown days between 2020 and 2021, longer than any other city. New Zealand Prime Minister Jacinda Ardern's daily 1pm briefings with Director-General of Health Ashley Bloomfield became a fixture of pandemic communication and were credited with rare success: New Zealand recorded only 25 COVID deaths through the end of 2021, with total confirmed deaths around 3,200 by mid-2023. Vaccination rollouts began later than in the US and UK, in part because of low case numbers reducing urgency. Both countries eventually pivoted to living with the virus in late 2021 and 2022 as the Delta and Omicron variants breached elimination. Pacific island nations, dependent on tourism from Australia, New Zealand, and China, faced severe economic damage even where infections were kept out; Fiji's post-April 2021 Delta wave was the region's worst outbreak.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Jacinda_Ardern%2C_2018.jpg",
+        "caption": "Jacinda Ardern, Prime Minister of New Zealand from October 2017 to January 2023; her early elimination strategy and communications during COVID-19 became internationally studied. Portrait 2018.",
+        "credit": "Governor-General of New Zealand, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacinda_Ardern,_2018.jpg"
+      }
     }
   ],
   "figures": [

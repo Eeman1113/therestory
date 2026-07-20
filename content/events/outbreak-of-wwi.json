@@ -37,27 +37,69 @@
   "worldContext": [
     {
       "region": "east-asia",
-      "text": "China in 1914 was three years into its republic. President Yuan Shikai, a former Qing general who had forced the abdication of the last emperor Puyi in 1912, was consolidating personal power at the expense of the parliament and the Nationalist Party (Kuomintang) of Sun Yat-sen. In August Japan, seizing the wartime distraction of the European powers, declared war on Germany and moved to occupy the German leased territory of Qingdao and the German-held Pacific islands north of the equator, prefiguring the Twenty-One Demands it would impose on Beijing the following year."
+      "text": "China in 1914 was three years into its republic. President Yuan Shikai, a former Qing general who had commanded the northern Beiyang Army and had forced the abdication of the six-year-old Xuantong Emperor Puyi in February 1912, was consolidating personal power at the expense of the fragile Republican parliament and the Nationalist Party (Kuomintang) of Sun Yat-sen, whose leader Song Jiaoren had been assassinated in Shanghai in March 1913 in an operation traced to Yuan's circle. In November 1913 Yuan dissolved the Kuomintang; in January 1914 he suspended parliament. In August 1914 Japan under Prime Minister Okuma Shigenobu, seizing the wartime distraction of the European powers, declared war on Germany on 23 August and moved to occupy the German leased territory of Kiautschou (Qingdao) on the Shandong peninsula, taken after a two-month siege ending 7 November, and the German-held Pacific islands north of the equator (the Marshalls, Marianas, and Carolines). This prefigured the humiliating Twenty-One Demands Japan would impose on Beijing in January 1915, radicalising Chinese nationalism and setting the stage for the May Fourth Movement of 1919.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/YuanShikaiPresidente1915.jpg",
+        "caption": "Yuan Shikai as president of the Republic of China, 1915, wearing ceremonial military regalia; the following winter he would attempt to declare himself emperor.",
+        "credit": "Rio V. De Sieux, from The World's Work, vol. 30 (1915), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:YuanShikaiPresidente1915.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "British India, a Crown possession of some 315 million people, was quietly mobilising in the summer of 1914. Within weeks of Britain's declaration of war Indian troops would be sailing for France, East Africa, and Mesopotamia; more than a million would ultimately serve. The Indian National Congress, led by moderates such as Gopal Krishna Gokhale, pledged loyalty in the expectation of postwar reform. A young lawyer named Mohandas Gandhi, whose civil disobedience campaign against racial laws in South Africa had just ended in compromise, sailed for London in July and would reach India in January 1915."
+      "text": "British India, a Crown possession of some 315 million people under Viceroy Lord Hardinge, was quietly mobilising in the summer of 1914. Within weeks of Britain's 4 August declaration of war Indian Army divisions and cavalry brigades would be sailing to France (the Lahore and Meerut divisions arrived at Marseilles in September and October and were in the line at First Ypres by end October), to East Africa, and to the Mesopotamian and Palestine campaigns; more than one and a half million Indians would ultimately serve overseas, of whom around 74,000 died. The Indian National Congress, led by moderates such as Gopal Krishna Gokhale, and the newly formed Muslim League under Muhammad Ali Jinnah pledged loyalty in the expectation of postwar constitutional reform, a hope confirmed and then partly disappointed in the 1919 Government of India Act. A forty-four-year-old lawyer named Mohandas Karamchand Gandhi, whose satyagraha campaign against racial laws in Natal and the Transvaal had just ended in the Smuts-Gandhi Agreement of June 1914, sailed for London in July with his wife Kasturba and reached India via Bombay in January 1915, launching a career that would define the anti-colonial century.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gandhi_1908_%28cropped%29.jpg",
+        "caption": "M. K. Gandhi in South Africa, 1908, recuperating in the home of the Reverend J. J. Doke after an assault by Mir Alam; six years later he would return to India to lead its independence movement.",
+        "credit": "Unknown photographer, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandhi_1908_(cropped).jpg"
+      }
     },
     {
       "region": "middle-east-north-africa",
-      "text": "The Ottoman Empire in 1914 was ruled by the Committee of Union and Progress, dominated after early 1913 by the triumvirate of Enver, Talaat, and Cemal Pasha. Battered by the Balkan wars, the empire was rebuilding its army with German advisers under General Otto Liman von Sanders. On 2 August, the day after Germany declared war on Russia, Enver signed a secret Ottoman-German alliance; by November the empire was at war with Britain, France, and Russia, opening fronts from the Caucasus to Sinai and drawing the entire eastern Mediterranean into the conflict."
+      "text": "The Ottoman Empire in 1914 was ruled by the Committee of Union and Progress (CUP, Ittihad ve Terakki), which had returned to power in the January 1913 Bab-i Ali coup and was dominated after that spring by the triumvirate of Enver Pasha (war minister), Talaat Pasha (interior minister), and Cemal Pasha (naval minister and later governor of Syria). Battered by the two Balkan wars of 1912 to 1913, which had cost the empire almost all its European territory, its army was being rebuilt with German advisers under General Otto Liman von Sanders, whose December 1913 appointment as commander of the First Army in Constantinople had provoked a diplomatic crisis with Russia. On 2 August 1914, the day after Germany declared war on Russia, Enver secretly signed an Ottoman-German alliance; when the German battlecruiser Goeben and light cruiser Breslau were nominally sold to the Ottoman navy and, under Rear Admiral Souchon, shelled Odessa and Sevastopol on 29 October, the empire was drawn into war with Britain, France, and Russia by early November, opening fronts from the Caucasus to Sinai and drawing the entire eastern Mediterranean into the conflict.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Enver_Pasha_1911.jpg",
+        "caption": "Enver Pasha in 1911; as Ottoman war minister he would sign the secret German alliance in August 1914 that drew the empire into the First World War.",
+        "credit": "Nicola Perscheid (1864 to 1930), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enver_Pasha_1911.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "Almost the whole continent, apart from Ethiopia and Liberia, was ruled from Europe in 1914 under the borders drawn at the 1884-85 Berlin Conference. Within days of the European declarations, Allied troops from British and French African colonies invaded German Togoland, Kamerun, and later German South-West Africa and German East Africa, opening a set of little-remembered campaigns fought largely with African askari soldiers and porters. In the Union of South Africa, Prime Minister Louis Botha would face a rebellion by Boer veterans opposed to joining Britain's war against Germany."
+      "text": "Almost the whole continent, apart from Ethiopia under Empress Zewditu's regent Lij Iyasu and the small settler republic of Liberia, was ruled from Europe in 1914 under the borders drawn at the 1884 to 1885 Berlin Conference. Within days of the European declarations, Allied troops from British and French African colonies invaded German Togoland (surrendered by 26 August 1914 after only a three-week campaign), Kamerun (Cameroon, which resisted until February 1916), German South-West Africa (present-day Namibia, taken by South African forces under Louis Botha and Jan Smuts in July 1915) and German East Africa (Tanganyika), where the German Schutztruppe commander Paul von Lettow-Vorbeck, leading a small force of German officers and African askari, would tie down more than 300,000 Allied troops in a guerrilla campaign that lasted until after the November 1918 armistice. Most fighting was borne by African askari soldiers and hundreds of thousands of carrier-porters, whose deaths from disease and privation ran into six figures. In the Union of South Africa, Prime Minister Louis Botha faced the Boer Maritz Rebellion of Manie Maritz and Christiaan de Wet in October 1914, opposing joining Britain's war against Germany; it was crushed by February 1915.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Great-Zimbabwe-6.jpg",
+        "caption": "The stone ruins of Great Zimbabwe in Southern Rhodesia (present-day Zimbabwe), a reminder of pre-colonial African statecraft in a continent that in 1914 was almost entirely partitioned among European empires.",
+        "credit": "PatrickVanM, uploaded by Atamari, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great-Zimbabwe-6.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "The United States under President Woodrow Wilson had opened the Panama Canal to shipping on 15 August 1914 and proclaimed neutrality in the European war. Mexico was in the middle of its revolution: the dictator Victoriano Huerta resigned on 15 July under pressure from Constitutionalist armies under Venustiano Carranza and Pancho Villa, while American marines had occupied the port of Veracruz since April in a separate dispute. In Canada, Australia, New Zealand, and Newfoundland, dominion governments were already committing expeditionary forces to Britain's cause."
+      "text": "The United States under President Woodrow Wilson had opened the Panama Canal to shipping on 15 August 1914, three weeks into the European war, when the SS Ancon of the Panama Railroad steamship line became the first vessel to make an official transit; the canal, whose construction had cost 25,000 lives and 375 million dollars over a decade, transformed global shipping. Wilson proclaimed American neutrality in the European war on 4 August. Mexico was in the middle of its Revolution: the dictator Victoriano Huerta, who had overthrown Francisco Madero in February 1913, resigned on 15 July under pressure from the Constitutionalist armies of Venustiano Carranza, Alvaro Obregon, and Pancho Villa; the peasant leader Emiliano Zapata in Morelos remained in arms for his agrarian revolution. American marines had occupied the port of Veracruz since 21 April 1914 in a separate dispute over an insult to sailors, withdrawing in November. In Canada, Australia, New Zealand, and Newfoundland, dominion governments were already committing expeditionary forces to Britain's cause; the first Canadian contingent of 32,000 sailed from Quebec in October.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/SS_Ancon_%281902_ship%29_NARA_185-G-0884_cropped.jpg",
+        "caption": "The SS Ancon making the first official transit of the Panama Canal, 15 August 1914; the American-built waterway opened for shipping in the third week of the European war. US National Archives.",
+        "credit": "Panama Railroad Company / US National Archives, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SS_Ancon_(1902_ship)_NARA_185-G-0884_cropped.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "The Pacific dominions moved with startling speed. Within a month of the outbreak Australian and New Zealand expeditionary forces had seized German New Guinea, the Bismarck Archipelago, and German Samoa; Japan took the Marshall, Caroline, and Mariana Islands. The Australian Naval and Military Expeditionary Force landed at Rabaul in September 1914. A larger Australian Imperial Force and the New Zealand Expeditionary Force embarked for Egypt in November, from where they would sail to Gallipoli in April 1915, forging the ANZAC legend at heavy cost."
+      "text": "The Pacific dominions moved with startling speed. Within a month of the outbreak Australian and New Zealand expeditionary forces had seized German New Guinea and the Bismarck Archipelago (the Australian Naval and Military Expeditionary Force landed at Rabaul on 11 September 1914 after a small firefight at Bita Paka) and German Samoa (occupied by a New Zealand force under Colonel Robert Logan on 29 August 1914 without resistance); Japan took the Marshall, Caroline and Mariana Islands north of the equator. A larger Australian Imperial Force under Major-General William Bridges and the New Zealand Expeditionary Force under Major-General Alexander Godley embarked in November 1914 for Egypt, from where they would sail to Gallipoli in April 1915, forging the ANZAC legend at heavy cost (over 8,700 Australian and 2,700 New Zealand dead in the eight-month campaign). In Aotearoa New Zealand, Prime Minister William Massey's Reform government pledged full support to Britain; in Australia, Prime Minister Andrew Fisher declared that the country would defend Britain to 'our last man and our last shilling'.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Landing_of_Australian_troops_at_ANZAC_Cove%2C_25_April_1915_slnsw.jpg",
+        "caption": "Landing of Australian troops of the 4th Battalion at ANZAC Cove, Gallipoli, on 25 April 1915. Gelatin silver print postcard, State Library of New South Wales.",
+        "credit": "Published by Brookes, via State Library of New South Wales / Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landing_of_Australian_troops_at_ANZAC_Cove,_25_April_1915_slnsw.jpg"
+      }
     }
   ],
   "figures": [

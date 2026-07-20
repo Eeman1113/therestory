@@ -37,27 +37,69 @@
   "worldContext": [
     {
       "region": "middle-east-north-africa",
-      "text": "Ten months before Luther wrote to Archbishop Albert, the Ottoman sultan Selim I completed the conquest of Mamluk Egypt. His army defeated Sultan Tuman Bay at the battle of Ridaniya outside Cairo on 22 January 1517 and hanged him from the Zuwayla gate; by April the Ottomans had annexed all Mamluk territory from Anatolia to the Hejaz. Selim carried the Abbasid caliph and the Prophet's relics back to Constantinople and assumed the title of Servant of the Two Holy Sanctuaries. In one year the Ottoman Empire had roughly doubled in size, absorbed Syria, Egypt, and Arabia, and become the dominant Muslim power in the world."
+      "text": "Ten months before Luther wrote to Archbishop Albert, the Ottoman sultan Selim I, known to Ottomans as Yavuz, the Grim, had completed the conquest of Mamluk Egypt. His army defeated Sultan Tuman Bay at the battle of Ridaniya outside Cairo on 22 January 1517 and hanged him from the Zuwayla gate; by April the Ottomans had annexed all Mamluk territory from Anatolia to the Hejaz. Selim carried the last Abbasid caliph al-Mutawakkil III and the Prophet's relics back to Constantinople and assumed the title of Khadim al-Haramayn, Servant of the Two Holy Sanctuaries of Mecca and Medina. In one year the Ottoman Empire had roughly doubled in size, absorbed Syria, Egypt, and Arabia, and become the dominant Muslim power in the world; its annual grain shipments from the Nile now fed Istanbul, and its control of the Red Sea drew it into rivalry with Portuguese fleets in the Indian Ocean. In Iran the Safavid shah Ismail I, humiliated at Chaldiran in 1514 by Selim's Janissaries and their artillery, was rebuilding his shattered Qizilbash cavalry and imposing Twelver Shiism as a state religion. In Morocco the Saadian sharifs were consolidating power in the Sous valley.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Selim_I_by_Michael_Ostendorfer.jpg",
+        "caption": "Sultan Selim I of the Ottoman Empire (1470-1520), whose conquests of 1516 to 1517 tripled the empire and gave it Cairo, Damascus, and Jerusalem. Drawing by the German artist Michael Ostendorfer, c. 1548.",
+        "credit": "Michael Ostendorfer (1490 to 1559), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Selim_I_by_Michael_Ostendorfer.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "Ming China was ruled by the eccentric Zhengde Emperor, who preferred to live outside the Forbidden City in a personal residence he called the Leopard Quarter. On 17 June 1517 a Portuguese squadron under Fernao Peres de Andrade sailed into the estuary of the Pearl River, the first official European mission to reach China by sea. Andrade's ambassador Tome Pires would eventually be sent to Beijing, though his embassy would collapse when relations with the Portuguese soured after the Battle of Tunmen in 1521. Elsewhere the Wang Yangming school of neo-Confucianism was reshaping Chinese moral philosophy, and coastal piracy was already becoming the endemic problem it would remain for a century."
+      "text": "Ming China was ruled by the eccentric Zhengde Emperor (Zhu Houzhao), who preferred to live outside the Forbidden City in a personal pleasure residence he called the Leopard Quarter (Baofang), giving himself the pseudonym General Zhu Shou and staging mock military campaigns. On 17 June 1517 a Portuguese squadron of four vessels under Fernao Peres de Andrade sailed into the estuary of the Pearl River, the first official European mission to reach China by sea; Andrade carried the ambassador Tome Pires (author of the great commercial handbook the Suma Oriental) who would eventually be sent to Beijing, though his embassy would collapse when relations with the Portuguese soured after the Battle of Tunmen in 1521 and Pires died in Chinese captivity. Elsewhere the Wang Yangming school of neo-Confucianism, emphasising innate moral knowledge and the unity of knowledge and action, was reshaping Chinese moral philosophy from a Jiangxi provincial post. Coastal piracy, the wokou raiding that mixed Japanese, Chinese, and Portuguese crews, was already becoming the endemic problem it would remain for a century. In Japan, the Muromachi shogunate under Ashikaga Yoshitane presided over the middle Sengoku period, when regional daimyo houses like the Otomo, Mori, and Hojo were consolidating warring domains.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Portrait_of_Emperor_Zhengde_%289863895755%29.jpg",
+        "caption": "Portrait of the Zhengde Emperor (Zhu Houzhao, reigned 1505 to 1521) of the Ming dynasty, at Dingling near Beijing.",
+        "credit": "Gary Todd, via Wikimedia Commons",
+        "license": "CC0 Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Emperor_Zhengde_(9863895755).jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "In north India the Delhi Sultanate had passed on 21 November 1517 from the aging Sikandar Lodi to his son Ibrahim, whose harshness toward his Afghan nobility would within a decade drive them to invite the Timurid prince Babur into Hindustan and destroy the sultanate at Panipat in 1526. In Persia the young Safavid shah Ismail I, still recovering from his defeat by Selim at Chaldiran in 1514, was consolidating a Shia state that would define the eastern Islamic world for two centuries. Portuguese fortresses at Goa, Hormuz, and Malacca linked all of these worlds by sea."
+      "text": "In north India the Delhi Sultanate had passed on 21 November 1517 from the aging Sikandar Lodi, patron of Persian letters and builder of the tomb complex at Bagh-e Alam, to his son Ibrahim Lodi, whose harshness toward his Afghan nobility (including the humiliation of the Lohani and Farmuli clans) would within a decade drive them to invite the Timurid prince Babur down from Kabul into Hindustan; Babur would destroy the sultanate at the First Battle of Panipat on 21 April 1526 with a small army and Ottoman-style field artillery, founding the Mughal Empire. In Persia the young Safavid shah Ismail I, still recovering from his defeat by Selim at Chaldiran in 1514, was consolidating a Shia state that would define the eastern Islamic world for two centuries. In the Deccan the successor sultanates of Bijapur, Golconda, Ahmadnagar, Bidar, and Berar had emerged from the collapse of the Bahmani state, while the Hindu empire of Vijayanagara under Krishnadevaraya (r. 1509 to 1529) was at the peak of its power, its capital at Hampi described by the Portuguese factor Domingo Paes as larger than Rome. Portuguese fortresses at Goa (taken 1510), Hormuz (1515), and Malacca (1511) linked all of these worlds by sea.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Babur_in_the_first_illustrated_Baburnama%2C_painted_in_1589-1590.jpg",
+        "caption": "Babur, the Timurid prince who would found the Mughal Empire in 1526, from the first illustrated Baburnama manuscript, c. 1589 to 1590. Victoria and Albert Museum, London.",
+        "credit": "Mughal atelier, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Babur_in_the_first_illustrated_Baburnama,_painted_in_1589-1590.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "In the West African savannah the Songhai Empire under Askia Muhammad, who had ruled from Gao since 1493, stretched from the Atlantic coast of Senegal to the eastern bend of the Niger and controlled the trans-Saharan gold and salt trades that fed the mints of Cairo and Genoa. In the highlands of Ethiopia the Solomonic emperor Lebna Dengel was in the middle of an uneasy peace with the Muslim sultanate of Adal, a peace that would collapse in the 1520s under Ahmad Gragn. On the Swahili coast, Portuguese garrisons at Kilwa and Sofala controlled the outlets of the Zimbabwean gold trade."
+      "text": "In the West African savannah the Songhai Empire under Askia Muhammad Ture, who had ruled from Gao since 1493 after overthrowing the son of Sunni Ali, stretched from the Atlantic coast of Senegal to the eastern bend of the Niger and controlled the trans-Saharan gold and salt trades that fed the mints of Cairo and Genoa. Under Askia's patronage the University of Sankore at Timbuktu, staffed by scholars like Ahmad Baba's forebears, was among the most active centres of Islamic learning in West Africa; his 1495 hajj had brought back learned Egyptian jurists. In the highlands of Ethiopia the Solomonic emperor Lebna Dengel (r. 1508 to 1540) was in the middle of an uneasy peace with the Muslim sultanate of Adal, a peace that would collapse in the 1520s under the jihadist warlord Ahmad ibn Ibrahim al-Ghazi, known to Ethiopians as Ahmad Gragn, whose armies would nearly destroy the Christian kingdom before Portuguese muskets arrived to save it. On the Swahili coast, Portuguese garrisons at Kilwa and Sofala controlled the outlets of the Zimbabwean gold trade. In the Kongo kingdom, the Christian king Afonso I, baptised at the turn of the century, was writing letters to King Manuel I of Portugal protesting the slave trade already draining his realm.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sankore_Madrasah.jpg",
+        "caption": "The Sankore Mosque and madrasa at Timbuktu; under Askia Muhammad, Timbuktu was one of the great centres of Islamic scholarship in the Songhai Empire.",
+        "credit": "Dr Ondrej Havelka (HistoriaSalutis), via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "The Aztec Triple Alliance under Moctezuma II ruled from Tenochtitlan over most of central Mexico, its markets receiving cacao, quetzal feathers, and turquoise from tributaries as far as the Isthmus of Tehuantepec. In February 1517 a Spanish expedition under Francisco Hernandez de Cordoba sailed from Cuba, landed on the Yucatan coast, and was driven off with heavy losses by Maya warriors at Chakan Putun. On the Peruvian sierra Huayna Capac was extending Inca power northward into what is now Ecuador and southern Colombia, unaware that European diseases would reach him from Panama within a decade."
+      "text": "The Aztec Triple Alliance under Moctezuma II Xocoyotzin (r. 1502 to 1520) ruled from Tenochtitlan over most of central Mexico, its markets at Tlatelolco receiving cacao, quetzal feathers, turquoise, cotton, and gold from tributaries as far as the Isthmus of Tehuantepec and the Soconusco. The city, an island metropolis of chinampas and causeways, may have held around 200,000 people, larger than any capital in Europe. In February 1517 a Spanish expedition under Francisco Hernandez de Cordoba sailed from Cuba with 110 men, landed on the Yucatan coast at Cabo Catoche, and was driven off with heavy losses by Maya warriors at Chakan Putun (Champoton); Hernandez himself died of his wounds in Havana. The expedition brought back the first reports of Maya cities to Cuba's governor Diego Velazquez, who dispatched Juan de Grijalva's expedition the following year and Hernan Cortes's the year after. On the Peruvian sierra Huayna Capac, tenth Sapa Inca, was extending Tawantinsuyu northward into what is now Ecuador and southern Colombia from his forward capital at Tumipampa (Tomebamba), unaware that European diseases (smallpox, likely) would reach him from Panama across a chain of coastal contact within a decade and kill him around 1524.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Model_of_Tenochtitlan.jpg",
+        "caption": "Museum model of Tenochtitlan showing the sacred precinct and causeways of the Aztec capital, which under Moctezuma II held perhaps 200,000 residents. National Anthropology Museum, Mexico City.",
+        "credit": "Steve Cadman (from London, UK), via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Model_of_Tenochtitlan.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "No European ship had yet reached the Pacific islands. Ferdinand Magellan's expedition, which would cross the ocean and stumble upon Guam and the Philippines, was still two years from sailing. In New Guinea, Fiji, and Vanuatu, complex trading systems moved obsidian, pigs, and pottery across island networks; Polynesian navigators travelled between Tonga, Samoa, and the Society Islands using stick charts and star knowledge inherited from long voyages that had already peopled Hawaii and Aotearoa New Zealand. Australia's Indigenous nations had lived on the continent for more than sixty thousand years."
+      "text": "No European ship had yet reached the Pacific islands. Ferdinand Magellan's expedition, which would cross the ocean and stumble upon Guam and the Philippines, was still two years from sailing from Sanlucar de Barrameda in August 1519. In New Guinea, Fiji, and Vanuatu, complex trading systems moved obsidian from Talasea, pigs, pottery, and shell valuables across island networks; kula-like exchange circuits linked the Massim archipelagos. Polynesian navigators travelled between Tonga, Samoa, and the Society Islands using star knowledge, wave patterns, and mental sailing directions inherited from long voyages that had already peopled Hawaii around the ninth century and Aotearoa New Zealand around the thirteenth. The Tui Tonga maritime confederation, ruled from Mu'a, extended influence across western Polynesia. In Aotearoa, Maori iwi were consolidating pa hill-fort settlements and refining kumara horticulture; classic Maori material culture (nephrite weapons, waka war canoes, wharenui meeting houses) was reaching its mature form. Australia's Indigenous nations, custodians of some of the oldest continuous cultures on Earth, had lived on the continent for more than sixty thousand years.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Uluru_Panorama.jpg",
+        "caption": "Uluru at sunset in the central Australian desert, a sacred site of the Anangu people whose ancestors have lived across the continent for over sixty thousand years.",
+        "credit": "Stuart Edwards (BrisbanePom), via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uluru_Panorama.jpg"
+      }
     }
   ],
   "figures": [

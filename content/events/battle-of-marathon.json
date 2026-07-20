@@ -33,23 +33,58 @@
   "worldContext": [
     {
       "region": "east-asia",
-      "text": "In China the late Spring and Autumn period was drawing toward its end. The state of Wu, in the lower Yangtze, was at the height of its power under King Fuchai, engaged in a long struggle with its southern neighbour Yue. Confucius, then in his sixties, was wandering the courts of the central states in search of a ruler who would apply his teachings; his conversations of these years, later gathered as the Analects, would shape East Asian ethics for two millennia. Iron tools and coined money were becoming general."
+      "text": "In China the late Spring and Autumn period was drawing toward its end. The state of Wu, in the lower Yangtze, was at the height of its power under King Fuchai, engaged in a long struggle with its southern neighbour Yue under King Goujian, whose ministers Wen Zhong and Fan Li shaped a strategy of patient revenge later celebrated in the proverb 'lying on brushwood and tasting gall'. In the central plains the Zhou king Jing was still nominally the Son of Heaven, but real power was divided among the Jin, Qi, Chu, Qin, and Zheng states, whose rivalries would harden a generation later into the Warring States. Confucius (Kongzi), then in his sixties, was wandering the courts of the central states in search of a ruler who would apply his teachings; his conversations of these years, later gathered by his disciples as the Analects, would shape East Asian ethics for two millennia. Iron tools, cast rather than forged as in the Mediterranean, were spreading through Chinese agriculture, and coined money in the form of spade and knife coins was becoming general. In the Warring States city of Linzi, court philosophers of the Jixia Academy were laying the foundations of Chinese natural philosophy.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Confucius_Tang_Dynasty.jpg",
+        "caption": "Confucius, in an ink and colour portrait traditionally attributed to the Tang-dynasty painter Wu Daozi (685-758). The philosopher was in his sixties when the Athenians fought at Marathon.",
+        "credit": "Wu Daozi (attr.), Tang dynasty, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "The Ganges plain in the early fifth century BCE was the age of the mahajanapadas, the sixteen great kingdoms and republics through which the Buddha, Siddhartha Gautama, was travelling in the last years of his teaching life; traditional Theravadin chronology places his death, the parinirvana, around 483 BCE. His contemporary Vardhamana Mahavira was reorganising the Jain community. Magadha, under King Bimbisara and his son Ajatashatru, was already emerging as the dominant Gangetic power."
+      "text": "The Ganges plain in the early fifth century BCE was the age of the mahajanapadas, the sixteen great kingdoms and republics through which the Buddha, Siddhartha Gautama of the Shakya clan, was travelling in the last years of his teaching life; traditional Theravadin chronology places his death, the parinirvana, at Kusinara around 483 BCE, though the corrected long chronology now favoured by many specialists such as Richard Gombrich puts it closer to 400 BCE. His contemporary Vardhamana Mahavira was reorganising the Jain community around a rigorous asceticism after receiving enlightenment at Rijupalika. The kingdom of Magadha, under King Bimbisara and his patricidal son Ajatashatru, ruling from the hill-fortress of Rajagriha, was already emerging as the dominant Gangetic power, absorbing its neighbours Anga and Kashi and building the fortress of Pataliputra at the confluence of the Ganges and Son. In the northwest, the region of Gandhara (modern Peshawar and Taxila) had been under Persian rule since Darius I annexed the Indus valley, and paid the Achaemenids the largest tribute of any satrapy. Panini, the great Sanskrit grammarian, would soon codify the language at Taxila.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Buddha_Relic_Stupa_-_Vaishali_%281%29.jpg",
+        "caption": "The Relic Stupa at Vaishali in Bihar, a brick and clay mound traditionally said to house a share of the Buddha's cremated remains distributed after his parinirvana c. 483 BCE.",
+        "credit": "Sumitsurai, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buddha_Relic_Stupa_-_Vaishali_(1).jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "In Mesoamerica the Olmec heartland on the Gulf Coast had entered its final phase, its ceremonial centre at La Venta soon to be abandoned. In the Valley of Oaxaca the Zapotec city of Monte Alban was rising, its earliest carved danzante reliefs suggesting the display of defeated enemies. Along the north coast of Peru the Paracas culture was producing the intricate embroidered mantles found in later mummy bundles at the Paracas peninsula, part of the wider Chavín horizon."
+      "text": "In Mesoamerica the Olmec heartland on the Gulf Coast had entered its final phase, its ceremonial centre at La Venta, with its colossal basalt heads and jaguar altars, soon to be abandoned. In the Valley of Oaxaca the Zapotec city of Monte Alban was rising on its hilltop above the Etla and Tlacolula valleys, its earliest carved danzante reliefs suggesting the display of defeated and mutilated enemies with accompanying calendrical glyphs, an early Mesoamerican writing system. In the Maya lowlands the Middle Preclassic communities at Nakbe and San Bartolo were laying the ground for the great Classic-period cities. Along the south coast of Peru the Paracas culture, contemporary with the tail end of the wider Chavin horizon centred on Chavin de Huantar in the northern highlands, was producing the intricate embroidered mantles later found wrapped around mummy bundles at the Cerro Colorado necropolis on the Paracas peninsula. In North America the Adena people of the Ohio Valley continued building the burial mounds that would multiply into the later Hopewell tradition, and Basketmaker groups in the Colorado Plateau were experimenting with maize.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Paracas_style_-_Ceremonial_mantle_-_Google_Art_Project.jpg",
+        "caption": "A Paracas-style embroidered ceremonial mantle from the south coast of Peru, cotton with camelid-hair embroidery, c. 100 BCE to 100 CE, in the tradition begun by the fifth-century BCE Paracas culture. Museo de Arte de Lima.",
+        "credit": "Paracas culture (anonymous), via Wikimedia Commons / Google Cultural Institute",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paracas_style_-_Ceremonial_mantle_-_Google_Art_Project.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "Egypt in 490 BCE had been for thirty-five years a satrapy of the Persian empire, ruled since the invasion of Cambyses II in 525 BCE from Memphis by a Persian governor. A revolt would break out at the death of Darius in 486 BCE. Further south, along the middle Nile, the Kushite kingdom had shifted its centre from Napata to Meroe, where a distinctive Meroitic script and iron-working economy were developing. In the western Sahara, Berber populations traded across the desert as they had for centuries."
+      "text": "Egypt in 490 BCE had been for thirty-five years a satrapy of the Persian empire, the sixth satrapy in the tribute list of Darius I, ruled since the invasion of Cambyses II in 525 BCE from Memphis by a Persian governor; when news of Marathon reached the west, Egyptian resentment at heavy taxes and forced labour was building, and in 486 BCE, on Darius's death, the country would rise in a full revolt suppressed only by Xerxes in 484 BCE. Native Egyptian temple building continued at Karnak, Elephantine, and Kharga oasis. Further south, along the middle Nile, the Kushite kingdom still had its royal centre near Napata under Jebel Barkal, where kings such as Malewiebamani and Talakhamani were being buried in the pyramid fields at Nuri; the Kushite capital would only shift definitively south to Meroe in the following century. A distinctive Meroitic script and an iron-working economy were beginning to develop. In North Africa the Phoenician colony of Carthage had already emerged as the great power of the western Mediterranean; Carthaginian ships circumnavigated part of West Africa in the voyage of Hanno the Navigator around this time.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Amun_Tempel_Barkal_SW.jpg",
+        "caption": "The great Temple of Amun at Jebel Barkal beside the sacred mountain, in the heartland of the Kushite kingdom near Napata in northern Sudan.",
+        "credit": "Bertramz, via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amun_Tempel_Barkal_SW.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "In the western Pacific the descendants of the Lapita voyagers had by now settled Tonga, Samoa and Fiji, and were consolidating the ancestral Polynesian societies from which later waves would reach the Society Islands, the Marquesas and, much later, Hawaii and Aotearoa. In Australia, Aboriginal populations continued to maintain the world's oldest unbroken cultural tradition, adapting to widely different environments from the tropical north to the temperate south-east."
+      "text": "In the western Pacific the descendants of the Lapita voyagers, who had spread out from the Bismarck Archipelago in the second millennium BCE bearing their distinctive dentate-stamped pottery, had by now settled Tonga, Samoa, Fiji, Vanuatu, and New Caledonia, and were consolidating the ancestral Polynesian societies from which later waves would reach the Society Islands, the Marquesas, and, much later, Hawaii and Aotearoa. The pottery tradition itself was already fading as the settlers established themselves and turned to horticulture based on taro, yam, breadfruit, and coconut, with pigs, dogs, and chickens brought from Melanesia. In Micronesia early settlement of the Marianas from Island Southeast Asia was well established. In Australia, Aboriginal populations continued to maintain the world's oldest unbroken cultural tradition, adapting to widely different environments from the tropical Kakadu wetlands to the temperate southeast, sustaining complex kin and moiety systems, seasonal firestick farming, and rock-art traditions in places such as the Kimberley and Arnhem Land.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Decorated_piece_of_Lapita_pottery_from_the_Bourewa_site_in_Fiji.jpg",
+        "caption": "Decorated dentate-stamped Lapita potsherd from the Bourewa site in Fiji, roughly three thousand years old and typical of the ceramic tradition carried across Near and Remote Oceania.",
+        "credit": "Patrick Nunn, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Decorated_piece_of_Lapita_pottery_from_the_Bourewa_site_in_Fiji.jpg"
+      }
     }
   ],
   "figures": [

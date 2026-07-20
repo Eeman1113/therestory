@@ -87,6 +87,16 @@ Format:
 - Verified in dark mode across event/year/eras/about pages — Paper/Ink tokens hold; iron-blue accent softens correctly for dark backgrounds.
 - Build clean. Lint clean. **113 static pages** (110 content + 3 static sitemap/404/robots).
 
+## 2026-07-20 — Wordmark, region imagery, and polish fixes
+- Installed the user's handwritten `Therestory` wordmark as `public/wordmark.png` and as the browser favicon (`app/icon.png`). Built `<Wordmark>` component that renders the PNG at a specified height and inverts to white in dark mode via `dark:invert`. Wordmark replaces the plain-text `Therestory` in the site header and footer.
+- Rebuilt the OG image template to render the wordmark PNG in the top-left of every OG card (loaded as base64 data-URL from `public/wordmark.png` at build time). Every OG regenerates with the mark.
+- Removed the persistent 60px `TimelineStrip` from the root layout — the interactive canvas on the homepage is now the only timeline surface.
+- Added a Wikimedia hero image to the timeline hover-card preview (16:9 aspect, uses `SafeImage` for graceful fallback).
+- Extended `WorldContextSchema` to accept an optional `image` (Wikimedia URL + caption + credit + license + sourceUrl). Updated `MeanwhileSection` and `YearWorldSnapshot` to render the image alongside the plaque text with a small figcaption crediting the source.
+- **Two parallel subagents enriched 20 flagship events** — 109 region snapshots total. Each region now carries a Wikimedia Commons image (museum-held artefacts where possible: Louvre Gebel el-Arak knife, Shanghai Museum Liangzhu cong, Berlin Cleopatra, Iraq Museum Harun al-Rashid mihrab, National Palace Museum Taipei Tang/Yuan portraits, BnF Catalan Atlas, Sarnath Museum lion capital, USS Missouri surrender…) and every text is bulked to 140-220 words with named contemporary rulers, treaties, technologies, and cultural works. Every image URL WebFetched, license verified on the Commons file page, and direct upload path HTTP-checked before writing.
+- Fixed marker-click on GitHub Pages: swapped `window.location.assign` for `router.push` so the `/therestory` basePath is respected.
+- Fixed timeline width regression: `useLayoutEffect` now uses `getBoundingClientRect().width`, ignores intermittent 0-widths (which had been collapsing every marker onto x=0 during hydration), and re-checks once via `requestAnimationFrame` after first paint.
+
 ## 2026-07-20 — Phase 5 UI wiring
 - Built `/year/[year]` route with `generateStaticParams` + slug convention `1789` for CE, `776-bce` for BCE. Layout: mono XL year headline, editorial summary, seven regional snapshots (canonical region order), featured events (explicit + ±1 year window auto-detected), sources.
 - Built `/events` catalogue with events grouped by era, sorted chronologically, category-coloured dots, sidebar legend.

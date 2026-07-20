@@ -29,23 +29,58 @@
   "worldContext": [
     {
       "region": "europe",
-      "text": "In the western Mediterranean the Second Punic War was brewing. In 221 BCE Hannibal Barca, still in his twenties, was proclaimed commander-in-chief of the Carthaginian armies in Spain after the assassination of his brother-in-law Hasdrubal. Within two years he would march an army with elephants across the Alps and bring Rome to the brink of destruction."
+      "text": "In the western Mediterranean the Second Punic War was brewing. In 221 BCE Hannibal Barca, still in his twenties, was proclaimed commander-in-chief of the Carthaginian armies in Spain after the assassination of his brother-in-law Hasdrubal the Fair at New Carthage (modern Cartagena). Within two years he would march an army of some fifty thousand infantry, nine thousand cavalry, and thirty-seven war elephants across the Rhone and over the western Alps and bring Rome to the brink of destruction at the Trebia, Lake Trasimene, and above all at Cannae in 216 BCE. Rome itself was in the second consulship of Marcus Valerius Laevinus and about to elect the elder Publius Cornelius Scipio and Tiberius Sempronius Longus, both of whom would face Hannibal in the field. Elsewhere in the Hellenistic world Philip V had recently succeeded to the Antigonid throne of Macedon, and the Achaean League under Aratus of Sicyon was fighting the Cleomenean War against Sparta. Greek natural philosophy was flourishing: Eratosthenes of Cyrene, chief librarian at Alexandria, had recently measured the circumference of the Earth to within a few per cent, while Archimedes was at work in Syracuse.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Hannibal_Barca_bust_from_Capua_photo.jpg",
+        "caption": "Marble bust said to represent Hannibal Barca, discovered at Capua in 1667. National Archaeological Museum of Naples. Early photograph by the Fratelli Alinari studio, c. 1900.",
+        "credit": "Fratelli Alinari, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hannibal_Barca_bust_from_Capua_photo.jpg"
+      }
     },
     {
       "region": "middle-east-north-africa",
-      "text": "The Hellenistic successor kingdoms were in flux. Ptolemy III of Egypt died in 221 BCE and was succeeded by his weaker son Ptolemy IV Philopator. In the Seleucid east the young king Antiochus III, later called the Great, was fighting to keep his sprawling realm together and would soon defeat the rebel satrap Molon at the Tigris."
+      "text": "The Hellenistic successor kingdoms were in flux. Ptolemy III Euergetes of Egypt died in 221 BCE and was succeeded by his weaker son Ptolemy IV Philopator, whose reign at Alexandria would be dominated by the powerful ministers Sosibius and Agathocles. Alexandria under the Ptolemies remained the intellectual and commercial capital of the Mediterranean, its Library and Museum housing scholars including Eratosthenes, and its port shipping grain across the sea. In the Seleucid east the young king Antiochus III, later called the Great, was fighting to keep his sprawling realm together and would soon defeat the rebel satrap Molon on the Tigris in 220 BCE before turning against Ptolemaic Coele-Syria in the Fourth Syrian War, which ended in his defeat by Ptolemy IV at the great battle of Raphia in 217 BCE. Further east the Iranian Parthian kingdom of Arsaces II was consolidating on the fringe of the Seleucid realm, and the Greco-Bactrian kingdom under Euthydemus I ruled the far northeast. In Judaea the Ptolemaic high-priestly regime continued at Jerusalem, and the Septuagint translation of the Hebrew Bible was well under way.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Ptolemy_IV_or_Ptolemy_VI%2C_3rd_century_BC%2C_from_the_sanctuary_of_Sarapis%2C_Alexandria_%28Egypt%29%2C_Louvre_Museum_%287462957472%29.jpg",
+        "caption": "Marble portrait head, third century BCE, from the sanctuary of Serapis at Alexandria, identified as Ptolemy IV Philopator or Ptolemy VI. Louvre Museum, Paris.",
+        "credit": "Carole Raddato, via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ptolemy_IV_or_Ptolemy_VI,_3rd_century_BC,_from_the_sanctuary_of_Sarapis,_Alexandria_(Egypt),_Louvre_Museum_(7462957472).jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "The Mauryan Empire founded by Chandragupta and expanded under Ashoka was still the dominant power in the Indian subcontinent, though after Ashoka's death around 232 BCE its coherence had begun to fray. Buddhist and Jain communities continued to spread along the trade routes reaching into Central Asia."
+      "text": "The Mauryan Empire founded by Chandragupta around 322 BCE and expanded under his grandson Ashoka the Great (r. c. 268 to 232 BCE) was still nominally the dominant power in the Indian subcontinent, ruling from its capital Pataliputra on the Ganges. Ashoka's edicts, inscribed on polished sandstone pillars from Delhi to Bihar to Kandahar and Peshawar in the Ashokan Brahmi and Kharoshthi scripts, had proclaimed a policy of dhamma and non-violence across the subcontinent after his conversion following the Kalinga War. By 221 BCE, however, the empire under his grandson Dasharatha was fraying at the edges; the Mauryan dynasty would fall in 185 BCE when the last king Brihadratha was assassinated by his general Pushyamitra Shunga. Buddhist and Jain communities continued to expand along the trade routes reaching into Sri Lanka, where Ashoka's son Mahinda had brought the dhamma to king Devanampiya Tissa, and into Central Asia. In the south the Chola, Chera, and Pandya kingdoms of the Tamil country were consolidating.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Sarnath_capital.jpg",
+        "caption": "The Lion Capital of Ashoka from Sarnath, Chunar sandstone, c. 250 BCE. Sarnath Museum. The four-lion capital is now the national emblem of the Republic of India.",
+        "credit": "Chrisi1964, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarnath_capital.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "In Mesoamerica the late Olmec heartland along the Gulf of Mexico was in decline, but Zapotec Monte Alban in the Valley of Oaxaca was thriving, and the ceremonial city of Cuicuilco in the Basin of Mexico was at its height. In the Andes the Chavin cult centres were fading and regional cultures such as the Paracas on the Peruvian coast were taking shape."
+      "text": "In Mesoamerica the late Olmec heartland along the Gulf of Mexico was in decline, with the great ceremonial centre of La Venta long since abandoned, but Zapotec Monte Alban in the Valley of Oaxaca was thriving. Its Danzante reliefs, carved into upright stelae in a low platform on the Main Plaza, show what appear to be defeated and mutilated enemies with hieroglyphic name-signs and represent one of the earliest writing systems anywhere in the Americas. The ceremonial city of Cuicuilco in the Basin of Mexico was at the height of its round-plan monumental building; within a century it would be smothered by an eruption of the Xitle volcano. In the Maya lowlands the Late Preclassic was under way, with early monumental cities such as El Mirador rising in the Peten. In the Andes the Chavin cult centre at Chavin de Huantar was fading and regional cultures such as the Paracas on the Peruvian south coast were producing the intricate embroidered textiles found in later mummy bundles. The Basketmaker peoples of the American Southwest were beginning to cultivate maize.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Mexico.Oax.MonteAlban.Panorama.02.jpg",
+        "caption": "Panoramic view over the Sistema M complex at Monte Alban in the Valley of Oaxaca, the Zapotec capital rising from its founding around 500 BCE.",
+        "credit": "Hajor, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico.Oax.MonteAlban.Panorama.02.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "Meroe, on the middle Nile in what is now Sudan, was consolidating as the capital of the Kushite kingdom, developing its own script and iron-working tradition. To the north, Ptolemaic Egypt continued to run one of the great grain economies of the ancient world from Alexandria."
+      "text": "Meroe, on the middle Nile in what is now Sudan, was consolidating as the capital of the Kushite kingdom, whose court had shifted south from Napata generations earlier. Kushite kings and kandakes (queen mothers) were being buried in the steep-sided royal pyramids at Nuri and Meroe itself, and the region was developing its own Meroitic alphabetic script, distinct from Egyptian hieroglyphs and still only partly deciphered today. A large-scale iron-working tradition centred on the slag heaps around Meroe was under way. To the north, Ptolemaic Egypt continued to run one of the great grain economies of the ancient world from Alexandria under Ptolemy IV Philopator, its Delta ports shipping wheat and papyrus across the Mediterranean. In North Africa Carthage remained the great Punic city of the western Mediterranean until its final destruction by Rome in 146 BCE, while Berber kingdoms such as Numidia under Syphax and Massinissa in the following generation were consolidating in what is now Algeria and Tunisia. Further south, the Nok culture of central Nigeria was producing the celebrated terracotta heads that mark one of the earliest attestations of iron-working in sub-Saharan Africa.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Pyramids_of_Meroe_in_Bajrawiya%2C_Sudan_08.jpg",
+        "caption": "The steep-sided royal pyramids at Meroe (Begrawiya) in the Sudan, burial places of the kings and kandakes of Kush from the third century BCE onward.",
+        "credit": "Ahmed Amir, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyramids_of_Meroe_in_Bajrawiya,_Sudan_08.jpg"
+      }
     }
   ],
   "figures": [

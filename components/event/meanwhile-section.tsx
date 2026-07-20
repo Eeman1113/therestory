@@ -1,6 +1,7 @@
 import { MicroCaps } from "@/components/common/micro-caps";
 import { HairlineRule } from "@/components/common/hairline-rule";
 import { Markdown } from "@/components/common/markdown";
+import { SafeImage } from "@/components/common/safe-image";
 import { getRegion } from "@/lib/content/loader";
 import type { WorldContext } from "@/lib/content/schema";
 
@@ -37,17 +38,40 @@ export function MeanwhileSection({
 
       <HairlineRule className="mt-10" />
 
-      <ul className="grid grid-cols-1 gap-x-16 md:grid-cols-2">
+      <ul>
         {sorted.map((snap) => {
           const region = getRegion(snap.region);
           return (
-            <li
-              key={snap.region}
-              className="border-b border-rule py-8 md:border-b-0 md:[&:nth-last-child(-n+2)]:border-b-0 md:border-b-0"
-            >
-              <MicroCaps as="p">{region?.label ?? snap.region}</MicroCaps>
-              <div className="mt-3">
-                <Markdown>{snap.text}</Markdown>
+            <li key={snap.region} className="border-b border-rule py-10">
+              <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">
+                <div className="lg:col-span-3">
+                  <MicroCaps as="p">{region?.label ?? snap.region}</MicroCaps>
+                  {snap.image && (
+                    <figure className="mt-4">
+                      <SafeImage
+                        src={snap.image.url}
+                        alt={snap.image.caption}
+                        className="w-full border border-rule object-cover"
+                        aspectRatio="4 / 3"
+                      />
+                      <figcaption className="mt-2 text-[11px] leading-4 text-ink-muted/80">
+                        <span className="text-ink-muted">{snap.image.caption}</span>{" "}
+                        · {snap.image.credit} · {snap.image.license} ·{" "}
+                        <a
+                          href={snap.image.sourceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline decoration-ink-muted/40 underline-offset-2 hover:decoration-ink-muted"
+                        >
+                          src
+                        </a>
+                      </figcaption>
+                    </figure>
+                  )}
+                </div>
+                <div className="max-w-[65ch] lg:col-span-9">
+                  <Markdown>{snap.text}</Markdown>
+                </div>
               </div>
             </li>
           );

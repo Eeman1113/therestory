@@ -33,27 +33,69 @@
   "worldContext": [
     {
       "region": "africa",
-      "text": "Along the lower Nile the Naqada III phase was in full swing. Chiefs at Abydos, Hierakonpolis, and Naqada were being buried in increasingly elaborate mudbrick tombs, and the small ivory and bone labels from Tomb U-j at Abydos, dated to around 3200 BCE, carry proto-hieroglyphic signs whose relationship to Mesopotamian writing is still debated. Within a century or so a king called Narmer would unite the two lands into a single pharaonic state, but for now Egypt was a patchwork of kingdoms feeling its way, like Sumer, toward literacy and centralised government."
+      "text": "Along the lower Nile the Naqada III phase was in full swing. Chiefs at Abydos, Hierakonpolis, and Naqada were being buried in increasingly elaborate mudbrick tombs, and the small ivory and bone labels from Tomb U-j at Abydos, excavated in 1988 by the German archaeologist Gunter Dreyer and dated to around 3200 BCE, carry proto-hieroglyphic signs whose relationship to Mesopotamian writing is still debated. Nearby, the great decorated palettes and mace-heads of Hierakonpolis, including the Scorpion Macehead and the Narmer Palette, document a rapid consolidation of royal iconography. So-called 'Dynasty 0' kings such as Iry-Hor, Ka, and Scorpion II left inked jar-labels in tombs at Abydos. Long-distance trade linked the Nile to the southern Levant, where a network of Egyptian trading stations from En Besor to the Wadi Ghazzeh brought back oil, wine, and copper. Within a century or so a king called Narmer would unite the two lands into a single pharaonic state, but for now Egypt was a patchwork of chiefdoms feeling its way, like Sumer, toward literacy, monumental art, and centralised government. Further south in Nubia, the A-Group culture at Qustul was raising its own elite tombs.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Gebel_el-Arak_knife_mp3h8789.jpg",
+        "caption": "The Gebel el-Arak Knife, ivory and flint, late Naqada period, c. 3300 to 3200 BCE, whose relief carvings show clear Mesopotamian influence on late Predynastic Egypt. Louvre, E 11517.",
+        "credit": "Rama, via Wikimedia Commons",
+        "license": "CC BY-SA 2.0 FR",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gebel_el-Arak_knife_mp3h8789.jpg"
+      }
     },
     {
       "region": "europe",
-      "text": "In Neolithic Europe no writing yet existed. On Salisbury Plain the first stage of Stonehenge, a circular ditch enclosing a ring of wooden posts, was being raised in this century. In Orkney the great Neolithic village at Skara Brae was inhabited, and megalithic passage tombs from Newgrange in Ireland to Maeshowe were being built or in use. Across the Balkans the Vinca culture had produced enigmatic incised symbols on pottery, sometimes optimistically called the earliest European script, but most specialists regard them as pot-marks rather than a system of writing."
+      "text": "In Neolithic Europe no writing yet existed. On Salisbury Plain the first stage of Stonehenge, a circular ditch and bank enclosing a ring of wooden posts and the fifty-six Aubrey Holes, was being raised in this century. In Orkney the great Neolithic village at Skara Brae was inhabited, its stone-built houses connected by covered passages and equipped with dressers, hearths, and box beds; only a few kilometres away the ceremonial complex at the Ness of Brodgar and the Ring of Brodgar were in active use. Megalithic passage tombs from Newgrange in Ireland to Maeshowe on Orkney were being built or aligned to solstitial sunrises. Across the Balkans the Vinca culture had produced enigmatic incised symbols on pottery, sometimes optimistically called the earliest European script, but most specialists regard them as potter's marks rather than a system of writing. Along the Danube and in the Ukrainian forest-steppe the Cucuteni-Trypillia culture continued to occupy huge planned settlements of thousands of people at Talianki and Nebelivka, which were periodically burned and rebuilt on the same footprint.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Skara_Brae_-_a_neolithic_village_-_geograph.org.uk_-_1053883.jpg",
+        "caption": "The Neolithic village of Skara Brae on Mainland Orkney, its stone-built houses and covered passages exposed after the sand dunes were stripped away by storms.",
+        "credit": "M J Richardson, via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skara_Brae_-_a_neolithic_village_-_geograph.org.uk_-_1053883.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "Along the Indus and its tributaries the Early Harappan phase was underway. At Harappa itself the Ravi and Kot Diji occupations show planned streets and standardised bricks, and long-distance trade in lapis lazuli, carnelian, and copper linked the Indus plains to Central Asia and to Mesopotamia. The mature cities of Mohenjo-daro and Dholavira, with their still-undeciphered seal script, were more than half a millennium in the future, but the ingredients, urbanism, craft specialisation, weights and measures, were already assembling."
+      "text": "Along the Indus and its tributaries the Early Harappan phase was underway. At Harappa itself the Ravi and Kot Diji occupations show planned streets and standardised mud-brick construction, and long-distance trade in lapis lazuli from Badakhshan, carnelian from Gujarat, copper from Oman, and turquoise from the Iranian plateau linked the Indus plains to Central Asia and, through the Persian Gulf, to Mesopotamia. Mehrgarh in Baluchistan, continuously occupied for four thousand years, was one of the earliest farming villages anywhere in South Asia, its inhabitants growing wheat, barley, and cotton and firing painted terracotta figurines. Sites in the Kachi plain such as Rehman Dheri were being laid out on rough grid plans. The mature cities of Mohenjo-daro, Dholavira, and Rakhigarhi, with their gridded streets, brick-lined drains, standardised weights, and still-undeciphered seal script, were more than half a millennium in the future, but the constituent ingredients — urbanism, craft specialisation, weights and measures, and cross-regional exchange — were already assembling. Contemporary steppe populations to the north were domesticating the horse on the Pontic-Caspian grasslands.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Indus_Valley_Civilization_-_Archaeological_site_of_Harappa.jpg",
+        "caption": "The excavated ruins at Harappa in the Punjab, whose Early Harappan (Ravi and Kot Diji) phases were contemporary with the invention of writing in Sumer.",
+        "credit": "Sara jilani, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indus_Valley_Civilization_-_Archaeological_site_of_Harappa.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "In China the late Neolithic Longshan culture along the Yellow River and the Liangzhu culture in the lower Yangtze delta were producing wheel-thrown black burnished pottery, elaborate jade cong tubes and bi discs, and rammed-earth walls around proto-urban centres. Liangzhu, in particular, has yielded evidence of large-scale hydraulic engineering that some archaeologists consider the earliest state-level society in China. Writing, in the form of the oracle-bone script, would not appear for another two thousand years."
+      "text": "In China the late Neolithic Longshan culture along the middle and lower Yellow River and the Liangzhu culture in the lower Yangtze delta were producing wheel-thrown black burnished pottery, thin-walled eggshell goblets, elaborate jade cong tubes and bi discs, and rammed-earth walls around proto-urban centres such as Taosi in Shanxi and Liangzhu itself near modern Hangzhou. Liangzhu, in particular, has yielded evidence of large-scale hydraulic engineering, including an eleven-kilometre network of dams and reservoirs, that some archaeologists such as Colin Renfrew now consider the earliest state-level society in China; the site was inscribed as a UNESCO World Heritage list in 2019 partly on that basis. The characteristic cong, incised with stylised human-animal face motifs, appears in enormous numbers in elite burials at Fanshan and Yaoshan, testifying to a stratified society with specialist craftsmen and long-distance exchange in nephrite. A small number of Liangzhu jades bear incised marks whose status as proto-writing remains disputed. Writing proper, in the form of the Shang oracle-bone script, would not appear for another two thousand years.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Jade_cong%2C_Liangzhu_Culture%2C_5200-2200_BC%2C_Shanghai_Museum.JPG",
+        "caption": "A Liangzhu culture jade cong, third millennium BCE, incised with the culture's characteristic stylised human-animal face motif. Shanghai Museum.",
+        "credit": "Prof. Gary Lee Todd, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jade_cong,_Liangzhu_Culture,_5200-2200_BC,_Shanghai_Museum.JPG"
+      }
     },
     {
       "region": "americas",
-      "text": "On the arid coast of what is now Peru the Norte Chico or Caral civilisation was beginning to build its monumental platform mounds and sunken circular plazas. Sites such as Caral, Aspero, and Huaricanga in the Supe and Fortaleza valleys sustained a complex society based on cotton, squash, and Pacific fisheries rather than on ceramics or maize. There is no evidence of writing here, then or later; the Andean world would in time record itself instead on knotted-string quipus."
+      "text": "On the arid coast of what is now Peru the Norte Chico or Caral civilisation was beginning to build its monumental platform mounds and sunken circular plazas. Sites such as Caral, Aspero, Huaricanga, and Bandurria in the Supe, Fortaleza, and Pativilca valleys sustained a complex society based on irrigated cotton, squash, beans, and chili in the inland valleys and on rich anchovy and sardine fisheries at coastal sites. Caral itself, systematically excavated by the Peruvian archaeologist Ruth Shady from 1994 onward, covers over sixty hectares with six pyramidal platforms, the largest rising eighteen metres above the plain. Notably absent are ceramics, metallurgy, and any evidence of large-scale warfare; the discovery in 2001 of a set of thirty-two condor and pelican bone flutes hints at a ceremonial life organised around music. There is no evidence of writing here, then or later; the Andean world would in time record itself instead on knotted-string quipus. Elsewhere in the Americas, Mesoamerican groups in the Soconusco region were beginning to cultivate maize, and Archaic-period hunter-gatherer societies still occupied most of North America.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Pir%C3%A1mide_mayor_de_Caral.jpg",
+        "caption": "The Piramide Mayor at Caral in the Supe Valley of Peru, principal monument of the earliest known complex society in the Americas.",
+        "credit": "Gisela Xiomara Garcia Almonacid, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pir%C3%A1mide_mayor_de_Caral.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "The islands of Near Oceania, Melanesia, and Australia were inhabited by populations descended from the founding migrations of the late Pleistocene. Along the Sepik and Fly rivers of New Guinea, tropical horticulture based on taro and banana had been under way for thousands of years; the wetland drainage ditches at Kuk Swamp are among the earliest agricultural landscapes anywhere. Remote Oceania, the great scatter of Pacific islands beyond the Solomons, was still empty; the Austronesian voyagers who would settle it lay two thousand years in the future."
+      "text": "The islands of Near Oceania, Melanesia, and Australia were inhabited by populations descended from the founding migrations of the late Pleistocene, when Sahul was first reached by watercraft around fifty thousand years ago. Along the Wahgi and Sepik rivers of New Guinea tropical horticulture based on taro, yam, banana, and sugar cane had been under way for thousands of years; the wetland drainage ditches at Kuk Swamp in the Western Highlands, first cut some nine thousand years earlier, are among the earliest agricultural landscapes anywhere on earth and were inscribed as a UNESCO World Heritage site in 2008. Remote Oceania, the great scatter of Pacific islands beyond the Solomons, was still empty; the Austronesian voyagers whose Lapita cultural complex would carry them into Vanuatu, New Caledonia, Fiji, Samoa, and Tonga lay two thousand years in the future. Aboriginal populations across the Australian continent continued the world's oldest unbroken cultural tradition, adapting to the drying climate that had transformed the interior since the end of the Pleistocene, and continuing rock-art traditions in places such as Arnhem Land and the Kimberley.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Kuk_New_Guinea_2002.jpg",
+        "caption": "The Kuk Swamp region in the Wahgi Valley of Papua New Guinea, seen from orbit by NASA in 2002. The wetland drainage systems here are among the world's earliest agricultural landscapes.",
+        "credit": "NASA / JPL, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuk_New_Guinea_2002.jpg"
+      }
     }
   ],
   "figures": [

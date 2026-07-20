@@ -11,6 +11,9 @@ const geistSansRegular = readFileSync(path.join(FONT_DIR, "geist-sans", "Geist-R
 const geistSansMedium = readFileSync(path.join(FONT_DIR, "geist-sans", "Geist-Medium.ttf"));
 const geistMonoRegular = readFileSync(path.join(FONT_DIR, "geist-mono", "GeistMono-Regular.ttf"));
 
+const wordmarkPng = readFileSync(path.join(process.cwd(), "public", "wordmark.png"));
+const wordmarkDataUrl = `data:image/png;base64,${wordmarkPng.toString("base64")}`;
+
 const PAPER = "#F6F3EC";
 const INK = "#1A1815";
 const INK_MUTED = "#6B655A";
@@ -46,15 +49,22 @@ export function ogImage({ eyebrow, date, title, footer }: Params) {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "baseline",
-            textTransform: "uppercase",
-            letterSpacing: 3,
+            alignItems: "center",
             fontSize: 16,
             color: INK_MUTED,
           }}
         >
-          <span>Therestory</span>
-          <span style={{ fontFamily: "'Geist Mono'" }}>/3500 BCE → 2026</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={wordmarkDataUrl} width={110} height={52} alt="Therestory" />
+          <span
+            style={{
+              fontFamily: "'Geist Mono'",
+              textTransform: "uppercase",
+              letterSpacing: 3,
+            }}
+          >
+            /3500 BCE → 2026
+          </span>
         </div>
 
         {/* Date */}

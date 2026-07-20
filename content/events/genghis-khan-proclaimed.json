@@ -34,23 +34,58 @@
   "worldContext": [
     {
       "region": "south-central-asia",
-      "text": "In northern India 1206 was the founding year of another new state. After the assassination of the Ghurid sultan Muhammad of Ghor in March, his trusted Turkic commander Qutb al-Din Aibak was recognised as sovereign at Lahore in June, beginning the Mamluk line and the Delhi Sultanate that would rule much of the subcontinent for the next three centuries."
+      "text": "In northern India 1206 was the founding year of another new state. After the assassination of the Ghurid sultan Muhammad of Ghor in March, on the banks of the Jhelum, his trusted Turkic Mamluk commander Qutb al-Din Aibak was recognised as sovereign at Lahore in June, beginning the Mamluk (or 'Slave') line and the Delhi Sultanate that would rule much of the subcontinent for the next three centuries. Qutb al-Din had already begun construction of the great Qutb Minar victory tower at the site of the demolished Rai Pithora fort of the Chauhan Rajputs in Delhi, and of the adjoining Quwwat-ul-Islam mosque incorporating spoliated Jain and Hindu temple columns. He would die from a polo accident in Lahore in 1210 and be succeeded by his son-in-law Iltutmish. Elsewhere in India the Chola dynasty of the Tamil south, still in the reign of Kulottunga III, was declining as Pandya power revived. In the Deccan the Hoysalas ruled from Halebidu and the Kakatiyas from Warangal. In Bengal the Sena dynasty of Lakshmana Sena would soon fall to Bakhtiyar Khilji's raid.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/QutbMinarNewDelhiFromSouth.jpg",
+        "caption": "The Qutb Minar in Delhi, whose lowest stages were raised by Qutb al-Din Aibak from 1199 and completed by his successor Iltutmish, marking the foundation of the Delhi Sultanate.",
+        "credit": "Kelisi, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:QutbMinarNewDelhiFromSouth.jpg"
+      }
     },
     {
       "region": "europe",
-      "text": "Constantinople was in Latin hands. The Fourth Crusade had sacked the city in 1204, and in August 1206 Henry of Flanders was crowned the second Latin Emperor after his brother Baldwin I died in Bulgarian captivity. In the west, King John of England landed at La Rochelle to defend the remnants of Angevin Aquitaine against Philip II of France."
+      "text": "Constantinople was in Latin hands. The Fourth Crusade under the Venetian doge Enrico Dandolo and Boniface of Montferrat had sacked the city on 12 to 15 April 1204, breaking the Byzantine Empire into a Latin Empire of Constantinople, the successor Greek states of Nicaea (under the Laskarid emperors) and Trebizond (under the Grand Komnenoi), and the Despotate of Epirus. In August 1206 Henry of Flanders was crowned the second Latin Emperor in Hagia Sophia after his brother Baldwin I died in Bulgarian captivity following defeat at Adrianople by Tsar Kaloyan. In the west, King John of England, having lost Normandy to Philip II Augustus of France in 1204, landed at La Rochelle in 1206 to defend the remnants of Angevin Aquitaine; his campaign would end inconclusively. Philip's own consolidation of the French royal domain was under way. In the Iberian peninsula the Almohads and the Christian kingdoms were manoeuvring toward the decisive confrontation at Las Navas de Tolosa in 1212. In central Europe the Přemyslid Ottokar I ruled Bohemia, and Pope Innocent III at Rome exercised his high-medieval papal supremacy.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Interior_of_Hagia_Sophia.jpg",
+        "caption": "The interior of Hagia Sophia in Constantinople, where Henry of Flanders was crowned Latin Emperor in August 1206 after the Fourth Crusade's sack of the city two years earlier.",
+        "credit": "Dean Strelau, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_Hagia_Sophia.jpg"
+      }
     },
     {
       "region": "middle-east-north-africa",
-      "text": "The Ayyubid confederation founded by Saladin still dominated Egypt and Syria under the sultan al-Adil, uneasily managing crusader states along the Levantine coast. Further west the Almohad caliphate ruled the Maghreb and much of al-Andalus, though its Iberian position would soon collapse at Las Navas de Tolosa in 1212."
+      "text": "The Ayyubid confederation founded by Saladin (Salah al-Din Yusuf ibn Ayyub) after his 1187 victory at Hattin still dominated Egypt, Syria, Yemen, and the Hijaz under the sultan al-Adil (Saphadin, r. 1200 to 1218), Saladin's brother, uneasily managing the reduced crusader states along the Levantine coast after the settlement of the Third Crusade. Cairo, ruled from Saladin's great hilltop citadel, and Damascus, dominated by the Umayyad Mosque, were the two great capitals; the Ayyubids relied heavily on their Mamluk slave-soldier corps. Further west the Almohad caliphate under Muhammad al-Nasir ruled the Maghreb and much of al-Andalus from Marrakesh, though its Iberian position would collapse at Las Navas de Tolosa in 1212 before Alfonso VIII of Castile. In eastern Iran the Khwarazmian empire of Ala al-Din Muhammad II ruled from Samarkand and was in the last years before its catastrophic collision with the Mongols. In the Arabian peninsula the Rasulid dynasty was emerging in Yemen. Sufi orders such as those associated with Ibn Arabi (then in Damascus) and Umar Suhrawardi were flourishing.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Citadel_of_Saladin_in_Cairo.jpg",
+        "caption": "The Citadel of Saladin above Cairo, begun by Saladin in 1176 and the seat of the Ayyubid and later Mamluk sultans of Egypt.",
+        "credit": "Mohamed3171979, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citadel_of_Saladin_in_Cairo.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "China was divided among three states that Mongol armies would soon confront: the Jurchen Jin in the north, the Southern Song in the Yangtze basin and beyond, and the Tangut Western Xia in the northwest. In Japan the Kamakura shogunate under the Hojo regents governed in the name of a distant emperor in Kyoto."
+      "text": "China was divided among three states that Mongol armies would soon confront: the Jurchen Jin in the north, ruling from their central capital Zhongdu (modern Beijing) under Emperor Zhangzong (though he died in 1208), the Southern Song in the Yangtze basin and beyond, ruled by Emperor Ningzong from Lin'an (modern Hangzhou) with the powerful chief councillor Han Tuozhou dominating court politics until his assassination in 1207 after the failed Kaixi northern expedition against the Jin, and the Tangut Western Xia in the northwest, whose ruler Li Anquan had usurped the throne in 1206. Song China was still the world's most advanced economy: paper money, gunpowder weapons, magnetic compasses, movable-type printing (invented by Bi Sheng around 1040), coal-fired iron works, and a civil service recruited by written examination all flourished. In Japan the Kamakura shogunate under the Hojo regents (Hojo Yoshitoki succeeded his father in 1205) governed the samurai class in the name of a distant emperor in Kyoto; the monks Honen and, from 1207, Shinran and Eisai were spreading new schools of Pure Land and Zen Buddhism.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Along_the_River_During_the_Qingming_Festival_%28Qing_Court_Version%29.jpg",
+        "caption": "Along the River During the Qingming Festival, an eighteenth-century Qing court remake of Zhang Zeduan's Song-dynasty original, capturing the bustling urbanism that made Song China the world's richest economy.",
+        "credit": "Chen Mei, Sun Hu, Jin Kun, Dai Hong, Cheng Zhidao (1736 Qing court version), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Along_the_River_During_the_Qingming_Festival_(Qing_Court_Version).jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "In the West African savanna the empire of Ghana was in decline as new powers rose in its shadow, notably the Sosso kingdom of Sumanguru Kante, which within a generation would fall to Sundiata Keita and the founders of the Mali Empire. In the Ethiopian highlands the Zagwe dynasty was raising the rock-hewn churches of Lalibela."
+      "text": "In the West African savanna the empire of Ghana was in terminal decline as new powers rose in its shadow, notably the Sosso kingdom of Sumanguru Kante of the Kaniaga confederation, whose iron-working traditions and reputation as a sorcerer-king would become one of the great themes of the Mande epic. Within a generation Sosso would fall in 1235 at the battle of Kirina to Sundiata Keita and the Malinke founders of the Mali Empire, whose gold-based economy would in the fourteenth century make Mansa Musa the richest man of his day. In the Ethiopian highlands the Zagwe dynasty under King Gebre Mesqel Lalibela (traditionally r. c. 1181 to 1221) was completing the eleven rock-hewn churches at his new capital of Roha, subsequently renamed Lalibela after him; the churches, hewn downward into the volcanic tuff, were intended as a new Jerusalem in response to the Muslim reconquest of the holy city in 1187. In Egypt the Ayyubid state governed the Nile valley. Along the East African coast the Swahili trading cities of Kilwa, Mogadishu, and Mombasa were flourishing on Indian Ocean commerce; Great Zimbabwe on the Zambezi plateau was rising as the centre of a Shona kingdom controlling gold from the Zimbabwean plateau to the coast.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Bet_Giyorgis_Rock-Hewn_Church_-_Lalibela_-_Ethiopia_-_01_%288732144036%29.jpg",
+        "caption": "The rock-hewn church of Bete Giyorgis (St George) at Lalibela in the Ethiopian highlands, one of the eleven monolithic churches commissioned by the Zagwe king Gebre Mesqel Lalibela.",
+        "credit": "Adam Jones, via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bet_Giyorgis_Rock-Hewn_Church_-_Lalibela_-_Ethiopia_-_01_(8732144036).jpg"
+      }
     }
   ],
   "figures": [

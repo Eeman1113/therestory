@@ -38,27 +38,69 @@
   "worldContext": [
     {
       "region": "middle-east-north-africa",
-      "text": "The Ottoman Empire had just concluded the disastrous Russo-Turkish War of 1768 to 1774 with the Treaty of Kucuk Kaynarca (July 1774), losing territories on the northern Black Sea and giving Russia protective rights over Ottoman Orthodox Christians; Sultan Abdulhamid I ruled from Constantinople. In Egypt the Mamluk beys, nominally Ottoman vassals, were consolidating their independent power. In Morocco Sultan Mohammed III would, in December 1777, become the first sovereign to recognise the independence of the United States."
+      "text": "The Ottoman Empire had just concluded the disastrous Russo-Turkish War of 1768 to 1774 with the Treaty of Kucuk Kaynarca signed on 21 July 1774, losing territories on the northern Black Sea, ceding the Crimean Khanate's independence to Russian influence (Russia would annex Crimea outright in 1783), and giving Catherine the Great's diplomats protective rights over Ottoman Orthodox Christians that would fuel a century of intervention. Sultan Abdulhamid I, who had spent forty-three years confined in the Kafes cage of Topkapi Palace before his accession in 1774, ruled from Constantinople and struggled to modernise the army under French advisers. In Egypt the Mamluk beys, nominally Ottoman vassals, were consolidating their independent power under Ali Bey al-Kabir's successors. In Morocco Sultan Sidi Mohammed ben Abdallah, known as Mohammed III, an Alawite reformer who had opened his ports to European commerce and founded the Atlantic city of Essaouira with the French architect Theodore Cornut in 1764, would in December 1777 issue a decree opening Moroccan ports to American ships, becoming the first sovereign to recognise the independence of the United States; a formal treaty followed in 1786-87. In Iran the Zand dynasty of Karim Khan ruled peacefully from Shiraz.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Moroccan-American_Treaty_of_Peace_and_Friendship_01.jpg",
+        "caption": "The Moroccan-American Treaty of Peace and Friendship, signed under Sultan Sidi Mohammed ben Abdallah in Marrakesh and ratified by the US Congress on 18 July 1787; the oldest unbroken treaty relationship of the United States.",
+        "credit": "US and Moroccan government document, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moroccan-American_Treaty_of_Peace_and_Friendship_01.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "In Qing China the Qianlong Emperor, in the forty-first year of his reign, was in the middle of his so-called Ten Great Campaigns; his invasion of the Gurkha kingdoms of the Himalayas in the 1790s still lay ahead. The empire was at its greatest territorial extent, wealthy, and closed to almost all European trade except through the Canton system. In Tokugawa Japan the shogun Ieharu ruled a country in the middle of the long Tanuma reformist era; famine and rural distress were beginning to strain the system that would eventually produce the Tempo Reforms."
+      "text": "In Qing China the Qianlong Emperor, in the forty-first year of his reign and by then sixty-five years old, was in the middle of his self-styled Ten Great Campaigns, having recently concluded the costly Jinchuan wars against Tibetan-speaking hill peoples of western Sichuan in 1776; his invasion of the Gurkha kingdoms of Nepal in the 1790s still lay ahead. The empire was at its greatest territorial extent (roughly 13 million square kilometres), commercially wealthy from silk, tea, and porcelain exports handled through the Cohong merchants of Guangzhou (Canton), and closed to almost all European trade except through this Canton system; the Macartney embassy from Britain was still seventeen years away. The court chronicler Zhao Yi and the great novelist Cao Xueqin (whose Dream of the Red Chamber circulated in manuscript) worked in a brilliant late-Qing literary culture. In Tokugawa Japan the shogun Tokugawa Ieharu ruled a country in the middle of the long Tanuma Okitsugu reformist era of commercialisation; famine and rural distress in the northeast were beginning to strain the system that would eventually produce the Tempo Reforms of the 1830s. In Korea, the enlightened Joseon king Jeongjo had ascended the throne in March 1776.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/The_Qianlong_Emperor_in_Ceremonial_Armour_on_Horseback.jpg",
+        "caption": "The Qianlong Emperor in ceremonial armour on horseback, painted in 1739 by the Italian Jesuit court painter Giuseppe Castiglione (Lang Shining). Palace Museum, Beijing.",
+        "credit": "Giuseppe Castiglione (1688 to 1766), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Qianlong_Emperor_in_Ceremonial_Armour_on_Horseback.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "The Mughal Empire in India had become a shadow of itself; Delhi in 1776 was ruled nominally by Shah Alam II, in practice by whichever power (Maratha, Rohilla, or British) held the capital that year. The East India Company, which had made itself de facto ruler of Bengal after Plassey in 1757 and been granted formal revenue rights by Shah Alam in 1765, was now the greatest single power on the subcontinent. Warren Hastings, first Governor-General under the 1773 Regulating Act, was fighting the first Anglo-Maratha War."
+      "text": "The Mughal Empire in India had become a shadow of itself; Delhi in 1776 was ruled nominally by Shah Alam II, blinded in 1788 by the Rohilla warlord Ghulam Qadir, in practice by whichever power (Maratha under Mahadaji Scindia, Rohilla, or British) held the capital that year. The East India Company, which had made itself de facto ruler of Bengal after the Battle of Plassey in 1757 and Buxar in 1764, had been granted formal Diwani revenue rights by Shah Alam at Allahabad in August 1765 and was now the greatest single power on the subcontinent, its Bengal revenues transformed into the standing sepoy army that would conquer India. Warren Hastings, appointed first Governor-General of Bengal under Lord North's 1773 Regulating Act, was fighting the first Anglo-Maratha War (1775 to 1782) and the second Anglo-Mysore War against Hyder Ali of Mysore was three years ahead. In Punjab, twelve Sikh misls held loose territorial confederation; in the far south, Travancore under Rama Varma resisted Mysorean expansion.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Shah_Alam_II%2C_Mughal_Emperor%2C_Conveying_the_Grant_of_the_Diwani_to_Lord_Clive%2C_August_1765.jpg",
+        "caption": "Mughal Emperor Shah Alam II conveying the grant of the Diwani of Bengal, Bihar, and Orissa to Robert Clive of the East India Company, August 1765. Oil on canvas by Benjamin West, c. 1818. British Library.",
+        "credit": "Benjamin West (1738 to 1820), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shah_Alam_II,_Mughal_Emperor,_Conveying_the_Grant_of_the_Diwani_to_Lord_Clive,_August_1765.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "In West Africa the Asante Empire under Osei Kwame dominated the interior of what is now Ghana; the trans-Atlantic slave trade was near its historical peak, carrying about eighty thousand people a year across the ocean. In the Sahel the Islamic reforms that would culminate in Uthman dan Fodio's jihad in 1804 were already circulating. In southern Africa the Xhosa and expanding Boer settlers had begun the frontier conflicts that would define eastern Cape Colony for a century. Egypt and the Maghreb belonged politically to the Ottoman world."
+      "text": "In West Africa the Asante Empire under Asantehene Osei Kwame Panyin (r. 1777 to 1798) dominated the interior of what is now Ghana from its capital at Kumasi, its Golden Stool the emblem of political and spiritual authority. The trans-Atlantic slave trade, running through the Bights of Benin and Biafra and served by British, French, Portuguese, and Dutch slave castles at Cape Coast, Elmina, and Ouidah, was near its historical peak, carrying about eighty thousand people a year across the ocean; American revolutionary shipping was itself entangled in this commerce. In the Sahel the Islamic reforming currents that would culminate in Uthman dan Fodio's jihad in 1804 and the founding of the Sokoto Caliphate were already circulating among Fulani scholars in Gobir and Futa Jallon. In southern Africa the Xhosa chiefdoms and the expanding Boer trekboer settlers had begun the First Frontier War in 1779 along the Great Fish River, initiating conflicts that would define eastern Cape Colony for a century. Egypt and the Maghreb belonged politically to the Ottoman world. In the Kongo, decades of civil war between the Kimpanzu and Kinlaza factions had shattered the old kingdom.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Okomfo_Anokye_sword_site%2C_legendary_site_of_the_foundation_of_the_Asante_empire_in_Kumasi%2C_Ghana.jpg",
+        "caption": "The Okomfo Anokye sword site in Kumasi, Ghana, the legendary place where the priest Okomfo Anokye is said to have summoned the Golden Stool from the heavens to found the Asante Empire around 1701.",
+        "credit": "Caupolicaningles, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okomfo_Anokye_sword_site,_legendary_site_of_the_foundation_of_the_Asante_empire_in_Kumasi,_Ghana.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "James Cook was in the middle of his third and last Pacific voyage, having sailed from Plymouth aboard HMS Resolution in July 1776, ten days after the Declaration was signed. He would touch New Zealand in February 1777, cruise the Society Islands, and reach Hawaii in January 1778, becoming the first documented European to sight the archipelago. He would be killed there in February 1779. Australia's east coast, charted by Cook in 1770, would receive the First Fleet of British convicts and marines at Botany Bay only in January 1788."
+      "text": "Captain James Cook was in the middle of his third and last Pacific voyage, having sailed from Plymouth aboard HMS Resolution on 12 July 1776, eight days after the Declaration was signed; his lieutenant Charles Clerke followed in HMS Discovery. Cook carried instructions to return the Tahitian Omai and search for a Northwest Passage between the Pacific and Atlantic. He would touch Tasmania in January 1777, New Zealand's Queen Charlotte Sound in February 1777, cruise the Cook, Tonga and Society Islands, and reach Hawaii in January 1778, becoming the first documented European to sight the archipelago and to name it the Sandwich Islands after his patron the Earl of Sandwich. He would be killed at Kealakekua Bay in February 1779. Australia's east coast, charted by Cook aboard HMS Endeavour in April to August 1770 and claimed as New South Wales at Possession Island, would receive the First Fleet of British convicts and marines under Arthur Phillip at Botany Bay in January 1788, following Joseph Banks's parliamentary recommendation. Aboriginal Australians and Torres Strait Islanders had lived across the continent for more than sixty thousand years; Polynesian and Melanesian societies continued their island trade networks undisturbed.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Zoffany_Death_of_Captain_Cook.jpg",
+        "caption": "The Death of Captain Cook at Kealakekua Bay, Hawaii, on 14 February 1779, painted in oil by Johann Zoffany around 1795. National Maritime Museum, Greenwich.",
+        "credit": "Johann Zoffany (1733 to 1810), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zoffany_Death_of_Captain_Cook.jpg"
+      }
     },
     {
       "region": "europe",
-      "text": "Britain in July 1776 had just lost Boston (evacuated in March) but held Canada and dominated global commerce; Adam Smith's Wealth of Nations, published in London on 9 March 1776, was already being read and would shape political economy for generations. France under Louis XVI was in a period of Physiocratic reform under the finance minister Turgot, whose dismissal in May 1776 had ended the last serious attempt to stave off the fiscal crisis that would drive the Revolution of 1789. The Habsburg empress Maria Theresa ruled from Vienna with her son Joseph II as co-regent; Catherine the Great was consolidating Russia's gains on the Black Sea."
+      "text": "Britain in July 1776 had just lost Boston (evacuated in March under General William Howe) but held Canada and dominated global commerce through its East India Company and Atlantic sugar and slaving fleets. Adam Smith's Inquiry into the Nature and Causes of the Wealth of Nations, published in London by William Strahan and Thomas Cadell on 9 March 1776, was already being read and would shape political economy for generations; Edward Gibbon's Decline and Fall of the Roman Empire volume one appeared the following month. France under Louis XVI was in a period of Physiocratic reform under the finance minister Anne-Robert-Jacques Turgot, whose dismissal in May 1776 had ended the last serious attempt to stave off the fiscal crisis that would drive the Revolution of 1789; Jacques Necker succeeded him. The Habsburg empress Maria Theresa ruled from Vienna with her son Joseph II as co-regent; Frederick the Great of Prussia had ended the War of the Bavarian Succession by the Peace of Teschen in 1779. Catherine the Great of Russia was consolidating gains on the Black Sea after the 1774 Kucuk Kaynarca treaty. In Poland-Lithuania, the First Partition of 1772 had lopped off a third of the Commonwealth's territory to Russia, Prussia, and Austria.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Louis_XVI_of_France.jpg",
+        "caption": "Louis XVI of France, portrait by Joseph-Siffred Duplessis, c. 1774 to 1776; the king who supported American independence in 1778 and would be executed in the Revolution of 1793. Palace of Versailles.",
+        "credit": "Joseph-Siffred Duplessis (1725 to 1802), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Louis_XVI_of_France.jpg"
+      }
     }
   ],
   "figures": [

@@ -33,27 +33,69 @@
   "worldContext": [
     {
       "region": "middle-east-north-africa",
-      "text": "Ptolemaic Egypt, the last independent Hellenistic kingdom, was in the ninth year of the reign of Cleopatra VII. Her Alexandrian court had received Caesar in 48 to 47 BCE, and their son Caesarion had been born in 47 BCE; she had visited Rome in the autumn of 45 BCE and was still there when Caesar was killed. To the east, the Parthian Empire under Orodes II ruled from the Euphrates to the Iranian plateau; Caesar's planned expedition against Parthia was to have set out three days after his death. Judaea was still ruled by the Hasmonean high priest Hyrcanus II under Roman client status."
+      "text": "Ptolemaic Egypt, the last independent Hellenistic kingdom, was in the ninth year of the reign of Cleopatra VII Philopator, ruling from Alexandria with her brother-consort Ptolemy XIV. Her Alexandrian court had received Caesar in 48 to 47 BCE after his victory over Pompey at Pharsalus, and their son Ptolemy Caesar, known as Caesarion, had been born in 47 BCE and formally recognised as co-regent. Cleopatra had visited Rome in the autumn of 45 BCE, installed with her retinue in Caesar's private gardens across the Tiber, and was still in the city when the dictator was killed; she left for Alexandria within weeks and shortly afterwards had Ptolemy XIV poisoned. To the east, the Parthian Empire under Orodes II of the Arsacid dynasty ruled from the Euphrates to the Iranian plateau; his son and heir Pacorus and the Roman renegade Quintus Labienus would invade Roman Syria in 40 BCE, exploiting the succession chaos. Caesar's planned expedition against Parthia, to avenge Crassus's destruction at Carrhae in 53 BCE, was to have set out three days after his death. Judaea was still ruled by the Hasmonean high priest Hyrcanus II under Roman client status, with the Idumaean Antipater and his son Herod exercising real power.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+        "caption": "The Berlin Cleopatra, a Roman marble portrait head of Cleopatra VII wearing a royal diadem, c. 40 to 30 BCE. Altes Museum, Berlin.",
+        "credit": "Louis le Grand, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "The Han dynasty in China was in its middle phase, under Emperor Yuan (r. 48 to 33 BCE), whose reign saw further consolidation of Confucian orthodoxy in state doctrine, the extension of the imperial university (the Taixue), and the acceptance of the Chinese calendar reforms of 104 BCE that had put the Han state on a firm astronomical footing. On the northern frontier the Xiongnu confederation had recently split into northern and southern factions, and the southern shanyu was formally submitting to Han overlordship."
+      "text": "The Han dynasty in China was in its middle phase, under Emperor Yuan (r. 48 to 33 BCE), whose reign saw further consolidation of Confucian orthodoxy as state doctrine, the extension of the imperial university (the Taixue), and the continued operation of the Chinese calendar reforms of 104 BCE that had put the Han state on a firm astronomical footing. On the northern frontier the Xiongnu confederation had recently split into rival northern and southern factions after the succession dispute at the death of the Shanyu Xulüquanqu in 60 BCE; the southern shanyu Huhanye had formally submitted to Han overlordship in 51 BCE, ending a century of open warfare on the steppe. Chinese silk was already reaching the Mediterranean along what would in the twentieth century be called the Silk Road. In the far south of the empire the recently annexed commanderies in what is now northern Vietnam brought Han administration to the Red River delta. In the Korean peninsula the Han commandery at Lelang persisted, alongside the emerging kingdoms of Buyeo and proto-Goguryeo. Japan remained in the late Yayoi period, with iron and rice cultivation spreading and small kingdoms coalescing.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Chinese_tomb_sculpture_of_farmer%2C_Han_dynasty%2C_1st-2nd_century_CE%2C_earthenware%2C_HAA.JPG",
+        "caption": "An earthenware tomb figure of a farmer, Han dynasty, first to second century CE, of the kind buried in enormous numbers to accompany the dead into the afterlife. Honolulu Museum of Art.",
+        "credit": "Hiart, via Wikimedia Commons",
+        "license": "CC0 Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_tomb_sculpture_of_farmer,_Han_dynasty,_1st-2nd_century_CE,_earthenware,_HAA.JPG"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "In north-western India the Indo-Greek kingdoms established after Alexander were fragmenting under pressure from the Indo-Scythian (Saka) invaders sweeping down from Central Asia. The last Indo-Greek king, Strato II, would rule in the eastern Punjab into the early first century BCE. The Indo-Scythians were consolidating power at Taxila and Mathura. On the Gangetic plain, the Shunga and Kanva dynasties were in decline, and regional kingdoms in the Deccan and the far south were consolidating."
+      "text": "In north-western India the Indo-Greek kingdoms established after Alexander and Menander I (Milinda) were fragmenting under pressure from the Indo-Scythian (Saka) invaders sweeping down from Central Asia. The last Indo-Greek king, Strato II Philopator, would rule in the eastern Punjab into the early first century CE. The Indo-Scythians under Maues and his successor Azes I were consolidating power at Sirkap in Taxila and Mathura, minting bilingual coins in Greek and Kharoshthi and adopting Buddhist symbols such as the triratna and the dharmachakra. On the Gangetic plain, the Shunga dynasty of Pushyamitra's line had already been replaced in 73 BCE by the short-lived Kanva dynasty, itself soon to be extinguished by the Satavahanas of the Deccan. In south India the ancient Chola, Chera, and Pandya kingdoms of the Tamilakam were consolidating their Sangam-age society, whose classical poetry, gathered in the Ettuthokai and Pathupattu anthologies, was compiled in these very centuries. In Sri Lanka the Anuradhapura kingdom under Vattagamani had recently sponsored the writing down of the Pali Tipitaka at the Fourth Buddhist Council around 29 BCE.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Sirkap02_overview.jpg",
+        "caption": "Excavated wall foundations at Sirkap, the Greco-Bactrian and later Indo-Scythian city on the bank opposite Taxila in the Punjab, Pakistan.",
+        "credit": "Jona Lendering and Marco Prins, via Wikimedia Commons",
+        "license": "CC0 Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sirkap02_overview.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "In Mesoamerica the great city of Teotihuacan in the Basin of Mexico was in its early formative phase; its first monumental pyramids, the Pyramid of the Sun and the Pyramid of the Moon, would be raised over the next century. In the Maya lowlands the Late Preclassic period was underway, with major building at Cerros, Cival and the Mirador basin. In the Andes the Nazca and Moche cultures were emerging on the Peruvian coast, the Nazca beginning to lay out the famous ground drawings."
+      "text": "In Mesoamerica the great city of Teotihuacan in the Basin of Mexico was in its early formative phase, its Miccaotli phase population already probably above forty thousand, drawn from a scatter of earlier villages after the eruption of the Xitle volcano destroyed rival Cuicuilco. Its first monumental pyramids, the enormous Pyramid of the Sun (over sixty metres tall) and the smaller Pyramid of the Moon, were raised over the next century, framing the two-and-a-half kilometre ceremonial Avenue of the Dead. In the Maya lowlands the Late Preclassic period was underway, with major building at Cerros in Belize, Cival in the Peten, and, above all, in the Mirador basin, where the enormous pyramid La Danta at El Mirador was among the largest structures ever built in the Americas. In the Andes the Nazca and Moche cultures were emerging on the south and north Peruvian coasts respectively; the Nazca were beginning to lay out the famous ground drawings, geoglyphs cut into the desert pavement, and their finely painted polychrome pottery, while the Moche were developing the elaborate copper metallurgy of the huacas at their capital near modern Trujillo.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Pir%C3%A1mide_del_Sol_Teotihuacan.JPG",
+        "caption": "The Pyramid of the Sun at Teotihuacan in the Basin of Mexico, whose earliest phases date to the century of Caesar's death.",
+        "credit": "GUSTAVO VON, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pir%C3%A1mide_del_Sol_Teotihuacan.JPG"
+      }
     },
     {
       "region": "africa",
-      "text": "In the middle Nile the Meroitic kingdom of Kush continued to build royal pyramids at Meroe and had, under the kandake (queen) Amanirenas, come into conflict with the Roman frontier in Egypt following the Roman annexation of Ptolemaic Egypt after Actium, still thirteen years in the future in 44 BCE. In North Africa the Numidian kingdom of Juba I had been absorbed into the Roman province of Africa Nova after his defeat at Thapsus in 46 BCE, and the Kingdom of Mauretania continued as a Roman client state further west."
+      "text": "In the middle Nile the Meroitic kingdom of Kush continued to build royal pyramids at Meroe and would, under the kandake (queen) Amanirenas in the following generation, come into direct conflict with the Roman frontier in Egypt after the Roman annexation of Ptolemaic Egypt (which followed Actium in 31 BCE and Cleopatra's suicide in 30 BCE, thirteen and fourteen years in the future from 44 BCE respectively). In North Africa the Numidian kingdom of King Juba I had been absorbed into the new Roman province of Africa Nova after Juba's defeat at Thapsus in April 46 BCE by Caesar himself; Juba's son, the infant Prince Juba II, was taken to Rome as part of Caesar's triumph and would later be restored as a Roman client king of Mauretania and married to Cleopatra's daughter Cleopatra Selene. The Kingdom of Mauretania under Bocchus II and Bogud continued as a Roman client state further west, encompassing much of modern Morocco and western Algeria. Further south, the Garamantes of the Fezzan in modern Libya operated a network of underground irrigation channels (foggaras) and controlled the trans-Saharan trade to sub-Saharan Africa, where the Nok culture of central Nigeria continued its terracotta and iron-working traditions.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Pyramids_of_Meroe_in_Bajrawiya%2C_Sudan_08.jpg",
+        "caption": "The Meroitic royal pyramids at Bajrawiya (ancient Meroe) in the Sudan, burial places of the kings and kandakes of the Kushite state.",
+        "credit": "Ahmed Amir, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyramids_of_Meroe_in_Bajrawiya,_Sudan_08.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "In the western Pacific ancestral Polynesian societies were consolidating in Tonga, Samoa and Fiji, developing the chiefly hierarchies, canoe technology and horticultural repertoire that would in subsequent centuries carry Polynesians eastward to the Society and Marquesas Islands, and, a millennium later, to Hawaii and Aotearoa. In Australia, Aboriginal populations continued the world's oldest unbroken cultural tradition, sustaining complex kin systems, rock-art traditions and ecological management across the continent."
+      "text": "In the western Pacific ancestral Polynesian societies were consolidating in Tonga, Samoa, and Fiji, having developed after the Lapita horizon of the second and early first millennia BCE. They were refining the chiefly hierarchies, ocean-going double-hulled canoe technology, and horticultural repertoire (taro, yam, breadfruit, coconut, banana) that would in subsequent centuries carry Polynesians eastward to the Society and Marquesas Islands and, a millennium later, to Hawaii, Rapa Nui, and Aotearoa. In Micronesia the earliest settlement of the Caroline Islands from the Bismarcks was under way, and the Marianas were long settled from Island Southeast Asia. In Australia, Aboriginal populations continued the world's oldest unbroken cultural tradition, sustaining complex kin and moiety systems, seasonal firestick farming, and rock-art traditions in places such as Arnhem Land, the Kimberley, and the Sydney basin. The eel-trap aquaculture systems at Budj Bim in western Victoria, whose earliest phases date to some six thousand years ago, continued to be maintained by the Gunditjmara people.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ulu%E1%B9%9Fu_%28Ayers_Rock%29%2C_Sunset.jpg",
+        "caption": "Uluru at sunset in the Northern Territory of Australia, a sacred site of the Anangu Aboriginal people whose oral tradition anchors the region's continuous human history.",
+        "credit": "Weyf (Jörn Wellniak), via Wikimedia Commons",
+        "license": "CC0 Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ulu%E1%B9%9Fu_(Ayers_Rock),_Sunset.jpg"
+      }
     }
   ],
   "figures": [

@@ -19,6 +19,7 @@
  */
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   useCallback,
   useEffect,
@@ -34,6 +35,7 @@ import type { EventDoc } from "@/lib/content/schema";
 import { cn } from "@/lib/utils";
 import { MonoDate } from "@/components/common/mono-date";
 import { MicroCaps } from "@/components/common/micro-caps";
+import { SafeImage } from "@/components/common/safe-image";
 import {
   generateTicks,
   parseStartYear,
@@ -117,6 +119,7 @@ export function TimelineCanvas({ events }: Props) {
     resetView,
     setFocusedEvent,
   } = useTimelineView();
+  const router = useRouter();
 
   const containerRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
@@ -128,11 +131,22 @@ export function TimelineCanvas({ events }: Props) {
   useLayoutEffect(() => {
     const el = containerRef.current;
     if (!el) return;
-    const observe = () => setWidth(el.clientWidth);
+    const observe = () => {
+      const w = el.getBoundingClientRect().width;
+      // Never regress to 0 — an intermittent 0 (during hydration or transitions)
+      // would collapse every marker onto the same track. Wait for a real width.
+      if (w > 0) setWidth(w);
+    };
     observe();
     const ro = new ResizeObserver(observe);
     ro.observe(el);
-    return () => ro.disconnect();
+    // Belt-and-braces: recheck after the first paint in case layout was
+    // pending when useLayoutEffect first ran.
+    const raf = requestAnimationFrame(observe);
+    return () => {
+      ro.disconnect();
+      cancelAnimationFrame(raf);
+    };
   }, []);
 
   /* --- derive per-render positions ------------------------------------- */
@@ -358,7 +372,7 @@ export function TimelineCanvas({ events }: Props) {
         onWheel={onWheel}
         onKeyDown={onKeyDown}
         className={cn(
-          "relative w-full cursor-grab overflow-hidden border-y border-rule bg-surface/40 outline-none",
+          "relative w-full cursor-grab border-y border-rule bg-surface/40 outline-none",
           "active:cursor-grabbing",
           "focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-0",
         )}
@@ -445,7 +459,7 @@ export function TimelineCanvas({ events }: Props) {
                     evt.preventDefault();
                     return;
                   }
-                  window.location.assign(`/event/${m.event.slug}`);
+                  router.push(`/event/${m.event.slug}`);
                 }}
                 className={cn(
                   "absolute -translate-x-1/2 -translate-y-1/2 rounded-full transition-[width,height,box-shadow] duration-150",
@@ -528,19 +542,20 @@ function HoverCard({
   containerWidth: number;
   trackY: number;
 }) {
-  const CARD_W = 280;
+  const CARD_W = 300;
   const half = CARD_W / 2;
   let left = xPx - half;
   if (left < 8) left = 8;
   if (left + CARD_W > containerWidth - 8) left = containerWidth - CARD_W - 8;
-  const above = trackY > 120;
+  const above = trackY > 160;
   const c = markerColor(event.categories);
+  const hero = event.images[0];
 
   return (
     <div
       role="tooltip"
       className={cn(
-        "pointer-events-none absolute z-10 border border-rule bg-surface p-4 shadow-[0_2px_16px_-8px_rgb(0_0_0_/_0.25)]",
+        "pointer-events-none absolute z-10 border border-rule bg-surface shadow-[0_2px_16px_-8px_rgb(0_0_0_/_0.25)]",
       )}
       style={{
         left,
@@ -549,24 +564,35 @@ function HoverCard({
         transform: above ? "translateY(-100%)" : undefined,
       }}
     >
-      <div className="flex items-baseline justify-between gap-3">
-        <MonoDate date={event.date} size="sm" className="text-ink-muted" />
-        <span
-          className="text-[10px] uppercase tracking-[0.14em]"
-          style={{ color: `light-dark(${c.light}, ${c.dark})` }}
+      {hero && (
+        <SafeImage
+          src={hero.url}
+          alt={hero.caption}
+          className="w-full border-b border-rule object-cover"
+          aspectRatio="16 / 9"
+          loading="eager"
+        />
+      )}
+      <div className="p-4">
+        <div className="flex items-baseline justify-between gap-3">
+          <MonoDate date={event.date} size="sm" className="text-ink-muted" />
+          <span
+            className="text-[10px] uppercase tracking-[0.14em]"
+            style={{ color: `light-dark(${c.light}, ${c.dark})` }}
+          >
+            {event.categories[0].replace("-", " · ")}
+          </span>
+        </div>
+        <Link
+          href={`/event/${event.slug}`}
+          className="pointer-events-auto mt-1 block text-sm font-medium leading-snug text-ink hover:text-accent"
         >
-          {event.categories[0].replace("-", " · ")}
-        </span>
+          {event.title}
+        </Link>
+        <p className="mt-2 line-clamp-3 text-xs leading-5 text-ink-muted">
+          {event.summary}
+        </p>
       </div>
-      <Link
-        href={`/event/${event.slug}`}
-        className="pointer-events-auto mt-1 block text-sm font-medium leading-snug text-ink hover:text-accent"
-      >
-        {event.title}
-      </Link>
-      <p className="mt-2 line-clamp-3 text-xs leading-5 text-ink-muted">
-        {event.summary}
-      </p>
     </div>
   );
 }

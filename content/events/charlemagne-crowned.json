@@ -38,23 +38,58 @@
   "worldContext": [
     {
       "region": "middle-east-north-africa",
-      "text": "In Baghdad the Abbasid caliph Harun al-Rashid, now at the height of his powers, was famously said to have exchanged embassies and gifts with Charlemagne, sending him among other things an Asian elephant named Abul-Abbas that reached Aachen in 802. Under Harun and the Barmakid viziers the caliphate was at the peak of its cultural and economic influence. In North Africa the recently founded Aghlabid emirate of Ifriqiya was consolidating in modern Tunisia."
+      "text": "In Baghdad the fifth Abbasid caliph Harun al-Rashid (r. 786 to 809), now at the height of his powers, ruled from the round Madinat al-Salam that his grandfather al-Mansur had founded in 762 on the Tigris. The caliphate under Harun and his powerful Barmakid viziers, above all Yahya ibn Khalid and his sons Ja'far and al-Fadl, was at the peak of its cultural and economic influence, and the House of Wisdom (Bayt al-Hikma) at Baghdad was beginning to translate Greek, Sanskrit, and Middle Persian works into Arabic. Diplomatic tradition, preserved above all in the Frankish sources such as Einhard's Vita Karoli and the Royal Annals, records that Harun and Charlemagne exchanged embassies and gifts; among the objects sent to Aachen was an Asian elephant named Abul-Abbas that reached the Frankish court in 802 and lived until 810. In 803 Harun would abruptly disgrace and execute the Barmakids in one of the most consequential political ruptures of the caliphate. In North Africa the recently founded Aghlabid emirate of Ifriqiya, established under Ibrahim ibn al-Aghlab in 800 by Harun himself, was consolidating in what is now Tunisia and would soon begin its conquest of Byzantine Sicily.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Mihrab_from_al-Khasiki_Mosque_in_Baghdad%2C_built_by_the_Abbasid_Caliph_Harun_al-Rashid%2C_192_AH%2C_Iraq_Museum.jpg",
+        "caption": "Marble mihrab from the al-Khasiki Mosque in Baghdad, commissioned by the Abbasid caliph Harun al-Rashid in 192 AH (807 CE). Iraq Museum, Baghdad.",
+        "credit": "Osama Shukir Muhammed Amin FRCP(Glasg), via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mihrab_from_al-Khasiki_Mosque_in_Baghdad,_built_by_the_Abbasid_Caliph_Harun_al-Rashid,_192_AH,_Iraq_Museum.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "In China the Tang dynasty had recovered from the An Lushan Rebellion but never fully regained its earlier strength. Emperor Dezong ruled from Chang'an. In Japan the young Emperor Kanmu had just moved the imperial capital to Heian-kyo, modern Kyoto, in 794, opening the four-century Heian era. In Korea the kingdom of Silla under Aejang ruled the peninsula, and the Balhae kingdom to its north sent embassies to both Tang and Japan."
+      "text": "In China the Tang dynasty had recovered institutionally from the catastrophic An Lushan Rebellion of 755 to 763 but never fully regained its earlier military reach or population; the northern provinces from Youzhou to Weibo were now ruled by semi-independent military governors (jiedushi). Emperor Dezong (r. 779 to 805) ruled from Chang'an, whose gridded plan and Western Market drew Sogdian, Persian, Arab, Turkic, and Nestorian Christian merchants; the celebrated Nestorian Stele would be raised there in 781. In Japan the young Emperor Kanmu had just moved the imperial capital to Heian-kyo (modern Kyoto) in 794, opening the four-century Heian era; the monks Saicho and Kukai were about to leave for Tang China to bring back the Tendai and Shingon esoteric Buddhist schools. In Korea the kingdom of Silla under Aejang ruled the peninsula, and the Balhae (Parhae) kingdom to its north, founded by a Goguryeo aristocrat, sent regular embassies to both Tang and Japan. On the Central Asian frontier the Tibetan Empire under Trisong Detsen was at the peak of its extraordinary expansion, briefly occupying the Tang capital Chang'an in 763 and controlling much of Gansu and the Tarim Basin.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/TangTaizong.jpg",
+        "caption": "Standing portrait of the Tang emperor Taizong (r. 626 to 649), founder of the dynasty's high-water period, in a later imperial copy at the National Palace Museum, Taipei.",
+        "credit": "Unknown Chinese artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TangTaizong.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "The Pala king Dharmapala ruled Bengal and had recently placed a client, Chakrayudha, on the throne of Kannauj, provoking renewed war with the Pratiharas of Rajasthan and the Rashtrakutas of the Deccan. The Buddhist university of Vikramashila was newly founded under Pala patronage. Further west the Abbasid caliphate governed the Sindh and Multan valleys, and in Central Asia the Iranian Samanid dynasty was rising in Transoxiana under the patronage of Baghdad."
+      "text": "The Pala king Dharmapala (r. c. 775 to 812) ruled Bengal and Bihar and had recently placed a client, Chakrayudha, on the throne of Kannauj, provoking a renewed round in the three-way tripartite struggle with the Pratiharas of Rajasthan (under Vatsaraja and Nagabhata II) and the Rashtrakutas of the Deccan (under Dhruva and his son Govinda III) for supremacy in northern India. The Buddhist mahavihara of Vikramashila in Bihar was newly founded under Pala patronage, complementing the older Nalanda, and both institutions would train generations of scholars whose Vajrayana Buddhism would soon travel to Tibet. Further west the Abbasid caliphate governed the Sindh and Multan valleys through client governors, and in Central Asia the Iranian Samanid dynasty of Transoxiana under Ahmad ibn Asad was rising under Baghdad's patronage. In the south the Rashtrakuta king Govinda III was extending Deccan power as far south as Kanchi, and at Ellora his father Krishna I had recently completed the extraordinary rock-cut Kailasa Temple.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Indian_Museum_Sculpture_-_Buddha_calling_Earth%2C_Bronze%2C_Nalanda_%289220659984%29.jpg",
+        "caption": "Bronze Buddha calling the earth to witness, from Nalanda, Pala period, c. 9th to 10th century. Indian Museum, Kolkata.",
+        "credit": "Anandajoti Bhikkhu / Photo Dharma, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Museum_Sculpture_-_Buddha_calling_Earth,_Bronze,_Nalanda_(9220659984).jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "In West Africa the Wagadu kingdom of Ghana, controlling the Sahel entrepots of the trans-Saharan gold trade, was consolidating its regional power. The Berber Rustamid imamate at Tahert in modern Algeria practised an Ibadi variant of Islam and traded with the sub-Saharan gold fields. In Christian Nubia the kingdoms of Makuria and Alodia continued to prosper along the middle Nile, and in the Ethiopian highlands the Aksumite state was in its long final decline."
+      "text": "In West Africa the Wagadu kingdom of Ghana, whose capital most modern archaeologists identify with the ruins at Koumbi Saleh in modern Mauritania, was consolidating its regional power through control of the Sahel entrepots of the trans-Saharan gold trade; caravans from the Bambuk gold fields on the upper Senegal reached across the desert to Berber and Arab merchants who exchanged Saharan salt for gold. The Berber Rustamid imamate at Tahert in modern Algeria, founded in 776 by Abd al-Rahman ibn Rustam, practised an Ibadi variant of Islam and traded actively with the sub-Saharan gold fields. To the east, in Christian Nubia, the kingdoms of Makuria (with its capital at Old Dongola) and Alodia (Alwa, with its capital at Soba) continued to prosper along the middle Nile, their bishops appointed from Coptic Alexandria and their churches decorated with the striking Nubian frescoes later recovered at Faras. In the Ethiopian highlands the Aksumite state was in its long final decline, its capital gradually shifting south into the Agaw territories where the Zagwe dynasty would emerge two centuries later. Along the East African coast Bantu-speaking populations were laying the foundations of the Swahili city-states.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Djinguereber_Mosque%2C_Timbuktu%2C_Mali.jpg",
+        "caption": "The Djinguereber Mosque at Timbuktu, Mali, built under Mansa Musa in 1327 and one of the great later monuments of the Sudano-Sahelian Islamic tradition whose trans-Saharan trade routes were already active in Ghana's day.",
+        "credit": "Ondřej Havelka, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djinguereber_Mosque,_Timbuktu,_Mali.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "In the Maya lowlands the drought and warfare of the Terminal Classic were beginning to depopulate the great southern cities; within a century Tikal, Palenque and Copan would be effectively abandoned. In central Mexico the city of Tula was emerging as heir to Teotihuacan under the Toltecs. On the Peruvian coast the Wari empire was near collapse, and the successor Chimu culture was beginning to organise along the northern coast around Chan Chan."
+      "text": "In the Maya lowlands the prolonged droughts and endemic warfare of the Terminal Classic period were beginning to depopulate the great southern cities; within a century Tikal (which had erected its last dated stela in 869), Palenque, Copan, Yaxchilan, and Piedras Negras would all be effectively abandoned, their monumental construction ceasing and their populations dispersing to the northern Yucatan or into the highlands. The northern Maya cities of the Puuc region, above all Uxmal and Kabah, were entering their florescence, and Chichen Itza was beginning its remarkable ascent. In central Mexico the city of Tula in Hidalgo was emerging as heir to Teotihuacan under the Toltecs, whose plumed-serpent iconography would soon spread as far as Yucatan. On the Peruvian coast and highlands the Wari empire was near collapse, its administrative centres such as Pikillaqta and Viracochapampa being abandoned, and the successor Chimu culture was beginning to organise along the northern coast around Chan Chan. In the American Southwest, Chaco Canyon was just beginning the great pueblo-building era that would produce Pueblo Bonito. Mississippian mound-building was still in its early phase, with Cahokia's great expansion a century away.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Tikal-Plaza-And-North-Acropolis.jpg",
+        "caption": "The Great Plaza and North Acropolis at Tikal in the Peten of Guatemala. The pyramid-temples of Tikal reached their final form in the eighth and ninth centuries before the city's Terminal Classic abandonment.",
+        "credit": "Bjørn Christian Tørrissen, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tikal-Plaza-And-North-Acropolis.jpg"
+      }
     }
   ],
   "figures": [

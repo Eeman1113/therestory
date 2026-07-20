@@ -109,6 +109,7 @@ export type Section = z.infer<typeof SectionSchema>;
 export const WorldContextSchema = z.object({
   region: RegionEnum,
   text: z.string().min(1), // markdown
+  image: ImageSchema.optional(), // optional Wikimedia illustration for the region
 });
 export type WorldContext = z.infer<typeof WorldContextSchema>;
 

@@ -39,23 +39,58 @@
   "worldContext": [
     {
       "region": "europe",
-      "text": "In September 2001 the euro was three months from entering circulation as a physical currency, replacing twelve national currencies on 1 January 2002. The German government of Gerhard Schroder faced a general election the following year; Tony Blair was midway through his second term as British prime minister and would join the US-led wars in Afghanistan and Iraq. In the Balkans, NATO peacekeepers were still deployed in Bosnia and Kosovo. Russia under Vladimir Putin, in office since December 1999, offered rapid support to the US after 9/11, opening a brief window of cooperation."
+      "text": "In September 2001 the euro was three months from entering circulation as physical banknotes and coins, replacing twelve national currencies (from the Portuguese escudo to the Finnish markka) in the wallets of 300 million people on 1 January 2002 in the largest currency changeover in history. The chancellorship of Gerhard Schroder's Red-Green coalition in Berlin faced a general election the following year and would ultimately dispatch Bundeswehr troops to Afghanistan under NATO Article 5. Tony Blair, midway through his second term as British prime minister after the June 2001 Labour landslide, immediately pledged unqualified support to Washington and would join the US-led wars in Afghanistan and Iraq. In the Balkans, NATO peacekeepers were still deployed in Bosnia (SFOR) and Kosovo (KFOR) after the 1995 Dayton and 1999 Rambouillet settlements; Slobodan Milosevic had been extradited to The Hague on 28 June 2001. In France, Jacques Chirac's presidential re-election battle with Jean-Marie Le Pen lay six months ahead. Russia under President Vladimir Putin, in office since 31 December 1999, offered rapid support to the US after 9/11 (the first call to the White House), opening a brief window of cooperation that would later close.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/France_Euro_starter_kit_%28january_2002%29.jpg",
+        "caption": "French euro starter kit distributed at the launch of the single European currency in January 2002; the replacement of twelve national currencies was scheduled for a hundred and fourteen days after the September 11 attacks.",
+        "credit": "Tangopaso, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:France_Euro_starter_kit_(january_2002).jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "China had been admitted to the World Trade Organization in November 2001, sealing its integration into the global economy; Jiang Zemin remained president. Japan, under Prime Minister Junichiro Koizumi, was still mired in its 'lost decade' of low growth. North Korea under Kim Jong-il was rebuilding its nuclear programme; it would withdraw from the Non-Proliferation Treaty in 2003 and test a device in 2006. South Korea's engagement with the North under Kim Dae-jung's 'Sunshine Policy' was in its later stages."
+      "text": "China had been formally admitted to the World Trade Organization at the Doha ministerial meeting on 11 November 2001, sealing its integration into the global economy after fifteen years of negotiations and unleashing the manufacturing exports that would restructure world industry over the next decade; Jiang Zemin remained CCP general secretary and president until Hu Jintao succeeded him in 2002 to 03. Japan, under Prime Minister Junichiro Koizumi (elected in April 2001), was still mired in its lost decade of low growth after the collapse of the 1980s asset bubble; Koizumi's controversial visits to Yasukuni Shrine strained relations with China and Korea. North Korea under Kim Jong-il was rebuilding its nuclear programme after the 1994 Agreed Framework began to unravel; it would withdraw from the Non-Proliferation Treaty in January 2003 and test its first nuclear device on 9 October 2006. South Korea's engagement with the North under President Kim Dae-jung's Sunshine Policy, which had produced the historic June 2000 summit and Kim's Nobel Peace Prize, was in its later stages. Taiwan under Chen Shui-bian's DPP navigated growing mainland pressure.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Jiang_Zemin_2001.jpg",
+        "caption": "Jiang Zemin, General Secretary of the Communist Party of China and President, photographed in October 2001 during George W. Bush's visit for the Shanghai APEC summit weeks after 9/11.",
+        "credit": "Executive Office of the President of the United States, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jiang_Zemin_2001.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "The African Union was being founded that year, formally launched at Durban in July 2002 to replace the Organisation of African Unity. Zimbabwe's controversial land-reform seizures under Robert Mugabe were accelerating. In Sierra Leone the civil war ended in January 2002 with a British-led intervention. Sub-Saharan Africa was in the depths of the HIV/AIDS crisis: on 5 September 2001 the World Health Organization estimated that 25 million people on the continent were HIV-positive."
+      "text": "The African Union was being founded that year, formally launched at Durban on 9 July 2002 to replace the Organisation of African Unity of 1963; its first chairperson was South African President Thabo Mbeki. Zimbabwe's controversial fast-track land-reform seizures under President Robert Mugabe, targeting white commercial farms, were accelerating and would trigger economic collapse and hyperinflation by mid-decade. In Sierra Leone the eleven-year civil war ended on 18 January 2002 following the British-led Operation Palliser intervention of May 2000 that had rescued the Freetown government from Revolutionary United Front rebels. In the Democratic Republic of Congo the Second Congo War, which drew in armies from nine African states and killed millions, was in its later stages; the Sun City power-sharing agreement lay ahead in April 2002. Sub-Saharan Africa was in the depths of the HIV/AIDS crisis: UNAIDS estimated that 25 million people on the continent were HIV-positive; South Africa's President Mbeki continued to dispute the connection between HIV and AIDS, delaying antiretroviral rollout. In Nigeria, President Olusegun Obasanjo, elected in 1999, was consolidating civilian rule after decades of military government.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Nelson_Mandela_1994.jpg",
+        "caption": "Nelson Mandela in Washington in October 1994, at the start of his term as South African president; a decade later, retired but active, he remained the moral touchstone of a continent turning from OAU to African Union in 2002.",
+        "credit": "John Mathew Smith (Kingkongphoto), via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "Two days before the September 11 attacks, on 9 September 2001, al-Qaeda suicide bombers assassinated Ahmad Shah Massoud, the Afghan Northern Alliance commander and Taliban's principal opponent, evidently to weaken the resistance in advance of the American retaliation they knew was coming. India and Pakistan, both newly declared nuclear powers since 1998, were in a period of high tension after the Kargil conflict of 1999; a December 2001 attack on the Indian parliament would bring them close to war."
+      "text": "Two days before the September 11 attacks, on 9 September 2001, two Tunisian al-Qaeda suicide bombers posing as Belgian television journalists assassinated Commander Ahmad Shah Massoud, the Panjshiri Tajik leader of the Northern Alliance (United Islamic Front) and the Taliban's principal military opponent in Afghanistan; his killing was evidently timed to decapitate the resistance in advance of the American retaliation al-Qaeda knew was coming. India and Pakistan, both newly declared nuclear powers since their May 1998 tit-for-tat tests, were in a period of high tension after the Kargil conflict of summer 1999 (fought at 5,000 metres in Kashmir) and General Pervez Musharraf's October 1999 coup against Prime Minister Nawaz Sharif; a 13 December 2001 attack on the Indian parliament in New Delhi by Kashmiri militants would bring them close to war in 2002. India's Prime Minister Atal Bihari Vajpayee's BJP-led NDA coalition was pursuing economic liberalisation. In Bangladesh, Khaleda Zia's BNP had won the October 2001 election; in Sri Lanka the LTTE civil war continued, with a Norwegian-mediated ceasefire signed in February 2002.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ahmad_Shah_Massoud_EP_2001_%281%29.jpg",
+        "caption": "Ahmad Shah Massoud at the European Parliament in Strasbourg on 5 April 2001, five months before his assassination by al-Qaeda operatives on 9 September 2001, two days before the New York and Washington attacks.",
+        "credit": "European Parliament, via Wikimedia Commons",
+        "license": "Attribution (European Parliament)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ahmad_Shah_Massoud_EP_2001_(1).jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "Australia under Prime Minister John Howard rapidly invoked the 1951 ANZUS Treaty and committed troops to Afghanistan and, in 2003, Iraq. The 'Tampa affair' of late August 2001, in which Howard's government refused entry to a Norwegian freighter carrying rescued asylum seekers, had reshaped Australian border policy in the weeks before 9/11 and helped Howard win re-election in November. New Zealand under Helen Clark supported the Afghanistan mission but declined to join the Iraq war."
+      "text": "Australia under Prime Minister John Howard, then in his sixth year in office, rapidly invoked the 1951 ANZUS Treaty on 14 September 2001 (the first invocation of that mutual-defence pact) and committed SAS troops and F/A-18 fighters to the Afghanistan mission and, in 2003, to the invasion of Iraq. The Tampa affair of late August 2001, in which Howard's government refused entry to the Norwegian freighter MV Tampa carrying 433 asylum seekers (mostly Afghan Hazaras) rescued from a distressed Indonesian fishing vessel, had reshaped Australian border policy in the weeks before 9/11: the resulting Pacific Solution offshored processing to Nauru and Manus Island. Combined with the terror alarm after 11 September, the Tampa row helped Howard win a decisive re-election on 10 November 2001. In Aotearoa New Zealand, Prime Minister Helen Clark's Labour-Alliance coalition supported the Afghanistan mission through the SAS but publicly declined to join the 2003 Iraq war absent a UN Security Council mandate. In East Timor, the fledgling state under UN transitional administration UNTAET prepared for full independence in May 2002, six months after 9/11.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/John_Howard_-_2000_Sydney_Olympics.jpg",
+        "caption": "Australian Prime Minister John Howard with his wife Janette at the 2000 Sydney Paralympics; a year later Howard would invoke ANZUS after the September 11 attacks.",
+        "credit": "Sport the Library / Tom Putt / Australian Paralympic Committee, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Howard_-_2000_Sydney_Olympics.jpg"
+      }
     }
   ],
   "figures": [

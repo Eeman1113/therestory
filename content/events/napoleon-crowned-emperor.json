@@ -37,27 +37,69 @@
   "worldContext": [
     {
       "region": "americas",
-      "text": "The United States had just concluded the Louisiana Purchase from Napoleon's own government the previous year, doubling its territory for fifteen million dollars and opening the Mississippi valley to settlement. In November 1804 the Lewis and Clark expedition, wintering with the Mandan on the upper Missouri, was preparing to push west toward the Pacific. Further south, the black republic of Haiti had proclaimed independence from France on 1 January 1804 after defeating an army sent by Napoleon to reimpose slavery, and Jean-Jacques Dessalines took the title of emperor in October, an ironic mirror of the ceremony in Paris."
+      "text": "The United States under President Thomas Jefferson had just concluded the Louisiana Purchase from Napoleon's own government the previous year, doubling its territory for fifteen million dollars (worth roughly 340 million today) and opening the Mississippi valley and the vast unmapped west to eventual settlement; the Third Consul had sold Louisiana after his Saint-Domingue army was destroyed by yellow fever and Haitian resistance. In November 1804 the Corps of Discovery under Meriwether Lewis and William Clark, wintering with the Mandan-Hidatsa at Fort Mandan on the upper Missouri, was preparing (with the interpreter Sacagawea joining that winter) to push west toward the Pacific, which they would reach in November 1805. Further south, the Black republic of Haiti had proclaimed independence from France on 1 January 1804 after Jean-Jacques Dessalines's army defeated the French expeditionary force sent by Napoleon under his brother-in-law Charles Leclerc to reimpose slavery. On 22 September 1804 Dessalines took the title of Emperor Jacques I, an ironic mirror of the ceremony in Paris that would follow ten weeks later. In Spanish America, Simon Bolivar was in Paris that autumn as a young man of twenty-one, witness to Napoleon's coronation, and reportedly disgusted by it.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Jean_Jacques_Dessalines.jpg",
+        "caption": "Jean-Jacques Dessalines, revolutionary general who declared Haitian independence on 1 January 1804 and was proclaimed Emperor Jacques I in October 1804. Portrait, 1878.",
+        "credit": "Louis Rigaud, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Jacques_Dessalines.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "The Qing empire under the Jiaqing Emperor was struggling to suppress the White Lotus Rebellion, a millenarian uprising in the mountainous borderlands of Sichuan, Hubei and Shaanxi that had begun in 1794 and would drag on until 1805, exposing serious weaknesses in the Manchu banner armies and consuming enormous sums of silver. Along the south China coast the pirate confederation led by Zheng Yi and Ching Shih was reaching the height of its power. In Japan, the Tokugawa shogunate under Ienari continued its policy of sakoku, admitting only limited Dutch and Chinese trade through Nagasaki."
+      "text": "The Qing empire under the Jiaqing Emperor (Yongyan), who had ascended in 1796 after his father the Qianlong Emperor's formal abdication but effectively taken power only on the latter's death in 1799, was struggling to suppress the White Lotus Rebellion, a millenarian sectarian uprising in the mountainous borderlands of Sichuan, Hubei, and Shaanxi that had begun in 1794 and would drag on until 1805, exposing serious weaknesses in the Manchu Eight Banner armies and consuming an estimated 200 million taels of silver, roughly five years of imperial revenue. The corrupt grand councillor Heshen, favourite of the old emperor, had been forced to suicide in 1799. Along the south China coast the pirate confederation eventually led by Zheng Yi's widow Ching Shih (Zheng Yi Sao), commanding hundreds of junks and tens of thousands of men, was reaching the height of its power. In Tokugawa Japan the shogun Tokugawa Ienari (r. 1787 to 1837) continued the policy of sakoku, admitting only limited Dutch and Chinese trade through the artificial island of Dejima in Nagasaki harbour; the merchant scholar Ino Tadataka was in the middle of the great cartographic survey of Japan he had begun in 1800.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Emperor_Jiaqing.jpg",
+        "caption": "The Jiaqing Emperor (Yongyan, r. 1796 to 1820), whose reign was consumed by the White Lotus Rebellion and by the corruption exposed after Qianlong's death. Palace Museum, Beijing.",
+        "credit": "Unknown Qing court artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emperor_Jiaqing.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "In India the British East India Company was completing its conquest of the Maratha Confederacy. Under Governor-General Richard Wellesley, brother of the future Duke of Wellington, Company armies had defeated the Marathas at Assaye and Argaon in September and November 1803 and imposed the Treaty of Deogaon; the Second Anglo-Maratha War would conclude in December 1805. In Punjab, Ranjit Singh had unified the Sikh misls and would proclaim himself Maharaja in 1801, beginning the last independent Indian empire."
+      "text": "In India the British East India Company was completing its conquest of the Maratha Confederacy. Under Governor-General Richard Wellesley, elder brother of the future Duke of Wellington, Company armies commanded by Arthur Wellesley and Gerard Lake had crushed the Maratha field forces at the Battles of Assaye (23 September 1803) and Argaon (29 November 1803), and had imposed the Treaty of Surji-Anjangaon on Daulat Rao Scindia in December; the Second Anglo-Maratha War would formally conclude with the humbling of the Holkars in December 1805. Delhi had been taken from the Marathas and its blind Mughal emperor Shah Alam II placed under British protection in September 1803. In Punjab, Ranjit Singh, of the Sukerchakia misl, had unified the twelve Sikh confederacies and taken Lahore in July 1799; he was proclaimed Maharaja of the Punjab on the Baisakhi festival of April 1801, beginning the last independent Indian empire, which would hold the Khyber frontier until his death in 1839. The princely states of Hyderabad under the Nizam and Mysore (defeated with the death of Tipu Sultan in 1799) were now Company allies.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Ranjit_Singh%27s_golden_throne.jpg",
+        "caption": "The golden throne of Maharaja Ranjit Singh, made by Hafiz Muhammad Multani c. 1820-1830, one of the surviving material symbols of the Sikh Empire he consolidated at Lahore. Victoria and Albert Museum, London.",
+        "credit": "Victoria and Albert Museum, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ranjit_Singh%27s_golden_throne.jpg"
+      }
     },
     {
       "region": "middle-east-north-africa",
-      "text": "Egypt was in the midst of the turbulent aftermath of the French occupation of 1798 to 1801. In 1804 the Albanian officer Muhammad Ali, who had come to Egypt with the Ottoman army sent to expel the French, was manoeuvring against the Mamluk beys and the Ottoman viceroy; in May 1805 the ulama of Cairo would proclaim him wali, beginning a dynasty that ruled Egypt until 1952. In the Arabian peninsula the Wahhabi movement led by the House of Saud had captured Mecca and Medina in 1803 and 1804, alarming the Sublime Porte."
+      "text": "Egypt was in the midst of the turbulent aftermath of the French occupation of 1798 to 1801, when Napoleon's expeditionary force under General Kleber (assassinated in Cairo in June 1800) and then General Menou had been driven out by a combined British and Ottoman effort. In 1804 the Albanian officer Muhammad Ali (Kavalali Mehmed Ali Pasha), who had come to Egypt with the Ottoman army sent to expel the French, was manoeuvring against the Mamluk beys under Muhammad al-Alfi and Uthman Bardisi and the succession of weak Ottoman viceroys; in May 1805 the ulama of Cairo led by Umar Makram would proclaim him wali of Egypt, beginning a dynasty that ruled the Nile valley until the abdication of King Faruq in 1952. In the Arabian peninsula the Wahhabi movement led by the House of Saud under Emir Saud bin Abdul-Aziz had captured Mecca in 1803 and Medina in 1805, sacking the tomb of the Prophet and alarming the Sublime Porte. In Iran, Fath-Ali Shah of the Qajar dynasty ruled from Tehran; the Russo-Persian War over the Caucasus had just begun.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg",
+        "caption": "Muhammad Ali of Egypt, portrait in oil by the French painter Auguste Couder (1841). Commissioned for Louis-Philippe's historical museum at Versailles.",
+        "credit": "Auguste Couder (1789 to 1873), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ModernEgypt,_Muhammad_Ali_by_Auguste_Couder,_BAP_17996.jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "Along the West African coast the transatlantic slave trade was approaching its peak. In the Sahel, the Fulani scholar and reformer Usman dan Fodio was preparing the jihad he would launch in February 1804 against the Hausa king of Gobir, a movement that would within a decade establish the Sokoto Caliphate across what is now northern Nigeria. In southern Africa the Xhosa and the expanding Dutch-descended trekboer farmers continued the long series of frontier wars along the Great Fish River."
+      "text": "Along the West African coast the transatlantic slave trade was approaching its peak: the British Atlantic trade, at the moment three years from its 1807 abolition, still shipped tens of thousands of enslaved Africans across the ocean each year through Bonny, Calabar, and Lagos. In the Sahel, the Fulani scholar and reformer Usman dan Fodio, born in 1754 in Gobir and trained in the Qadiriyya Sufi tradition, was preparing the jihad he formally launched on 21 February 1804 against Yunfa, the Hausa king of Gobir, after being driven from Degel; that movement, prosecuted with his son Muhammadu Bello and brother Abdullahi, would within a decade establish the Sokoto Caliphate across what is now northern Nigeria, the largest state in nineteenth-century sub-Saharan Africa. In the Cape Colony, briefly returned to Dutch Batavian Republic control from 1803, the Xhosa chiefdoms under Ngqika and the expanding Dutch-descended trekboer farmers continued the long series of frontier wars along the Great Fish River. In the Merina highlands of Madagascar, King Andrianampoinimerina was completing the unification of Imerina before his death in 1810.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sankore_Madrasah.jpg",
+        "caption": "The Sankore Mosque at Timbuktu, once the great centre of West African Islamic learning; Usman dan Fodio's early nineteenth century Sokoto jihad drew on the same Sahelian scholarly tradition.",
+        "credit": "Dr Ondrej Havelka (HistoriaSalutis), via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "The British penal colony at Sydney Cove, founded only in 1788, was recovering from the Castle Hill convict rebellion of March 1804, in which Irish political prisoners had risen against the New South Wales Corps and been crushed at Rouse Hill. In New Zealand the Maori remained wholly independent and had begun to acquire European muskets through whalers and sealers, setting the stage for the intertribal Musket Wars of the following decades. Tasmania, then called Van Diemen's Land, was being surveyed for its first permanent European settlement."
+      "text": "The British penal colony at Sydney Cove, founded only in January 1788 under Governor Arthur Phillip, was recovering from the Castle Hill convict rebellion of 4 to 5 March 1804, in which around 260 mostly Irish political prisoners (transported after the 1798 United Irishmen rising) under Philip Cunningham had risen against the New South Wales Corps and were crushed at Rouse Hill by Major George Johnston, with 15 killed in the battle and 9 leaders hanged. Governor Philip Gidley King ruled a colony of about 7,000 people. In Aotearoa New Zealand the Maori remained wholly independent, still governing themselves by iwi and hapu; they had begun to acquire European muskets through whalers and sealers at the Bay of Islands, setting the stage for the intertribal Musket Wars of the 1810s to 1830s under leaders like Hongi Hika. Tasmania, then called Van Diemen's Land, was being surveyed for its first permanent European settlement at Hobart, founded in February 1804 under David Collins.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Castle_Hill_Rebellion_%281804%29.jpg",
+        "caption": "The Castle Hill Rebellion of 4 to 5 March 1804, in which Irish political convicts rose against the New South Wales Corps outside Sydney and were crushed at Rouse Hill. Contemporary illustration, National Library of Australia.",
+        "credit": "Unknown artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castle_Hill_Rebellion_(1804).jpg"
+      }
     }
   ],
   "figures": [

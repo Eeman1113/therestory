@@ -39,23 +39,58 @@
   "worldContext": [
     {
       "region": "south-central-asia",
-      "text": "In northern India the Delhi Sultanate under Muhammad bin Tughluq was disintegrating from the strain of his failed schemes: forced migration of the capital, token-copper coinage, and unaffordable campaigns. In 1347 the Bahmani Sultanate broke away in the Deccan under Alauddin Bahman Shah. The plague appears to have reached Indian ports through Persian Gulf shipping, though evidence is thinner than for the Mediterranean."
+      "text": "In northern India the Delhi Sultanate under Muhammad bin Tughluq (r. 1325 to 1351) was disintegrating from the strain of his failed schemes: the forced migration of the capital from Delhi to Daulatabad in the Deccan around 1327, the introduction of an unbacked token copper coinage in the early 1330s that quickly collapsed under counterfeiting, and unaffordable campaigns in Khorasan and the Kangra hills. In 1347 the Bahmani Sultanate broke away in the Deccan under the rebel governor Alauddin Bahman Shah, founding a dynasty that would dominate the plateau for two centuries. In the far south the Vijayanagara Empire, established in 1336 by the brothers Harihara and Bukka Raya as a Hindu response to Muslim expansion, was consolidating from its magnificent stone-built capital at Hampi. The plague appears to have reached Indian ports through Persian Gulf and Red Sea shipping — Ibn Battuta records outbreaks he witnessed at Aleppo and Damascus in 1348 as he was preparing to travel back to India — though the direct evidence for widespread mortality on the subcontinent is thinner than for the Mediterranean. In Tibet the Sakya-Yuan hegemony was fading, and in Bengal the Ilyas Shahi dynasty had recently founded an independent sultanate at Sonargaon.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Muhammad_bin_Tughlaq_on_the_throne_-_Indian_Museum%2C_Kolkata.jpg",
+        "caption": "Sultan Muhammad bin Tughluq of Delhi enthroned, in a Persian painting of 1534 preserved in the Indian Museum, Kolkata (accession R.32B/S.37).",
+        "credit": "Unknown Persian artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muhammad_bin_Tughlaq_on_the_throne_-_Indian_Museum,_Kolkata.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "The Mexica were still a minor tributary power around their new island city of Tenochtitlan under Azcapotzalco's hegemony; the great expansion under Itzcoatl and the Aztec Triple Alliance lay in the coming century. In the Andes the Inca dynasty was a local kingdom at Cuzco. Along the Mississippi Cahokia's decline was well advanced, and in the Southwest ancestral Pueblo people had regrouped in the Rio Grande and Little Colorado valleys. Old and New World disease pools were still isolated."
+      "text": "The Mexica (later called Aztecs) were still a minor tributary power around their new island city of Tenochtitlan, traditionally founded in 1325 on a marshy island in Lake Texcoco after generations of wandering; they served as mercenaries and tributaries under the hegemony of the Tepanec city of Azcapotzalco under its long-lived king Tezozomoc. The great Mexica expansion under Itzcoatl and the Aztec Triple Alliance (Tenochtitlan, Texcoco, Tlacopan) after the Tepanec War of 1428 lay in the coming century. In the Andes the Inca dynasty was still a local kingdom at Cuzco under Sinchi Roca and his descendants; the imperial expansion under Pachacuti would begin only after 1438. Along the Mississippi the great mound-centre of Cahokia's decline was well advanced and its central palisaded core had been abandoned; in the American Southwest ancestral Pueblo people had regrouped after the thirteenth-century abandonment of Chaco and Mesa Verde in the Rio Grande and Little Colorado valleys, producing the ancestral pueblos of Acoma, Zuni, and Hopi. Old and New World disease pools were still isolated; Y. pestis is not known to have crossed to the Americas before 1492.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Aztec_Great_Temple_Model_of_Tenochtitlan_%289780113945%29.jpg",
+        "caption": "Museum model of the Templo Mayor and the sacred precinct of Tenochtitlan, the twin-pyramid heart of the Mexica capital founded on an island in Lake Texcoco in 1325.",
+        "credit": "Prof. Gary Lee Todd, via Wikimedia Commons",
+        "license": "CC0 Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aztec_Great_Temple_Model_of_Tenochtitlan_(9780113945).jpg"
+      }
     },
     {
       "region": "africa",
-      "text": "The Mali Empire ruled the western Sudan under Mansa Sulayman, brother of the famous Musa; Ibn Battuta would visit his court in 1352 to 1353 and leave the fullest surviving account of the empire. Along the Swahili coast Kilwa continued as a major Indian Ocean trading city. In the Ethiopian highlands the Solomonic dynasty ruled under Amda Seyon and his successors. North African cities from Fez to Cairo were hit hard by the plague."
+      "text": "The Mali Empire ruled the western Sudan under Mansa Sulayman (r. 1341 to 1360), brother of the famous Mansa Musa (r. 1312 to 1337) whose 1324 hajj to Mecca had scattered so much West African gold across Cairo that its price there was still depressed a decade later. Ibn Battuta would visit Sulayman's court in 1352 to 1353 and leave the fullest surviving eyewitness account of the empire, describing the audience protocol, the ceremonies at his capital (probably Niani on the upper Niger), and the safety of travel across his territories. Timbuktu was already home to the Sankore and Djinguereber mosques, the latter commissioned by Mansa Musa on his return from Mecca. Along the Swahili coast Kilwa continued as a major Indian Ocean trading city — Ibn Battuta had visited it in 1331 and admired its coral-stone architecture — trading gold from the Zimbabwean plateau and slaves from the interior for Chinese porcelain and Indian textiles. In the Ethiopian highlands the Solomonic dynasty ruled under successors of the militant emperor Amda Seyon (d. 1344), consolidating Christian power against the Muslim sultanates of Ifat and Adal. North African cities from Marinid Fez under Abu al-Hasan Ali to Mamluk Cairo under al-Nasir Hasan were hit hard by the plague from 1347 onward.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+        "caption": "Mansa Musa of Mali enthroned holding a gold nugget, from Sheet 6 of the Catalan Atlas of Abraham Cresques, 1375. Bibliotheque nationale de France, Paris.",
+        "credit": "Attributed to Abraham Cresques, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg"
+      }
     },
     {
       "region": "oceania",
-      "text": "In Aotearoa Maori communities were adapting to a temperate climate and driving the flightless moa toward extinction. On Rapa Nui the great period of moai construction continued, though environmental pressures on the island were mounting. Polynesian networks connected the islands of the eastern Pacific. Aboriginal Australians maintained the managed-burning regimes that shaped the continent's landscapes. None of these societies is known to have been reached by Y. pestis."
+      "text": "In Aotearoa Maori communities, descended from the great southward wave of Polynesian voyaging that had reached the islands only a century or so earlier (radiocarbon dating now points to first settlement in the later thirteenth century), were adapting to the temperate climate, extending kumara horticulture in the North Island, and driving the nine species of the flightless moa toward extinction; large early-period moa-hunter sites at Wairau Bar in Marlborough and elsewhere document the rapid transformation. On Rapa Nui (Easter Island) the great period of moai construction and ceremonial ahu-platform building continued at Rano Raraku, Ahu Tongariki, and elsewhere, though environmental pressures on the small island, above all the loss of the palm forests, were mounting. Polynesian trading networks connected the islands of the eastern Pacific through voyages of thousands of kilometres. In Australia, Aboriginal populations maintained the managed-burning regimes and complex kin systems that shaped the continent's landscapes, and continued rock-art traditions from the Kimberley to Arnhem Land and the Sydney basin. None of these societies is known to have been reached by Yersinia pestis; the Pacific and Australian populations remained epidemiologically isolated from the Eurasian disease pool until European contact.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Moai_Rano_raraku.jpg",
+        "caption": "Moai at Rano Raraku on Rapa Nui, the quarry from which the great stone ancestor figures were carved. The classic moai-building period spanned roughly the eleventh to the sixteenth centuries.",
+        "credit": "Artemio Urbina (Aurbina), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moai_Rano_raraku.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "The Mongol Yuan dynasty of China under Toghon Temur Khan was in visible decay: repeated Yellow River floods, hyperinflation of paper currency, and, from 1351 onward, the Red Turban rebellions. Some historians read Chinese epidemic records of the 1330s and 1340s as evidence that plague was already circulating in Chinese cities; the point is debated. Japan under the divided imperial courts of the Nanboku-cho period was fighting its own civil war."
+      "text": "The Mongol Yuan dynasty of China under Toghon Temur Khan (r. 1333 to 1368) was in visible decay: repeated catastrophic Yellow River floods (culminating in the disastrous overflow of 1344 that forced a huge state-organised reconstruction of the river's course and dykes in 1351), hyperinflation of the paper currency, factional court intrigues, and, from 1351 onward, the White Lotus-inspired Red Turban rebellions that would in less than two decades expel the Mongols and bring Zhu Yuanzhang to the throne as the Hongwu emperor of a new Ming dynasty in 1368. Some historians such as William McNeill have read Chinese epidemic records of the 1330s and 1340s (which mention severe outbreaks in Hubei and along the north China plain) as evidence that plague was already circulating in Chinese cities well before it reached the Mediterranean; the point is debated and paleogenetic work since 2022 has begun to reconstruct the Central Asian ancestry of the Black Death strain more precisely. Japan under the divided imperial courts of the Nanboku-cho period (1336 to 1392) was fighting its own civil war between the Ashikaga shogun Takauji at Kyoto and the Southern Court of Emperor Go-Daigo's line at Yoshino.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg",
+        "caption": "Portrait of Kublai Khan, founder of the Yuan dynasty, painted shortly after his death in 1294 by the Nepali court artist Araniko (1244 to 1306). National Palace Museum, Taipei.",
+        "credit": "Araniko, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg"
+      }
     }
   ],
   "figures": [

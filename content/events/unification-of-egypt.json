@@ -29,23 +29,58 @@
   "worldContext": [
     {
       "region": "middle-east-north-africa",
-      "text": "In southern Mesopotamia the great city of Uruk had grown to perhaps 25,000 to 50,000 inhabitants across roughly 250 hectares, the largest human settlement anywhere on earth. Sumerian scribes were pressing the first proto-cuneiform tablets into clay, mostly for temple accounts, and monumental structures such as the Anu Ziggurat and the White Temple defined the city's skyline."
+      "text": "In southern Mesopotamia the great city of Uruk had grown to perhaps 25,000 to 50,000 inhabitants spread across roughly 250 hectares, the largest human settlement anywhere on earth. Sumerian scribes in the Eanna precinct of the goddess Inanna were pressing the first proto-cuneiform tablets into clay, mostly for temple accounts of grain, beer, cattle, and rations. Monumental structures such as the Anu Ziggurat and its white-plastered temple defined the city's skyline, raised on a stepped terrace that dominated the flat alluvial plain. Legendary early kings such as Enmerkar and Lugalbanda, later commemorated in Sumerian epic, may correspond to real dynasts of this Jemdet Nasr transitional period. Trade colonies planted by Uruk merchants reached as far north as Habuba Kabira on the middle Euphrates in modern Syria and Godin Tepe in the Zagros, spreading standardised bevel-rim bowls, cylinder seals, and administrative bullae. Elsewhere in the region, Susa on the Iranian plateau was developing its own proto-Elamite script, and along the Levantine coast small Canaanite settlements traded cedar and wine with the Nile Delta. The Uruk expansion, as archaeologists such as Guillermo Algaze have called it, was the first attested long-distance economic system anywhere on earth.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/White_Temple_ziggurat_in_Uruk.jpg",
+        "caption": "The reconstructed remains of the Anu Ziggurat and White Temple at Uruk in southern Iraq, the platform that dominated the city's late fourth-millennium skyline.",
+        "credit": "tobeytravels, via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Temple_ziggurat_in_Uruk.jpg"
+      }
     },
     {
       "region": "south-central-asia",
-      "text": "Along the Indus and its tributaries the Ravi and early Harappan phases were laying the ground for what would become the Indus Valley civilisation. Villages at Harappa and Mehrgarh were experimenting with standardised bricks, metallurgy, and long-distance trade in lapis lazuli, though the full urban flowering of Mohenjo-daro still lay several centuries in the future."
+      "text": "Along the Indus and its tributaries the Ravi phase and the earliest Harappan occupations were laying the ground for what would become the Indus Valley civilisation. Villages at Harappa on the Ravi, Mehrgarh in Baluchistan, and Kot Diji in Sindh were experimenting with standardised mud bricks, wheel-thrown pottery, copper metallurgy, and long-distance trade in lapis lazuli from Badakhshan, carnelian from Gujarat, and turquoise from the Iranian plateau. Mehrgarh had already been continuously occupied for four thousand years and was one of the earliest farming communities anywhere in South Asia, its inhabitants growing wheat, barley, cotton, and dates and firing painted terracotta figurines. The full urban flowering of Mohenjo-daro, Dholavira, and Rakhigarhi, with their gridded streets, brick-lined drains, and undeciphered seal script, still lay six or seven centuries in the future, but the constituent elements were already visible in the archaeological record. Contemporary sites in Balochistan such as Rehman Dheri were also being laid out on rough grid plans, and craft villages along the Kachi plain participated in a network that stretched from the Persian Gulf to Central Asia.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Mohenjo-daro.jpg",
+        "caption": "The excavated ruins of Mohenjo-daro in Sindh, whose mature urban plan grew out of the Early Harappan experiments of the fourth millennium BCE.",
+        "credit": "Saqib Qayyum, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mohenjo-daro.jpg"
+      }
     },
     {
       "region": "europe",
-      "text": "On Salisbury Plain the first stage of Stonehenge, a circular earthwork with a ring of timber posts, was raised around this time. Across Atlantic Europe, from Brittany to Orkney, Neolithic communities were building passage tombs and stone circles, part of a wave of megalithic construction that had begun a millennium earlier."
+      "text": "On Salisbury Plain the first stage of Stonehenge, a circular earthwork of ditch and bank enclosing a ring of timber posts and the fifty-six Aubrey Holes, was raised around this time. Across Atlantic Europe, from Brittany to Orkney, Neolithic communities were building passage tombs and stone circles, part of a wave of megalithic construction that had begun a millennium earlier at monuments such as Carnac and Barnenez. The great chambered cairn at Newgrange in the Boyne Valley of Ireland, aligned with the winter solstice sunrise, had recently been completed. At Skara Brae on Orkney a stone-built village of interconnected houses was occupied, sharing pottery styles with the Ness of Brodgar temple complex nearby. In the Balkans and central Europe the Cucuteni-Trypillia culture was building enormous proto-urban settlements of several thousand inhabitants at sites such as Talianki and Nebelivka in modern Ukraine, later burned deliberately and rebuilt on the same footprint. Copper metallurgy, first developed in the region generations earlier, was spreading westward. Writing was still absent everywhere in Europe.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Stonehenge2007_07_30.jpg",
+        "caption": "The stone circle at Stonehenge on Salisbury Plain, whose earliest earthwork phase belongs to the same century as the unification of Upper and Lower Egypt.",
+        "credit": "garethwiscombe, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg"
+      }
     },
     {
       "region": "americas",
-      "text": "On the arid Pacific coast of what is now Peru, the Caral or Norte Chico civilisation was taking shape. Large communal platform mounds and sunken plazas at Caral, Aspero, and Huaricanga mark the earliest known complex society in the Americas, sustained by fishing and irrigated cotton and squash rather than by ceramics or maize."
+      "text": "On the arid Pacific coast of what is now Peru, the Caral or Norte Chico civilisation was taking shape in the Supe, Fortaleza, and Pativilca valleys. Large communal platform mounds and sunken circular plazas at Caral, Aspero, Huaricanga, and Bandurria mark the earliest known complex society in the Americas, sustained by anchovy and sardine fisheries at coastal sites and by irrigated cotton, squash, beans, and chili in the inland valleys. Caral itself, first excavated systematically by the Peruvian archaeologist Ruth Shady from 1994 onward, covers over sixty hectares with six pyramidal platforms, the largest rising eighteen metres above the plain. Notably absent are ceramics, metallurgy, and any evidence of large-scale warfare; the discovery in 2001 of a set of thirty-two condor and pelican bone flutes hints at a ceremonial life organised around music. Elsewhere in the Americas, Mesoamerican populations in the Soconusco region were beginning to cultivate maize alongside squash and beans, and Archaic-period hunter-gatherer societies still occupied most of North America, the Amazon basin, and the Southern Cone.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Pir%C3%A1mide_mayor_de_Caral.jpg",
+        "caption": "The Piramide Mayor at Caral in the Supe Valley of Peru, principal monument of the earliest known complex society in the Americas.",
+        "credit": "Gisela Xiomara Garcia Almonacid, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pir%C3%A1mide_mayor_de_Caral.jpg"
+      }
     },
     {
       "region": "east-asia",
-      "text": "In China the late Neolithic Longshan and Liangzhu cultures were producing fine black burnished pottery and elaborate jade objects, and building rammed-earth walls around proto-urban settlements along the Yellow and lower Yangtze rivers. These would in time feed into the Bronze Age states of the second millennium BCE."
+      "text": "In China the late Neolithic Longshan culture along the middle and lower Yellow River and the Liangzhu culture in the lower Yangtze delta were producing fine wheel-thrown black burnished pottery, thin-walled eggshell goblets, and elaborate jade objects, and building rammed-earth walls around proto-urban settlements such as Taosi in Shanxi and Liangzhu itself near modern Hangzhou. Liangzhu, in particular, has yielded evidence of large-scale hydraulic engineering, including an eleven-kilometre network of dams and reservoirs, that some archaeologists such as Colin Renfrew consider the earliest state-level society in China. The characteristic jade cong, a squared tube incised with stylised human-animal faces, and the flat bi disc were produced in enormous numbers for elite burials, testifying to a stratified society with specialist craftsmen and long-distance exchange in nephrite from the Kunlun Mountains. To the north, on the Liaodong peninsula, the Hongshan culture had recently declined. Writing, in the form of the oracle-bone script, would not appear for another two thousand years, though a small number of Liangzhu jades bear incised marks whose status as proto-writing remains disputed.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Jade_cong%2C_Liangzhu_Culture%2C_5200-2200_BC%2C_Shanghai_Museum.JPG",
+        "caption": "A Liangzhu culture jade cong, third millennium BCE, incised with the culture's characteristic stylised human-animal face motif. Shanghai Museum.",
+        "credit": "Prof. Gary Lee Todd, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jade_cong,_Liangzhu_Culture,_5200-2200_BC,_Shanghai_Museum.JPG"
+      }
     }
   ],
   "figures": [
