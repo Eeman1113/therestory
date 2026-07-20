@@ -69,6 +69,11 @@ Format:
 - Some image substitutions when initial candidates had unclear licences (Kish Tablet → British Museum proto-cuneiform; Hammurabi hero swap). All images verified against their Wikimedia Commons file description pages.
 - 4 events not written (subagents hit rate limits mid-run): `fall-of-western-roman-empire`, `haitian-revolution-begins`, `battle-of-tsushima`, `fall-of-the-berlin-wall` — queued for fill-in after limits reset.
 
+## 2026-07-20 — Phase 5 gap fill
+- Fill-in subagent produced the 4 previously-missing events with the same extreme depth bar: Fall of the Western Roman Empire (4 September 476 CE, disputed: true — Heather/Ward-Perkins catastrophist vs Goffart transformationist debate noted), Haitian Revolution begins (22 August 1791, Bois Caïman), Battle of Tsushima (27 May 1905), Fall of the Berlin Wall (9 November 1989).
+- Total event count now **79**. Total content pages **110** (5 static + 79 events + 15 years + 8 eras + 3 static sitemap/404/etc).
+- Build clean.
+
 ## 2026-07-20 — Phase 5 UI wiring
 - Built `/year/[year]` route with `generateStaticParams` + slug convention `1789` for CE, `776-bce` for BCE. Layout: mono XL year headline, editorial summary, seven regional snapshots (canonical region order), featured events (explicit + ±1 year window auto-detected), sources.
 - Built `/events` catalogue with events grouped by era, sorted chronologically, category-coloured dots, sidebar legend.
