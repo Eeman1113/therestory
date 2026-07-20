@@ -1,0 +1,37 @@
+[
+  {
+    "id": "africa",
+    "label": "Africa",
+    "description": "The continent south of the Sahara plus the Nile valley — the birthplace of humanity and of the oldest continuous cultural traditions."
+  },
+  {
+    "id": "americas",
+    "label": "The Americas",
+    "description": "North, Central, and South America — from the first Paleoindians through the Mesoamerican and Andean civilizations to the modern hemispheric powers."
+  },
+  {
+    "id": "east-asia",
+    "label": "East Asia",
+    "description": "China, Korea, Japan, and mainland Southeast Asia — a cultural sphere anchored by the succession of Chinese dynasties."
+  },
+  {
+    "id": "south-central-asia",
+    "label": "South & Central Asia",
+    "description": "The Indian subcontinent and the Eurasian steppe — home to the Mauryas, Guptas, Mughals, Timurids, and countless nomadic empires."
+  },
+  {
+    "id": "middle-east-north-africa",
+    "label": "Middle East & North Africa",
+    "description": "Mesopotamia, the Levant, Arabia, Persia, Anatolia, Egypt, and the Maghreb — the crossroads where writing, religion, and empire were repeatedly reinvented."
+  },
+  {
+    "id": "europe",
+    "label": "Europe",
+    "description": "From Iberia to the Urals — Greco-Roman antiquity, Christendom, the Renaissance, industrial revolution, and the modern European project."
+  },
+  {
+    "id": "oceania",
+    "label": "Oceania",
+    "description": "Australia, New Zealand, and the Pacific islands — deep Indigenous histories and the last regions of the world settled by humans."
+  }
+]

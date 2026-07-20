@@ -1,0 +1,42 @@
+[
+  {
+    "id": "war-conflict",
+    "label": "War & Conflict",
+    "description": "Battles, wars, invasions, revolutions, and the political violence that reshaped states."
+  },
+  {
+    "id": "politics-empires",
+    "label": "Politics & Empires",
+    "description": "The rise and fall of states — coronations, treaties, constitutional moments, and imperial administration."
+  },
+  {
+    "id": "science-technology",
+    "label": "Science & Technology",
+    "description": "Discoveries, inventions, and the slow accumulation of human understanding of the natural world."
+  },
+  {
+    "id": "art-culture",
+    "label": "Art & Culture",
+    "description": "Literature, music, architecture, philosophy, and the movements that changed how people saw the world."
+  },
+  {
+    "id": "exploration",
+    "label": "Exploration",
+    "description": "Voyages, expeditions, and encounters between previously separate worlds."
+  },
+  {
+    "id": "religion-ideas",
+    "label": "Religion & Ideas",
+    "description": "Foundings and reforms of religions, philosophies, and ideologies with lasting global reach."
+  },
+  {
+    "id": "disaster-disease",
+    "label": "Disaster & Disease",
+    "description": "Pandemics, famines, earthquakes, and other events whose scale rewrote the demographic map."
+  },
+  {
+    "id": "economy-trade",
+    "label": "Economy & Trade",
+    "description": "Long-distance trade, currencies, financial revolutions, and the material basis of history."
+  }
+]

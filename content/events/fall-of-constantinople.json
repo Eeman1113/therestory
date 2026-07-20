@@ -1,0 +1,115 @@
+{
+  "id": "fall-of-constantinople",
+  "slug": "fall-of-constantinople",
+  "title": "Fall of Constantinople",
+  "date": {
+    "start": "1453-05-29",
+    "precision": "day"
+  },
+  "era": "early-modern",
+  "regions": [
+    "europe",
+    "middle-east-north-africa"
+  ],
+  "categories": [
+    "war-conflict",
+    "politics-empires"
+  ],
+  "significance": 5,
+  "summary": "On 29 May 1453, after a fifty-three-day siege, the Ottoman sultan Mehmed II broke into Constantinople and ended the eleven-hundred-year Byzantine Empire. The last emperor, Constantine XI Palaiologos, died in the fighting. The greatest Christian city of the eastern Mediterranean became the Muslim capital of a new imperial order and, in the shorthand of many historians, the medieval world ended.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "By 1453 the Byzantine Empire had shrunk to little more than Constantinople itself and a few pockets in the Peloponnese. For a century the Ottomans had encircled it, taking Adrianople and the Balkans and using Christian vassals in campaigns from the Danube to the Euphrates. When the young sultan Mehmed II succeeded his father Murad II in 1451, at nineteen, he made the capture of the city his first great project.\n\nHe built the fortress of Rumeli Hisari on the European shore of the Bosphorus in 1452, cutting the city off from Black Sea grain, and hired the Hungarian engineer Orban to cast enormous bronze bombards. Emperor Constantine XI Palaiologos, ruling a treasury near empty, could muster perhaps five thousand Greek soldiers and around two thousand Western volunteers, most notably the Genoese condottiere Giovanni Giustiniani Longo and his professional troops."
+    },
+    {
+      "heading": "What happened",
+      "body": "The siege began on 6 April 1453. Mehmed's army of perhaps 50,000 to 80,000 men, including the elite Janissary corps, deployed against the great triple line of the Theodosian land walls, which had turned back besiegers for a thousand years. Orban's largest cannon, said to be around eight metres long and firing stone balls weighing several hundred kilograms, hammered the walls day after day. Nightly repairs by the defenders and their civilian volunteers kept the breaches closed.\n\nA great chain across the mouth of the Golden Horn kept the Ottoman fleet out of the inner harbour, so on the night of 22 April Mehmed had some seventy of his ships hauled overland on greased log rollers from the Bosphorus into the Horn behind the chain, an audacious portage that stretched the defence dangerously thin. Small relief squadrons from Genoa broke through the blockade in April but no large Western fleet came.\n\nJust after midnight on Tuesday 29 May the final assault began. Waves of irregulars and Anatolian regulars were thrown at the walls to exhaust the defenders; then the Janissaries went in. In the confusion at the Kerkoporta, a small postern gate near the Blachernae palace, a party of Ottoman troops entered and raised their standard on a tower. Giustiniani was mortally wounded near the Saint Romanus Gate; his withdrawal broke the defenders' nerve. Constantine XI is said to have thrown off his imperial regalia and died sword in hand in the last melee. By morning the city was Mehmed's."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "Mehmed granted his troops the customary three days of plunder but reportedly cut it short. Contemporary estimates suggest around four thousand civilians died and perhaps thirty thousand were enslaved. The great church of Hagia Sophia was converted into a mosque; the sultan installed a new Greek patriarch, Gennadios Scholarios, and confirmed the Orthodox community's legal existence under Ottoman rule.\n\nMehmed, henceforth known as Fatih, the Conqueror, moved his capital from Edirne to the city he called Kostantiniyye and repopulated it with Muslim, Greek, Armenian, and Jewish settlers. The Ottoman Empire, now stretching from the Danube to the Euphrates, would be a decisive Mediterranean power for the next four centuries.\n\nIn Christendom the shock was profound. Refugee scholars carrying Greek manuscripts fed the Italian Renaissance, the trade routes to the East were reorganised in ways that helped push Portuguese and Spanish ships around Africa and across the Atlantic, and Moscow began to style itself the 'Third Rome', heir to a fallen Christian imperial capital. Many historians still use 1453 as the conventional boundary between the medieval and early modern worlds."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "europe",
+      "text": "The Hundred Years' War ended in the same summer. On 17 July 1453 a French army destroyed the last major English field force at Castillon in Gascony; within weeks English rule in France was reduced to the town of Calais. In central Europe the young Ladislaus the Posthumous was recognised as king of Bohemia, and Muscovy under Vasily II tightened its grip over the Russian principalities."
+    },
+    {
+      "region": "east-asia",
+      "text": "Ming China, ruled by the Jingtai Emperor after the Tumu Crisis of 1449 had seen his brother captured by the Mongols, was recovering from a difficult year: catastrophic Yellow River flooding devastated Henan and an unusually harsh winter caused widespread deaths. A mysterious tropical volcanic eruption in late 1452 or early 1453 had begun a fifteen-year cold snap across the northern hemisphere."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "The Timurid inheritance of Tamerlane, ruled from Herat by Shah Rukh until 1447 and now fragmenting under his descendants, still dominated eastern Persia and Transoxiana. In northern India the Lodi dynasty of Afghans was consolidating control of the Delhi Sultanate, while the Bahmani Sultanate ran a rival court in the Deccan and Vijayanagara ruled the south."
+    },
+    {
+      "region": "africa",
+      "text": "In West Africa the Mali Empire was in long decline and Songhai was rising along the middle Niger under the future conqueror Sunni Ali. Portuguese caravels sponsored by Prince Henry the Navigator had been feeling their way down the Atlantic coast and would round Cape Verde within a few years, drawing Africa into a new maritime world."
+    },
+    {
+      "region": "americas",
+      "text": "In the Valley of Mexico the Aztec Triple Alliance under Moctezuma I was in the middle of a devastating multi-year drought and famine that had begun around 1450 and drove people to sell themselves into servitude. On the Peruvian sierra the Inca ruler Pachacuti was in the middle of the campaigns that would turn Cuzco's regional kingdom into the largest empire of the pre-Columbian Americas."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Mehmed II",
+      "role": "Ottoman sultan, aged 21, who directed the siege and became known thereafter as Fatih, the Conqueror"
+    },
+    {
+      "name": "Constantine XI Palaiologos",
+      "role": "Last Byzantine emperor, killed in the final assault on 29 May 1453"
+    },
+    {
+      "name": "Giovanni Giustiniani Longo",
+      "role": "Genoese commander of the land-wall defence; mortally wounded during the final assault"
+    },
+    {
+      "name": "Orban",
+      "role": "Hungarian founder whose giant bronze bombards battered the Theodosian walls"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Zonaro_GatesofConst.jpg",
+      "caption": "Mehmed II Entering Constantinople, painted by the Ottoman court artist Fausto Zonaro around the turn of the 20th century. Dolmabahce Palace, Istanbul.",
+      "credit": "Fausto Zonaro (1854 to 1929), via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zonaro_GatesofConst.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of Constantinople",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Mehmed II",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mehmed_II",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "1453",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1453",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "1453: The Fall of Constantinople",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/article/1180/1453-the-fall-of-constantinople/",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Mehmed II",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/Mehmed_II/",
+      "accessed": "2026-07-20"
+    }
+  ]
+}

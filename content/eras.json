@@ -1,0 +1,58 @@
+[
+  {
+    "id": "prehistory",
+    "label": "Prehistory",
+    "startYear": -3500,
+    "endYear": -800,
+    "description": "From the invention of writing in Mesopotamia and Egypt through the rise of the earliest urban civilizations and the first great riverine empires."
+  },
+  {
+    "id": "ancient",
+    "label": "Ancient",
+    "startYear": -800,
+    "endYear": 500,
+    "description": "The age of Persia, Greece, Rome, Han China, and Mauryan India — literate empires trading and warring across three continents."
+  },
+  {
+    "id": "classical",
+    "label": "Classical",
+    "startYear": 500,
+    "endYear": 1000,
+    "description": "The rise of Islam, Tang and Song China, the Byzantine world, the Maya, and post-Roman Europe — a half-millennium of new orders."
+  },
+  {
+    "id": "post-classical",
+    "label": "Post-classical",
+    "startYear": 1000,
+    "endYear": 1500,
+    "description": "Mongol steppe empires, Islamic caliphates, the High Middle Ages in Europe, the Mali and Songhai empires, and the Aztec and Inca ascendancies."
+  },
+  {
+    "id": "early-modern",
+    "label": "Early Modern",
+    "startYear": 1500,
+    "endYear": 1800,
+    "description": "Global exchange, gunpowder empires, Reformation and scientific revolution, Atlantic slavery, and the beginnings of the modern state."
+  },
+  {
+    "id": "long-19th",
+    "label": "Long 19th Century",
+    "startYear": 1800,
+    "endYear": 1914,
+    "description": "Industry, nationalism, empire, revolution — from Napoleon through the eve of the First World War."
+  },
+  {
+    "id": "20th-century",
+    "label": "20th Century",
+    "startYear": 1914,
+    "endYear": 1991,
+    "description": "World wars, decolonisation, the Cold War, mass media, space flight, and the collapse of the Soviet order."
+  },
+  {
+    "id": "contemporary",
+    "label": "Contemporary",
+    "startYear": 1991,
+    "endYear": 2026,
+    "description": "The internet age, globalisation, climate change, and the shifting balance of a multipolar world."
+  }
+]

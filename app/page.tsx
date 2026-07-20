@@ -3,26 +3,12 @@ import { ArrowRight } from "lucide-react";
 import { MicroCaps } from "@/components/common/micro-caps";
 import { MonoDate } from "@/components/common/mono-date";
 import { HairlineRule } from "@/components/common/hairline-rule";
-
-const PIVOTAL_YEARS = [
-  { year: -3100, note: "Writing appears in Sumer and Egypt" },
-  { year: -776, note: "First recorded Olympiad" },
-  { year: -221, note: "Qin unifies China" },
-  { year: 622, note: "The Hijra" },
-  { year: 1066, note: "Norman conquest of England" },
-  { year: 1206, note: "Genghis Khan proclaimed" },
-  { year: 1347, note: "The Black Death reaches Europe" },
-  { year: 1453, note: "Fall of Constantinople" },
-  { year: 1492, note: "Columbus makes landfall in the Americas" },
-  { year: 1789, note: "French Revolution begins" },
-  { year: 1914, note: "The world goes to war" },
-  { year: 1945, note: "End of WWII; atomic age begins" },
-  { year: 1969, note: "Apollo 11 lands on the Moon" },
-  { year: 1989, note: "Berlin Wall falls" },
-  { year: 2001, note: "September 11 attacks" },
-];
+import { allEvents } from "@/lib/content/loader";
 
 export default function HomePage() {
+  const events = allEvents();
+  const heroEvent = events.find((e) => e.slug === "fall-of-constantinople") ?? events[0];
+
   return (
     <div className="mx-auto w-full max-w-[1400px] px-8">
       {/* Hero */}
@@ -42,23 +28,27 @@ export default function HomePage() {
             and Oceania.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-6">
-            <Link
-              href="/year/1453"
-              className="group inline-flex items-baseline gap-3 border-b border-ink pb-1 text-base"
-            >
-              <span>Start with the fall of Constantinople</span>
-              <ArrowRight
-                size={16}
-                strokeWidth={1.5}
-                className="translate-y-[2px] transition-transform group-hover:translate-x-1"
-                aria-hidden
+          {heroEvent && (
+            <div className="mt-10 flex flex-wrap items-center gap-6">
+              <Link
+                href={`/event/${heroEvent.slug}`}
+                className="group inline-flex items-baseline gap-3 border-b border-ink pb-1 text-base"
+              >
+                <span>Start here — {heroEvent.title}</span>
+                <ArrowRight
+                  size={16}
+                  strokeWidth={1.5}
+                  className="translate-y-[2px] transition-transform group-hover:translate-x-1"
+                  aria-hidden
+                />
+              </Link>
+              <MonoDate
+                date={heroEvent.date}
+                size="sm"
+                className="text-ink-muted"
               />
-            </Link>
-            <span className="font-mono text-xs tabular-nums text-ink-muted">
-              1453·05·29
-            </span>
-          </div>
+            </div>
+          )}
         </div>
 
         {/* Sidebar */}
@@ -83,32 +73,32 @@ export default function HomePage() {
 
       <HairlineRule />
 
-      {/* Pivotal years */}
+      {/* Seed anchor events */}
       <section className="py-16">
         <div className="flex items-baseline justify-between">
           <div>
-            <MicroCaps as="p">Pivotal years</MicroCaps>
+            <MicroCaps as="p">Anchor events</MicroCaps>
             <h2 className="mt-2 text-2xl tracking-[-0.01em]">
-              Fifteen moments to start from
+              Where the story begins
             </h2>
           </div>
           <span className="hidden font-mono text-xs tabular-nums text-ink-muted sm:inline">
-            —{PIVOTAL_YEARS.length} entries
+            —{events.length} seeded
           </span>
         </div>
 
         <ul className="mt-8 grid grid-cols-1 gap-x-10 gap-y-0 md:grid-cols-2 lg:grid-cols-3">
-          {PIVOTAL_YEARS.map((y) => (
-            <li key={y.year} className="border-t border-rule py-4">
+          {events.map((e) => (
+            <li key={e.slug} className="border-t border-rule py-4">
               <Link
-                href={`/year/${y.year}`}
+                href={`/event/${e.slug}`}
                 className="group flex items-baseline justify-between gap-4"
               >
                 <span className="text-sm leading-6 text-ink transition-colors group-hover:text-accent">
-                  {y.note}
+                  {e.title}
                 </span>
                 <MonoDate
-                  date={{ start: signedYear(y.year), precision: "year" }}
+                  date={e.date}
                   size="sm"
                   className="shrink-0 text-ink-muted"
                 />
@@ -135,9 +125,4 @@ export default function HomePage() {
       </section>
     </div>
   );
-}
-
-function signedYear(y: number): string {
-  const abs = Math.abs(y).toString().padStart(4, "0");
-  return y < 0 ? `-${abs.padStart(6, "0")}` : abs;
 }

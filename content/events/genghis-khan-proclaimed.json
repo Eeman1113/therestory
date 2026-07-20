@@ -1,0 +1,107 @@
+{
+  "id": "genghis-khan-proclaimed",
+  "slug": "genghis-khan-proclaimed",
+  "title": "Genghis Khan proclaimed at the kurultai",
+  "date": {
+    "start": "1206",
+    "precision": "year"
+  },
+  "era": "post-classical",
+  "regions": [
+    "east-asia",
+    "south-central-asia"
+  ],
+  "categories": [
+    "politics-empires",
+    "war-conflict"
+  ],
+  "significance": 5,
+  "summary": "In 1206 a great assembly of Mongol and allied steppe clans gathered at the headwaters of the Onon River and acclaimed a chieftain named Temujin as Chinggis Khaan, ruler of the Great Mongol Nation. It was the formal birth of the Mongol Empire, the state that within a lifetime would become the largest contiguous land empire in history and reshape Eurasia from the Pacific to the Mediterranean.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "Temujin was born in the 1160s into a minor clan of the Mongol steppe. His father was poisoned when he was still a child, and he grew up an outlaw and a hostage. Through a mixture of personal charisma, brutal reprisal, and unusually inclusive rewards for followers of any background, he spent two decades knitting the fractious tribes of the eastern steppe into a single confederation.\n\nHis campaigns eliminated one rival after another: the Tatars around 1202, the Kereit under Toghrul, and the Naiman at the battle of Chakirmaut in 1204. The Merkits were shattered the same year, and his childhood sworn brother and adult rival Jamukha was executed. By the winter of 1205 to 1206 there was no independent Mongol-speaking power left on the eastern steppe."
+    },
+    {
+      "heading": "What happened",
+      "body": "In the spring or summer of 1206 the surviving clan chiefs, generals, and shamans convened a kurultai, the traditional Mongol grand assembly, at the source of the Onon River in what is now northeastern Mongolia. There they proclaimed Temujin ruler of the Yeke Mongghol Ulus, the Great Mongol Nation, under the title Chinggis Khaan, usually rendered in English as Genghis Khan. The exact sense of the title is debated: possible readings include 'fierce' or 'firm' ruler and, via Turkic tängiz meaning ocean, 'universal' or 'oceanic' ruler.\n\nThe assembly was more than a coronation. Genghis Khan used it to promulgate a new order. The old tribal lineages were dissolved and every free man aged roughly fifteen to seventy was enrolled in a decimal military structure, in units of ten, one hundred, one thousand, and ten thousand, cutting across kin loyalties. His personal bodyguard, the keshig, was enlarged to ten thousand and made both a household staff and a school for future commanders. A body of customary law, later called the Yassa, regulated theft, adultery, and the treatment of allies, and religious toleration was extended to Christians, Muslims, Buddhists, and Daoists alike."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The kurultai released a wave of conquest. Between 1209 and 1210 Genghis brought the Tangut Western Xia state to heel. From 1211 to 1215 his armies invaded the Jurchen Jin dynasty of northern China and captured its central capital Zhongdu, the site of modern Beijing. From 1219 he turned west to destroy the Khwarazmian Empire, sacking Bukhara, Samarkand, and Merv in a campaign remembered for its scale of destruction.\n\nBy Genghis Khan's death in 1227 his sons and grandsons had inherited an empire that reached from the Sea of Japan to the Caspian. Under his successors it would extend further still, into Russia, Persia, Anatolia, and southern China, forging the Pax Mongolica that briefly made overland travel from Europe to China safer than at any time before the modern age. The 1206 kurultai is the moment historians conventionally date the beginning of that transformation."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "south-central-asia",
+      "text": "In northern India 1206 was the founding year of another new state. After the assassination of the Ghurid sultan Muhammad of Ghor in March, his trusted Turkic commander Qutb al-Din Aibak was recognised as sovereign at Lahore in June, beginning the Mamluk line and the Delhi Sultanate that would rule much of the subcontinent for the next three centuries."
+    },
+    {
+      "region": "europe",
+      "text": "Constantinople was in Latin hands. The Fourth Crusade had sacked the city in 1204, and in August 1206 Henry of Flanders was crowned the second Latin Emperor after his brother Baldwin I died in Bulgarian captivity. In the west, King John of England landed at La Rochelle to defend the remnants of Angevin Aquitaine against Philip II of France."
+    },
+    {
+      "region": "middle-east-north-africa",
+      "text": "The Ayyubid confederation founded by Saladin still dominated Egypt and Syria under the sultan al-Adil, uneasily managing crusader states along the Levantine coast. Further west the Almohad caliphate ruled the Maghreb and much of al-Andalus, though its Iberian position would soon collapse at Las Navas de Tolosa in 1212."
+    },
+    {
+      "region": "east-asia",
+      "text": "China was divided among three states that Mongol armies would soon confront: the Jurchen Jin in the north, the Southern Song in the Yangtze basin and beyond, and the Tangut Western Xia in the northwest. In Japan the Kamakura shogunate under the Hojo regents governed in the name of a distant emperor in Kyoto."
+    },
+    {
+      "region": "africa",
+      "text": "In the West African savanna the empire of Ghana was in decline as new powers rose in its shadow, notably the Sosso kingdom of Sumanguru Kante, which within a generation would fall to Sundiata Keita and the founders of the Mali Empire. In the Ethiopian highlands the Zagwe dynasty was raising the rock-hewn churches of Lalibela."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Temujin (Genghis Khan)",
+      "role": "Mongol chieftain proclaimed universal ruler in 1206; founder of the Mongol Empire, died 1227",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/YuanEmperorAlbumGenghisPortrait.jpg",
+      "credit": "Unknown 14th-century Yuan-era painter, via Wikimedia Commons"
+    },
+    {
+      "name": "Jamukha",
+      "role": "Sworn brother and later rival of Temujin, defeated and executed before the 1206 assembly"
+    },
+    {
+      "name": "Teb Tengri",
+      "role": "Shaman who is said to have publicly proclaimed Temujin as khan of the Great Mongol Nation at the kurultai"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/YuanEmperorAlbumGenghisPortrait.jpg",
+      "caption": "Portrait of Genghis Khan from a 14th-century Yuan-dynasty album, ink and colour on silk. National Palace Museum, Taipei.",
+      "credit": "Unknown 14th-century Yuan-era painter, via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Genghis Khan",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Mongol Empire",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mongol_Empire",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Qutb al-Din Aibak",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qutb_al-Din_Aibak",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Genghis Khan",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/Genghis_Khan/",
+      "accessed": "2026-07-20"
+    }
+  ]
+}

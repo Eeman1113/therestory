@@ -1,0 +1,94 @@
+{
+  "id": "qin-unification-of-china",
+  "slug": "qin-unification-of-china",
+  "title": "Qin unification of China",
+  "date": {
+    "start": "-000221",
+    "precision": "year",
+    "display": "221 BCE"
+  },
+  "era": "ancient",
+  "regions": ["east-asia"],
+  "categories": ["politics-empires", "war-conflict"],
+  "significance": 5,
+  "summary": "In 221 BCE King Zheng of Qin completed the conquest of the last of his rival states and declared himself Shi Huangdi, First Emperor. Two and a half centuries of civil war between the Warring States ended in a single, brutally efficient bureaucratic empire. Within a decade a common script, currency, weights, road gauge, and system of commanderies had been imposed on all the lands the Han would inherit.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "By the fourth century BCE the Zhou kingdom that had once claimed the Mandate of Heaven had dissolved into seven large states, locked in near-permanent war. Qin, in the far northwest on the loess plateau, had until then been treated as a semi-barbarian frontier. Reforms under the Legalist statesman Shang Yang in the mid-fourth century BCE reshaped it into a disciplined, agrarian, meritocratic war machine: peasants received land in exchange for military service, aristocratic privilege was curtailed, and the household was made the basic unit of taxation and conscription.\n\nBy the time Ying Zheng inherited the throne of Qin in 246 BCE, at the age of nine, this system was producing armies his rivals could not match. Guided in the early years by the merchant-statesman Lü Buwei and then by the Legalist chancellor Li Si, Qin launched a decade of coordinated campaigns against its neighbours."
+    },
+    {
+      "heading": "What happened",
+      "body": "The conquests came in swift succession: Han fell in 230 BCE, Zhao in 228, Wei in 225, the vast southern state of Chu in 223, and Yan in 226 and 222. In 221 BCE the eastern kingdom of Qi surrendered without a battle. For the first time in recorded history the Yellow and Yangtze basins were under a single ruler.\n\nKing Zheng promptly styled himself Qin Shi Huangdi, First August Emperor, a new title deliberately grander than that of any previous king. He and Li Si moved to make the unification irreversible. Aristocratic fiefs were abolished and the empire divided into thirty-six commanderies (later expanded), each run by centrally appointed civil and military officers. Weights, measures, and the diameter of chariot axles were standardised. The many regional scripts were reduced to a single small seal form. A common bronze coin, the round banliang with its square hole, replaced local currencies. Sections of northern walls built by the old states were connected and extended to guard the frontier against the Xiongnu, creating the ancestor of the Great Wall."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The Qin dynasty itself was short-lived. Qin Shi Huang died on tour in 210 BCE and his heirs proved incapable of holding the state together; peasant revolts and elite defections toppled the dynasty by 206 BCE, after barely fifteen years. But the shape of the empire endured. The Han dynasty, which emerged from the wars of succession, kept the commandery system, the standardised script, the coinage, the road network, and the ideal of a single emperor ruling All Under Heaven.\n\nThat template shaped every subsequent Chinese dynasty and, through them, the political grammar of East Asia. The vast tomb complex Qin Shi Huang built for himself outside modern Xi'an, guarded by more than six thousand life-sized terracotta soldiers rediscovered in 1974, is the most familiar physical trace of an empire that lasted only a generation but set the mould for two millennia."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "europe",
+      "text": "In the western Mediterranean the Second Punic War was brewing. In 221 BCE Hannibal Barca, still in his twenties, was proclaimed commander-in-chief of the Carthaginian armies in Spain after the assassination of his brother-in-law Hasdrubal. Within two years he would march an army with elephants across the Alps and bring Rome to the brink of destruction."
+    },
+    {
+      "region": "middle-east-north-africa",
+      "text": "The Hellenistic successor kingdoms were in flux. Ptolemy III of Egypt died in 221 BCE and was succeeded by his weaker son Ptolemy IV Philopator. In the Seleucid east the young king Antiochus III, later called the Great, was fighting to keep his sprawling realm together and would soon defeat the rebel satrap Molon at the Tigris."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "The Mauryan Empire founded by Chandragupta and expanded under Ashoka was still the dominant power in the Indian subcontinent, though after Ashoka's death around 232 BCE its coherence had begun to fray. Buddhist and Jain communities continued to spread along the trade routes reaching into Central Asia."
+    },
+    {
+      "region": "americas",
+      "text": "In Mesoamerica the late Olmec heartland along the Gulf of Mexico was in decline, but Zapotec Monte Alban in the Valley of Oaxaca was thriving, and the ceremonial city of Cuicuilco in the Basin of Mexico was at its height. In the Andes the Chavin cult centres were fading and regional cultures such as the Paracas on the Peruvian coast were taking shape."
+    },
+    {
+      "region": "africa",
+      "text": "Meroe, on the middle Nile in what is now Sudan, was consolidating as the capital of the Kushite kingdom, developing its own script and iron-working tradition. To the north, Ptolemaic Egypt continued to run one of the great grain economies of the ancient world from Alexandria."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Qin Shi Huang",
+      "role": "Born Ying Zheng in 259 BCE; king of Qin from 246 BCE, First Emperor of unified China from 221 BCE until his death in 210 BCE"
+    },
+    {
+      "name": "Li Si",
+      "role": "Legalist chancellor and chief architect of the standardisation reforms in script, coinage, and administration"
+    },
+    {
+      "name": "Shang Yang",
+      "role": "Fourth-century BCE Legalist reformer whose earlier restructuring of the Qin state made the later conquests possible"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Qinshihuang.jpg",
+      "caption": "A 19th-century Chinese portrait of Qin Shi Huang, the First Emperor of a unified China.",
+      "credit": "Unknown 19th-century Chinese artist, via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qinshihuang.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qin dynasty",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qin_dynasty",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Qin Shi Huang",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Qin Dynasty",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/Qin_Dynasty/",
+      "accessed": "2026-07-20"
+    }
+  ]
+}

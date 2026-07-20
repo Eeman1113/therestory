@@ -1,0 +1,101 @@
+{
+  "id": "unification-of-egypt",
+  "slug": "unification-of-egypt",
+  "title": "Unification of Upper and Lower Egypt",
+  "date": {
+    "start": "-003100",
+    "precision": "century",
+    "display": "c. 3100 BCE"
+  },
+  "era": "prehistory",
+  "regions": ["africa"],
+  "categories": ["politics-empires"],
+  "significance": 5,
+  "summary": "Around 3100 BCE the two kingdoms of the Nile valley were welded into a single state under one crown, an act traditionally attributed to a king called Menes and now generally identified with Narmer. The moment inaugurated more than three millennia of pharaonic rule, a centralised god-kingship administered from a new capital at Memphis, and produced the world's earliest large territorial state.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "For centuries before unification the Nile had supported two distinct polities. Upper Egypt was the long ribbon of the river valley to the south, its rulers wearing a tall white crown and associated with the town of Nekhen (Hierakonpolis). Lower Egypt was the broad Delta to the north, whose kings wore a flat red crown. During the late Predynastic Naqada III period (roughly 3200 to 3000 BCE) the southern kingdom pushed steadily northward, absorbing rival centres and extending its trading reach into the Levant.\n\nWriting was still in its infancy, so the political story survives mostly through carved ceremonial objects and later king-lists. The Egyptian priest Manetho, writing in Greek in the third century BCE, said the country was first joined under a king named Menes. Modern Egyptology, working from the seal impressions of Den and Qa'a at Abydos, identifies this figure with the historical king Narmer, though a minority view holds that Menes was actually his successor Hor-Aha. The disagreement is genuine and unresolved."
+    },
+    {
+      "heading": "What happened",
+      "body": "The clearest surviving image of the event is the Narmer Palette, a shield-shaped slab of greywacke about 64 centimetres tall, carved in low relief and discovered in 1897 to 1898 by James Quibell and Frederick Green in the temple of Horus at Hierakonpolis. On one face Narmer wears the white crown of Upper Egypt and raises a mace to strike a kneeling northern enemy; on the reverse he wears the red crown of Lower Egypt and inspects rows of decapitated foes. It is the earliest surviving depiction of a single ruler in both crowns.\n\nWith unification the capital moved from Thinis in the south to a new foundation at Memphis, near the apex of the Delta, where north and south could be governed as one. A national administration of royal governors was appointed, and divine kingship, in which pharaoh mediated between the gods and the land, was set on the footing it would keep until the Roman conquest three thousand years later. Because so much of this transition happened before continuous written records, dates carry a margin of a century in either direction."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "Narmer's reign is now taken as the start of the First Dynasty and of the Early Dynastic Period, which lasted until about 2686 BCE. His successors extended royal power into the Sinai and Nubia, consolidated a professional scribal class, and developed the hieroglyphic script from the pictographic experiments visible on the palette itself.\n\nWithin a few centuries the machinery built at unification would raise the pyramids at Saqqara and Giza. The pharaonic model, one god-king, two lands, a bureaucracy of scribes, a state cult, proved so durable that even Alexander the Great and later the Ptolemies found it easier to adopt Egyptian kingship than to replace it. The unification of the Two Lands is, in that sense, the ancestor of every subsequent Egyptian regime."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "middle-east-north-africa",
+      "text": "In southern Mesopotamia the great city of Uruk had grown to perhaps 25,000 to 50,000 inhabitants across roughly 250 hectares, the largest human settlement anywhere on earth. Sumerian scribes were pressing the first proto-cuneiform tablets into clay, mostly for temple accounts, and monumental structures such as the Anu Ziggurat and the White Temple defined the city's skyline."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "Along the Indus and its tributaries the Ravi and early Harappan phases were laying the ground for what would become the Indus Valley civilisation. Villages at Harappa and Mehrgarh were experimenting with standardised bricks, metallurgy, and long-distance trade in lapis lazuli, though the full urban flowering of Mohenjo-daro still lay several centuries in the future."
+    },
+    {
+      "region": "europe",
+      "text": "On Salisbury Plain the first stage of Stonehenge, a circular earthwork with a ring of timber posts, was raised around this time. Across Atlantic Europe, from Brittany to Orkney, Neolithic communities were building passage tombs and stone circles, part of a wave of megalithic construction that had begun a millennium earlier."
+    },
+    {
+      "region": "americas",
+      "text": "On the arid Pacific coast of what is now Peru, the Caral or Norte Chico civilisation was taking shape. Large communal platform mounds and sunken plazas at Caral, Aspero, and Huaricanga mark the earliest known complex society in the Americas, sustained by fishing and irrigated cotton and squash rather than by ceramics or maize."
+    },
+    {
+      "region": "east-asia",
+      "text": "In China the late Neolithic Longshan and Liangzhu cultures were producing fine black burnished pottery and elaborate jade objects, and building rammed-earth walls around proto-urban settlements along the Yellow and lower Yangtze rivers. These would in time feed into the Bronze Age states of the second millennium BCE."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Narmer",
+      "role": "First-Dynasty king of Egypt, most likely the historical figure behind the tradition of 'Menes' the unifier"
+    },
+    {
+      "name": "Hor-Aha",
+      "role": "Narmer's successor, identified by a minority of scholars as the true 'Menes' and founder of the united kingdom"
+    },
+    {
+      "name": "Manetho",
+      "role": "Ptolemaic-era Egyptian priest whose Greek-language king-list preserved the name Menes for the first unifier"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Narmer_Palette.jpg",
+      "caption": "The Narmer Palette, c. 3100 BCE, showing the king wearing the crowns of Upper and Lower Egypt on its two faces. Egyptian Museum, Cairo.",
+      "credit": "Unknown ancient Egyptian artist, via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Early Dynastic Period (Egypt)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Early_Dynastic_Period_(Egypt)",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Narmer",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Narmer",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Narmer Palette",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Narmer_Palette",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Narmer Palette",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/Narmer_Palette/",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": true
+}

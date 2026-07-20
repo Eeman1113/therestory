@@ -29,3 +29,13 @@ Format:
 - Removed scaffold's default SVGs and cruft. Verified `npm run build` + `npm run lint` clean. Verified light + dark in browser.
 - Wrote `README.md`.
 
+## 2026-07-20 — Phase 2: data layer + 5 seed events
+- Authored Zod schemas (`lib/content/schema.ts`) for events, years, and IA metadata; enums for regions/eras/categories; signed BCE year regex; year snapshots must cover all seven regions.
+- Built content loader (`lib/content/loader.ts`) that reads and validates every JSON in `/content` at build time and caches results.
+- Authored static IA JSONs: `content/eras.json` (8 eras with year spans + descriptions), `content/regions.json` (7 regions), `content/categories.json` (8 categories).
+- Spawned research subagent to author 5 Wave A anchor events: Unification of Upper & Lower Egypt (c. 3100 BCE), Qin unification of China (221 BCE), Genghis Khan proclaimed (1206), Fall of Constantinople (1453·05·29), Apollo 11 lunar landing (1969·07·20).
+- Each event: full schema, ≥3 sources, hero image from Wikimedia Commons with confirmed license + credit + Commons file-page URL, world-context snapshots for other regions, key figures. `disputed: true` on Egypt unification per Menes/Narmer/Hor-Aha debate.
+- Spawned source-strengthening subagent to append at least one non-Wikipedia source per event (World History Encyclopedia — peer-reviewed) alongside existing Wikipedia sources. Wikipedia kept; augmented, not replaced.
+- Wired homepage to load events from the content loader (proves the pipeline end-to-end at build time). Replaced hardcoded pivotal-years list with a live "Anchor events" grid.
+- Trimmed `display` overrides on CE day-precision events so the mono middle-dot signature (`1453·05·29`, `1969·07·20`) renders consistently; kept `display` on BCE dates ("221 BCE", "c. 3100 BCE") where it reads more naturally.
+
