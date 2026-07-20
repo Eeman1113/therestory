@@ -1,4 +1,4 @@
-import { allEras, allEvents, allRegions } from "@/lib/content/loader";
+import { allEras, allEvents, allRegions, allYears } from "@/lib/content/loader";
 import { CommandPalette } from "./command-palette";
 
 /**
@@ -15,11 +15,16 @@ export function CommandPaletteMount() {
     categories: e.categories,
     summary: e.summary,
   }));
+  const years = allYears().map((y) => ({
+    year: y.year,
+    headline: y.headline,
+  }));
   return (
     <CommandPalette
       events={events}
       eras={allEras()}
       regions={allRegions()}
+      years={years}
     />
   );
 }

@@ -1,0 +1,124 @@
+{
+  "id": "2008-financial-crisis",
+  "slug": "2008-financial-crisis",
+  "title": "2008 Global Financial Crisis (Lehman collapses)",
+  "date": {
+    "start": "2008-09-15",
+    "precision": "day"
+  },
+  "era": "contemporary",
+  "regions": [
+    "americas",
+    "europe"
+  ],
+  "categories": [
+    "economy-trade",
+    "politics-empires"
+  ],
+  "significance": 5,
+  "summary": "In the early hours of 15 September 2008 the 158-year-old New York investment bank Lehman Brothers filed for Chapter 11 bankruptcy protection, listing 639 billion dollars in assets, the largest failure in United States history. The Bush administration and the Federal Reserve, having rescued Bear Stearns six months earlier, chose not to save Lehman. Within days a panic engulfed global credit markets, the insurance giant AIG required a federal takeover, money-market funds broke the buck, and governments across the North Atlantic mounted the largest bank rescues since the 1930s. The Lehman failure crystallised the deepest financial crisis since the Great Depression.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "The roots of the crisis lay in a long American housing boom and the financial engineering built around it. From the late 1990s low interest rates, the Federal Reserve's rate-cutting after the 2000 dot-com crash, capital inflows from surplus countries, and a policy push to expand home ownership fed a rise in US house prices that accelerated after 2003. Mortgage lenders, competing for market share, extended credit to borrowers with weak documentation and low credit scores, so-called 'subprime' loans, often with adjustable rates that would reset upward after two or three years. In the second-tier boom towns of Florida, Nevada, Arizona, and California, house prices doubled.\n\nOn Wall Street these mortgages were pooled into securities, tranched by credit quality, and sold on as mortgage-backed securities (MBS) and collateralised debt obligations (CDOs). The three major credit-rating agencies awarded triple-A ratings to senior tranches on the theory that geographic diversification would prevent losses from correlating. Insurance against default was written as credit default swaps, most infamously by the London-based Financial Products unit of the American International Group (AIG), which by 2008 had underwritten roughly 500 billion dollars of them.\n\nHouse prices peaked in mid-2006 and began to fall. Subprime delinquencies rose sharply through 2007; two Bear Stearns hedge funds that had held subprime CDOs collapsed that June. In August 2007 BNP Paribas suspended withdrawals from three funds, citing a 'complete evaporation of liquidity'; interbank lending seized up; and the Bank of England took the extraordinary step of rescuing Northern Rock, which suffered the first bank run in Britain in more than a century.\n\nThrough 2008 the crisis widened. The Federal Reserve chairman Ben Bernanke, Treasury Secretary Henry Paulson, and New York Fed president Timothy Geithner rescued Bear Stearns in a fire sale to JPMorgan Chase over the weekend of 14-16 March, using 29 billion dollars of Fed money to backstop the deal. On 7 September 2008 the Treasury placed the two housing-finance giants Fannie Mae and Freddie Mac, together backing more than five trillion dollars of mortgages, into 'conservatorship'. By then Lehman Brothers, the smaller of the remaining independent investment banks, was in visible distress. It had been the most aggressive of the Wall Street firms in packaging and holding subprime mortgages; its leverage ratio, assets to equity, exceeded thirty to one; its Repo 105 accounting manoeuvres flattered its balance sheet at reporting dates. CEO Richard Fuld sought a buyer through the summer, but talks with Korea Development Bank, Bank of America, and the British bank Barclays all foundered."
+    },
+    {
+      "heading": "What happened",
+      "body": "Over the weekend of 12-14 September 2008 the leaders of Wall Street were summoned to the New York Fed at 33 Liberty Street. Paulson made clear the government would not commit public money to save Lehman: the previous Bear Stearns rescue had drawn heavy political criticism, and Paulson believed no legal authority existed to inject capital directly. Bank of America withdrew to buy the smaller broker Merrill Lynch instead, announced on Sunday 14 September. Barclays' offer for Lehman was blocked on Sunday afternoon by the UK Financial Services Authority, which refused to waive the shareholder-vote requirement.\n\nWith no buyer, no government backstop, and no lender willing to extend the tens of billions of dollars of overnight repo funding on which the firm depended, Lehman Brothers Holdings Inc. filed for Chapter 11 bankruptcy protection in the Southern District of New York at 01:45 on Monday 15 September 2008. The petition listed 639 billion dollars in assets and 619 billion in debts, the largest bankruptcy in American history by a factor of six.\n\nWorld markets convulsed. The Dow Jones Industrial Average fell 504 points on 15 September, its worst day since the September 2001 reopening. AIG, whose credit default swaps required it to post collateral it did not have, saw its shares fall 61 per cent that day. On the evening of Tuesday 16 September the Fed announced an 85-billion-dollar emergency loan to AIG in exchange for a 79.9 per cent equity stake, effectively nationalising it. On 16 September the Reserve Primary Fund, a large money-market mutual fund holding Lehman commercial paper, 'broke the buck', its net asset value fell below one dollar per share, triggering a run on money-market funds that the Treasury halted only by guaranteeing the entire 3.4-trillion-dollar sector on 19 September.\n\nOn 18 September Paulson and Bernanke summoned congressional leaders to a private briefing and warned that without immediate action the American economy faced collapse within days. Over the next two weeks they secured passage, at the second attempt, of the Troubled Asset Relief Program (TARP), signed into law by President George W. Bush on 3 October 2008, authorising up to 700 billion dollars of federal money for financial rescues. On 13 October Paulson summoned the chief executives of nine major banks to the Treasury and, in effect, compelled them to accept 125 billion dollars of federal equity injections; the same day the British government announced 37 billion pounds in recapitalisation of Royal Bank of Scotland, Lloyds TSB, and HBOS. The Federal Reserve, the European Central Bank, and other central banks cut policy interest rates in a coordinated move on 8 October.\n\nThe global spread was rapid. Iceland's three main banks failed within a week of Lehman, forcing the country into an IMF programme. Ireland issued a blanket guarantee of its bank liabilities on 30 September. Fortis, Dexia, and Hypo Real Estate all required rescues in continental Europe. Global equity markets fell roughly forty per cent over the following six months; world trade contracted sharply; industrial production in Japan and Germany fell more steeply than in 1930."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The immediate response was the largest fiscal and monetary intervention in the history of the world economy. Central banks cut interest rates to near zero and began 'quantitative easing', large-scale purchases of government and mortgage securities. Governments enacted stimulus packages: the US Congress passed the 787-billion-dollar American Recovery and Reinvestment Act in February 2009 under the newly inaugurated President Barack Obama; China announced a four-trillion-yuan stimulus in November 2008. The G20, elevated from finance-ministers' body to leaders' summit in Washington in November 2008 and London in April 2009, coordinated a common response and produced a communique headlined by a trillion dollars in new IMF resources.\n\nThe global recession that followed was the sharpest since the Second World War. In the United States unemployment rose from 4.7 per cent in November 2007 to a peak of 10 per cent in October 2009; some 8.7 million jobs were lost. Home foreclosures in the US eventually exceeded ten million. Output in the euro area fell 4.5 per cent in 2009. The crisis then mutated into a sovereign-debt crisis in the euro area from 2010, as governments that had absorbed banking losses, especially Greece, Ireland, Portugal, Spain, and Cyprus, faced borrowing crises that required unprecedented EU/IMF rescue programmes and near-existential debates over the euro's survival.\n\nRegulatory reforms followed. The Dodd-Frank Wall Street Reform and Consumer Protection Act, signed into law by President Obama on 21 July 2010, created a Consumer Financial Protection Bureau, imposed the 'Volcker Rule' restricting proprietary trading, and required the largest banks to submit 'living wills'. Internationally, the Basel III accords of 2010-2011 substantially raised capital and liquidity requirements for global banks. Central banking itself was transformed: quantitative easing, forward guidance, and negative policy rates, all previously exotic, became standard tools.\n\nRelatively few individuals were prosecuted. In the United States no top Wall Street executive was jailed for offences directly related to the crisis, a matter of continuing political controversy. Bernard Madoff, whose 65-billion-dollar Ponzi scheme was exposed by the crisis, was sentenced to 150 years in December 2008. In Iceland a special prosecutor secured convictions of several bank chiefs. The scale of state support for financial institutions, and the meagre consequences for those who had run them, fed populist movements on left and right, most immediately the Tea Party in the United States and Occupy Wall Street in 2011, and, over the longer run, the anti-establishment politics that produced Brexit and the election of Donald Trump in 2016."
+    },
+    {
+      "heading": "Legacy",
+      "body": "The financial crisis of 2008 is now widely regarded as a hinge of contemporary history: an event that ended the confident post-Cold War consensus in favour of deregulation, globalisation, and financial innovation, and opened a decade of economic disappointment, political polarisation, and doubts about the competence of Western elites.\n\nEconomically its most durable legacy has been a global regime of very low interest rates. Central bank balance sheets in the US, Europe, Japan, and Britain expanded from a combined three trillion dollars before the crisis to some 25 trillion by 2022. Asset prices, equities, housing, later cryptocurrencies, boomed in the long low-rate era, while wage growth remained sluggish, widening the gap between owners of capital and everyone else. Household indebtedness fell only slowly; median household wealth in the United States did not recover to 2007 levels until well into the 2010s.\n\nGeopolitically the crisis accelerated the shift in economic weight from the North Atlantic to Asia, particularly to China, which used its stimulus to build infrastructure and, from 2013, the Belt and Road Initiative. American self-confidence in its economic model was permanently dented. In Europe the euro-area crisis exposed the fault line between creditor and debtor member states, entrenched austerity politics, and fuelled the rise of parties on the far right and far left, from Syriza and Podemos to the AfD and Rassemblement National.\n\nIntellectually the crisis revived interest in Keynesian macroeconomics, in Hyman Minsky's model of financial fragility, and in the economic history of the 1930s. It also opened long debates on causation. Some scholars emphasise loose Fed monetary policy after 2001; others regulatory failure and the shadow banking system; others global imbalances between saving and consumption; others the incentive structures of Wall Street bonuses; most now accept that multiple factors interacted.\n\nWhen the COVID-19 pandemic struck in 2020, the toolkit developed in 2008-2009, massive quantitative easing, direct fiscal support, banking-system backstops, was deployed almost as reflex, and at even greater scale. The Lehman moment, in that sense, redefined what governments and central banks are expected to do when confidence in the financial system fails."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "east-asia",
+      "text": "In August 2008 China had hosted the Summer Olympics in Beijing, a coming-out event that dramatised its rise. The financial crisis then interrupted the country's export-led growth model; in November Premier Wen Jiabao announced a four-trillion-yuan stimulus package weighted toward infrastructure and real estate. Japan's economy, exposed to the collapse in global demand for cars and electronics, contracted sharply. South Korea faced a currency crisis in October 2008 that was quelled by a 30-billion-dollar Fed swap line."
+    },
+    {
+      "region": "africa",
+      "text": "Sub-Saharan Africa initially seemed insulated from the financial crisis, but the subsequent collapse in commodity prices and remittances hit hard. In September 2008 Thabo Mbeki was forced from South Africa's presidency by his party; the country was preparing for its 2010 World Cup. In Zimbabwe, hyperinflation reached surreal levels: the central bank issued a 100-trillion-dollar note in early 2009. The African Union sent peacekeepers into Somalia, where an Islamist insurgency by al-Shabaab was gaining ground."
+    },
+    {
+      "region": "middle-east-north-africa",
+      "text": "Oil prices, having peaked at 147 dollars a barrel in July 2008, collapsed by the year's end to under 40 dollars, sharply tightening budgets for Gulf producers and for Iran under President Mahmoud Ahmadinejad. Israel launched Operation Cast Lead against Hamas in Gaza in December 2008, three months after the Lehman collapse. In Iraq, US troop levels were declining under the 'surge' commander General David Petraeus; a status-of-forces agreement providing for withdrawal by 2011 was signed in November 2008."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "India, whose growth had been running above nine per cent, decelerated but avoided recession. The Mumbai attacks of 26 November 2008 by Pakistan-based Lashkar-e-Taiba militants dominated the country's political attention that autumn, killing 166 people over four days. Pakistan itself was in political and economic crisis: Pervez Musharraf had resigned as president in August, replaced by Asif Ali Zardari; the country secured a 7.6-billion-dollar IMF loan in November. In Afghanistan the Taliban insurgency was intensifying."
+    },
+    {
+      "region": "oceania",
+      "text": "Australia's Labor government under Kevin Rudd responded with a rapid stimulus package that helped the country avoid technical recession, the only major advanced economy to do so through 2008-2009. The country's mining exports to China rebounded quickly. New Zealand had elected the National Party's John Key on 8 November 2008, replacing Helen Clark; the new government inherited a much weaker economy than had been apparent at the campaign's start."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Richard 'Dick' Fuld",
+      "role": "Chairman and CEO of Lehman Brothers, 1994-2008; presided over the firm's expansion into subprime mortgages and its bankruptcy"
+    },
+    {
+      "name": "Henry 'Hank' Paulson",
+      "role": "United States Secretary of the Treasury 2006-2009; declined to bail out Lehman and later led the TARP response"
+    },
+    {
+      "name": "Ben Bernanke",
+      "role": "Chairman of the Federal Reserve 2006-2014; deployed emergency lending and quantitative easing"
+    },
+    {
+      "name": "Timothy Geithner",
+      "role": "President of the New York Federal Reserve during the crisis; later US Treasury Secretary under President Obama"
+    },
+    {
+      "name": "Gordon Brown",
+      "role": "British Prime Minister 2007-2010; led an early European response to bank recapitalisation"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Lehman_Brothers-NYC-20080915.jpg",
+      "caption": "The Lehman Brothers headquarters at 745 Seventh Avenue in midtown Manhattan on 15 September 2008, the day of the firm's bankruptcy filing.",
+      "credit": "Robert Scoble, via Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers-NYC-20080915.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bankruptcy of Lehman Brothers",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Financial crisis of 2007-2008",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "The Financial Crisis Inquiry Report",
+      "publisher": "US Financial Crisis Inquiry Commission",
+      "url": "https://www.govinfo.gov/app/details/GPO-FCIC",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "The fall of Lehman Brothers: how the world's biggest bankruptcy unfolded",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.com/news/business-45489841",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Crashed: How a Decade of Financial Crises Changed the World",
+      "publisher": "Adam Tooze / Viking",
+      "url": "https://en.wikipedia.org/wiki/Crashed:_How_a_Decade_of_Financial_Crises_Changed_the_World",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": false
+}

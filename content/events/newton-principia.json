@@ -1,0 +1,127 @@
+{
+  "id": "newton-principia",
+  "slug": "newton-principia",
+  "title": "Newton publishes the Principia",
+  "date": {
+    "start": "1687-07-05",
+    "precision": "day"
+  },
+  "era": "early-modern",
+  "regions": [
+    "europe"
+  ],
+  "categories": [
+    "science-technology"
+  ],
+  "significance": 5,
+  "summary": "On 5 July 1687, at the presses of Joseph Streater in London, the Royal Society issued the first copies of Philosophiæ Naturalis Principia Mathematica by Isaac Newton, forty-four years old and Lucasian Professor of Mathematics at Cambridge. In three Latin books and about five hundred pages of dense geometry, Newton set out the laws of motion, derived the elliptical orbits of the planets from a universal inverse-square gravitational attraction, calculated the mass of the Sun and the shape of the Earth, and founded the science of classical mechanics that would dominate physics for the next two centuries.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "The problem Newton solved had been sharpening for a century. Copernicus in 1543 had placed the Sun at the centre of the solar system without knowing why the planets moved in the paths they did. Kepler, working on Tycho Brahe's Mars observations, had by 1619 given three empirical laws: elliptical orbits with the Sun at a focus, equal areas swept in equal times, and orbital periods related to the cube of orbital distances. Galileo had shown that terrestrial motion followed regular quantitative laws: bodies falling in a vacuum accelerate uniformly, projectiles trace parabolas, the pendulum keeps time. But no one had unified the celestial and the terrestrial into a single physics.\n\nBy the 1660s the leading English natural philosophers, including Christopher Wren, Robert Hooke, and Edmond Halley, all suspected that the force holding the planets in their orbits fell off as the inverse square of distance from the Sun. What they lacked was the mathematics to prove that an inverse-square attraction actually produces Keplerian ellipses. In August 1684 the young astronomer Edmond Halley travelled to Cambridge to put the question directly to Isaac Newton, the eccentric and reclusive Lucasian Professor of Mathematics. Newton claimed, casually, that he had already worked it out; when Halley asked for the demonstration Newton could not find his papers, and promised to redo the proof and send it.\n\nWhat Newton sent, in November 1684, was a nine-page tract, De motu corporum in gyrum (On the Motion of Bodies in Orbit), which proved from an inverse-square central force that orbits must be conic sections. Halley, thunderstruck, saw what he was looking at and pressed Newton to write more. Over the next eighteen months, in a burst of concentrated work that even his enemies conceded was one of the great intellectual achievements in history, Newton expanded the nine pages into three long books totaling about 550 pages in the printed edition.\n\nNewton was born in Woolsthorpe, Lincolnshire, on Christmas Day 1642, a premature and sickly infant whose father, a yeoman farmer, was already dead. Educated at Grantham Grammar School and Trinity College Cambridge (matriculated 1661, BA 1665), he spent the plague years of 1665 and 1666 back in Lincolnshire, where he later claimed to have laid the foundations of his optics, calculus, and gravitation in what he called his year of miracles. He returned to Cambridge, succeeded Isaac Barrow as Lucasian Professor in 1669, published influential papers on the composition of light and on the reflecting telescope, and quarrelled bitterly with Robert Hooke about optics. By the mid-1680s he had also spent years on the alchemical and theological researches that consumed at least as much of his attention as physics ever did."
+    },
+    {
+      "heading": "What happened",
+      "body": "Writing began in the autumn of 1684 and continued through 1685 and into 1686. Newton delivered Book I to the Royal Society in April 1686; the society formally accepted the work and undertook publication. Book II arrived by early 1687 and Book III shortly after. Halley managed the entire enterprise: he corrected proofs, drew diagrams, and, because the Royal Society had exhausted its book budget on Francis Willughby's ill-selling De historia piscium, personally underwrote the printing costs of the Principia. In gratitude the society paid part of his salary that year in leftover copies of the fish book.\n\nA further crisis nearly stopped everything. In May 1686 Robert Hooke, at a Royal Society meeting, claimed that the inverse-square law was his; he had suggested it in correspondence with Newton in 1679 to 1680. Newton, always thin-skinned about priority, threatened to suppress Book III. It was Halley's patient diplomacy that talked him back. The published Principia included a grudging acknowledgement of Wren, Hooke, and Halley in the preface to Book III, along with a footnote crediting Hooke and others; the private feud lasted until Hooke's death in 1703, after which Newton, by then President of the Royal Society, appears to have quietly removed Hooke's portrait from its rooms.\n\nThe finished book, formally issued on 5 July 1687, was written in the austere Latin geometry of Euclid rather than in the differential calculus Newton had privately invented (and which would fuel his equally bitter later quarrel with Leibniz). Book I laid down three laws of motion: a body persists in uniform motion unless acted on by a force; the change of motion is proportional to the impressed force; to every action there is an equal and opposite reaction. From these, and from a treatment of central forces, Newton derived Kepler's laws, showed that any inverse-square force must produce conic-section orbits, and analysed the perturbations produced when three bodies attract one another.\n\nBook II treated motion in resisting fluids, made Newton's most serious mistakes (he thought sound should travel faster than his measurements suggested and had to fudge the calculation in later editions), and demolished the vortex theory of planetary motion put forward by Rene Descartes. Book III, subtitled The System of the World, applied the mathematics of Book I to the actual solar system: it derived Jupiter's mass from the orbits of its four Galilean moons, calculated the mass of the Sun as more than three hundred thousand times that of the Earth, showed that the tides were caused by the gravitational attraction of Moon and Sun, predicted that the Earth would be oblate at the poles because of its rotation, and explained the slow precession of the equinoxes. Comets, which had long been treated as atmospheric phenomena, were shown to be objects moving in extremely elongated ellipses around the Sun, subject to the same law as the planets."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The initial print run of about four hundred copies sold out within a few years, and the Principia was almost immediately recognised as a monumental achievement. It was, however, extraordinarily difficult; contemporary readers joked that many of them bought it, and even opened it, but few finished it. Newton himself remarked that he had made the mathematics difficult 'to avoid being baited by little smatterers.' The book had to be interpreted by successors: David Gregory in Edinburgh, John Keill and William Whiston in England, Willem Jacob 's Gravesande in Leiden, and Colin Maclaurin in Glasgow all wrote treatises expounding its results in more accessible language.\n\nOn the Continent the reception was slower. Cartesian mechanics, with its vortices of subtle matter and its refusal to admit action at a distance, dominated French and Dutch natural philosophy well into the 1730s. The turning point came when the French Academy of Sciences sent Pierre Louis Maupertuis and Alexis Clairaut to Lapland in 1736 to 1737 and Charles Marie de La Condamine to Peru to measure the length of a degree of latitude at high and low latitudes. Their expeditions confirmed Newton's prediction that the Earth was flattened at the poles rather than, as the Cartesians had claimed, elongated. Emilie du Châtelet's French translation of the Principia, completed in 1749 shortly before her death and published in 1759 with a commentary by Clairaut, secured the book's authority in French science.\n\nMathematically the Principia opened the way to celestial mechanics as a systematic discipline. Leonhard Euler, Joseph-Louis Lagrange, and Pierre-Simon Laplace developed analytical techniques that Newton would have recognised only with difficulty; Laplace's five-volume Mécanique céleste (1799 to 1825) treated the entire solar system as a stable, deterministic system whose motions could be calculated indefinitely into past and future. The discovery of Neptune in 1846 by Johann Galle and Urbain Le Verrier, from perturbations of the orbit of Uranus, was celebrated as the crowning triumph of Newtonian gravitation, an object literally computed into visibility before it was observed.\n\nNewton's own later life was largely spent away from research. He served as MP for Cambridge University in 1689 and 1701, moved to London in 1696 to become Warden and then Master of the Royal Mint, ruthlessly prosecuted counterfeiters, was elected President of the Royal Society in 1703, and revised the Principia through a second edition in 1713 and a third in 1726. Knighted by Queen Anne in 1705, he died on 20 March 1727 and was buried with unusual pomp in Westminster Abbey. Voltaire, in London for the funeral, wrote back to France with astonishment that a mere natural philosopher could be honoured like a king."
+    },
+    {
+      "heading": "Legacy",
+      "body": "For more than two centuries Newtonian mechanics was the universal working physics of engineers, astronomers, and philosophers. Bridges, canals, steam engines, and ballistic tables all rested on it. When Herschel discovered Uranus in 1781, its motion was calculated by Newtonian methods; when the Titius-Bode law prompted the search for a planet between Mars and Jupiter, Ceres was found (by Piazzi in 1801) and its orbit refined (by Gauss) using Newtonian techniques. Poincaré's work in the 1890s on the three-body problem revealed subtle chaotic behaviour hidden in Newton's equations that Laplacian determinism had missed, opening the way to twentieth-century dynamical systems theory.\n\nEinstein's general relativity, published in 1915 and confirmed by Arthur Eddington's eclipse expedition of 1919, superseded Newtonian gravitation as the fundamental theory. Yet in almost every practical application (from calculating a satellite orbit to landing a rover on Mars), Newtonian mechanics remains a fully adequate approximation. Relativistic corrections become important only under extreme gravitational fields or at velocities approaching that of light. In this sense the Principia remains, three and a half centuries later, a working textbook.\n\nBeyond physics the Principia became a cultural icon. Alexander Pope's couplet of 1727 captured the eighteenth-century enthusiasm: 'Nature and Nature's Laws lay hid in Night: God said, Let Newton be! and all was Light.' The Principia was invoked by Enlightenment writers from Voltaire to Kant as proof of what mathematical reason could achieve, and its example inspired attempts (mostly failed) to found a Newtonian moral philosophy, a Newtonian economics, and a Newtonian theology. Isaac Newton himself, however, warned to the end of his life that his physics said nothing about the ultimate causes of things. In a famous letter to Richard Bentley in 1692 he insisted that gravity as action at a distance without any material medium was 'so great an absurdity that I believe no man who has in philosophical matters a competent faculty of thinking can ever fall into it.' He never satisfied himself as to what gravity really was; his readers have been arguing about it ever since."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "americas",
+      "text": "British America in 1687 was in the middle of the short-lived Dominion of New England imposed by James II, an unpopular consolidation of Massachusetts, Plymouth, New Hampshire, and Maine under Governor Edmund Andros that would collapse in the Glorious Revolution of 1689. In New Spain the viceroyalty was in one of its wealthiest periods, and the great mestiza polymath and nun Sor Juana Inés de la Cruz was writing her poetry in Mexico City. In Peru, Potosí silver still dominated the world economy, though the ore was thinning and Andean societies were entering long demographic recovery."
+    },
+    {
+      "region": "middle-east-north-africa",
+      "text": "The Ottoman Empire was reeling from the disaster of the second siege of Vienna in 1683; a Holy League of the Habsburgs, Poland, Venice, and Russia had pushed Ottoman forces out of central Hungary, taken Buda in 1686, and would win the great victory at Mohács in August 1687, one month after the Principia was published. Sultan Mehmed IV would be deposed in November. In Safavid Persia Shah Sulayman I ruled a court in decline; in Morocco Sultan Ismail ibn Sharif was fighting off European coastal powers and consolidating an Alawi dynasty."
+    },
+    {
+      "region": "east-asia",
+      "text": "The Kangxi Emperor of Qing China, in the twenty-sixth year of a reign that would last sixty-one, had recently defeated the great Revolt of the Three Feudatories and would negotiate the Treaty of Nerchinsk with Russia in 1689, the first modern treaty between China and a European state. The Jesuit missionary Ferdinand Verbiest, who had directed the Beijing observatory and translated Euclid into Manchu, had died in early 1688. Japan under the fifth Tokugawa shogun Tsunayoshi maintained its policy of near-complete isolation."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "The Mughal emperor Aurangzeb, then nearing seventy, was campaigning ceaselessly in the Deccan against the Maratha successors of Shivaji (who had died in 1680); the Mughal empire was at its greatest territorial extent but hollow at the centre. British Bombay and Madras were small trading factories of the East India Company; French and Dutch companies competed on the same coasts. Sri Lanka's inland kingdom of Kandy resisted successive European coastal powers."
+    },
+    {
+      "region": "africa",
+      "text": "The Kingdom of Kongo was in the middle of a long dynastic civil war following the disaster of Ambuila in 1665; Angola was the great source of enslaved Africans shipped across the Atlantic to Portuguese Brazil, which received the majority of Africans transported in this period. In Ethiopia the great Gondarine dynasty under Iyasu I was in its architectural and cultural prime. On the Swahili coast Omani Arabs from Muscat, having captured Mombasa's Fort Jesus in 1698, were beginning to displace Portuguese power along East Africa."
+    },
+    {
+      "region": "oceania",
+      "text": "European ships had reached Australia (Willem Janszoon in 1606, Tasman in 1642 to 1643) but had made no attempt at settlement or serious exploration; the Dutch East India Company had concluded there was nothing profitable there. William Dampier's Cygnet had touched the northwest coast of Australia in January 1688, six months after the Principia's publication, and produced the first English description of Aboriginal peoples. Māori, Polynesian, and Micronesian societies continued undisturbed by European contact."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Isaac Newton",
+      "role": "Lucasian Professor of Mathematics at Cambridge, author of the Principia"
+    },
+    {
+      "name": "Edmond Halley",
+      "role": "Astronomer who prompted, edited, and personally financed the publication of the Principia"
+    },
+    {
+      "name": "Robert Hooke",
+      "role": "Royal Society curator of experiments who claimed priority for the inverse-square law and quarrelled with Newton"
+    },
+    {
+      "name": "Christopher Wren",
+      "role": "Architect of St Paul's Cathedral and one of the trio who first speculated about an inverse-square gravity"
+    },
+    {
+      "name": "Samuel Pepys",
+      "role": "President of the Royal Society whose imprimatur on 5 July 1686 authorised the printing of the Principia"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Newton-Principia-Mathematica_1-500x700.jpg",
+      "caption": "Title page of the first edition of Philosophiæ Naturalis Principia Mathematica, printed for the Royal Society by Joseph Streater in London in 1687.",
+      "credit": "Isaac Newton (1642 to 1727), via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Newton-Principia-Mathematica_1-500x700.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "caption": "Portrait of Isaac Newton at age 46, painted in 1689 by Sir Godfrey Kneller two years after the publication of the Principia.",
+      "credit": "After Sir Godfrey Kneller (1646 to 1723), via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:GodfreyKneller-IsaacNewton-1689.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Philosophiæ Naturalis Principia Mathematica",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Isaac Newton",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Isaac Newton",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/newton/",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Isaac Newton",
+      "publisher": "Britannica",
+      "url": "https://www.britannica.com/biography/Isaac-Newton",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": false
+}

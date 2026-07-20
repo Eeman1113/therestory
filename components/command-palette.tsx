@@ -16,9 +16,20 @@ interface Props {
   >;
   eras: EraMeta[];
   regions: RegionMeta[];
+  years: Array<{ year: number; headline: string }>;
 }
 
-export function CommandPalette({ events, eras, regions }: Props) {
+function yearSlug(y: number): string {
+  return y < 0 ? `${Math.abs(y)}-bce` : `${y}`;
+}
+
+function yearLabel(y: number): string {
+  if (y < 0) return `${Math.abs(y)} BCE`;
+  if (y === 0) return "1 CE";
+  return `${y}`;
+}
+
+export function CommandPalette({ events, eras, regions, years }: Props) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const router = useRouter();
@@ -140,6 +151,37 @@ export function CommandPalette({ events, eras, regions }: Props) {
               </Command.Item>
             ))}
           </Command.Group>
+
+          {years.length > 0 && (
+            <Command.Group
+              heading="Years"
+              className={cn(
+                "px-2 pb-2 pt-1",
+                "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:pb-2",
+                "[&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:font-medium",
+                "[&_[cmdk-group-heading]]:uppercase [&_[cmdk-group-heading]]:tracking-[0.14em]",
+                "[&_[cmdk-group-heading]]:text-ink-muted",
+              )}
+            >
+              {years.map((y) => (
+                <Command.Item
+                  key={y.year}
+                  value={`${yearLabel(y.year)} ${y.headline}`}
+                  onSelect={() => go(`/year/${yearSlug(y.year)}`)}
+                  className={cn(
+                    "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-2",
+                    "text-sm text-ink",
+                    "aria-selected:bg-ink/[0.04] dark:aria-selected:bg-ink/[0.06]",
+                  )}
+                >
+                  <span className="truncate">{y.headline}</span>
+                  <span className="shrink-0 font-mono text-[11px] tabular-nums text-ink-muted">
+                    {yearLabel(y.year)}
+                  </span>
+                </Command.Item>
+              ))}
+            </Command.Group>
+          )}
 
           <Command.Group
             heading="Eras"

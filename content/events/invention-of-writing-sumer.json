@@ -1,0 +1,113 @@
+{
+  "id": "invention-of-writing-sumer",
+  "slug": "invention-of-writing-sumer",
+  "title": "The invention of writing in Sumer",
+  "date": {
+    "start": "-003200",
+    "precision": "century",
+    "display": "c. 3200 BCE"
+  },
+  "era": "prehistory",
+  "regions": ["middle-east-north-africa"],
+  "categories": ["science-technology", "art-culture"],
+  "significance": 5,
+  "summary": "In the temple precincts of Uruk, on the flat alluvial plain of southern Mesopotamia, scribes near the end of the fourth millennium BCE began pressing wedge-shaped marks and small pictures into damp clay tablets to record grain, beer, cattle, and workers. This proto-cuneiform, dated to the Uruk IV period around 3200 BCE, is the earliest unambiguous writing system known anywhere. Over the next thousand years it evolved into full cuneiform, the script of Sumerian, Akkadian, and later Hittite and Old Persian, and gave humanity its first durable memory outside the human head.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "By the middle of the fourth millennium BCE the southern Mesopotamian city of Uruk, on a now-abandoned channel of the Euphrates about 250 kilometres south of modern Baghdad, had swollen into what was probably the largest human settlement anywhere on earth. Estimates by the German excavators and by successors such as Hans Nissen put its late-Uruk-period population between 25,000 and 50,000, spread across roughly 250 hectares of mudbrick houses, workshops, and temple courtyards. Two great sacred quarters dominated the skyline: the Eanna precinct of the goddess Inanna, and the Anu district with its white-plastered temple raised on a stepped terrace.\n\nThe temple was not just a religious institution. It owned fields, storehouses, herds, and labour gangs, and it needed to keep track of them. For millennia before writing itself appeared, communities across the ancient Near East had used small clay tokens, some of them geometric and some shaped like miniature animals or jars, to represent quantities of goods. The French-American archaeologist Denise Schmandt-Besserat argued in a long series of studies from the 1970s onward that these tokens, sometimes sealed inside hollow clay envelopes called bullae, were the direct ancestors of writing: at some point a scribe realised that the marks impressed on the outside of the envelope were enough on their own, and the token inside could be dispensed with.\n\nThe archaeological record of the Uruk IV level, dated by radiocarbon and stratigraphy to around 3300 to 3100 BCE, shows the moment this abstraction hardened into a system. Excavators of the German Oriental Society, working at Uruk since 1912 under Julius Jordan and later Heinrich Lenzen, found several thousand small clay tablets in the ruins of the Eanna quarter, most of them no bigger than a modern mobile phone. On these tablets the earliest scribes drew simplified pictures with a pointed reed stylus, then, from Uruk III onward, began impressing wedge-shaped strokes into the surface. The purpose was almost exclusively bureaucratic. About eighty-five per cent of the earliest tablets are administrative accounts of grain rations, beer allocations, herds of sheep, or textile shipments; the remainder are lexical lists in which scribes practised the vocabulary of their new craft."
+    },
+    {
+      "heading": "What happened",
+      "body": "The point of transition from record-keeping devices to true writing cannot be dated to a year, but the classic archaeological horizon lies in the Uruk IV level, conventionally placed around 3200 BCE. At that horizon the tablets from Eanna change character. They are larger, more standardised, and divided into ruled boxes; the signs are more numerous, more abstract, and repeat consistently across many hands and many years. Scholars call this system proto-cuneiform. Its sign inventory of some 900 to 1,200 pictographs was enough to record the categories of a temple economy: units of dry and liquid measure, professions such as herdsman or brewer, place names, and above all numbers, which were already using multiple base systems (a sexagesimal base-60 for time and area, a decimal for people, other systems for grain and livestock).\n\nThe writing surface was locally abundant clay, which grew soft when wet and hardened almost indestructibly when dried in the sun or, for a few especially important documents, fired. The stylus was cut from a river reed, its tip trimmed to leave a small triangular wedge. That wedge, in Latin cuneus, gave the mature script its modern name. The tablets themselves, thousands of which now sit in the Vorderasiatisches Museum in Berlin, the British Museum, and the Iraq Museum in Baghdad, are stubby, palm-sized bricks; the largest of the Uruk IV corpus rarely exceeds ten centimetres on a side.\n\nAround 3000 BCE, in the Uruk III or Jemdet Nasr phase, a decisive step occurred. Scribes began to use signs for their sound rather than their meaning, the so-called rebus principle. A sign for arrow (ti in Sumerian) could now stand for the homophone ti meaning life. Once phonetic writing was possible, personal names, verbs, and abstract ideas could be recorded, and the script escaped the temple ledger. By the middle of the third millennium BCE cuneiform was being used for royal inscriptions at Ur, for hymns and myths, for legal contracts, and eventually for the world's oldest surviving epic, the Sumerian tale of Gilgamesh. Egypt's hieroglyphic system, which appears at almost exactly the same moment on labels from Tomb U-j at Abydos, may or may not have been independent; the debate is unresolved but the current mainstream view treats the two as parallel inventions rather than as one script derived from the other."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "Writing changed what it was possible for a society to remember, to plan, and to argue about. Within a generation of the Uruk IV tablets, temple economies could reconcile last year's harvest with this year's sowing and hold individual overseers accountable across long chains of command. Within a few centuries, kings such as Eannatum of Lagash were carving their conquests in stone; within a millennium, scribes in Babylon were compiling astronomical diaries whose observations of Venus can still be checked against modern ephemerides.\n\nFrom Sumer the technology travelled outward. Akkadian, a Semitic language unrelated to Sumerian, was written in the same cuneiform signs from the reign of Sargon of Akkad (c. 2334 BCE), and by the second millennium BCE Akkadian cuneiform was the diplomatic lingua franca of the entire ancient Near East. Elamite, Hittite, Hurrian, Urartian, and eventually Old Persian all adopted the wedge-shaped signs. The Amarna Letters of the fourteenth century BCE, in which the pharaohs Amenhotep III and Akhenaten corresponded with kings from Cyprus to Assyria, are almost all in Akkadian cuneiform. The signs endured for more than three thousand years; the last known cuneiform tablet, an astronomical almanac, is dated to 75 CE.\n\nThe alphabet, invented by Semitic-speaking workers in the Sinai around 1800 BCE and refined by the Phoenicians around 1050 BCE, eventually eclipsed cuneiform, but it too descended, at least indirectly, from the pictographic experiments of Uruk. Every modern script that ultimately traces to the Phoenician letters, which is to say Greek, Latin, Arabic, Hebrew, Cyrillic, and the scripts of India and Southeast Asia, belongs to a single genealogical tree whose root is planted in the clay of southern Iraq. The one certain rival tradition, the Chinese script attested from the Shang oracle bones around 1200 BCE, appears to have been an independent invention, and the Mesoamerican scripts of the Olmecs and Maya are certainly independent."
+    },
+    {
+      "heading": "Legacy",
+      "body": "The legacy of the Uruk tablets is not really the specific shapes of cuneiform, which no living community now reads without training, but the demonstration that a small technical trick, marks on clay, could make possible almost everything we mean by history. Before writing there is prehistory, the domain of archaeologists working from potsherds and post-holes. After writing there is a documentary record: the names of kings, the terms of contracts, the prayers of ordinary people. The cuneiform tablets recovered from Sumer, Akkad, Babylon, Assur, and Nineveh now number in the hundreds of thousands, and only a fraction have been read.\n\nDecipherment itself is a modern story. The eighteenth-century Danish scholar Carsten Niebuhr copied Old Persian cuneiform inscriptions at Persepolis; Georg Friedrich Grotefend in 1802 correctly identified several signs; and in the 1840s Henry Rawlinson, dangling from a rope on the cliff face at Bisitun in western Iran, copied the trilingual inscription of Darius I whose Old Persian, Elamite, and Babylonian versions provided the Rosetta Stone of cuneiform. By 1857 the newly founded Royal Asiatic Society in London staged a test in which four scholars independently translated the same unseen Akkadian inscription and agreed; cuneiform was pronounced deciphered.\n\nIn the twenty-first century, projects such as the Cuneiform Digital Library Initiative at UCLA and Oxford are photographing and transliterating the surviving tablets into open online archives. The invention that began as a way of counting sacks of barley in the storerooms of Inanna at Uruk has become, in the end, the ancestor of the digital text you are now reading."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "africa",
+      "text": "Along the lower Nile the Naqada III phase was in full swing. Chiefs at Abydos, Hierakonpolis, and Naqada were being buried in increasingly elaborate mudbrick tombs, and the small ivory and bone labels from Tomb U-j at Abydos, dated to around 3200 BCE, carry proto-hieroglyphic signs whose relationship to Mesopotamian writing is still debated. Within a century or so a king called Narmer would unite the two lands into a single pharaonic state, but for now Egypt was a patchwork of kingdoms feeling its way, like Sumer, toward literacy and centralised government."
+    },
+    {
+      "region": "europe",
+      "text": "In Neolithic Europe no writing yet existed. On Salisbury Plain the first stage of Stonehenge, a circular ditch enclosing a ring of wooden posts, was being raised in this century. In Orkney the great Neolithic village at Skara Brae was inhabited, and megalithic passage tombs from Newgrange in Ireland to Maeshowe were being built or in use. Across the Balkans the Vinca culture had produced enigmatic incised symbols on pottery, sometimes optimistically called the earliest European script, but most specialists regard them as pot-marks rather than a system of writing."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "Along the Indus and its tributaries the Early Harappan phase was underway. At Harappa itself the Ravi and Kot Diji occupations show planned streets and standardised bricks, and long-distance trade in lapis lazuli, carnelian, and copper linked the Indus plains to Central Asia and to Mesopotamia. The mature cities of Mohenjo-daro and Dholavira, with their still-undeciphered seal script, were more than half a millennium in the future, but the ingredients, urbanism, craft specialisation, weights and measures, were already assembling."
+    },
+    {
+      "region": "east-asia",
+      "text": "In China the late Neolithic Longshan culture along the Yellow River and the Liangzhu culture in the lower Yangtze delta were producing wheel-thrown black burnished pottery, elaborate jade cong tubes and bi discs, and rammed-earth walls around proto-urban centres. Liangzhu, in particular, has yielded evidence of large-scale hydraulic engineering that some archaeologists consider the earliest state-level society in China. Writing, in the form of the oracle-bone script, would not appear for another two thousand years."
+    },
+    {
+      "region": "americas",
+      "text": "On the arid coast of what is now Peru the Norte Chico or Caral civilisation was beginning to build its monumental platform mounds and sunken circular plazas. Sites such as Caral, Aspero, and Huaricanga in the Supe and Fortaleza valleys sustained a complex society based on cotton, squash, and Pacific fisheries rather than on ceramics or maize. There is no evidence of writing here, then or later; the Andean world would in time record itself instead on knotted-string quipus."
+    },
+    {
+      "region": "oceania",
+      "text": "The islands of Near Oceania, Melanesia, and Australia were inhabited by populations descended from the founding migrations of the late Pleistocene. Along the Sepik and Fly rivers of New Guinea, tropical horticulture based on taro and banana had been under way for thousands of years; the wetland drainage ditches at Kuk Swamp are among the earliest agricultural landscapes anywhere. Remote Oceania, the great scatter of Pacific islands beyond the Solomons, was still empty; the Austronesian voyagers who would settle it lay two thousand years in the future."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Anonymous scribes of Eanna",
+      "role": "The unnamed temple accountants of Uruk who first pressed proto-cuneiform signs into clay tablets in the late fourth millennium BCE"
+    },
+    {
+      "name": "Denise Schmandt-Besserat",
+      "role": "French-American archaeologist whose token-and-bulla hypothesis, published from the 1970s onward, traced the deep prehistory of writing back to Neolithic accounting devices"
+    },
+    {
+      "name": "Julius Jordan",
+      "role": "German archaeologist who led the Deutsche Orient-Gesellschaft's excavations at Uruk from 1912, recovering the earliest proto-cuneiform tablets"
+    },
+    {
+      "name": "Henry Rawlinson",
+      "role": "British East India Company officer whose copying of the Bisitun inscription in the 1840s made possible the decipherment of Akkadian cuneiform"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Clay_tablet%2C_late_Uruk_period%2C_3300-3100_BCE._Proto-cuneiform_signs%2C_food_issue_list_%22_rations%22_written_by_combining_a_human_head_and_a_bowl._Purchased_via_Christie%27s_in_1989%2C_with_contribution_from_the_British_Museum_Friends.jpg",
+      "caption": "A late Uruk-period clay tablet, c. 3300 to 3100 BCE, listing food rations by combining the signs for a human head and a bowl. British Museum, BM 140852.",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg), via Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clay_tablet,_late_Uruk_period,_3300-3100_BCE._Proto-cuneiform_signs,_food_issue_list_%22_rations%22_written_by_combining_a_human_head_and_a_bowl._Purchased_via_Christie%27s_in_1989,_with_contribution_from_the_British_Museum_Friends.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuneiform",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cuneiform",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Uruk",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Uruk",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Writing",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/writing/",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Proto-cuneiform",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Proto-cuneiform",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": false
+}

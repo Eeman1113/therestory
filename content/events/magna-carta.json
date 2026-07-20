@@ -1,0 +1,133 @@
+{
+  "id": "magna-carta",
+  "slug": "magna-carta",
+  "title": "Magna Carta sealed at Runnymede",
+  "date": {
+    "start": "1215-06-15",
+    "precision": "day"
+  },
+  "era": "post-classical",
+  "regions": [
+    "europe"
+  ],
+  "categories": [
+    "politics-empires"
+  ],
+  "significance": 5,
+  "summary": "On 15 June 1215, in a riverside meadow at Runnymede between Windsor and Staines, King John of England pressed his great seal onto a peace treaty with his rebel barons. The Great Charter, later called Magna Carta, bound the crown for the first time to a written set of legal limits: due process for freemen, consultation before taxation, and the right to justice for all. The immediate settlement collapsed within weeks, but the document was reissued, revised, and eventually enshrined in English statute law, and its shadow reaches into modern constitutions, human-rights conventions, and courtrooms around the world.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "King John, youngest son of Henry II and Eleanor of Aquitaine, had come to the throne in 1199 with the Angevin empire at its widest and lost most of it within five years. His French cousin King Philip II Augustus took Normandy in 1204 after John's failure to relieve the siege of Chateau Gaillard, and Anjou, Maine, and Touraine soon followed. To pay for a proposed reconquest, John pressed every source of royal revenue: scutage, the tax paid by knights in lieu of military service, was demanded eleven times in his reign; feudal dues from wardships and marriages were sold to the highest bidder; a new tax on movable goods was introduced.\n\nHis quarrel with the papacy compounded the strain. Between 1208 and 1213 England lay under a papal interdict after John refused to accept Stephen Langton as archbishop of Canterbury. Excommunicated in 1209 and threatened with deposition in 1212, John eventually surrendered, made England a papal fief, and paid an annual tribute. He then poured resources into the campaign to recover his French lands. In July 1214 his ally Emperor Otto IV was defeated at Bouvines, ending any realistic prospect of recovering Normandy. John returned to England in October a king humiliated and out of money.\n\nThe northern barons had had enough. A group led by Robert Fitzwalter, Eustace de Vesci, and Saher de Quincy refused to pay scutage for a war they had opposed and demanded that John confirm the good laws of his ancestor Henry I, whose Coronation Charter of 1100 had promised to end the abuses of William Rufus. Archbishop Langton, whom John had at last accepted at the papacy's insistence, produced a copy of that charter at a meeting at St Paul's in August 1213 and encouraged the barons to press their case.\n\nThrough the winter of 1214 to 1215 negotiations shuttled between London and the royal court. In April 1215 the malcontents formally renounced their homage and mustered under the title Army of God at Stamford. On 17 May they entered London unopposed, welcomed by a citizenry angered by John's arbitrary levies. The capture of the capital left the king with little military option. He agreed to meet the rebels in a neutral meadow beside the Thames on the road between Windsor and Staines called Ronimede, place of council. Both sides brought lawyers as well as arms."
+    },
+    {
+      "heading": "What happened",
+      "body": "Between 10 and 15 June a working text was hammered out. A preliminary document called the Articles of the Barons, still preserved in the British Library, contains forty-nine clauses in a working draft with corrections in the margins. Archbishop Langton and William Marshal, Earl of Pembroke, the aged and universally respected soldier-statesman, acted as mediators. On Monday 15 June 1215 the king put his great wax seal to a fair copy of the agreement. Over the next four days copies were engrossed by chancery scribes for distribution to the shires and cathedrals of the kingdom; on 19 June the barons formally renewed their homage.\n\nThe charter contained sixty-three clauses in a single, unbroken column of Latin. Most were technical remedies for specific grievances: fixed reliefs on inherited estates; protection of widows from forced remarriage; standard measures of wine, ale, and corn; the freedom of London and other boroughs from arbitrary tallage; the right of merchants, including foreign ones, to travel unmolested. Feudal aids and scutages could only be levied with the common counsel of the realm, a phrase that later parliamentarians would treat as an ancestor of no taxation without representation.\n\nTwo clauses would prove immortal, though at the time they were not singled out. Clause 39 declared that no free man was to be arrested, imprisoned, dispossessed, outlawed, exiled, or in any way destroyed except by the lawful judgement of his equals or by the law of the land. Clause 40 added that to no one would the king sell, deny, or delay right or justice. Together they laid down that the king, too, stood beneath the law.\n\nA final clause, the so-called security clause, was more radical still. A committee of twenty-five barons was empowered, if the king breached the charter and did not make amends within forty days, to seize his castles, lands, and possessions until he made restitution. It was, in effect, a legal right of rebellion. John never intended to abide by it. Within weeks he wrote to Pope Innocent III, his overlord, asking that the charter be annulled. On 24 August 1215 Innocent obliged in a fierce bull calling the agreement shameful, illegal, and unjust and forbidding king or barons to observe it. By September England was in open war."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The First Barons' War that followed was as brutal as any of John's earlier campaigns. Rebel barons offered the English crown to the French prince Louis, son of Philip II, who landed at Thanet in May 1216 and was welcomed in London. John spent the summer campaigning in the east and midlands; while crossing the Wash in October he lost part of the royal baggage train, including, legend has it, a portion of the crown jewels. A few days later, on the night of 18 to 19 October 1216, he died of dysentery at Newark Castle, aged forty-nine.\n\nThe new king, his nine-year-old son Henry III, was crowned at Gloucester on 28 October. The regent William Marshal understood that the surest way to detach moderates from Prince Louis was to embrace the very charter John had repudiated. In November 1216 Marshal and the papal legate Guala Bicchieri reissued Magna Carta in the name of the young king, shorn of its most contentious clauses. A further revised issue followed in 1217 alongside a new Charter of the Forest. In 1225 Henry III, now of age, issued the definitive version in return for a tax grant, and this was the version confirmed by successive kings and eventually enrolled on the statute roll under Edward I in 1297.\n\nOver the following century Magna Carta was invoked in a growing number of judicial and political disputes. The clauses on due process were cited when royal officials arrested men without warrant; the clauses on taxation were invoked when kings demanded aids without parliamentary consent. The 1297 statute, called the Confirmation of the Charters, tied together the Great Charter and the Charter of the Forest and made both permanent features of the constitution. By the fourteenth century commentators like the anonymous author of the Modus Tenendi Parliamentum treated it as the fundamental law of the realm."
+    },
+    {
+      "heading": "Legacy",
+      "body": "Magna Carta was not democratic in any modern sense. Most of its beneficiaries were free men, and free men were a minority in a society still weighted with unfree villeinage. The barons who forced it on the king were an armed aristocracy, not a parliament. But the charter did something no earlier medieval European document had quite done: it wrote down that a ruler was bound by law and that specific violations could be resisted by law.\n\nIn the seventeenth century Sir Edward Coke, chief justice under James I and later a leader of parliamentary opposition, reinvented Magna Carta as a bulwark against absolutism. His commentary on clause 39 shaped the Petition of Right of 1628 and, through it, the constitutional settlement that emerged from the English Civil War. When English colonists in North America objected to taxation by a distant parliament, they reached for Magna Carta again. The seal on the state flag of Massachusetts still holds a copy. The Fifth and Fourteenth Amendments to the United States Constitution echo clause 39 in the guarantee that no person shall be deprived of life, liberty, or property without due process of law.\n\nOnly four original copies of the 1215 charter survive: two at the British Library, one at Lincoln Cathedral, and one at Salisbury Cathedral. The one in Salisbury Chapter House is the best preserved. Modern scholars caution that many popular claims about Magna Carta are anachronistic and that most of its clauses were quickly repealed. The three that remain in force in England and Wales include the guarantee of the liberties of the Church, the special privileges of the City of London, and clauses 39 and 40 on due process and access to justice. On its eight-hundredth anniversary in 2015 statues, exhibitions, and speeches around the world testified to a truth that would have astonished John: the settlement he tried to have annulled has outlived every ruler who has invoked it."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "east-asia",
+      "text": "In China the Southern Song under Emperor Ningzong faced growing Mongol pressure to their north. Genghis Khan's armies had invaded the Jurchen Jin dynasty in 1211 and captured its central capital Zhongdu, near modern Beijing, on 31 May 1215, only weeks before Runnymede. The Jin court fled south to Kaifeng. Movable-type printing and paper money continued to reshape Song commerce and administration."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "The Delhi Sultanate under Iltutmish, who had succeeded Qutb al-Din Aibak's short-lived heir in 1211, was consolidating Turkic rule over the Ganges plain. The great Qutb Minar in Delhi, begun by Aibak, was still rising. In the south the Chola dynasty was in terminal decline and the Hoysala kingdom of Karnataka was in its architectural prime, with the temple complex at Belur just completed."
+    },
+    {
+      "region": "middle-east-north-africa",
+      "text": "The Ayyubid confederation founded by Saladin was ruled from Cairo by Sultan al-Adil, who managed uneasy relations with the crusader states of the Levantine coast. Preparations for the Fifth Crusade, proclaimed by Pope Innocent III at the Fourth Lateran Council in November 1215, were beginning; it would attack Egypt in 1218. In Baghdad the Abbasid caliph al-Nasir presided over a diminished but still symbolically central caliphate."
+    },
+    {
+      "region": "africa",
+      "text": "In West Africa the empire of Ghana had disintegrated and the Sosso kingdom of Sumanguru Kante was rising to fill its place, though it would soon fall in turn to Sundiata Keita's new Mali Empire. In the Ethiopian highlands the Zagwe dynasty at Roha, later called Lalibela, was completing its programme of rock-hewn churches. Along the Swahili coast city-states like Kilwa and Mogadishu carried on Indian Ocean commerce."
+    },
+    {
+      "region": "americas",
+      "text": "In central Mexico the Toltec state had collapsed and the Valley of Mexico was a patchwork of small kingdoms into which the Mexica, or Aztecs, would migrate a century later. Along the Mississippi Cahokia was still one of the largest cities north of Mexico. In the central Andes small polities occupied the highlands; the Inca dynasty at Cuzco had not yet begun its expansion. Chaco Canyon had been abandoned decades earlier."
+    },
+    {
+      "region": "oceania",
+      "text": "In Aotearoa Polynesian settlers were adapting to a temperate climate and driving the flightless moa toward extinction. On Rapa Nui the great period of moai construction continued. In highland New Guinea and across Melanesia agricultural societies practised intensive taro and sweet potato cultivation. Aboriginal Australians maintained the long-established patterns of managed burning that shaped the continent's ecosystems."
+    }
+  ],
+  "figures": [
+    {
+      "name": "King John",
+      "role": "King of England from 1199 to 1216 whose fiscal and legal abuses provoked the baronial revolt and who was compelled to seal Magna Carta at Runnymede"
+    },
+    {
+      "name": "Stephen Langton",
+      "role": "Archbishop of Canterbury and moderating mediator between king and barons; produced Henry I's coronation charter as a model"
+    },
+    {
+      "name": "William Marshal, Earl of Pembroke",
+      "role": "Aged marshal of England, senior mediator at Runnymede, and later regent for the young Henry III"
+    },
+    {
+      "name": "Robert Fitzwalter",
+      "role": "Chief leader of the rebel barons, styled Marshal of the Army of God, who occupied London in May 1215"
+    },
+    {
+      "name": "Pope Innocent III",
+      "role": "As John's papal overlord, annulled Magna Carta in the bull Etsi karissimus of 24 August 1215"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg",
+      "caption": "The Cotton copy of Magna Carta, 1215, one of only four surviving originals. British Library, London.",
+      "credit": "Chancery scribes of King John, 1215, via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/King_John_from_De_Rege_Johanne.jpg",
+      "caption": "King John hunting, from Matthew Paris's Historia Anglorum, c. 1250 to 1259. British Library, Royal MS 14 C VII.",
+      "credit": "Matthew Paris, 13th-century Benedictine chronicler, via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_John_from_De_Rege_Johanne.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Magna Carta",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Magna_Carta",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "John, King of England",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John,_King_of_England",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Magna Carta",
+      "publisher": "British Library",
+      "url": "https://www.bl.uk/magna-carta",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Magna Carta",
+      "publisher": "Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Magna-Carta",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Magna Carta",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/Magna_Carta/",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": false
+}

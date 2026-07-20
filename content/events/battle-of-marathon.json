@@ -1,0 +1,120 @@
+{
+  "id": "battle-of-marathon",
+  "slug": "battle-of-marathon",
+  "title": "Battle of Marathon",
+  "date": {
+    "start": "-000490",
+    "precision": "year",
+    "display": "490 BCE"
+  },
+  "era": "ancient",
+  "regions": ["europe", "middle-east-north-africa"],
+  "categories": ["war-conflict", "politics-empires"],
+  "significance": 5,
+  "summary": "In August or September 490 BCE, on a coastal plain twenty-six miles north-east of Athens, roughly nine thousand Athenian hoplites and one thousand allies from Plataea routed the seaborne expedition King Darius I of Persia had sent to punish them for supporting the Ionian Revolt. The tactical envelopment devised by the general Miltiades left, by Herodotus's count, 6,400 Persian dead against 192 Athenian. It was the first time a Greek citizen army had defeated the Achaemenid Persians in open battle.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "The road to Marathon began a decade earlier and a thousand miles to the east. In 499 BCE the Greek cities of Ionia on the Aegean coast of Anatolia, subjects of the Persian empire since Cyrus the Great's conquest of Lydia in the 540s BCE, rose in revolt under the tyrant Aristagoras of Miletus. Athens sent twenty triremes and Eretria on Euboea sent five to support the rebels. In 498 BCE the combined force marched inland and burned Sardis, the seat of the Persian satrap; the Ionian Revolt was crushed at the naval battle of Lade in 494 BCE, and Miletus itself was sacked. Herodotus reports that Darius, on being told of the burning of Sardis, ordered a slave to whisper to him at every meal: Master, remember the Athenians.\n\nIn 492 BCE the king's son-in-law Mardonius led a first expedition that subdued Thrace and Macedonia; a storm off Mount Athos wrecked much of the fleet. In 490 BCE Darius launched a second, more focused strike. Command went to the Median admiral Datis and to Artaphernes, the king's nephew. Their fleet, estimated by modern historians at roughly six hundred ships carrying perhaps twenty-five thousand infantry and about a thousand cavalry, sailed from Cilicia, hopped across the Aegean by way of Samos, Naxos and Delos, and in July or August landed on Euboea. Eretria, betrayed from within, fell after a week's siege; its temples were burned and its citizens deported to Persia.\n\nFrom Eretria the fleet crossed the strait to the bay of Marathon on the north-east coast of Attica, guided by the exiled former Athenian tyrant Hippias, whom Persia intended to reinstall. The plain of Marathon, a crescent of level ground about nine kilometres long and up to three wide, was hemmed in by mountains behind and marshland at both ends, and it offered the only stretch of coast in eastern Attica where a large army could disembark and manoeuvre.\n\nWhen news reached Athens, the Assembly, on a motion of the general Miltiades, voted to march out to meet the invaders rather than await siege. A herald, Pheidippides, was despatched to Sparta to request help; he covered the two hundred and forty kilometres to Sparta, Herodotus says, in two days, but the Spartan authorities replied that they could not march before the full moon of the Karneia festival. The Athenians, joined only by a thousand hoplites from the small Boeotian city of Plataea, took position at the western end of the plain, blocking the road to Athens."
+    },
+    {
+      "heading": "What happened",
+      "body": "For several days the two armies faced one another without engaging. The Persians had the beach and the sea behind them; the Greeks held the higher ground of the Vrana valley to the west. Command of the Athenian army rotated daily among its ten strategoi, one per tribe, with the polemarch Callimachus of Aphidnae holding the position of ceremonial commander in chief. Miltiades, who had spent years as a client ruler under Persian suzerainty in the Chersonese and understood how a Persian army fought, is credited by Herodotus with persuading Callimachus that the Greeks should attack rather than continue to wait.\n\nOn the morning of the battle, probably 12 September 490 BCE by the modern calendar, the Athenians formed up across the plain in the usual hoplite phalanx, but with a thinned centre and reinforced wings. Their line was extended to match the wider Persian formation, so that the centre was only four ranks deep against the eight of the flanks. The Persians drew up with their best troops, Persians and Sacae, in the middle, and levy contingents on the flanks. When the Greeks were within bowshot, roughly two hundred metres, they broke into a run, a manoeuvre Herodotus says the Persians had never seen from an armoured infantry line.\n\nAt the collision the Persian centre held and drove the thin Greek middle back. But on both wings the deeper Athenian and Plataean files broke their opposite numbers. Instead of pursuing off the field, the victorious Greek wings wheeled inward against the flanks and rear of the Persian centre, which now broke in turn. What had been an orderly battle collapsed into a rout across the plain toward the ships. The fugitives were driven into the marshes at the north end of the plain, where many drowned, while others struggled aboard the beached transports. In the fight for the ships the polemarch Callimachus was killed, along with the general Stesilaus and the brother of the playwright Aeschylus, Cynegirus, whose hand, tradition says, was cut off as he clung to a Persian stern.\n\nHerodotus, writing about forty years later from the eyewitness memory of surviving veterans, records the losses as 6,400 Persian and 192 Athenian dead. The Plataean fallen, and a small number of enslaved auxiliaries who fought with the Athenians, were counted separately. The Athenian dead were cremated together on the field, and their bones placed under the burial mound, the Soros, which still stands about twelve metres high in the middle of the plain. A second, smaller mound at nearby Vrana is traditionally identified as the tomb of the Plataeans.\n\nThe surviving Persian ships did not withdraw immediately. Instead they sailed south around Cape Sounion in an attempt to reach an undefended Athens, whose army was still at Marathon. Miltiades, understanding the manoeuvre, marched his exhausted troops back to the city in a single day and drew them up before Athens in the sanctuary of Heracles at Cynosarges. When the Persian fleet arrived off Phaleron and saw the phalanx already in position, it turned about and sailed for home. The Spartans, whose two thousand hoplites had left the moment the Karneia ended, arrived a day after the battle. They walked out to Marathon, inspected the Persian dead, congratulated the Athenians, and marched back."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "Marathon by itself did not end the Persian threat, but it broke the psychological hold of the Achaemenid army over the Greek cities. Darius spent the next four years preparing a much larger expedition; his death in 486 BCE and revolts in Egypt delayed the return. When his son Xerxes finally invaded in 480 BCE with an army of perhaps two hundred thousand and a fleet of over a thousand ships, the Greeks, having used the intervening decade to fortify and to build up a fleet of two hundred triremes under Themistocles's ship-building programme, were ready. The Persian invasion was halted at Thermopylae, defeated at sea at Salamis in September 480 BCE, and destroyed at Plataea in August 479 BCE.\n\nWithin Athens, Marathon reshaped politics. Miltiades was hailed as saviour of the city; the following year he led a disastrous expedition against Paros, was tried on his return, and died shortly afterwards of a gangrenous wound. His son Cimon, however, became one of the leading figures of the next generation. The men who had fought as hoplites at Marathon, the Marathonomachoi, were revered for the rest of the fifth century as embodiments of Athenian courage. Aeschylus, in the epitaph he composed for his own tomb, chose not to mention the plays that had made him famous, only that he had fought at Marathon.\n\nCulturally, the battle inspired a spate of public art. The Stoa Poikile in the Athenian Agora was decorated around 460 BCE with a great painting by Polygnotus and Micon showing the moment of the Greek envelopment; ancient viewers could still identify the portraits of Miltiades and Callimachus. On the Athenian Acropolis Miltiades's helmet, dedicated after the battle, is now in the museum at Olympia, its brow inscribed simply Militiades. Athens also dedicated a new treasury at Delphi from the spoils, and Pheidias's colossal bronze Athena Promachos on the Acropolis is said to have been paid for from the Persian loot."
+    },
+    {
+      "heading": "Legacy",
+      "body": "The image of a small citizen army defeating the invading force of the world's largest empire fixed Marathon in western memory as a foundational moment for the idea of political freedom. Herodotus's narrative, composed for a Greek-speaking audience in the middle of the fifth century BCE, framed the whole Greco-Persian conflict as a contest between free polities and imperial subjection; every subsequent invocation of the battle, from the Roman antiquarians through the humanists of the Renaissance to the modern nation-state, has depended on that frame. John Stuart Mill's 1846 remark that the battle of Marathon, even as an event in English history, is more important than the battle of Hastings, was a nineteenth-century commonplace.\n\nThe conflation of the runner Pheidippides's pre-battle dash to Sparta with a supposed post-battle run from Marathon to Athens to announce the victory is a late invention; the story appears not in Herodotus but in Plutarch, six centuries after the fact. Nevertheless, when the modern Olympic Games were revived at Athens in 1896 the organisers instituted a long-distance foot race from Marathon to the Panathenaic Stadium, and the modern marathon race, later standardised at 42.195 kilometres, took its name and its symbolic geography from the battle.\n\nArchaeologically the battle has left an unusual amount to see. The Soros, the burial mound of the Athenian dead, was excavated by Valerios Stais in the 1890s and confirmed as a mass grave with ash and cremated bone; the mound itself and the surrounding plain are preserved as an archaeological site. A monument dedicated by the Athenians at Delphi survives in fragments in the Delphi museum, as do the helmet at Olympia, portions of the Callimachus monument, and fifth-century Attic red-figure vases showing hoplites at the run. Together they anchor a battle whose ancient reputation has always run somewhat ahead of the historical record but whose military and political consequences were, on any reading, decisive for what became the classical Greek world."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "east-asia",
+      "text": "In China the late Spring and Autumn period was drawing toward its end. The state of Wu, in the lower Yangtze, was at the height of its power under King Fuchai, engaged in a long struggle with its southern neighbour Yue. Confucius, then in his sixties, was wandering the courts of the central states in search of a ruler who would apply his teachings; his conversations of these years, later gathered as the Analects, would shape East Asian ethics for two millennia. Iron tools and coined money were becoming general."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "The Ganges plain in the early fifth century BCE was the age of the mahajanapadas, the sixteen great kingdoms and republics through which the Buddha, Siddhartha Gautama, was travelling in the last years of his teaching life; traditional Theravadin chronology places his death, the parinirvana, around 483 BCE. His contemporary Vardhamana Mahavira was reorganising the Jain community. Magadha, under King Bimbisara and his son Ajatashatru, was already emerging as the dominant Gangetic power."
+    },
+    {
+      "region": "americas",
+      "text": "In Mesoamerica the Olmec heartland on the Gulf Coast had entered its final phase, its ceremonial centre at La Venta soon to be abandoned. In the Valley of Oaxaca the Zapotec city of Monte Alban was rising, its earliest carved danzante reliefs suggesting the display of defeated enemies. Along the north coast of Peru the Paracas culture was producing the intricate embroidered mantles found in later mummy bundles at the Paracas peninsula, part of the wider Chavín horizon."
+    },
+    {
+      "region": "africa",
+      "text": "Egypt in 490 BCE had been for thirty-five years a satrapy of the Persian empire, ruled since the invasion of Cambyses II in 525 BCE from Memphis by a Persian governor. A revolt would break out at the death of Darius in 486 BCE. Further south, along the middle Nile, the Kushite kingdom had shifted its centre from Napata to Meroe, where a distinctive Meroitic script and iron-working economy were developing. In the western Sahara, Berber populations traded across the desert as they had for centuries."
+    },
+    {
+      "region": "oceania",
+      "text": "In the western Pacific the descendants of the Lapita voyagers had by now settled Tonga, Samoa and Fiji, and were consolidating the ancestral Polynesian societies from which later waves would reach the Society Islands, the Marquesas and, much later, Hawaii and Aotearoa. In Australia, Aboriginal populations continued to maintain the world's oldest unbroken cultural tradition, adapting to widely different environments from the tropical north to the temperate south-east."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Miltiades the Younger",
+      "role": "Athenian general and former client ruler in the Chersonese, credited with the tactical plan that won the battle"
+    },
+    {
+      "name": "Callimachus of Aphidnae",
+      "role": "Polemarch and ceremonial commander in chief of the Athenian force, killed in the fighting around the Persian ships"
+    },
+    {
+      "name": "Datis",
+      "role": "Median admiral and joint commander of the Persian expedition sent by Darius I"
+    },
+    {
+      "name": "Darius I",
+      "role": "Achaemenid king who ordered the punitive expedition against Athens and Eretria in retaliation for their support of the Ionian Revolt"
+    },
+    {
+      "name": "Pheidippides",
+      "role": "Athenian professional runner sent to Sparta to request aid before the battle, later confused in tradition with a supposed post-battle messenger to Athens"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Battle_of_Marathon_Greek_Double_Envelopment.png",
+      "caption": "Diagram of the Greek double envelopment at Marathon, from a US Military Academy teaching atlas. The thinned Athenian centre yielded while the deeper wings broke the Persian flanks and wheeled inward.",
+      "credit": "Department of History, United States Military Academy, via Wikimedia Commons",
+      "license": "GNU Free Documentation License",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Battle_of_Marathon_Greek_Double_Envelopment.png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/The_Battlefield_of_Marathon.jpg",
+      "caption": "The plain of Marathon, viewed from the west. The Athenian and Plataean line held the higher ground at the entrance of the Vrana valley; the Persian ships lay along the bay in the distance. Engraving from Maspero and Sayce, 1903.",
+      "credit": "Gaston Maspero and Archibald Sayce, History of Egypt, Chaldea, Syria, Babylonia and Assyria (1903), via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Battlefield_of_Marathon.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Marathon",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Marathon",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Greco-Persian Wars",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Greco-Persian_Wars",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Battle of Marathon",
+      "publisher": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/Battle_of_Marathon/",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Battle of Marathon",
+      "publisher": "Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/event/Battle-of-Marathon",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": false
+}

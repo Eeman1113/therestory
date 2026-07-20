@@ -1,0 +1,128 @@
+{
+  "id": "copernicus-de-revolutionibus",
+  "slug": "copernicus-de-revolutionibus",
+  "title": "Copernicus publishes De revolutionibus",
+  "date": {
+    "start": "1543",
+    "precision": "year"
+  },
+  "era": "early-modern",
+  "regions": [
+    "europe"
+  ],
+  "categories": [
+    "science-technology",
+    "religion-ideas"
+  ],
+  "significance": 5,
+  "summary": "In the spring of 1543, as the seventy-year-old Polish canon and physician Nicolaus Copernicus lay dying in Frombork on the shore of the Baltic, the Nuremberg press of Johannes Petreius printed the six books of De revolutionibus orbium coelestium. It argued, with a full mathematical apparatus, that the Sun stood still at the centre of the world and the Earth turned upon its axis and moved around it. The book barely stirred its own generation but planted the seed of an astronomy that, through Kepler, Galileo, and Newton, would remake the western picture of the cosmos.",
+  "sections": [
+    {
+      "heading": "Background",
+      "body": "By the sixteenth century the astronomical world Copernicus inherited was the achievement of a single ancient book: the Almagest of Claudius Ptolemy, compiled in Alexandria around 150 CE and mediated to Latin Europe through Arabic. Ptolemy's cosmos placed a stationary Earth at the centre of a nest of transparent spheres; the Sun, Moon, and five known planets moved on combinations of large deferent circles and small epicycles that saved the appearances of retrograde motion. It was mathematically ingenious and, by the fifteenth century, embarrassingly ill-fitted to observations. The Alfonsine Tables produced under Alfonso X of Castile in the 1270s were creaking; calendrical drift meant that Easter, calculated from the vernal equinox, was slipping badly.\n\nNicolaus Copernicus was born in the Prussian city of Torun in 1473, the son of a copper merchant. Orphaned young, he was raised by his uncle Lucas Watzenrode, a powerful churchman who eventually became Prince-Bishop of Warmia. Copernicus studied at Krakow, where he encountered mathematics and astronomy under Albert of Brudzewo, and then spent nearly a decade in Italy taking degrees in canon law at Bologna and Ferrara and studying medicine at Padua. In Bologna he lived with the astronomer Domenico Maria da Novara and observed with him; in Rome around 1500 he gave a set of astronomical lectures. Back in Warmia after 1503 he settled into life as a cathedral canon at Frombork, a doctor, an administrator, a monetary reformer, and an amateur observer working from a small tower in the cathedral wall.\n\nSomewhere before 1514 he circulated in manuscript a short sketch called the Commentariolus, in which he proposed as a working hypothesis that the Sun sat at the centre of the world and the Earth was one of the planets moving around it. The idea was not wholly new; the ancient Pythagorean Aristarchus of Samos had made a similar suggestion in the third century BCE, and medieval scholars such as Nicole Oresme had entertained the diurnal rotation of the Earth as a possibility. But Copernicus set about turning it into a full mathematical astronomy, and he worked at the problem, in secret and in his spare hours, for the next thirty years.\n\nWhat drew the book into print was a young Lutheran mathematician from Wittenberg named Georg Joachim Rheticus, who arrived unannounced at Frombork in the summer of 1539 and spent more than two years pressing the old canon to publish. Rheticus wrote his own summary, the Narratio prima, and had it printed at Gdańsk in 1540; that pamphlet won a cautious reception and encouraged Copernicus to release the full manuscript. Rheticus carried the book to Nuremberg in 1542 and entrusted it to the printer Johannes Petreius. Circumstances forced Rheticus to leave for a chair in Leipzig before the printing was finished, and he handed final oversight to a Lutheran theologian and mathematician of the city, Andreas Osiander."
+    },
+    {
+      "heading": "What happened",
+      "body": "Petreius's press worked through the winter of 1542 and into the spring of 1543. The finished book ran to more than four hundred pages, six books in Latin, with woodcut diagrams and a foldout of the great heliocentric cosmos. Its structure recalled Ptolemy: Book I set out the general picture of a moving Earth in a Sun-centred world; Books II to VI treated spherical astronomy, precession, the motions of the Moon, and then each of the five planets in turn, with full tables and geometrical constructions. Copernicus dedicated the work to Pope Paul III, defending his novelty by appealing to the ancient authorities who had entertained similar ideas and to the mathematical elegance of a system that ordered the planets by their true periods and distances.\n\nOsiander, editing the final proofs, added an unsigned preface titled To the Reader, on the Hypotheses of This Work. It argued that the astronomer's business was to save the appearances by any mathematical construction that worked, and that the reader should not expect physical truth from the theory. Copernicus had spent decades insisting the opposite, that the motions of the Earth were real and the Sun's stillness a fact of nature, but he was too far gone to protest. Legend, recorded by Rheticus's ally Tiedemann Giese, says a printed copy of De revolutionibus was placed in Copernicus's hands on 24 May 1543, the day of his death, and that he was already unconscious.\n\nThe title page bore the words 'On the Revolutions of the Heavenly Spheres.' Its most famous single passage described the arrangement of the world: at the centre of everything sits the Sun; enthroned upon a royal throne, it governs the family of stars that turn around it. Mercury, Venus, then the Earth with its single Moon, then Mars, Jupiter, and Saturn, and beyond them the sphere of the fixed stars, immensely more distant than the ancients had supposed in order to reconcile heliocentrism with the absence of observed stellar parallax. The Earth turned on its axis once a day, revolved around the Sun once a year, and inclined its axis to the plane of that revolution to produce the seasons.\n\nThe book was received quietly. It was not banned. Its planetary tables, published separately in 1551 by Erasmus Reinhold as the Prutenic Tables, quickly became the working standard for astronomers across Europe. But the underlying claim, that the Earth genuinely moved, was mostly treated as a mathematical convenience. Fewer than four hundred copies were printed of the first edition; extant copies, catalogued by the historian Owen Gingerich in a decades-long census, show that most sixteenth-century readers annotated the mathematics and left the cosmology alone. Even Rheticus's own edition of the Prutenic Tables did not commit to the physical truth of the Copernican system."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "For the first fifty years after publication Copernicus remained a specialist's author. The Danish astronomer Tycho Brahe, working at his observatory of Uraniborg on the island of Hven from 1576, admired the mathematical elegance of the Copernican model but rejected the moving Earth on physical and scriptural grounds, and offered his own hybrid system in which the planets orbited the Sun while the Sun orbited a stationary Earth. Tycho's real contribution, which turned out to matter more than his cosmology, was a corpus of naked-eye observations accurate to perhaps one arcminute, which he willed to his young German assistant, Johannes Kepler.\n\nKepler, a devout Lutheran and convinced Copernican, spent the first years of the seventeenth century wrestling with Tycho's data on Mars. In his Astronomia nova of 1609 he broke with two thousand years of Greek astronomy by proposing that planetary orbits were ellipses with the Sun at one focus, and that a line from Sun to planet swept equal areas in equal times. In the Harmonices mundi of 1619 he added the third law, relating orbital periods to distances. In the same years Galileo Galilei in Padua turned the newly invented telescope on the heavens and reported, in the Sidereus nuncius of 1610, mountains on the Moon, four satellites orbiting Jupiter, and the phases of Venus, all of which fit the Copernican system far better than the Ptolemaic.\n\nThe Church, quiet in 1543, was no longer quiet in 1616. The Congregation of the Index, alarmed by the polemical energy Galileo had brought to the Copernican cause, ruled that heliocentrism was 'formally heretical' and placed De revolutionibus on the Index of Forbidden Books, pending 'correction' of about ten passages that presented the Earth's motion as physically real rather than as hypothesis. Copernicus's name remained on the Index for centuries; Galileo, tried in 1633 for defending Copernicanism, was sentenced to house arrest and forced to abjure. It was not until 1758 that Pope Benedict XIV removed the general prohibition on Copernican books, and 1835 that a purged De revolutionibus disappeared from the Index entirely."
+    },
+    {
+      "heading": "Legacy",
+      "body": "Isaac Newton's Principia of 1687 completed what De revolutionibus began. The universal law of gravitation showed why Kepler's ellipses were the necessary shape of orbits under an inverse-square attraction, and it made the Copernican world into a mechanical system that any competent mathematician could calculate. From then on the moving Earth was not just a mathematical hypothesis but the working assumption of natural philosophy. The discovery of stellar aberration by James Bradley in 1728 and of stellar parallax by Friedrich Bessel in 1838 gave direct observational confirmation of the Earth's annual motion. Later work by Herschel, Bessel, and Hubble would enlarge the Copernican picture into a universe of galaxies and, eventually, of an expanding cosmos with no privileged centre at all.\n\nThe Copernican shift also travelled far beyond astronomy. The idea that the ordinary human perspective was not the true one, that reason and mathematics could dethrone appearances, became a standard trope in early modern thought; Immanuel Kant's Critique of Pure Reason of 1781 self-consciously described its own philosophical turn as Copernican. The word 'revolution' shifted meaning during the eighteenth century from the astronomer's cycle to the historian's rupture partly under the pull of De revolutionibus itself.\n\nIn Poland Copernicus is a national hero, his likeness on banknotes and stamps and the university of Torun bearing his name; the mission that returned his relics to Frombork cathedral in 2010, after a decade of forensic identification, was a state event. In wider culture he stands as the quiet founder of modern science, an aging cathedral canon working with an armillary sphere in the corner of a chilly Baltic tower, who guessed, and then proved as far as sixteenth-century mathematics allowed, that the Earth was one of the planets and not the centre of the world."
+    }
+  ],
+  "worldContext": [
+    {
+      "region": "americas",
+      "text": "New Spain, twenty-two years after the fall of Tenochtitlán, was ruled by the first viceroy Antonio de Mendoza; a great cocoliztli epidemic in 1545 to 1548 would kill perhaps fifteen million people in central Mexico. Silver had just been struck in enormous quantities at the mines of Zacatecas, whose deposits were confirmed in 1546. Francisco de Orellana had descended the Amazon in 1541 to 1542, giving Europeans their first crossing of South America. In the Andes, Peru's civil wars between the Pizarro and Almagro factions were still tearing the young viceroyalty apart."
+    },
+    {
+      "region": "middle-east-north-africa",
+      "text": "The Ottoman Empire under Suleiman the Magnificent was at the height of its power. In 1543 the great architect Mimar Sinan was rebuilding Constantinople; a joint Franco-Ottoman fleet under Hayreddin Barbarossa was wintering in French Toulon after ravaging the Italian coast, and Suleiman himself had led another campaign into Hungary the summer before. In Safavid Persia the young Shah Tahmasp I ruled from Tabriz and was patronising the great manuscript workshops that produced the Shahnameh of Shah Tahmasp."
+    },
+    {
+      "region": "east-asia",
+      "text": "In Ming China the Jiajing Emperor, obsessed with Daoist alchemy and immortality, had withdrawn from court business; the coast was plagued by wokou pirate raids that would peak in the 1550s. In 1543 or thereabouts, three Portuguese aboard a Chinese junk drifted to the small Japanese island of Tanegashima, introducing matchlock firearms to Sengoku Japan and beginning the century of the nanban, southern barbarians. Korea under King Jungjong of Joseon was refining its neo-Confucian bureaucracy, and Vietnamese kingdoms fought one another north and south of the Gianh River."
+    },
+    {
+      "region": "south-central-asia",
+      "text": "Northern India in 1543 was contested between the Timurid emperor Humayun, driven out of Delhi in 1540 by the Afghan warlord Sher Shah Suri, and Sher Shah himself, who was reorganising the sultanate with new roads, rest houses, and the silver rupee that would give its name to modern South Asian currencies. Humayun was in exile at the Safavid court in Persia; his son Akbar had been born the year before, in October 1542, at Umerkot in Sindh. Vijayanagara, the great Hindu empire of the Deccan, was under the regency that preceded the disastrous defeat at Talikota in 1565."
+    },
+    {
+      "region": "africa",
+      "text": "In Ethiopia the Christian emperor Gelawdewos, with Portuguese musketeers led by Cristóvão da Gama, defeated and killed the Muslim conqueror Ahmad Gragn at the battle of Wayna Daga on 21 February 1543, ending sixteen years of jihad that had almost destroyed the Solomonic kingdom. Along the Swahili coast Portuguese governors ruled from Sofala and Mozambique Island. In West Africa the Songhai Empire under Askia Ishaq I dominated the Niger bend; the Kingdom of Kongo continued a fraught partnership with Portuguese slavers and missionaries."
+    },
+    {
+      "region": "oceania",
+      "text": "No European ship had yet charted Australia, New Zealand, or the eastern Pacific islands. The first credible European sighting of Australia, by Willem Janszoon of the Dutch East India Company, was still sixty years away; Abel Tasman would reach Tasmania and New Zealand in 1642 to 1643, exactly a century after De revolutionibus was printed. Meanwhile the vast oceanic world continued its own long history: Māori communities in Aotearoa were consolidating iwi identities, and Polynesian societies from Tonga to Rapa Nui maintained ancient astronomical traditions of their own."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Nicolaus Copernicus",
+      "role": "Warmian cathedral canon and physician, author of De revolutionibus orbium coelestium"
+    },
+    {
+      "name": "Georg Joachim Rheticus",
+      "role": "Young Wittenberg mathematician who persuaded Copernicus to publish and supervised the Nuremberg printing"
+    },
+    {
+      "name": "Andreas Osiander",
+      "role": "Nuremberg Lutheran theologian who added the unsigned instrumentalist preface to the printed edition"
+    },
+    {
+      "name": "Johannes Petreius",
+      "role": "Nuremberg printer who produced the first edition of De revolutionibus"
+    },
+    {
+      "name": "Tiedemann Giese",
+      "role": "Bishop of Kulm and Copernicus's close friend who delivered the manuscript to Rheticus"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/De_revolutionibus_orbium_coelestium.jpg",
+      "caption": "The famous heliocentric diagram from Book I of De revolutionibus, showing the Sun at the centre and the six planetary orbs around it. From the second edition, Basel 1566.",
+      "credit": "Nicolaus Copernicus (1473 to 1543), via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_revolutionibus_orbium_coelestium.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Nikolaus_Kopernikus.jpg",
+      "caption": "Anonymous portrait of Nicolaus Copernicus, based on a lost original, held at the Torun town hall.",
+      "credit": "Unknown 16th-century artist, via Wikimedia Commons",
+      "license": "Public Domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nikolaus_Kopernikus.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "De revolutionibus orbium coelestium",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Nicolaus Copernicus",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Nicolaus Copernicus",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/copernicus/",
+      "accessed": "2026-07-20"
+    },
+    {
+      "title": "Nicolaus Copernicus",
+      "publisher": "Britannica",
+      "url": "https://www.britannica.com/biography/Nicolaus-Copernicus",
+      "accessed": "2026-07-20"
+    }
+  ],
+  "disputed": false
+}

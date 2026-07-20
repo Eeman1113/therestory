@@ -20,6 +20,12 @@ export function SiteHeader() {
 
         <nav aria-label="Primary" className="flex items-center gap-6">
           <Link
+            href="/events"
+            className="text-sm text-ink-muted transition-colors hover:text-ink"
+          >
+            Events
+          </Link>
+          <Link
             href="/eras"
             className="text-sm text-ink-muted transition-colors hover:text-ink"
           >

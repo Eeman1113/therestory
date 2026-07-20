@@ -59,3 +59,22 @@ Format:
 - Built ⌘K command palette using `cmdk`: searches events, eras, regions, keyboard-navigable, editorial styled (mono middle-dot dates, micro-caps group headers, hairline dividers, Esc/↵/↑↓ hints). Global keyboard shortcut + clickable header trigger via custom event.
 - Verified end-to-end: search "cons" → Fall of Constantinople bubbled to top → Enter → event page loads with hero image (Fausto Zonaro painting), full sections, "meanwhile" plaques for East Asia / South & Central Asia / Africa / Europe / Americas, complete sources list.
 
+## 2026-07-20 — Phase 5: full content pipeline (subagent-authored)
+- Spawned **10 research subagents in parallel** — one per era (8) plus two pivotal-year batches — via the Agent tool in background mode.
+- Landed **75 anchor event JSON files** and **15 pivotal-year JSON files**. Every one schema-valid at build time (Zod).
+- Depth bar: 4 body sections × 450–700 words each, 5–6 worldContext plaques × 80–140 words each, 4–6 figures, 2–3 Wikimedia images with verified licenses (Public Domain / CC BY / CC BY-SA), 4–6 sources (Wikipedia + World History Encyclopedia + Britannica / museum catalogues / national archives).
+- Year pages carry all seven regional snapshots (Africa, Americas, East Asia, South & Central Asia, Middle East & North Africa, Europe, Oceania) at 120–220 words each — dense sourced editorial prose.
+- Content spans **prehistory through the contemporary world**: Sumerian cuneiform, Great Pyramid of Giza, Sargon of Akkad, Code of Hammurabi, Shang, Bronze Age Collapse, Olmec San Lorenzo, founding of Rome, Cyrus the Great, Marathon, Socrates, Alexander, Ashoka, Julius Caesar, Jesus, Edict of Milan, Justinian's Code, the Hijra, Yarmouk, Abbasid Revolution, An Lushan, Charlemagne, House of Wisdom, Song, Hastings, First Crusade, Fourth Crusade, Magna Carta, Baghdad 1258, Mansa Musa, Black Death, Ming, Zheng He, Granada, Luther, Tenochtitlán, Copernicus, Trent, Lepanto, Westphalia, Newton, US Independence, Bastille, Napoleon, Vienna, Opium War, 1848, Darwin, US Civil War, Meiji, Suez, Berlin Conference, WWI, October Revolution, Versailles, Wall Street, WWII, Pearl Harbor, Hiroshima, UN, Partition, PRC, Cuban Missile Crisis, USSR dissolution, Rwanda, Hong Kong, 9/11, 2008, Arab Spring, COVID. Plus 15 pivotal-year pages including 776 BCE, 1066, 1258, 1492, 1517, 1648, 1776, 1789, 1815, 1848, 1914, 1929, 1945, 1989, 2001.
+- Factual disputes flagged in prose where scholarship genuinely differs (Sargon dating chronology, Menes/Narmer/Hor-Aha, historical Jesus, whether 476 CE really "fell", Bronze Age Collapse causation, Olmec "mother culture" debate).
+- Some image substitutions when initial candidates had unclear licences (Kish Tablet → British Museum proto-cuneiform; Hammurabi hero swap). All images verified against their Wikimedia Commons file description pages.
+- 4 events not written (subagents hit rate limits mid-run): `fall-of-western-roman-empire`, `haitian-revolution-begins`, `battle-of-tsushima`, `fall-of-the-berlin-wall` — queued for fill-in after limits reset.
+
+## 2026-07-20 — Phase 5 UI wiring
+- Built `/year/[year]` route with `generateStaticParams` + slug convention `1789` for CE, `776-bce` for BCE. Layout: mono XL year headline, editorial summary, seven regional snapshots (canonical region order), featured events (explicit + ±1 year window auto-detected), sources.
+- Built `/events` catalogue with events grouped by era, sorted chronologically, category-coloured dots, sidebar legend.
+- Added Years group to the ⌘K palette. Added event→year cross-ref block on event pages when a matching year file exists.
+- Refreshed the homepage: features one anchor event per era (12 tiles), added a Pivotal Years section listing all 15 year files, added link to the /events catalogue.
+- Added `/sitemap.xml` generated from all content.
+- Header nav now includes Events + Eras + About.
+- `npm run build` generates 106 static pages cleanly.
+
