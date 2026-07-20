@@ -26,25 +26,25 @@ export function YearWorldSnapshot({
   );
 
   return (
-    <section className="py-16">
+    <section className="py-12 sm:py-16">
       <MicroCaps as="p">The world, region by region</MicroCaps>
-      <h2 className="mt-2 max-w-[26ch] text-[32px] leading-[1.1] tracking-[-0.015em]">
+      <h2 className="mt-2 max-w-[26ch] text-[26px] leading-[1.15] tracking-[-0.015em] sm:text-[32px] sm:leading-[1.1]">
         Seven snapshots. One year.
       </h2>
-      <p className="mt-4 max-w-[62ch] text-sm leading-6 text-ink-muted">
+      <p className="mt-4 max-w-[62ch] text-base leading-7 text-ink-muted sm:text-sm sm:leading-6">
         Every year page on Therestory carries a snapshot of every world region
         — Africa, the Americas, East Asia, South & Central Asia, the Middle East
         & North Africa, Europe, and Oceania. This is what a global history
         looks like when nothing is left out.
       </p>
 
-      <HairlineRule className="mt-10" />
+      <HairlineRule className="mt-8 sm:mt-10" />
 
       <ul>
         {sorted.map((snap) => {
           const region = getRegion(snap.region);
           return (
-            <li key={snap.region} className="border-b border-rule py-10">
+            <li key={snap.region} className="border-b border-rule py-8 sm:py-10">
               <div className="grid grid-cols-1 gap-x-16 gap-y-6 lg:grid-cols-12">
                 <div className="lg:col-span-3">
                   <MicroCaps as="p">{region?.label ?? snap.region}</MicroCaps>

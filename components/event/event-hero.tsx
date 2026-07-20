@@ -11,10 +11,14 @@ export function EventHero({ event }: { event: EventDoc }) {
   const hero = event.images[0];
 
   return (
-    <header className="grid grid-cols-1 gap-10 py-16 lg:grid-cols-12 lg:gap-16">
+    <header className="grid grid-cols-1 gap-10 py-12 sm:py-16 lg:grid-cols-12 lg:gap-16">
       <div className="lg:col-span-7">
-        <div className="flex items-baseline gap-4">
-          <MonoDate date={event.date} size="xl" />
+        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+          <MonoDate
+            date={event.date}
+            size="xl"
+            className="text-[24px] leading-7 sm:text-[32px] sm:leading-8"
+          />
           {event.disputed && (
             <MicroCaps className="text-accent">Disputed</MicroCaps>
           )}
@@ -34,10 +38,10 @@ export function EventHero({ event }: { event: EventDoc }) {
             );
           })}
         </div>
-        <h1 className="mt-6 text-[44px] leading-[1.05] tracking-[-0.02em] sm:text-[56px] sm:leading-[1.04]">
+        <h1 className="mt-6 text-[36px] leading-[1.05] tracking-[-0.02em] sm:text-[56px] sm:leading-[1.04]">
           {event.title}
         </h1>
-        <p className="mt-6 max-w-[62ch] text-lg leading-8 text-ink-muted">
+        <p className="mt-6 max-w-[62ch] text-base leading-7 text-ink-muted sm:text-lg sm:leading-8">
           {event.summary}
         </p>
       </div>

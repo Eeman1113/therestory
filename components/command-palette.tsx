@@ -85,7 +85,7 @@ export function CommandPalette({ events, eras, regions, years }: Props) {
       role="dialog"
       aria-modal
       aria-label="Search Therestory"
-      className="fixed inset-0 z-50 flex items-start justify-center px-4 pt-[10vh]"
+      className="fixed inset-0 z-50 flex items-start justify-center px-4 pt-[6vh] sm:pt-[10vh]"
     >
       <button
         type="button"
@@ -105,16 +105,17 @@ export function CommandPalette({ events, eras, regions, years }: Props) {
             onValueChange={setQuery}
             autoFocus
             placeholder="Search events, eras, regions…"
-            className="flex-1 bg-transparent text-sm text-ink outline-none placeholder:text-ink-muted"
+            // 16px input font-size on mobile so iOS Safari doesn't zoom on focus.
+            className="flex-1 bg-transparent text-base text-ink outline-none placeholder:text-ink-muted sm:text-sm"
           />
           <MicroCaps className="hidden sm:inline">Esc</MicroCaps>
           <button
             type="button"
             onClick={closePalette}
-            className="ml-1 text-ink-muted transition-colors hover:text-ink sm:hidden"
+            className="-mr-2 inline-flex h-11 w-11 items-center justify-center text-ink-muted transition-colors hover:text-ink sm:hidden"
             aria-label="Close"
           >
-            <X size={14} strokeWidth={1.5} aria-hidden />
+            <X size={18} strokeWidth={1.5} aria-hidden />
           </button>
         </div>
 
@@ -139,7 +140,7 @@ export function CommandPalette({ events, eras, regions, years }: Props) {
                 value={`${e.title} ${e.era} ${e.categories.join(" ")}`}
                 onSelect={() => go(`/event/${e.slug}`)}
                 className={cn(
-                  "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-2",
+                  "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-3 sm:py-2",
                   "text-sm text-ink",
                   "aria-selected:bg-ink/[0.04] dark:aria-selected:bg-ink/[0.06]",
                 )}
@@ -169,7 +170,7 @@ export function CommandPalette({ events, eras, regions, years }: Props) {
                   value={`${yearLabel(y.year)} ${y.headline}`}
                   onSelect={() => go(`/year/${yearSlug(y.year)}`)}
                   className={cn(
-                    "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-2",
+                    "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-3 sm:py-2",
                     "text-sm text-ink",
                     "aria-selected:bg-ink/[0.04] dark:aria-selected:bg-ink/[0.06]",
                   )}
@@ -199,7 +200,7 @@ export function CommandPalette({ events, eras, regions, years }: Props) {
                 value={`${era.label} ${era.description}`}
                 onSelect={() => go(`/eras/${era.id}`)}
                 className={cn(
-                  "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-2",
+                  "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-3 sm:py-2",
                   "text-sm text-ink",
                   "aria-selected:bg-ink/[0.04] dark:aria-selected:bg-ink/[0.06]",
                 )}
@@ -231,7 +232,7 @@ export function CommandPalette({ events, eras, regions, years }: Props) {
                   go(`/eras`);
                 }}
                 className={cn(
-                  "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-2",
+                  "flex cursor-pointer items-baseline justify-between gap-4 px-2 py-3 sm:py-2",
                   "text-sm text-ink-muted",
                   "aria-selected:bg-ink/[0.04] dark:aria-selected:bg-ink/[0.06]",
                 )}

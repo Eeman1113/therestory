@@ -20,16 +20,16 @@ export function YearCrossref({ year }: { year: YearDoc }) {
       className="group block border-y border-rule py-8"
     >
       <MicroCaps>Zoom out — the whole year</MicroCaps>
-      <div className="mt-2 flex items-baseline justify-between gap-6">
+      <div className="mt-2 flex flex-col-reverse items-start gap-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
         <div className="max-w-[62ch]">
-          <h3 className="text-2xl leading-tight text-ink transition-colors group-hover:text-accent">
+          <h3 className="text-xl leading-tight text-ink transition-colors group-hover:text-accent sm:text-2xl">
             {year.headline}
           </h3>
           <p className="mt-2 text-sm text-ink-muted">
             See what was happening in every world region during {yearLabel(year.year)}.
           </p>
         </div>
-        <div className="flex items-baseline gap-3">
+        <div className="flex shrink-0 items-baseline gap-3">
           <span className="font-mono text-2xl tabular-nums text-ink-muted">
             {yearLabel(year.year)}
           </span>

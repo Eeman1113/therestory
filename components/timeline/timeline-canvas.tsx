@@ -48,7 +48,8 @@ import { minSignificanceFor } from "@/lib/timeline/density";
 import { markerColor, markerRadius } from "@/lib/timeline/categories";
 import { useTimelineView } from "./timeline-view";
 
-const CANVAS_HEIGHT = 420;
+const CANVAS_HEIGHT_MOBILE = 360;
+const CANVAS_HEIGHT_DESKTOP = 420;
 const ERA_BAND_H = 24;
 const RULER_H = 40;
 const MARKER_TOP = ERA_BAND_H + RULER_H;
@@ -122,9 +123,17 @@ export function TimelineCanvas({ events }: Props) {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
+  const [isSmall, setIsSmall] = useState(false);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const dragRef = useRef<{ startX: number; startView: [number, number] } | null>(null);
+  const pinchRef = useRef<{
+    startDist: number;
+    startView: [number, number];
+    startCenterFrac: number;
+  } | null>(null);
   const pointerMoved = useRef(false);
+  // Track live pointers so we can detect 2-finger pinch on touch devices.
+  const activePointers = useRef(new Map<number, { x: number; y: number }>());
 
   /* --- observe container size ------------------------------------------ */
   useLayoutEffect(() => {
@@ -134,7 +143,10 @@ export function TimelineCanvas({ events }: Props) {
       const w = el.getBoundingClientRect().width;
       // Never regress to 0 — an intermittent 0 (during hydration or transitions)
       // would collapse every marker onto the same track. Wait for a real width.
-      if (w > 0) setWidth(w);
+      if (w > 0) {
+        setWidth(w);
+        setIsSmall(w < 640);
+      }
     };
     observe();
     const ro = new ResizeObserver(observe);
@@ -150,7 +162,9 @@ export function TimelineCanvas({ events }: Props) {
 
   /* --- derive per-render positions ------------------------------------- */
   const viewWidth = viewEnd - viewStart;
-  const minSig = minSignificanceFor(viewWidth);
+  // Raise the significance floor by one notch on small viewports so the marker
+  // plane never feels crowded on a phone. Capped so we always show something.
+  const minSig = Math.min(5, minSignificanceFor(viewWidth) + (isSmall ? 1 : 0));
 
   /** Convert a normalized 0..1 timeline position to pixel X inside the canvas. */
   const posToPx = useCallback(
@@ -179,8 +193,8 @@ export function TimelineCanvas({ events }: Props) {
   );
 
   const ticks = useMemo(
-    () => generateTicks(width, viewStart, viewEnd, 56),
-    [width, viewStart, viewEnd],
+    () => generateTicks(width, viewStart, viewEnd, isSmall ? 72 : 56),
+    [width, viewStart, viewEnd, isSmall],
   );
 
   const eraBands = useMemo(
@@ -195,22 +209,68 @@ export function TimelineCanvas({ events }: Props) {
 
   const centeredYear = positionToYear((viewStart + viewEnd) / 2);
 
-  /* --- pointer drag → pan ---------------------------------------------- */
+  /* --- pointer drag → pan (+ two-finger pinch → zoom on touch) --------- */
   const onPointerDown = useCallback(
     (e: ReactMouseEvent<HTMLDivElement>) => {
+      const pe = e as unknown as PointerEvent;
       if ((e.target as HTMLElement).closest("[data-marker]")) return;
+      activePointers.current.set(pe.pointerId, { x: e.clientX, y: e.clientY });
+      (e.currentTarget as HTMLElement).setPointerCapture?.(pe.pointerId);
+
+      if (activePointers.current.size === 2) {
+        // Enter pinch mode: cancel any single-finger drag.
+        dragRef.current = null;
+        const pts = [...activePointers.current.values()];
+        const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+        const el = containerRef.current;
+        const rect = el?.getBoundingClientRect();
+        const centerX = (pts[0].x + pts[1].x) / 2;
+        const centerFrac = rect && rect.width > 0
+          ? Math.min(1, Math.max(0, (centerX - rect.left) / rect.width))
+          : 0.5;
+        pinchRef.current = {
+          startDist: dist,
+          startView: [viewStart, viewEnd],
+          startCenterFrac: centerFrac,
+        };
+        return;
+      }
+
       dragRef.current = {
         startX: e.clientX,
         startView: [viewStart, viewEnd],
       };
       pointerMoved.current = false;
-      (e.currentTarget as HTMLElement).setPointerCapture?.((e as unknown as PointerEvent).pointerId);
     },
     [viewStart, viewEnd],
   );
 
   const onPointerMove = useCallback(
     (e: ReactMouseEvent<HTMLDivElement>) => {
+      const pe = e as unknown as PointerEvent;
+      if (activePointers.current.has(pe.pointerId)) {
+        activePointers.current.set(pe.pointerId, { x: e.clientX, y: e.clientY });
+      }
+
+      // Two-finger pinch: recompute view around the anchor point.
+      const pinch = pinchRef.current;
+      if (pinch && activePointers.current.size === 2 && width > 0) {
+        const pts = [...activePointers.current.values()];
+        const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+        if (dist > 0 && pinch.startDist > 0) {
+          const scale = pinch.startDist / dist; // pinch out → dist grows → scale < 1 → view shrinks (zoom in)
+          const [s0, e0] = pinch.startView;
+          const w0 = e0 - s0;
+          const newW = Math.max(0.002, Math.min(1, w0 * scale));
+          const anchorPos = s0 + pinch.startCenterFrac * w0;
+          const newStart = anchorPos - pinch.startCenterFrac * newW;
+          const newEnd = newStart + newW;
+          setView(newStart, newEnd);
+        }
+        pointerMoved.current = true;
+        return;
+      }
+
       const drag = dragRef.current;
       if (!drag || width === 0) return;
       const dx = e.clientX - drag.startX;
@@ -223,8 +283,11 @@ export function TimelineCanvas({ events }: Props) {
     [setView, width],
   );
 
-  const onPointerUp = useCallback(() => {
-    dragRef.current = null;
+  const onPointerUp = useCallback((e: ReactMouseEvent<HTMLDivElement>) => {
+    const pe = e as unknown as PointerEvent;
+    activePointers.current.delete(pe.pointerId);
+    if (activePointers.current.size < 2) pinchRef.current = null;
+    if (activePointers.current.size === 0) dragRef.current = null;
   }, []);
 
   /* --- wheel → zoom (anchored at cursor) ------------------------------- */
@@ -338,23 +401,28 @@ export function TimelineCanvas({ events }: Props) {
   return (
     <div className="relative select-none">
       {/* You are here + controls */}
-      <div className="mb-3 flex items-baseline justify-between">
-        <div className="flex items-baseline gap-3">
+      <div className="mb-3 flex items-baseline justify-between gap-3">
+        <div className="flex min-w-0 flex-wrap items-baseline gap-x-3 gap-y-1">
           <MicroCaps>You are here</MicroCaps>
           <span className="font-mono text-sm tabular-nums text-ink">
             {formatYearShort(centeredYear)}
           </span>
-          <span className="text-xs text-ink-muted">— {eraOf(centeredYear)}</span>
+          <span className="truncate text-xs text-ink-muted">
+            — {eraOf(centeredYear)}
+          </span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex shrink-0 items-center gap-1">
           <ControlButton onClick={() => zoomAt((viewStart + viewEnd) / 2, 1.35)} label="Zoom out">
-            <Minus size={14} strokeWidth={1.5} />
+            <Minus size={18} strokeWidth={1.5} className="sm:hidden" />
+            <Minus size={14} strokeWidth={1.5} className="hidden sm:block" />
           </ControlButton>
           <ControlButton onClick={() => zoomAt((viewStart + viewEnd) / 2, 0.75)} label="Zoom in">
-            <Plus size={14} strokeWidth={1.5} />
+            <Plus size={18} strokeWidth={1.5} className="sm:hidden" />
+            <Plus size={14} strokeWidth={1.5} className="hidden sm:block" />
           </ControlButton>
           <ControlButton onClick={resetView} label="Reset view">
-            <RotateCcw size={14} strokeWidth={1.5} />
+            <RotateCcw size={18} strokeWidth={1.5} className="sm:hidden" />
+            <RotateCcw size={14} strokeWidth={1.5} className="hidden sm:block" />
           </ControlButton>
         </div>
       </div>
@@ -375,7 +443,11 @@ export function TimelineCanvas({ events }: Props) {
           "active:cursor-grabbing",
           "focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-0",
         )}
-        style={{ height: CANVAS_HEIGHT }}
+        style={{
+          height: isSmall ? CANVAS_HEIGHT_MOBILE : CANVAS_HEIGHT_DESKTOP,
+          // Block browser pan/zoom on touch — we handle it ourselves.
+          touchAction: "none",
+        }}
       >
         {/* Era band strip */}
         <div className="absolute inset-x-0 top-0" style={{ height: ERA_BAND_H }}>
@@ -545,10 +617,13 @@ export function TimelineCanvas({ events }: Props) {
         />
       </div>
 
-      <p className="mt-3 text-xs text-ink-muted">
+      <p className="mt-3 hidden text-xs text-ink-muted sm:block">
         Drag to pan · scroll to zoom · <kbd className="font-mono">←</kbd>{" "}
         <kbd className="font-mono">→</kbd> between markers ·{" "}
         <kbd className="font-mono">Enter</kbd> to open · showing {visibleEvents.length} of {events.length} events
+      </p>
+      <p className="mt-3 text-xs text-ink-muted sm:hidden">
+        Drag to pan · pinch or use +/− to zoom · showing {visibleEvents.length} of {events.length} events
       </p>
     </div>
   );
@@ -569,7 +644,7 @@ function ControlButton({
       aria-label={label}
       title={label}
       onClick={onClick}
-      className="inline-flex h-7 w-7 items-center justify-center text-ink-muted transition-colors hover:text-ink"
+      className="inline-flex h-11 w-11 items-center justify-center text-ink-muted transition-colors hover:text-ink sm:h-7 sm:w-7"
     >
       {children}
     </button>
@@ -587,7 +662,8 @@ function HoverCard({
   containerWidth: number;
   trackY: number;
 }) {
-  const CARD_W = 300;
+  // On narrow viewports, shrink the card so it never overflows the canvas.
+  const CARD_W = Math.min(300, Math.max(220, containerWidth - 24));
   const half = CARD_W / 2;
   let left = xPx - half;
   if (left < 8) left = 8;

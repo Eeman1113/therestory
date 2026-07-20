@@ -59,7 +59,7 @@ export default async function YearPage({
   const featured = [...explicit, ...nearby];
 
   return (
-    <article className="mx-auto w-full max-w-[1400px] px-8">
+    <article className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
       <YearHero year={year} />
       <HairlineRule />
       <YearWorldSnapshot snapshots={year.snapshots} />

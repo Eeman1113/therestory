@@ -14,7 +14,12 @@ export function Markdown({
   className?: string;
 }) {
   return (
-    <div className={cn("space-y-4 text-[15px] leading-[1.7] text-ink", className)}>
+    <div
+      className={cn(
+        "space-y-4 text-base leading-[1.75] text-ink sm:text-[15px] sm:leading-[1.7]",
+        className,
+      )}
+    >
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{

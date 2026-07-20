@@ -4,7 +4,7 @@ import type { Section } from "@/lib/content/schema";
 
 export function EventBody({ sections }: { sections: Section[] }) {
   return (
-    <div className="grid grid-cols-1 gap-x-16 gap-y-14 py-16 lg:grid-cols-12">
+    <div className="grid grid-cols-1 gap-x-16 gap-y-10 py-12 sm:gap-y-14 sm:py-16 lg:grid-cols-12">
       {sections.map((s, i) => (
         <section key={s.heading} className="contents">
           <div className="lg:col-span-3">

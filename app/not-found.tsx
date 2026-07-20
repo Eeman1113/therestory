@@ -5,12 +5,12 @@ import { HairlineRule } from "@/components/common/hairline-rule";
 
 export default function NotFound() {
   return (
-    <div className="mx-auto flex w-full max-w-[900px] flex-col items-start px-8 py-24">
+    <div className="mx-auto flex w-full max-w-[900px] flex-col items-start px-5 py-16 sm:px-8 sm:py-24">
       <MicroCaps as="p">404 · not in the record</MicroCaps>
-      <h1 className="mt-4 max-w-[24ch] font-mono text-[112px] leading-[0.9] tracking-[-0.03em]">
+      <h1 className="mt-4 max-w-[24ch] font-mono text-[80px] leading-[0.9] tracking-[-0.03em] sm:text-[112px]">
         404
       </h1>
-      <p className="mt-8 max-w-[62ch] text-lg leading-8 text-ink-muted">
+      <p className="mt-8 max-w-[62ch] text-base leading-7 text-ink-muted sm:text-lg sm:leading-8">
         There is nothing at this address. Either the page has moved, the URL
         was mistyped, or the moment you were looking for hasn&rsquo;t been
         catalogued yet. If you were expecting content here, please open an

@@ -5,7 +5,7 @@ import type { Source } from "@/lib/content/schema";
 
 export function SourcesList({ sources }: { sources: Source[] }) {
   return (
-    <section className="py-16">
+    <section className="py-12 sm:py-16">
       <MicroCaps as="p">Sources</MicroCaps>
       <h2 className="mt-2 text-2xl tracking-[-0.01em]">
         Everything on this page traces back to these.
@@ -15,19 +15,19 @@ export function SourcesList({ sources }: { sources: Source[] }) {
         {sources.map((s, i) => (
           <li
             key={s.url}
-            className="grid grid-cols-[auto,1fr,auto] items-baseline gap-x-4 gap-y-1 border-b border-rule py-4"
+            className="grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-1 border-b border-rule py-4 sm:grid-cols-[auto_1fr_auto]"
           >
             <span className="font-mono text-xs tabular-nums text-ink-muted">
               {String(i + 1).padStart(2, "0")}
             </span>
-            <div>
+            <div className="min-w-0">
               <a
                 href={s.url}
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex items-baseline gap-2 text-sm text-ink hover:text-accent"
               >
-                <span>{s.title}</span>
+                <span className="break-words">{s.title}</span>
                 <ExternalLink
                   size={12}
                   strokeWidth={1.5}
@@ -36,8 +36,13 @@ export function SourcesList({ sources }: { sources: Source[] }) {
                 />
               </a>
               <p className="mt-0.5 text-xs text-ink-muted">{s.publisher}</p>
+              {/* On mobile, "accessed" folds under the publisher to avoid the
+                  cramped 3-column baseline. */}
+              <p className="mt-1 font-mono text-[10px] tabular-nums text-ink-muted/70 sm:hidden">
+                accessed {s.accessed}
+              </p>
             </div>
-            <span className="font-mono text-[10px] tabular-nums text-ink-muted/70">
+            <span className="hidden font-mono text-[10px] tabular-nums text-ink-muted/70 sm:inline">
               accessed {s.accessed}
             </span>
           </li>

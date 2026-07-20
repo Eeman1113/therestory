@@ -5,10 +5,19 @@ import { Wordmark } from "@/components/wordmark";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24">
+    <footer className="mt-16 sm:mt-24">
       <HairlineRule />
-      <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-6 px-8 py-8 sm:flex-row sm:items-center sm:justify-between">
-        <Link href="/" className="inline-flex items-center gap-3" aria-label="Therestory — home">
+      <div
+        className="mx-auto flex w-full max-w-[1400px] flex-col gap-6 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8"
+        style={{
+          paddingBottom: "max(2rem, env(safe-area-inset-bottom))",
+        }}
+      >
+        <Link
+          href="/"
+          className="inline-flex items-center gap-3"
+          aria-label="Therestory — home"
+        >
           <Wordmark size={36} />
           <span className="max-w-md text-sm text-ink-muted">
             A global history in progress. Every fact is sourced, every image credited.

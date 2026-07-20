@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto w-full max-w-[1400px] px-8 py-16">
+    <div className="mx-auto w-full max-w-[1400px] px-5 py-12 sm:px-8 sm:py-16">
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-8">
           <MicroCaps as="p">About</MicroCaps>
-          <h1 className="mt-4 text-[44px] leading-[1.05] tracking-[-0.02em] sm:text-[52px]">
+          <h1 className="mt-4 text-[36px] leading-[1.05] tracking-[-0.02em] sm:text-[52px]">
             An editorial history of the world, organised by time.
           </h1>
-          <p className="mt-6 max-w-[62ch] text-lg leading-8 text-ink-muted">
+          <p className="mt-6 max-w-[62ch] text-base leading-7 text-ink-muted sm:text-lg sm:leading-8">
             Therestory is an attempt to build the most complete and up-to-date
             home for world history — but shaped like a timeline rather than an
             encyclopedia. Pick a moment. See what was happening in every corner
@@ -26,14 +26,14 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <HairlineRule className="mt-16" />
+      <HairlineRule className="mt-12 sm:mt-16" />
 
-      <section className="grid grid-cols-1 gap-x-16 gap-y-14 py-16 lg:grid-cols-12">
+      <section className="grid grid-cols-1 gap-x-16 gap-y-10 py-12 sm:gap-y-14 sm:py-16 lg:grid-cols-12">
         <div className="lg:col-span-3">
           <MicroCaps as="p">§ 01</MicroCaps>
           <h2 className="mt-2 text-xl tracking-[-0.01em]">The mission</h2>
         </div>
-        <div className="max-w-[65ch] text-[15px] leading-[1.7] text-ink lg:col-span-9">
+        <div className="max-w-[65ch] text-base leading-[1.75] text-ink sm:text-[15px] sm:leading-[1.7] lg:col-span-9">
           <p>
             Most histories are organised by topic or by region. Therestory is
             organised by time. The homepage is a horizontal ruler that spans
@@ -54,12 +54,12 @@ export default function AboutPage() {
 
       <HairlineRule />
 
-      <section className="grid grid-cols-1 gap-x-16 gap-y-14 py-16 lg:grid-cols-12">
+      <section className="grid grid-cols-1 gap-x-16 gap-y-10 py-12 sm:gap-y-14 sm:py-16 lg:grid-cols-12">
         <div className="lg:col-span-3">
           <MicroCaps as="p">§ 02</MicroCaps>
           <h2 className="mt-2 text-xl tracking-[-0.01em]">Sourcing standard</h2>
         </div>
-        <div className="max-w-[65ch] text-[15px] leading-[1.7] text-ink lg:col-span-9">
+        <div className="max-w-[65ch] text-base leading-[1.75] text-ink sm:text-[15px] sm:leading-[1.7] lg:col-span-9">
           <p>
             Every fact, date, and name on this site must be verifiable in at
             least two reputable independent sources. In practice, that means an
@@ -84,12 +84,12 @@ export default function AboutPage() {
 
       <HairlineRule />
 
-      <section className="grid grid-cols-1 gap-x-16 gap-y-14 py-16 lg:grid-cols-12">
+      <section className="grid grid-cols-1 gap-x-16 gap-y-10 py-12 sm:gap-y-14 sm:py-16 lg:grid-cols-12">
         <div className="lg:col-span-3">
           <MicroCaps as="p">§ 03</MicroCaps>
           <h2 className="mt-2 text-xl tracking-[-0.01em]">Imagery & credits</h2>
         </div>
-        <div className="max-w-[65ch] text-[15px] leading-[1.7] text-ink lg:col-span-9">
+        <div className="max-w-[65ch] text-base leading-[1.75] text-ink sm:text-[15px] sm:leading-[1.7] lg:col-span-9">
           <p>
             All historical imagery on Therestory comes from Wikimedia Commons,
             and is either public domain or licensed under a Creative Commons
@@ -105,12 +105,12 @@ export default function AboutPage() {
 
       <HairlineRule />
 
-      <section className="grid grid-cols-1 gap-x-16 gap-y-14 py-16 lg:grid-cols-12">
+      <section className="grid grid-cols-1 gap-x-16 gap-y-10 py-12 sm:gap-y-14 sm:py-16 lg:grid-cols-12">
         <div className="lg:col-span-3">
           <MicroCaps as="p">§ 04</MicroCaps>
           <h2 className="mt-2 text-xl tracking-[-0.01em]">Colophon</h2>
         </div>
-        <div className="max-w-[65ch] text-[15px] leading-[1.7] text-ink lg:col-span-9">
+        <div className="max-w-[65ch] text-base leading-[1.75] text-ink sm:text-[15px] sm:leading-[1.7] lg:col-span-9">
           <p>
             Set in <span className="font-mono">Geist Sans</span> and{" "}
             <span className="font-mono">Geist Mono</span> — the mono

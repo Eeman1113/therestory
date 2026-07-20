@@ -21,11 +21,11 @@ export default function ErasIndex() {
   const events = allEvents();
 
   return (
-    <div className="mx-auto w-full max-w-[1400px] px-8 py-16">
+    <div className="mx-auto w-full max-w-[1400px] px-5 py-12 sm:px-8 sm:py-16">
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-8">
           <MicroCaps as="p">The eight eras</MicroCaps>
-          <h1 className="mt-4 text-[44px] leading-[1.05] tracking-[-0.02em]">
+          <h1 className="mt-4 text-[36px] leading-[1.05] tracking-[-0.02em] sm:text-[44px]">
             Every era in Therestory, from Prehistory to today.
           </h1>
           <p className="mt-6 max-w-[62ch] text-base leading-7 text-ink-muted">
@@ -38,7 +38,7 @@ export default function ErasIndex() {
         </div>
       </div>
 
-      <HairlineRule className="mt-16" />
+      <HairlineRule className="mt-12 sm:mt-16" />
 
       <ul>
         {eras.map((era) => {

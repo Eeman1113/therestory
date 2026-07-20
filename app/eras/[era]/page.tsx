@@ -45,30 +45,30 @@ export default async function EraPage({
     .sort((a, b) => parseStartYear(a.date.start) - parseStartYear(b.date.start));
 
   return (
-    <div className="mx-auto w-full max-w-[1400px] px-8 py-16">
+    <div className="mx-auto w-full max-w-[1400px] px-5 py-12 sm:px-8 sm:py-16">
       <Link
         href="/eras"
-        className="inline-flex items-center gap-2 text-sm text-ink-muted transition-colors hover:text-ink"
+        className="inline-flex min-h-[44px] items-center gap-2 text-sm text-ink-muted transition-colors hover:text-ink"
       >
         <ArrowLeft size={14} strokeWidth={1.5} aria-hidden />
         <span>All eras</span>
       </Link>
 
-      <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+      <div className="mt-6 grid grid-cols-1 gap-10 sm:mt-8 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-8">
           <p className="font-mono text-xs tabular-nums text-ink-muted">
             {formatYear(meta.startYear)} → {formatYear(meta.endYear)}
           </p>
-          <h1 className="mt-2 text-[44px] leading-[1.05] tracking-[-0.02em] sm:text-[52px]">
+          <h1 className="mt-2 text-[36px] leading-[1.05] tracking-[-0.02em] sm:text-[52px]">
             {meta.label}
           </h1>
-          <p className="mt-6 max-w-[62ch] text-lg leading-8 text-ink-muted">
+          <p className="mt-6 max-w-[62ch] text-base leading-7 text-ink-muted sm:text-lg sm:leading-8">
             {meta.description}
           </p>
         </div>
       </div>
 
-      <HairlineRule className="mt-16" />
+      <HairlineRule className="mt-12 sm:mt-16" />
 
       <section className="py-8">
         <MicroCaps as="p">Anchor events in this era</MicroCaps>

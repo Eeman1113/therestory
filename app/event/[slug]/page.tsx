@@ -54,7 +54,7 @@ export default async function EventPage({
   const yearPage = getYear(eventYear);
 
   return (
-    <article className="mx-auto w-full max-w-[1400px] px-8">
+    <article className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
       <EventJsonLd event={event} />
       <EventHero event={event} />
       <HairlineRule />

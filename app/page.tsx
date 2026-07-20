@@ -41,12 +41,12 @@ export default function HomePage() {
     events.find((e) => e.slug === "fall-of-constantinople") ?? events[0];
 
   return (
-    <div className="mx-auto w-full max-w-[1400px] px-8">
+    <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
       {/* Intro */}
-      <section className="grid grid-cols-1 gap-10 pt-14 pb-10 lg:grid-cols-12 lg:gap-16">
+      <section className="grid grid-cols-1 gap-10 pt-10 pb-8 sm:pt-14 sm:pb-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-8">
           <MicroCaps as="p">Wikipedia, by time</MicroCaps>
-          <h1 className="mt-4 text-[40px] leading-[1.05] tracking-[-0.02em] sm:text-[52px] sm:leading-[1.04]">
+          <h1 className="mt-4 text-[36px] leading-[1.05] tracking-[-0.02em] sm:text-[52px] sm:leading-[1.04]">
             A history of everything,{" "}
             <span className="text-ink-muted">everywhere,</span>{" "}
             arranged along a single line.
@@ -60,7 +60,7 @@ export default function HomePage() {
 
         <aside className="lg:col-span-4">
           <MicroCaps as="p">Editorial notes</MicroCaps>
-          <ul className="mt-4 space-y-3 text-sm leading-6 text-ink-muted">
+          <ul className="mt-4 space-y-3 text-base leading-6 text-ink-muted sm:text-sm">
             <li>
               <span className="text-ink">Sourced.</span> Every fact is grounded
               in at least two reputable sources.
@@ -79,15 +79,15 @@ export default function HomePage() {
       </section>
 
       {/* Interactive timeline — the hero */}
-      <section className="pb-16">
+      <section className="pb-12 sm:pb-16">
         <TimelineCanvas events={events} />
       </section>
 
       <HairlineRule />
 
       {/* Featured anchor events */}
-      <section className="py-16">
-        <div className="flex items-baseline justify-between">
+      <section className="py-12 sm:py-16">
+        <div className="flex items-baseline justify-between gap-4">
           <div>
             <MicroCaps as="p">Anchor events</MicroCaps>
             <h2 className="mt-2 text-2xl tracking-[-0.01em]">
@@ -144,8 +144,8 @@ export default function HomePage() {
       {years.length > 0 && (
         <>
           <HairlineRule />
-          <section className="py-16">
-            <div className="flex items-baseline justify-between">
+          <section className="py-12 sm:py-16">
+            <div className="flex items-baseline justify-between gap-4">
               <div>
                 <MicroCaps as="p">Pivotal years</MicroCaps>
                 <h2 className="mt-2 text-2xl tracking-[-0.01em]">
@@ -179,7 +179,7 @@ export default function HomePage() {
 
       <HairlineRule />
 
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <MicroCaps as="p">Read a full event</MicroCaps>
         <h2 className="mt-2 max-w-[28ch] text-2xl leading-tight tracking-[-0.01em]">
           Start with {heroEvent.title.toLowerCase()}.
