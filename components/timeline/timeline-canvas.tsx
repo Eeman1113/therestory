@@ -45,16 +45,15 @@ import {
   MAX_YEAR,
 } from "@/lib/timeline/scale";
 import { minSignificanceFor } from "@/lib/timeline/density";
-import { markerColor } from "@/lib/timeline/categories";
+import { markerColor, markerRadius } from "@/lib/timeline/categories";
 import { useTimelineView } from "./timeline-view";
 
-const CANVAS_HEIGHT = 360;
+const CANVAS_HEIGHT = 420;
 const ERA_BAND_H = 24;
 const RULER_H = 40;
 const MARKER_TOP = ERA_BAND_H + RULER_H;
-const TRACK_H = 22;
-const MARKER_R = 5;
-const MARKER_R_HOVER = 8;
+const AXIS_Y = 170;      // vertical position of the main horizontal backbone inside the marker plane
+const TRACK_H = 22;      // vertical distance between stacked-track slots away from the axis
 
 const ERAS = [
   { key: "prehistory", label: "Prehistory", start: -3500, end: -800 },
@@ -414,14 +413,16 @@ export function TimelineCanvas({ events }: Props) {
             >
               <div
                 className={cn(
-                  "w-px bg-rule",
-                  t.major ? "h-3 bg-ink/40" : "h-1.5",
+                  "w-px",
+                  t.major ? "h-4 bg-ink/60" : "h-1 bg-rule/60",
                 )}
               />
               <span
                 className={cn(
                   "mt-1 font-mono tabular-nums",
-                  t.major ? "text-[11px] text-ink" : "text-[10px] text-ink-muted",
+                  t.major
+                    ? "text-[11px] font-medium text-ink"
+                    : "text-[10px] text-ink-muted/70",
                 )}
               >
                 {formatYearShort(t.year)}
@@ -436,66 +437,110 @@ export function TimelineCanvas({ events }: Props) {
           className="absolute inset-x-0"
           style={{ top: MARKER_TOP, bottom: 0 }}
         >
+          {/* Era separator verticals — stronger than tick marks */}
+          {eraBands.map((band) => (
+            <div
+              key={`sep-${band.key}`}
+              className="pointer-events-none absolute top-0 bottom-0 w-px bg-rule/70 dark:bg-rule"
+              style={{ left: band.left }}
+              aria-hidden
+            />
+          ))}
+
+          {/* The backbone — a 2px horizontal axis with a subtle gradient */}
+          <div
+            className="pointer-events-none absolute inset-x-0"
+            style={{
+              top: AXIS_Y - 1,
+              height: 2,
+              background:
+                "linear-gradient(to right, transparent 0%, var(--rule) 4%, var(--ink-muted) 50%, var(--rule) 96%, transparent 100%)",
+              opacity: 0.75,
+            }}
+            aria-hidden
+          />
+
           {visibleEvents.map((m) => {
             const track = trackFor.get(m.event.id) ?? 0;
-            const y = track * TRACK_H + MARKER_R + 8;
+            const level = Math.floor(track / 2) + 1;
+            const above = track % 2 === 0;
+            const y = AXIS_Y + (above ? -1 : 1) * level * TRACK_H;
             const c = markerColor(m.event.categories);
             const isFocused = focusedEventId === m.event.id;
             const isHovered = hoverId === m.event.id;
-            const r = isFocused || isHovered ? MARKER_R_HOVER : MARKER_R;
+            const r = markerRadius(m.event.significance, isFocused || isHovered);
+            const stemStart = above ? y + r : y - r;
+            const stemLen = Math.max(0, Math.abs(AXIS_Y - stemStart) - 1);
             return (
-              <button
-                key={m.event.id}
-                type="button"
-                data-marker
-                aria-label={`${m.event.title}, ${m.event.date.display ?? m.event.date.start}`}
-                onMouseEnter={() => setHoverId(m.event.id)}
-                onMouseLeave={() =>
-                  setHoverId((cur) => (cur === m.event.id ? null : cur))
-                }
-                onFocus={() => setFocusedEvent(m.event.id)}
-                onClick={(evt) => {
-                  if (pointerMoved.current) {
-                    evt.preventDefault();
-                    return;
+              <div key={m.event.id}>
+                {/* Stem connecting the marker to the axis */}
+                <div
+                  className="pointer-events-none absolute w-px"
+                  style={{
+                    left: m.xPx,
+                    top: above ? stemStart : AXIS_Y + 1,
+                    height: stemLen,
+                    background: `light-dark(${c.light}, ${c.dark})`,
+                    opacity: isFocused || isHovered ? 0.9 : 0.45,
+                  }}
+                  aria-hidden
+                />
+                <button
+                  type="button"
+                  data-marker
+                  aria-label={`${m.event.title}, ${m.event.date.display ?? m.event.date.start}`}
+                  onMouseEnter={() => setHoverId(m.event.id)}
+                  onMouseLeave={() =>
+                    setHoverId((cur) => (cur === m.event.id ? null : cur))
                   }
-                  router.push(`/event/${m.event.slug}`);
-                }}
-                className={cn(
-                  "absolute -translate-x-1/2 -translate-y-1/2 rounded-full transition-[width,height,box-shadow] duration-150",
-                  "outline-none",
-                )}
-                style={{
-                  left: m.xPx,
-                  top: y,
-                  width: r * 2,
-                  height: r * 2,
-                  background: `light-dark(${c.light}, ${c.dark})`,
-                  boxShadow: isFocused
-                    ? `0 0 0 2px var(--bg), 0 0 0 3px light-dark(${c.light}, ${c.dark})`
-                    : undefined,
-                }}
-              />
+                  onFocus={() => setFocusedEvent(m.event.id)}
+                  onClick={(evt) => {
+                    if (pointerMoved.current) {
+                      evt.preventDefault();
+                      return;
+                    }
+                    router.push(`/event/${m.event.slug}`);
+                  }}
+                  className={cn(
+                    "absolute -translate-x-1/2 -translate-y-1/2 rounded-full transition-[width,height,box-shadow] duration-150",
+                    "outline-none",
+                  )}
+                  style={{
+                    left: m.xPx,
+                    top: y,
+                    width: r * 2,
+                    height: r * 2,
+                    background: `light-dark(${c.light}, ${c.dark})`,
+                    boxShadow: isFocused
+                      ? `0 0 0 2px var(--bg), 0 0 0 3px light-dark(${c.light}, ${c.dark})`
+                      : undefined,
+                  }}
+                />
+              </div>
             );
           })}
 
           {/* Hover / focus preview card */}
-          {cardFor && (
-            <HoverCard
-              event={cardFor.event}
-              xPx={cardFor.xPx}
-              containerWidth={width}
-              trackY={
-                (trackFor.get(cardFor.event.id) ?? 0) * TRACK_H + MARKER_R + 8
-              }
-            />
-          )}
+          {cardFor && (() => {
+            const track = trackFor.get(cardFor.event.id) ?? 0;
+            const level = Math.floor(track / 2) + 1;
+            const above = track % 2 === 0;
+            const y = AXIS_Y + (above ? -1 : 1) * level * TRACK_H;
+            return (
+              <HoverCard
+                event={cardFor.event}
+                xPx={cardFor.xPx}
+                containerWidth={width}
+                trackY={y}
+              />
+            );
+          })()}
         </div>
 
-        {/* "Center" indicator line */}
+        {/* "Center" indicator line — quiet accent */}
         <div
-          className="pointer-events-none absolute top-0 bottom-0 w-px bg-accent/30"
-          style={{ left: width / 2 }}
+          className="pointer-events-none absolute w-px bg-accent/40"
+          style={{ left: width / 2, top: ERA_BAND_H, bottom: 0 }}
           aria-hidden
         />
       </div>
