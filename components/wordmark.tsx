@@ -1,11 +1,10 @@
 import { cn } from "@/lib/utils";
 
 /**
- * The handwritten Therestory wordmark. Uses the raw PNG so the exact ink
- * strokes stay intact. In dark mode we invert the artwork so black becomes
- * white — this only works because the source is a pure black-on-transparent
- * PNG. If we ever swap in a coloured mark, replace `dark:invert` with a
- * dark-mode-specific asset.
+ * The handwritten Therestory wordmark, rendered as a CSS mask so it always
+ * paints in the current theme ink colour (near-black on Paper, warm bone
+ * on Ink). Using a mask instead of an <img> gives us pixel-perfect colour
+ * control regardless of the source PNG's anti-aliasing.
  */
 export function Wordmark({
   className,
@@ -20,20 +19,27 @@ export function Wordmark({
   const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const src = `${base}/wordmark.png`;
   const width = Math.round((size * 442) / 207);
+  const maskCss = `url(${src}) center / contain no-repeat`;
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={src}
-      alt={alt}
-      width={width}
-      height={size}
-      className={cn(
-        "block h-auto object-contain select-none",
-        "dark:invert",
-        className,
-      )}
-      style={{ height: size, width }}
-      draggable={false}
+    <span
+      role="img"
+      aria-label={alt}
+      className={cn("inline-block bg-ink select-none align-middle", className)}
+      style={{
+        height: size,
+        width,
+        WebkitMaskImage: `url(${src})`,
+        WebkitMaskRepeat: "no-repeat",
+        WebkitMaskPosition: "center",
+        WebkitMaskSize: "contain",
+        maskImage: `url(${src})`,
+        maskRepeat: "no-repeat",
+        maskPosition: "center",
+        maskSize: "contain",
+        // Fallback shorthand for older parsers
+        WebkitMask: maskCss,
+        mask: maskCss,
+      }}
     />
   );
 }
