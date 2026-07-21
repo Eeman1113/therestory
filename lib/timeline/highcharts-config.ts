@@ -80,17 +80,14 @@ export function tooltipHTML(event: EventDoc, isDark: boolean): string {
   const summary = esc(event.summary);
   const catLabel = esc(CATEGORY_LABELS[cat]);
 
-  const heroBlock = hero
-    ? `
-      <div class="tsc-tooltip-hero" style="background:${c.tint}">
-        <img src="${esc(hero.url)}" alt="${esc(hero.caption)}" onerror="this.style.display='none'" />
-        <div class="tsc-tooltip-scrim"></div>
-        <span class="tsc-tooltip-year">${yearLabel}</span>
-      </div>`
-    : `
-      <div class="tsc-tooltip-hero tsc-tooltip-hero--empty" style="background:${c.tint}">
-        <span class="tsc-tooltip-year tsc-tooltip-year--empty" style="color:${c.light}">${yearLabel}</span>
-      </div>`;
+  // Every event has at least one image per schema (images.min(1)).
+  // <img> + src/alt are whitelisted in Highcharts.AST from _highcharts-host.
+  const heroBlock = `
+    <div class="tsc-tooltip-hero" style="background:${c.tint}">
+      <img src="${esc(hero.url)}" alt="${esc(hero.caption)}" loading="lazy" />
+      <div class="tsc-tooltip-scrim"></div>
+      <span class="tsc-tooltip-year">${yearLabel}</span>
+    </div>`;
 
   const surface = isDark ? "#1A1815" : "#FBF9F3";
   const inkColor = isDark ? "#EDE7D6" : "#1A1815";
