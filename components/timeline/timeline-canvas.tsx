@@ -592,7 +592,7 @@ export function TimelineCanvas({
 
         /* Era timeline tooltip */
         .tsc-era-tooltip {
-          width: 260px;
+          width: 320px;
           padding: 14px 16px;
           border-radius: 14px;
           border: 1px solid;
@@ -600,6 +600,13 @@ export function TimelineCanvas({
             0 10px 28px rgb(0 0 0 / 0.08),
             0 2px 6px rgb(0 0 0 / 0.04);
           font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+          white-space: normal;
+          overflow: visible;
+        }
+        .tsc-era-tooltip-desc {
+          white-space: normal !important;
+          overflow: visible !important;
+          text-overflow: clip !important;
         }
         .tsc-era-tooltip-dot {
           width: 8px;

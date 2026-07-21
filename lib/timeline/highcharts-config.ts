@@ -167,10 +167,16 @@ export function buildErasOptions(
     tooltip: {
       enabled: true,
       useHTML: true,
+      outside: true,
       shadow: false,
       borderWidth: 0,
       backgroundColor: "transparent",
       padding: 0,
+      hideDelay: 150,
+      style: {
+        pointerEvents: "auto",
+        width: "340px",
+      },
       formatter: function () {
         const p = this as unknown as { point: { name: string; description: string; color: string } };
         const surface = tokens.isDark ? "#1A1815" : "#FBF9F3";
@@ -355,9 +361,7 @@ export function buildScatterOptions(
       scatter: {
         cursor: "pointer",
         stickyTracking: false,
-        animation: {
-          duration: 900,
-        },
+        animation: false,
         marker: {
           symbol: "circle",
         },
@@ -366,7 +370,7 @@ export function buildScatterOptions(
         },
       },
       series: {
-        animation: { duration: 800 },
+        animation: false,
       },
     },
     series: [
