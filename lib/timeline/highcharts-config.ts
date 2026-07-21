@@ -205,7 +205,7 @@ export function buildErasOptions(
   eventsByEra: Record<string, number>,
   tokens: ThemeTokens,
 ): Highcharts.Options {
-  const base = baseChartOptions(tokens, 380);
+  const base = baseChartOptions(tokens, 460);
   return {
     ...base,
     chart: {
@@ -294,7 +294,7 @@ export function buildErasOptions(
           borderColor: tokens.rule,
           borderRadius: 4,
           padding: 10,
-          distance: 64,
+          distance: 110,
           width: 210,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
@@ -343,7 +343,7 @@ export function buildEraTimelineOptions(
   events: EventDoc[],
   tokens: ThemeTokens,
 ): Highcharts.Options {
-  const base = baseChartOptions(tokens, 420);
+  const base = baseChartOptions(tokens, 500);
 
   const data = events.map((event, i) => {
     const cat = event.categories[0];
@@ -429,7 +429,7 @@ export function buildEraTimelineOptions(
           borderColor: tokens.rule,
           borderRadius: 4,
           padding: 10,
-          distance: 64,
+          distance: 110,
           width: 200,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
