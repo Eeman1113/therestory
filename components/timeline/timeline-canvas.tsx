@@ -608,12 +608,6 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
                   color: `light-dark(${cat.light}, ${cat.dark})`,
                 }}
               >
-                <span
-                  className={cn(
-                    "absolute bottom-0 left-0 h-full w-px bg-current transition-opacity duration-200",
-                    isActive ? "opacity-60" : "opacity-25",
-                  )}
-                />
                 <button
                   type="button"
                   data-marker
