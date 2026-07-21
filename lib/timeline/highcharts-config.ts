@@ -272,6 +272,16 @@ export function buildErasOptions(
 
                 const laneIdx = (p.options as { __laneIdx?: number }).__laneIdx ?? 0;
                 const isFar = laneIdx >= 2;
+                // Force connector + label visibility on ALL points —
+                // Highcharts likes to hide connectors it thinks are too
+                // short or overlap-adjacent, but we want every point
+                // tied to its ribbon marker.
+                if (dl.connector && dl.connector.element) {
+                  (dl.connector.element as SVGPathElement).style.opacity = "1";
+                  dl.connector.element.setAttribute("opacity", "1");
+                }
+                (dl.element as SVGGraphicsElement).style.opacity = "1";
+                dl.element.setAttribute("opacity", "1");
                 if (!isFar) continue;
 
                 const currentY = dl.translateY ?? 0;
@@ -549,6 +559,16 @@ export function buildEraTimelineOptions(
 
                 const laneIdx = (p.options as { __laneIdx?: number }).__laneIdx ?? 0;
                 const isFar = laneIdx >= 2;
+                // Force connector + label visibility on ALL points —
+                // Highcharts likes to hide connectors it thinks are too
+                // short or overlap-adjacent, but we want every point
+                // tied to its ribbon marker.
+                if (dl.connector && dl.connector.element) {
+                  (dl.connector.element as SVGPathElement).style.opacity = "1";
+                  dl.connector.element.setAttribute("opacity", "1");
+                }
+                (dl.element as SVGGraphicsElement).style.opacity = "1";
+                dl.element.setAttribute("opacity", "1");
                 if (!isFar) continue;
 
                 const currentY = dl.translateY ?? 0;
