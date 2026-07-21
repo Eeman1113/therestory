@@ -332,7 +332,7 @@ export function buildErasOptions(
         }),
       },
     ],
-  } as Highcharts.Options;
+  } as unknown as Highcharts.Options;
 }
 
 /* ---------------------------------------------------------------------------
