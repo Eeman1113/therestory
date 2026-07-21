@@ -245,7 +245,10 @@ export function buildErasOptions(
       borderWidth: 0,
       backgroundColor: "transparent",
       padding: 0,
-      hideDelay: 150,
+      hideDelay: 0,
+      animation: false,
+      followPointer: false,
+      snap: 0,
       style: {
         pointerEvents: "auto",
         width: "340px",
@@ -461,8 +464,10 @@ export function buildScatterOptions(
       borderWidth: 0,
       backgroundColor: "transparent",
       padding: 0,
-      hideDelay: 80,
+      hideDelay: 0,
+      animation: false,
       followPointer: false,
+      snap: 0,
       outside: true,
       formatter: function () {
         const p = (this as unknown as { point: { eventIndex: number } }).point;
