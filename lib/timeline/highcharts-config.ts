@@ -333,7 +333,123 @@ export function buildErasOptions(
 }
 
 /* ---------------------------------------------------------------------------
-   MODE 2/3 — scatter (era or all)
+   MODE 2 — era timeline (per-era Highcharts timeline of events)
+--------------------------------------------------------------------------- */
+
+export function buildEraTimelineOptions(
+  events: EventDoc[],
+  tokens: ThemeTokens,
+): Highcharts.Options {
+  const base = baseChartOptions(tokens, 420);
+
+  const data = events.map((event, i) => {
+    const cat = event.categories[0];
+    const color = pickColor(cat, tokens.isDark);
+    const year = parseStartYear(event.date.start);
+    return {
+      name: `${fmtYear(year)}: ${event.title}`,
+      label: event.title,
+      description: event.summary,
+      color,
+      slug: event.slug,
+      eventIndex: i,
+    };
+  });
+
+  return {
+    ...base,
+    chart: {
+      ...base.chart,
+      type: "timeline",
+      events: {
+        render: function () {
+          const chart = this as unknown as {
+            series: Array<{ points: Array<{ dataLabel?: { element?: HTMLElement }; firePointEvent: (name: string) => void }> }>;
+          };
+          for (const s of chart.series) {
+            for (const p of s.points) {
+              const el = p.dataLabel?.element;
+              if (el && !(el as unknown as { __wired?: boolean }).__wired) {
+                el.style.cursor = "pointer";
+                el.addEventListener("click", () => p.firePointEvent("click"));
+                (el as unknown as { __wired?: boolean }).__wired = true;
+              }
+            }
+          }
+        },
+      },
+    },
+    xAxis: { visible: false, type: "category" },
+    yAxis: { visible: false, gridLineWidth: 0 },
+    tooltip: {
+      enabled: true,
+      useHTML: true,
+      outside: true,
+      shadow: false,
+      borderWidth: 0,
+      backgroundColor: "transparent",
+      padding: 0,
+      hideDelay: 0,
+      animation: false,
+      followPointer: false,
+      snap: 0,
+      style: { pointerEvents: "auto", width: "340px" },
+      formatter: function () {
+        const p = this as unknown as { point: { name: string; description: string; color: string } };
+        const surface = tokens.isDark ? "#1A1815" : "#FBF9F3";
+        return `
+          <div class="tsc-era-tooltip" style="background:${surface};color:${tokens.ink};border-color:${tokens.rule}">
+            <div class="tsc-era-tooltip-dot" style="background:${p.point.color}"></div>
+            <div class="tsc-era-tooltip-name">${esc(p.point.name ?? "")}</div>
+            <p class="tsc-era-tooltip-desc" style="color:${tokens.inkMuted}">${esc(p.point.description ?? "")}</p>
+            <div class="tsc-era-tooltip-cta" style="color:${tokens.accent}">Open event →</div>
+          </div>`;
+      },
+    },
+    plotOptions: {
+      timeline: {
+        showInLegend: false,
+        colorByPoint: true,
+        cursor: "pointer",
+        animation: { duration: 320 },
+        marker: {
+          states: {
+            hover: { animation: { duration: 0 }, radiusPlus: 2, lineWidthPlus: 0 },
+            select: { animation: { duration: 0 } },
+          },
+        },
+        states: {
+          hover: { animation: { duration: 0 }, halo: { size: 0 } },
+          inactive: { animation: { duration: 0 } },
+        },
+        dataLabels: {
+          allowOverlap: false,
+          connectorWidth: 1,
+          connectorColor: tokens.rule,
+          backgroundColor: tokens.surface,
+          borderWidth: 1,
+          borderColor: tokens.rule,
+          borderRadius: 4,
+          padding: 10,
+          style: {
+            fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
+            fontWeight: "500",
+            fontSize: "12.5px",
+            textOutline: "none",
+            color: tokens.ink,
+          },
+          format:
+            '<span style="color:{point.color}">●</span> <b>{point.label}</b><br/>' +
+            '<span style="color:' + tokens.inkMuted + ';font-weight:400;font-size:11px">{point.name}</span>',
+        },
+      },
+    },
+    series: [{ type: "timeline", data }],
+  } as Highcharts.Options;
+}
+
+/* ---------------------------------------------------------------------------
+   MODE 3 — scatter (all events across full time range)
 --------------------------------------------------------------------------- */
 
 export interface ScatterPointExtras {

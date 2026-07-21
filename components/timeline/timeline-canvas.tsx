@@ -28,6 +28,7 @@ import { cn } from "@/lib/utils";
 import { parseStartYear } from "@/lib/timeline/scale";
 import { CATEGORY_COLORS } from "@/lib/timeline/categories";
 import {
+  buildEraTimelineOptions,
   buildErasOptions,
   buildScatterOptions,
   type ThemeTokens,
@@ -270,14 +271,33 @@ export function TimelineCanvas({
       };
       return opts;
     }
-    const isAll = mode === "all-scatter";
+    if (mode === "era-scatter") {
+      const opts = buildEraTimelineOptions(scatterEvents, tokens);
+      opts.plotOptions = {
+        ...opts.plotOptions,
+        timeline: {
+          ...opts.plotOptions?.timeline,
+          point: {
+            events: {
+              click: function () {
+                const p = this as unknown as { options: { slug?: string } };
+                const slug = p.options.slug;
+                if (slug) router.push(`/event/${slug}`);
+              },
+            },
+          },
+        },
+      };
+      return opts;
+    }
+    // all-scatter mode
     const opts = buildScatterOptions(scatterEvents, tokens, {
       xMin,
       xMax,
-      zoomable: isAll,
+      zoomable: true,
       activeCat,
       height: 360,
-      piecewise: isAll,
+      piecewise: true,
     });
     // Wire click + hover on scatter points via plotOptions.series
     opts.plotOptions = {
