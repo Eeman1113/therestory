@@ -40,6 +40,7 @@ export interface ThemeTokens {
   surface: string;
   accent: string;
   isDark: boolean;
+  isMobile: boolean;
 }
 
 function pickColor(cat: Category, isDark: boolean): string {
@@ -205,7 +206,8 @@ export function buildErasOptions(
   eventsByEra: Record<string, number>,
   tokens: ThemeTokens,
 ): Highcharts.Options {
-  const base = baseChartOptions(tokens, 460);
+  const m = tokens.isMobile;
+  const base = baseChartOptions(tokens, m ? 360 : 460);
   return {
     ...base,
     chart: {
@@ -293,20 +295,20 @@ export function buildErasOptions(
           borderWidth: 1,
           borderColor: tokens.rule,
           borderRadius: 4,
-          padding: 10,
-          distance: 110,
-          width: 210,
+          padding: m ? 7 : 10,
+          distance: m ? 60 : 110,
+          width: m ? 140 : 210,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
             fontWeight: "500",
-            fontSize: "12.5px",
+            fontSize: m ? "11px" : "12.5px",
             textOutline: "none",
             color: tokens.isDark ? "#EDE7D6" : "#000",
             opacity: 1,
           },
           format:
             '<span style="color:{point.color}">●</span> <b style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + '">{point.label}</b><br/>' +
-            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:11px">{point.description}</span>',
+            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:' + (m ? "10px" : "11px") + '">{point.description}</span>',
         },
       },
     },
@@ -343,7 +345,8 @@ export function buildEraTimelineOptions(
   events: EventDoc[],
   tokens: ThemeTokens,
 ): Highcharts.Options {
-  const base = baseChartOptions(tokens, 500);
+  const m = tokens.isMobile;
+  const base = baseChartOptions(tokens, m ? 380 : 500);
 
   const data = events.map((event, i) => {
     const cat = event.categories[0];
@@ -428,20 +431,20 @@ export function buildEraTimelineOptions(
           borderWidth: 1,
           borderColor: tokens.rule,
           borderRadius: 4,
-          padding: 10,
-          distance: 110,
-          width: 200,
+          padding: m ? 7 : 10,
+          distance: m ? 60 : 110,
+          width: m ? 140 : 200,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
             fontWeight: "500",
-            fontSize: "12.5px",
+            fontSize: m ? "11px" : "12.5px",
             textOutline: "none",
             color: tokens.isDark ? "#EDE7D6" : "#000",
             opacity: 1,
           },
           format:
             '<span style="color:{point.color}">●</span> <b style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + '">{point.label}</b><br/>' +
-            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:11px">{point.name}</span>',
+            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:' + (m ? "10px" : "11px") + '">{point.name}</span>',
         },
       },
     },

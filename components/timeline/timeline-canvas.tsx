@@ -33,6 +33,7 @@ import {
   buildScatterOptions,
   type ThemeTokens,
 } from "@/lib/timeline/highcharts-config";
+import { AllTimelineCanvas } from "./all-timeline-canvas";
 import type Highcharts from "highcharts";
 
 /* ---------------------------------------------------------------------------
@@ -94,28 +95,32 @@ function eraLabelFor(y: number, eras: EraMeta[]): string {
 
 function useThemeTokens(): ThemeTokens {
   const { resolvedTheme } = useTheme();
-  const [tokens, setTokens] = useState<ThemeTokens>(() => defaultTokens(false));
+  const [tokens, setTokens] = useState<ThemeTokens>(() => defaultTokens(false, false));
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    // Wait for the class swap that next-themes performs.
     const compute = () => {
       const isDark =
         (resolvedTheme ?? "").toLowerCase() === "dark" ||
         document.documentElement.classList.contains("dark");
-      setTokens(defaultTokens(isDark));
+      const isMobile = window.matchMedia("(max-width: 640px)").matches;
+      setTokens(defaultTokens(isDark, isMobile));
     };
     compute();
-    // If the theme changes at runtime, recompute after the class swap.
     const obs = new MutationObserver(compute);
     obs.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-    return () => obs.disconnect();
+    const mq = window.matchMedia("(max-width: 640px)");
+    mq.addEventListener("change", compute);
+    return () => {
+      obs.disconnect();
+      mq.removeEventListener("change", compute);
+    };
   }, [resolvedTheme]);
 
   return tokens;
 }
 
-function defaultTokens(isDark: boolean): ThemeTokens {
+function defaultTokens(isDark: boolean, isMobile: boolean): ThemeTokens {
   return isDark
     ? {
         ink: "#EDE7D6",
@@ -125,6 +130,7 @@ function defaultTokens(isDark: boolean): ThemeTokens {
         surface: "#1A1815",
         accent: "#8CB1E8",
         isDark: true,
+        isMobile,
       }
     : {
         ink: "#1A1815",
@@ -134,6 +140,7 @@ function defaultTokens(isDark: boolean): ThemeTokens {
         surface: "#FBF9F3",
         accent: "#2A487A",
         isDark: false,
+        isMobile,
       };
 }
 
@@ -372,6 +379,26 @@ export function TimelineCanvas({
       : scatterEvents.length;
   const totalCount = events.length;
 
+  // "All" mode uses the hand-built canvas (piecewise scale, drag-to-pan,
+  // magnetic snap, hover card w/ hero image) rather than a Highcharts chart.
+  if (mode === "all-scatter") {
+    return (
+      <section className="not-prose relative">
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={() => setMode("eras")}
+            className="inline-flex items-center gap-2 rounded-full border border-rule bg-surface px-3.5 py-[7px] text-[12.5px] font-medium text-ink transition-colors hover:bg-surface/70"
+          >
+            <ArrowLeft size={14} strokeWidth={1.5} />
+            Back to eras
+          </button>
+        </div>
+        <AllTimelineCanvas events={events} categories={categories} />
+      </section>
+    );
+  }
+
   return (
     <section className="not-prose relative">
       {/* Header row — "You are here" */}
@@ -390,20 +417,6 @@ export function TimelineCanvas({
           </div>
         </div>
 
-        {/* Zoom controls only in all-scatter mode */}
-        {mode === "all-scatter" && (
-          <div className="flex gap-1.5">
-            <ZoomButton onClick={() => zoomAxis(1 / 1.5)} label="Zoom out">
-              <Minus size={14} strokeWidth={1.5} />
-            </ZoomButton>
-            <ZoomButton onClick={() => zoomAxis(1.5)} label="Zoom in">
-              <Plus size={14} strokeWidth={1.5} />
-            </ZoomButton>
-            <ZoomButton onClick={resetZoom} label="Reset view">
-              <RotateCcw size={14} strokeWidth={1.5} />
-            </ZoomButton>
-          </div>
-        )}
       </div>
 
       {/* Above-chart nav: back button + all-eras chip */}
@@ -494,9 +507,6 @@ export function TimelineCanvas({
         )}
         {mode === "era-scatter" && (
           <span>Click a dot to open the event. Use <em>Back to eras</em> to zoom back out.</span>
-        )}
-        {mode === "all-scatter" && (
-          <span>Drag on the chart to zoom. Shift + drag to pan. Click a dot to open.</span>
         )}
         <span className="ml-auto font-mono text-[11px] tracking-wider text-ink-muted/70">
           showing {visibleCount} of {totalCount} events
