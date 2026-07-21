@@ -54,6 +54,59 @@ function fmtYear(y: number): string {
   return `${rounded}`;
 }
 
+/* ---------------------------------------------------------------------------
+   Piecewise era-weighted x scale for the "all" scatter mode. Ancient
+   millennia get compressed so contemporary events don't crowd on top of each
+   other. Weights match the reference-mockup timeline widths.
+--------------------------------------------------------------------------- */
+const SCALE_ERAS = [
+  { start: -3500, end: -800,  weight: 12 },
+  { start:  -800, end: -200,  weight: 11 },
+  { start:  -200, end:  500,  weight: 10 },
+  { start:   500, end: 1500,  weight: 16 },
+  { start:  1500, end: 1800,  weight: 13 },
+  { start:  1800, end: 1914,  weight: 11 },
+  { start:  1914, end: 1991,  weight: 14 },
+  { start:  1991, end: 2026,  weight: 13 },
+];
+const SCALE_TOTAL = SCALE_ERAS.reduce((s, e) => s + e.weight, 0);
+const SCALE_CUM: number[] = (() => {
+  const out: number[] = [];
+  let acc = 0;
+  for (const e of SCALE_ERAS) {
+    out.push(acc);
+    acc += (e.weight / SCALE_TOTAL) * 100;
+  }
+  return out;
+})();
+export function yearToScale(year: number): number {
+  for (let i = 0; i < SCALE_ERAS.length; i++) {
+    const e = SCALE_ERAS[i];
+    if (year >= e.start && year <= e.end) {
+      const ew = (e.weight / SCALE_TOTAL) * 100;
+      return SCALE_CUM[i] + ((year - e.start) / (e.end - e.start)) * ew;
+    }
+  }
+  return year < SCALE_ERAS[0].start ? 0 : 100;
+}
+export function scaleToYear(pos: number): number {
+  const c = Math.min(100, Math.max(0, pos));
+  for (let i = 0; i < SCALE_ERAS.length; i++) {
+    const e = SCALE_ERAS[i];
+    const ew = (e.weight / SCALE_TOTAL) * 100;
+    const eL = SCALE_CUM[i];
+    if (c >= eL && c <= eL + ew) {
+      const t = ew === 0 ? 0 : (c - eL) / ew;
+      return Math.round(e.start + t * (e.end - e.start));
+    }
+  }
+  return SCALE_ERAS[SCALE_ERAS.length - 1].end;
+}
+const SCALE_TICK_YEARS = [
+  ...SCALE_ERAS.map((e) => e.start),
+  SCALE_ERAS[SCALE_ERAS.length - 1].end,
+];
+
 /**
  * Escapes HTML so summaries with `<`, `&`, etc. don't break the tooltip.
  */
@@ -259,9 +312,11 @@ export function buildScatterOptions(
     zoomable: boolean;
     activeCat: Category | null;
     height: number;
+    piecewise?: boolean; // "all" mode: era-weighted x scale
   },
 ): Highcharts.Options {
   const base = baseChartOptions(tokens, opts.height);
+  const piecewise = !!opts.piecewise;
 
   // Data with jittered Y lanes and per-point colours.
   const data = events.map((event, i) => {
@@ -271,7 +326,7 @@ export function buildScatterOptions(
     const lane = (i % 3) + 1; // 1..3
     const dimmed = opts.activeCat != null && !event.categories.includes(opts.activeCat);
     return {
-      x: year,
+      x: piecewise ? yearToScale(year) : year,
       y: lane,
       color,
       marker: {
@@ -311,29 +366,53 @@ export function buildScatterOptions(
         theme: { style: { display: "none" } },
       },
     },
-    xAxis: {
-      min: opts.xMin,
-      max: opts.xMax,
-      type: "linear",
-      gridLineWidth: 0,
-      lineColor: tokens.rule,
-      lineWidth: 1,
-      tickColor: tokens.rule,
-      tickWidth: 1,
-      tickLength: 6,
-      tickPixelInterval: 100,
-      labels: {
-        style: {
-          fontFamily: 'var(--font-mono), ui-monospace, monospace',
-          fontSize: "10.5px",
-          color: tokens.inkMuted,
+    xAxis: piecewise
+      ? {
+          min: 0,
+          max: 100,
+          type: "linear",
+          gridLineWidth: 0,
+          lineColor: tokens.rule,
+          lineWidth: 1,
+          tickColor: tokens.rule,
+          tickWidth: 1,
+          tickLength: 6,
+          tickPositions: SCALE_TICK_YEARS.map((y) => yearToScale(y)),
+          labels: {
+            style: {
+              fontFamily: 'var(--font-mono), ui-monospace, monospace',
+              fontSize: "10.5px",
+              color: tokens.inkMuted,
+            },
+            formatter: function () {
+              const v = Number((this as unknown as { value: number }).value);
+              return fmtYear(scaleToYear(v));
+            },
+          },
+        }
+      : {
+          min: opts.xMin,
+          max: opts.xMax,
+          type: "linear",
+          gridLineWidth: 0,
+          lineColor: tokens.rule,
+          lineWidth: 1,
+          tickColor: tokens.rule,
+          tickWidth: 1,
+          tickLength: 6,
+          tickPixelInterval: 100,
+          labels: {
+            style: {
+              fontFamily: 'var(--font-mono), ui-monospace, monospace',
+              fontSize: "10.5px",
+              color: tokens.inkMuted,
+            },
+            formatter: function () {
+              const v = Number((this as unknown as { value: number }).value);
+              return fmtYear(v);
+            },
+          },
         },
-        formatter: function () {
-          const v = Number((this as unknown as { value: number }).value);
-          return fmtYear(v);
-        },
-      },
-    },
     yAxis: {
       min: 0,
       max: 4,

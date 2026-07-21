@@ -277,6 +277,7 @@ export function TimelineCanvas({
       zoomable: isAll,
       activeCat,
       height: 360,
+      piecewise: isAll,
     });
     // Wire click + hover on scatter points via plotOptions.series
     opts.plotOptions = {
