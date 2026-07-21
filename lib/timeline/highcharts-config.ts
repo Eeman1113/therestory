@@ -443,7 +443,7 @@ export function buildEraTimelineOptions(
       },
     },
     series: [{ type: "timeline", data }],
-  } as Highcharts.Options;
+  } as unknown as Highcharts.Options;
 }
 
 /* ---------------------------------------------------------------------------
