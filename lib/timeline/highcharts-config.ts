@@ -330,7 +330,7 @@ export function buildErasOptions(
           return {
             name: `${era.label}`,
             label: era.label,
-            description: `${range} · ${count} event${count === 1 ? "" : "s"}. ${era.description}`,
+            description: `${range} · ${count} event${count === 1 ? "" : "s"}`,
             color,
             eraId: era.id,
           };
