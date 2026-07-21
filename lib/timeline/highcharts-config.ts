@@ -211,6 +211,26 @@ export function buildErasOptions(
     chart: {
       ...base.chart,
       type: "timeline",
+      events: {
+        // Wire clicks on data-label boxes to fire the point's click handler,
+        // so the label acts as a click target for the era (not just the tiny
+        // dot on the ribbon).
+        render: function () {
+          const chart = this as unknown as {
+            series: Array<{ points: Array<{ dataLabel?: { element?: HTMLElement }; firePointEvent: (name: string) => void }> }>;
+          };
+          for (const s of chart.series) {
+            for (const p of s.points) {
+              const el = p.dataLabel?.element;
+              if (el && !(el as unknown as { __wired?: boolean }).__wired) {
+                el.style.cursor = "pointer";
+                el.addEventListener("click", () => p.firePointEvent("click"));
+                (el as unknown as { __wired?: boolean }).__wired = true;
+              }
+            }
+          }
+        },
+      },
     },
     xAxis: {
       visible: false,
@@ -443,13 +463,26 @@ export function buildScatterOptions(
         animation: false,
         marker: {
           symbol: "circle",
+          states: {
+            hover: {
+              animation: { duration: 0 },
+              lineWidthPlus: 0,
+              radiusPlus: 0,
+            },
+            select: { animation: { duration: 0 } },
+          },
         },
         states: {
-          inactive: { opacity: 1 },
+          inactive: { opacity: 1, animation: { duration: 0 } },
+          hover: { animation: { duration: 0 }, halo: { size: 0 } },
         },
       },
       series: {
         animation: false,
+        states: {
+          hover: { animation: { duration: 0 } },
+          inactive: { animation: { duration: 0 } },
+        },
       },
     },
     series: [

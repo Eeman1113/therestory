@@ -520,6 +520,11 @@ export function TimelineCanvas({
           height: 100%;
           object-fit: cover;
           display: block;
+          /* Hide alt-text + broken icon on failed loads so the tinted
+             background + serif year overlay carry the space cleanly. */
+          color: transparent;
+          font-size: 0;
+          text-indent: -9999px;
         }
         .tsc-tooltip-hero--empty {
           height: 52px;
