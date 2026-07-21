@@ -185,7 +185,7 @@ function baseChartOptions(tokens: ThemeTokens, height: number): Highcharts.Optio
         color: tokens.ink,
       },
       spacing: [12, 8, 12, 8],
-      animation: { duration: 700 },
+      animation: { duration: 220 },
       height,
     },
     credits: { enabled: false },
@@ -267,6 +267,21 @@ export function buildErasOptions(
         showInLegend: false,
         colorByPoint: true,
         cursor: "pointer",
+        animation: { duration: 220 },
+        marker: {
+          states: {
+            hover: {
+              animation: { duration: 0 },
+              radiusPlus: 2,
+              lineWidthPlus: 0,
+            },
+            select: { animation: { duration: 0 } },
+          },
+        },
+        states: {
+          hover: { animation: { duration: 0 }, halo: { size: 0 } },
+          inactive: { animation: { duration: 0 } },
+        },
         dataLabels: {
           allowOverlap: false,
           connectorWidth: 1,
