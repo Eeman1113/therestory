@@ -395,15 +395,10 @@ export function buildEraTimelineOptions(
       snap: 0,
       style: { pointerEvents: "auto", width: "340px" },
       formatter: function () {
-        const p = this as unknown as { point: { name: string; description: string; color: string } };
-        const surface = tokens.isDark ? "#1A1815" : "#FBF9F3";
-        return `
-          <div class="tsc-era-tooltip" style="background:${surface};color:${tokens.ink};border-color:${tokens.rule}">
-            <div class="tsc-era-tooltip-dot" style="background:${p.point.color}"></div>
-            <div class="tsc-era-tooltip-name">${esc(p.point.name ?? "")}</div>
-            <p class="tsc-era-tooltip-desc" style="color:${tokens.inkMuted}">${esc(p.point.description ?? "")}</p>
-            <div class="tsc-era-tooltip-cta" style="color:${tokens.accent}">Open event →</div>
-          </div>`;
+        const p = (this as unknown as { point: { eventIndex: number } }).point;
+        const event = events[p.eventIndex];
+        if (!event) return "";
+        return tooltipHTML(event, tokens.isDark);
       },
     },
     plotOptions: {
@@ -420,7 +415,7 @@ export function buildEraTimelineOptions(
         },
         states: {
           hover: { animation: { duration: 0 }, halo: { size: 0 } },
-          inactive: { animation: { duration: 0 } },
+          inactive: { animation: { duration: 0 }, opacity: 1 },
         },
         dataLabels: {
           allowOverlap: false,
@@ -431,16 +426,19 @@ export function buildEraTimelineOptions(
           borderColor: tokens.rule,
           borderRadius: 4,
           padding: 10,
+          distance: 32,
+          width: 200,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
             fontWeight: "500",
             fontSize: "12.5px",
             textOutline: "none",
-            color: tokens.ink,
+            color: tokens.isDark ? "#EDE7D6" : "#000",
+            opacity: 1,
           },
           format:
-            '<span style="color:{point.color}">●</span> <b>{point.label}</b><br/>' +
-            '<span style="color:' + tokens.inkMuted + ';font-weight:400;font-size:11px">{point.name}</span>',
+            '<span style="color:{point.color}">●</span> <b style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + '">{point.label}</b><br/>' +
+            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:11px">{point.name}</span>',
         },
       },
     },
