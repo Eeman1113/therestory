@@ -24,10 +24,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/1280px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg",
+        "caption": "The Lehman Brothers headquarters at 745 Seventh Avenue, New York, photographed shortly before the September 2008 bankruptcy.",
+        "credit": "David Shankbone, via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers_Times_Square_by_David_Shankbone.jpg"
+      },
       "body": "Over the weekend of 12-14 September 2008 the leaders of Wall Street were summoned to the New York Fed at 33 Liberty Street. Paulson made clear the government would not commit public money to save Lehman: the previous Bear Stearns rescue had drawn heavy political criticism, and Paulson believed no legal authority existed to inject capital directly. Bank of America withdrew to buy the smaller broker Merrill Lynch instead, announced on Sunday 14 September. Barclays' offer for Lehman was blocked on Sunday afternoon by the UK Financial Services Authority, which refused to waive the shareholder-vote requirement.\n\nWith no buyer, no government backstop, and no lender willing to extend the tens of billions of dollars of overnight repo funding on which the firm depended, Lehman Brothers Holdings Inc. filed for Chapter 11 bankruptcy protection in the Southern District of New York at 01:45 on Monday 15 September 2008. The petition listed 639 billion dollars in assets and 619 billion in debts, the largest bankruptcy in American history by a factor of six.\n\nWorld markets convulsed. The Dow Jones Industrial Average fell 504 points on 15 September, its worst day since the September 2001 reopening. AIG, whose credit default swaps required it to post collateral it did not have, saw its shares fall 61 per cent that day. On the evening of Tuesday 16 September the Fed announced an 85-billion-dollar emergency loan to AIG in exchange for a 79.9 per cent equity stake, effectively nationalising it. On 16 September the Reserve Primary Fund, a large money-market mutual fund holding Lehman commercial paper, 'broke the buck', its net asset value fell below one dollar per share, triggering a run on money-market funds that the Treasury halted only by guaranteeing the entire 3.4-trillion-dollar sector on 19 September.\n\nOn 18 September Paulson and Bernanke summoned congressional leaders to a private briefing and warned that without immediate action the American economy faced collapse within days. Over the next two weeks they secured passage, at the second attempt, of the Troubled Asset Relief Program (TARP), signed into law by President George W. Bush on 3 October 2008, authorising up to 700 billion dollars of federal money for financial rescues. On 13 October Paulson summoned the chief executives of nine major banks to the Treasury and, in effect, compelled them to accept 125 billion dollars of federal equity injections; the same day the British government announced 37 billion pounds in recapitalisation of Royal Bank of Scotland, Lloyds TSB, and HBOS. The Federal Reserve, the European Central Bank, and other central banks cut policy interest rates in a coordinated move on 8 October.\n\nThe global spread was rapid. Iceland's three main banks failed within a week of Lehman, forcing the country into an IMF programme. Ireland issued a blanket guarantee of its bank liabilities on 30 September. Fortis, Dexia, and Hypo Real Estate all required rescues in continental Europe. Global equity markets fell roughly forty per cent over the following six months; world trade contracted sharply; industrial production in Japan and Germany fell more steeply than in 1930."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Federal_Funds_Rate_1954_thru_2009_effective.svg/1280px-Federal_Funds_Rate_1954_thru_2009_effective.svg.png",
+        "caption": "US Federal Funds Rate 1954-2009: the Fed cut rates to near zero after the Lehman collapse.",
+        "credit": "Explodicle, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Federal_Funds_Rate_1954_thru_2009_effective.svg"
+      },
       "body": "The immediate response was the largest fiscal and monetary intervention in the history of the world economy. Central banks cut interest rates to near zero and began 'quantitative easing', large-scale purchases of government and mortgage securities. Governments enacted stimulus packages: the US Congress passed the 787-billion-dollar American Recovery and Reinvestment Act in February 2009 under the newly inaugurated President Barack Obama; China announced a four-trillion-yuan stimulus in November 2008. The G20, elevated from finance-ministers' body to leaders' summit in Washington in November 2008 and London in April 2009, coordinated a common response and produced a communique headlined by a trillion dollars in new IMF resources.\n\nThe global recession that followed was the sharpest since the Second World War. In the United States unemployment rose from 4.7 per cent in November 2007 to a peak of 10 per cent in October 2009; some 8.7 million jobs were lost. Home foreclosures in the US eventually exceeded ten million. Output in the euro area fell 4.5 per cent in 2009. The crisis then mutated into a sovereign-debt crisis in the euro area from 2010, as governments that had absorbed banking losses, especially Greece, Ireland, Portugal, Spain, and Cyprus, faced borrowing crises that required unprecedented EU/IMF rescue programmes and near-existential debates over the euro's survival.\n\nRegulatory reforms followed. The Dodd-Frank Wall Street Reform and Consumer Protection Act, signed into law by President Obama on 21 July 2010, created a Consumer Financial Protection Bureau, imposed the 'Volcker Rule' restricting proprietary trading, and required the largest banks to submit 'living wills'. Internationally, the Basel III accords of 2010-2011 substantially raised capital and liquidity requirements for global banks. Central banking itself was transformed: quantitative easing, forward guidance, and negative policy rates, all previously exotic, became standard tools.\n\nRelatively few individuals were prosecuted. In the United States no top Wall Street executive was jailed for offences directly related to the crisis, a matter of continuing political controversy. Bernard Madoff, whose 65-billion-dollar Ponzi scheme was exposed by the crisis, was sentenced to 150 years in December 2008. In Iceland a special prosecutor secured convictions of several bank chiefs. The scale of state support for financial institutions, and the meagre consequences for those who had run them, fed populist movements on left and right, most immediately the Tea Party in the United States and Occupy Wall Street in 2011, and, over the longer run, the anti-establishment politics that produced Brexit and the election of Donald Trump in 2016."
     },
     {
@@ -64,19 +78,27 @@
     },
     {
       "name": "Henry 'Hank' Paulson",
-      "role": "United States Secretary of the Treasury 2006-2009; declined to bail out Lehman and later led the TARP response"
+      "role": "United States Secretary of the Treasury 2006-2009; declined to bail out Lehman and later led the TARP response",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Henry_Paulson_official_Treasury_photo%2C_2006_%28cropped%29.jpg/800px-Henry_Paulson_official_Treasury_photo%2C_2006_%28cropped%29.jpg",
+      "credit": "US Treasury / Public domain"
     },
     {
       "name": "Ben Bernanke",
-      "role": "Chairman of the Federal Reserve 2006-2014; deployed emergency lending and quantitative easing"
+      "role": "Chairman of the Federal Reserve 2006-2014; deployed emergency lending and quantitative easing",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ben_Bernanke_official_portrait.jpg/800px-Ben_Bernanke_official_portrait.jpg",
+      "credit": "US Federal Reserve / Public domain"
     },
     {
       "name": "Timothy Geithner",
-      "role": "President of the New York Federal Reserve during the crisis; later US Treasury Secretary under President Obama"
+      "role": "President of the New York Federal Reserve during the crisis; later US Treasury Secretary under President Obama",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Timothy_Geithner_official_portrait.jpg/800px-Timothy_Geithner_official_portrait.jpg",
+      "credit": "US Treasury / Public domain"
     },
     {
       "name": "Gordon Brown",
-      "role": "British Prime Minister 2007-2010; led an early European response to bank recapitalisation"
+      "role": "British Prime Minister 2007-2010; led an early European response to bank recapitalisation",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Gordon_Brown_%282008%29.jpg/800px-Gordon_Brown_%282008%29.jpg",
+      "credit": "UK Government / OGL 3.0"
     }
   ],
   "images": [

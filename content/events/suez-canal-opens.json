@@ -25,6 +25,13 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/L%27inauguration_du_canal_de_Suez%2C_17_November_1869_Gal18_riou_001f.jpg",
+        "caption": "The inauguration of the Suez Canal at Port Said, 17 November 1869. Illustration by Édouard Riou.",
+        "credit": "Édouard Riou (1833 to 1900), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27inauguration_du_canal_de_Suez,_17_November_1869_Gal18_riou_001f.jpg"
+      },
       "body": "The Khedive Isma'il, whose spending on European fashions, opera houses and infrastructure had earned him both admiration and enormous debt, spared nothing for the inauguration. He extended personal invitations to every European sovereign and sent invitations by name to some six thousand dignitaries. The Empress Eugenie of France, cousin of Lesseps, sailed on the imperial yacht L'Aigle; Emperor Franz Joseph of Austria-Hungary came in person, the first European sovereign to visit Egypt since the crusades; the Crown Prince Frederick William of Prussia, the Prince of Wales's younger brother Prince Louis of Hesse, the princes of the Netherlands and Hanover, and ambassadors of Russia, Italy, Spain, the United States and the United Kingdom rounded out the party. In Cairo the khedive built an opera house for the occasion (Verdi was commissioned to write a new work about the pharaohs but did not finish Aida in time, and the theatre opened with Rigoletto instead on 1 November); a new palace, the Gezira, was constructed on an island in the Nile to house the visiting European royalty; and a great tent city on the shore of Lake Timsah at Ismailia was raised to lodge more than a thousand overnight guests.\n\nThe formal ceremonies began at Port Said on 16 November 1869. Muslim and Christian clergy blessed the canal from separate platforms erected side by side on the beach; French, British, Italian and Austrian bands played national anthems; fireworks illuminated the harbour into the small hours. On the morning of Wednesday 17 November L'Aigle led the procession into the canal at eight o'clock, followed by the Austrian imperial paddle steamer Greif, the Prussian corvette Grille, the British P&O steamer Delta, the American mail steamer Missouri, the French warship Peluse and forty other vessels of various nationalities. The chief pilot rode on the bridge of L'Aigle; the Empress waved from the rail; the fleet moved through the still-narrow channel at a walking pace, watched from the sandy banks by thousands of Egyptian labourers and their families. Progress was slow, at one point held up by a small Egyptian corvette that had run aground; the flotilla anchored overnight at Ismailia, where the khedive held a state banquet in the tented town for two thousand guests and a fireworks display was staged over the lake. Riou, the illustrator, and the young Ismail Pasha's official photographer recorded the scenes for the commemorative album that was later distributed to the courts of Europe.\n\nOn 18 November the flotilla continued south. On 20 November L'Aigle reached the Red Sea at Suez. The Suez Canal was open. On the same day the first commercial convoy of merchant ships was assembled at Port Said to make the passage northward. Within a year some five hundred vessels had transited the canal, most of them British, and the young line of Peninsular and Oriental Steam Navigation had rerouted its India and Australia services from the overland connection at Alexandria and Suez through the new waterway."
     },
     {
@@ -33,6 +40,13 @@
     },
     {
       "heading": "Legacy",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Iss016e019375.jpg/1280px-Iss016e019375.jpg",
+        "caption": "The Suez Canal seen from the International Space Station in 2008, cutting the Sinai peninsula from Egypt proper.",
+        "credit": "NASA / ISS Expedition 16, via Wikimedia Commons",
+        "license": "Public Domain (NASA)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iss016e019375.jpg"
+      },
       "body": "The Suez Canal was the largest engineering project of the nineteenth century after the American transcontinental railroad, which had been completed six months earlier at Promontory Summit in Utah. Together they compressed the physical distances of the globe into something like the network of the twentieth century. The Panama Canal that opened in 1914 would complete the transformation, but Suez remained then and remains now the busier and more strategic. Roughly twelve per cent of all global seaborne trade passes through it in a normal year; when the container ship Ever Given ran aground in the canal on 23 March 2021 and blocked it for six days, the shockwave through supply chains reached every continent within a week.\n\nThe canal has been enlarged repeatedly. Its depth has been increased from the original eight metres to more than twenty-four; convoy passage was replaced in 2015 by a substantial two-way section built by the Egyptian government of Abdel Fattah el-Sisi at a cost of some eight billion dollars. The Suez Canal Authority, an Egyptian state body, has administered the waterway since the nationalisation of 1956 and derives from it a substantial share of Egyptian foreign exchange earnings. Port Said, Ismailia and Suez have grown into major cities. The Franco-Italian and Greek communities that grew up along the canal in the late nineteenth century, celebrated in the novels of Lawrence Durrell and the memoirs of Andre Aciman, largely dispersed after 1956.\n\nThe cultural residue is equally significant. Verdi's Aida, though not premiered at the canal opening as legend has it, was commissioned by Isma'il for the Cairo Opera House and had its first performance there on 24 December 1871; it remains one of the most performed grand operas in the world. The Statue of Liberty was originally sketched by Frederic Auguste Bartholdi in 1869 as a lighthouse for the Mediterranean end of the canal, showing a colossal Egyptian fellaha carrying a torch; Isma'il, out of money, declined the project, and Bartholdi's design was reworked as the Liberty Enlightening the World that would be dedicated in New York Harbour in 1886. The canal, the Statue of Liberty and the transcontinental railroad, all products of the years around 1869, mark the moment when the industrial nineteenth century truly became global."
     }
   ],
@@ -65,23 +79,33 @@
   "figures": [
     {
       "name": "Ferdinand de Lesseps",
-      "role": "French diplomat and entrepreneur; founder of the Suez Canal Company and director of the project from 1854 to 1869"
+      "role": "French diplomat and entrepreneur; founder of the Suez Canal Company and director of the project from 1854 to 1869",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ferdinand_de_Lesseps_by_Nadar.jpg/500px-Ferdinand_de_Lesseps_by_Nadar.jpg",
+      "credit": "Nadar, via Wikimedia Commons"
     },
     {
       "name": "Khedive Isma'il Pasha",
-      "role": "Ruler of Egypt from 1863 to 1879 who financed the construction and staged the inauguration"
+      "role": "Ruler of Egypt from 1863 to 1879 who financed the construction and staged the inauguration",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Isma%27il_Pasha.jpg/500px-Isma%27il_Pasha.jpg",
+      "credit": "Anonymous, via Wikimedia Commons"
     },
     {
       "name": "Empress Eugenie of the French",
-      "role": "Cousin of Lesseps and guest of honour; her yacht L'Aigle led the inaugural flotilla"
+      "role": "Cousin of Lesseps and guest of honour; her yacht L'Aigle led the inaugural flotilla",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Eug%C3%A9nie_de_Montijo%2C_Kejsarinna_av_Frankrike.jpg/500px-Eug%C3%A9nie_de_Montijo%2C_Kejsarinna_av_Frankrike.jpg",
+      "credit": "Franz Xaver Winterhalter, via Wikimedia Commons"
     },
     {
       "name": "Muhammad Sa'id",
-      "role": "Khedive of Egypt from 1854 to 1863 who granted the original concession to Lesseps"
+      "role": "Khedive of Egypt from 1854 to 1863 who granted the original concession to Lesseps",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Muhammad_Said_Pascha_1855_Nadar.jpg/500px-Muhammad_Said_Pascha_1855_Nadar.jpg",
+      "credit": "Nadar, 1855, via Wikimedia Commons"
     },
     {
       "name": "Emperor Franz Joseph I",
-      "role": "Austro-Hungarian emperor who attended the opening in person"
+      "role": "Austro-Hungarian emperor who attended the opening in person",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Franz_Joseph_I_of_Austria.1910_%28cropped%29.jpg/500px-Franz_Joseph_I_of_Austria.1910_%28cropped%29.jpg",
+      "credit": "Wilhelm Gause, via Wikimedia Commons"
     },
     {
       "name": "Linant de Bellefonds",

@@ -20,7 +20,14 @@
   "sections": [
     {
       "heading": "Background",
-      "body": "By 1453 the Byzantine Empire had shrunk to little more than Constantinople itself and a few pockets in the Peloponnese. For a century the Ottomans had encircled it, taking Adrianople and the Balkans and using Christian vassals in campaigns from the Danube to the Euphrates. When the young sultan Mehmed II succeeded his father Murad II in 1451, at nineteen, he made the capture of the city his first great project.\n\nHe built the fortress of Rumeli Hisari on the European shore of the Bosphorus in 1452, cutting the city off from Black Sea grain, and hired the Hungarian engineer Orban to cast enormous bronze bombards. Emperor Constantine XI Palaiologos, ruling a treasury near empty, could muster perhaps five thousand Greek soldiers and around two thousand Western volunteers, most notably the Genoese condottiere Giovanni Giustiniani Longo and his professional troops."
+      "body": "By 1453 the Byzantine Empire had shrunk to little more than Constantinople itself and a few pockets in the Peloponnese. For a century the Ottomans had encircled it, taking Adrianople and the Balkans and using Christian vassals in campaigns from the Danube to the Euphrates. When the young sultan Mehmed II succeeded his father Murad II in 1451, at nineteen, he made the capture of the city his first great project.\n\nHe built the fortress of Rumeli Hisari on the European shore of the Bosphorus in 1452, cutting the city off from Black Sea grain, and hired the Hungarian engineer Orban to cast enormous bronze bombards. Emperor Constantine XI Palaiologos, ruling a treasury near empty, could muster perhaps five thousand Greek soldiers and around two thousand Western volunteers, most notably the Genoese condottiere Giovanni Giustiniani Longo and his professional troops.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bellini%2C_Gentile_-_Sultan_Mehmet_II.jpg",
+        "caption": "Portrait of Sultan Mehmed II by Gentile Bellini, 1480. National Gallery, London.",
+        "credit": "Gentile Bellini (c. 1429 to 1507), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bellini,_Gentile_-_Sultan_Mehmet_II.jpg"
+      }
     },
     {
       "heading": "What happened",
@@ -28,7 +35,14 @@
     },
     {
       "heading": "Aftermath & consequences",
-      "body": "Mehmed granted his troops the customary three days of plunder but reportedly cut it short. Contemporary estimates suggest around four thousand civilians died and perhaps thirty thousand were enslaved. The great church of Hagia Sophia was converted into a mosque; the sultan installed a new Greek patriarch, Gennadios Scholarios, and confirmed the Orthodox community's legal existence under Ottoman rule.\n\nMehmed, henceforth known as Fatih, the Conqueror, moved his capital from Edirne to the city he called Kostantiniyye and repopulated it with Muslim, Greek, Armenian, and Jewish settlers. The Ottoman Empire, now stretching from the Danube to the Euphrates, would be a decisive Mediterranean power for the next four centuries.\n\nIn Christendom the shock was profound. Refugee scholars carrying Greek manuscripts fed the Italian Renaissance, the trade routes to the East were reorganised in ways that helped push Portuguese and Spanish ships around Africa and across the Atlantic, and Moscow began to style itself the 'Third Rome', heir to a fallen Christian imperial capital. Many historians still use 1453 as the conventional boundary between the medieval and early modern worlds."
+      "body": "Mehmed granted his troops the customary three days of plunder but reportedly cut it short. Contemporary estimates suggest around four thousand civilians died and perhaps thirty thousand were enslaved. The great church of Hagia Sophia was converted into a mosque; the sultan installed a new Greek patriarch, Gennadios Scholarios, and confirmed the Orthodox community's legal existence under Ottoman rule.\n\nMehmed, henceforth known as Fatih, the Conqueror, moved his capital from Edirne to the city he called Kostantiniyye and repopulated it with Muslim, Greek, Armenian, and Jewish settlers. The Ottoman Empire, now stretching from the Danube to the Euphrates, would be a decisive Mediterranean power for the next four centuries.\n\nIn Christendom the shock was profound. Refugee scholars carrying Greek manuscripts fed the Italian Renaissance, the trade routes to the East were reorganised in ways that helped push Portuguese and Spanish ships around Africa and across the Atlantic, and Moscow began to style itself the 'Third Rome', heir to a fallen Christian imperial capital. Many historians still use 1453 as the conventional boundary between the medieval and early modern worlds.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hagia_Sophia_%28228968325%29.jpeg",
+        "caption": "The Hagia Sophia in Istanbul; converted from cathedral to mosque after the 1453 conquest.",
+        "credit": "Adli Wahid, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg"
+      }
     }
   ],
   "worldContext": [
@@ -91,7 +105,9 @@
   "figures": [
     {
       "name": "Mehmed II",
-      "role": "Ottoman sultan, aged 21, who directed the siege and became known thereafter as Fatih, the Conqueror"
+      "role": "Ottoman sultan, aged 21, who directed the siege and became known thereafter as Fatih, the Conqueror",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bellini%2C_Gentile_-_Sultan_Mehmet_II.jpg",
+      "credit": "Gentile Bellini (1480), National Gallery London, Public Domain"
     },
     {
       "name": "Constantine XI Palaiologos",

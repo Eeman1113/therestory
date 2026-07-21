@@ -23,10 +23,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Philippoteaux_-_Lamartine_in_front_of_the_Town_Hall_of_Paris_rejects_the_red_flag.jpg",
+        "caption": "Lamartine rejecting the red flag before the Hôtel de Ville, Paris, 25 February 1848.",
+        "credit": "Henri Felix Emmanuel Philippoteaux (1815 to 1884), via Wikimedia Commons",
+        "license": "Public Domain (CC0)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philippoteaux_-_Lamartine_in_front_of_the_Town_Hall_of_Paris_rejects_the_red_flag.jpg"
+      },
       "body": "The trigger came in Sicily, where an insurrection against the Bourbon king of the Two Sicilies broke out in Palermo on 12 January 1848 and quickly forced the granting of a constitution. In Paris the crisis of the banquet campaign erupted on 22 February when the government banned a scheduled meeting; students and workers threw up barricades in the Latin Quarter, the National Guard refused to fire, and on 24 February the seventy-four-year-old king Louis-Philippe abdicated and fled to England disguised as an English gentleman. A provisional government led by the poet Alphonse de Lamartine proclaimed the Second Republic, abolished slavery in the French colonies, decreed universal male suffrage and set up National Workshops to relieve unemployment.\n\nThe news from Paris raced across Europe in days. In Vienna on 13 March students and workers rose in the streets; Prince Metternich, chancellor since 1809 and the architect of the post-1815 order, resigned that evening and slipped out of the capital in a laundry cart, reaching London on 20 April. The Emperor Ferdinand promised a constitution. In Berlin on 18 March barricade fighting killed some three hundred people; King Frederick William IV rode bare-headed through the crowds three days later behind a black-red-gold flag and promised to lead the movement for German unification. In Milan on 18 March the Cinque Giornate drove the Austrian garrison of Field Marshal Radetzky out of the city; Venice proclaimed the Republic of San Marco under the lawyer Daniele Manin on 22 March. King Charles Albert of Piedmont-Sardinia declared war on Austria on 23 March, opening the First Italian War of Independence. In Hungary the Diet at Pressburg under the leadership of the Protestant lawyer Lajos Kossuth voted through on 15 March the April Laws, a package of constitutional reforms that in effect made Hungary an autonomous kingdom sharing only the monarch and foreign policy with Vienna.\n\nA parliament of the German states convened at the Paulskirche in Frankfurt on 18 May 1848 to draft a constitution for a united Germany. Similar national assemblies met in Vienna, Prague, Palermo and Kremsier. The revolutions reached even into the small principalities: Denmark under the new king Frederik VII granted a constitution and became a hereditary constitutional monarchy in June 1849; the Swiss Confederation, which had just fought a brief civil war in 1847, adopted a federal constitution modelled on the American in September 1848; the Netherlands accepted a liberal charter drafted by Johan Rudolf Thorbecke.\n\nThe counter-revolution began almost as soon as the revolutionaries had triumphed. In Paris, the closure of the National Workshops on 21 June provoked the June Days uprising of the eastern working-class quarters; General Louis-Eugène Cavaignac crushed the rising in four days of street fighting that left more than four thousand dead. In Prague, General Windischgratz bombarded the city into submission on 17 June. In Milan, Field Marshal Radetzky, having withdrawn to the fortress Quadrilateral, defeated the Piedmontese army at Custoza on 25 July and reoccupied Milan on 6 August. In Vienna, a second rising in October was suppressed by Windischgratz in the last days of the month with two thousand dead; the young emperor Franz Joseph, only eighteen, replaced his uncle Ferdinand on 2 December. In Berlin the king's troops reoccupied the city in November and imposed a conservative constitution in December. The Frankfurt Parliament finally offered the imperial crown of a united Germany to Frederick William of Prussia in April 1849; he refused, calling it a diadem picked up from the gutter. The Hungarian republic declared on 14 April 1849 was crushed by a combined Austrian and Russian invasion; General Arthur Gorgey surrendered his army to the Russians at Vilagos on 13 August. The Roman Republic of Mazzini and Garibaldi fell to a French army sent by Louis-Napoleon on 3 July 1849. The Venetian republic held out under Manin, ravaged by cholera and Austrian bombardment, until 24 August 1849. By the autumn of 1849 the old order was everywhere restored."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Barricade_bei_der_Universit%C3%A4t_am_26ten_Mai_1848_in_Wien.jpg/960px-Barricade_bei_der_Universit%C3%A4t_am_26ten_Mai_1848_in_Wien.jpg",
+        "caption": "Barricade by the University of Vienna, 26 May 1848, during the second Vienna uprising.",
+        "credit": "Contemporary print, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barricade_bei_der_Universit%C3%A4t_am_26ten_Mai_1848_in_Wien.jpg"
+      },
       "body": "Judged by the immediate political outcome, the revolutions failed. The German unification project of the Frankfurt Parliament collapsed; the Italian war ended in Austrian victory; the Hungarian republic was extinguished by Cossack cavalry; Louis-Napoleon Bonaparte, elected president of the French Second Republic in December 1848 with the votes of the peasantry, dissolved the Legislative Assembly by coup on 2 December 1851 and had himself proclaimed Emperor Napoleon III a year later to the day. Constitutional charters granted in the panic of March 1848 were rescinded or emasculated in Prussia, Austria and the smaller German states. Tens of thousands of revolutionaries went into exile, many to Britain, Switzerland and the United States, forming the German Forty-Eighter emigration that would supply so many officers to the Union armies in the American Civil War.\n\nYet the concrete gains were substantial. Serfdom, the surviving robota and grain dues, was abolished in the Austrian Empire by the imperial patent of 7 September 1848; the emancipation was made permanent by the March Patent of 1849. Serfdom likewise ended in the German states west of the Elbe and in the Danubian Principalities during the revolution and its aftermath. Constitutional government was consolidated in Denmark, the Netherlands, Piedmont and Belgium; the Statuto Albertino granted by Charles Albert of Piedmont in March 1848, alone among the constitutions of the year, survived until 1948 and became the basis of the constitutional monarchy of united Italy. Even in Prussia, the constitution imposed by Frederick William IV in December 1848 and revised in 1850, though heavily conservative, retained an elected Landtag and formed the framework of the North German Confederation and eventually the German Empire.\n\nMost importantly, the revolutions demonstrated that nationalism, once the property of romantic poets and secret societies, was now a mass political force that no European state could ignore. Piedmont, defeated in 1848 and 1849, resumed the leadership of Italian unification under Count Camillo Cavour and completed it in 1861. Prussia, having refused the Frankfurt crown, achieved a similar unification under Bismarck between 1866 and 1871. The Hungarian settlement of 1867, the Ausgleich, transformed the Austrian Empire into the dual Austria-Hungary and gave Budapest most of what Kossuth had demanded in 1848. Karl Marx, watching the collapse of the revolutions from London, concluded that the bourgeoisie had failed and that the working class must lead the next revolution alone."
     },
     {
@@ -63,31 +77,45 @@
   "figures": [
     {
       "name": "Louis-Philippe I",
-      "role": "Citizen King of the French, overthrown by the February Revolution in Paris and forced into exile in England"
+      "role": "Citizen King of the French, overthrown by the February Revolution in Paris and forced into exile in England",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/1841_portrait_painting_of_Louis_Philippe_I_%28King_of_the_French%29_by_Winterhalter.jpg/500px-1841_portrait_painting_of_Louis_Philippe_I_%28King_of_the_French%29_by_Winterhalter.jpg",
+      "credit": "Franz Xaver Winterhalter, 1841, via Wikimedia Commons"
     },
     {
       "name": "Klemens von Metternich",
-      "role": "Austrian chancellor since 1809, forced to resign and flee Vienna during the March 1848 uprising"
+      "role": "Austrian chancellor since 1809, forced to resign and flee Vienna during the March 1848 uprising",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Prince_Metternich_by_Lawrence.jpeg/500px-Prince_Metternich_by_Lawrence.jpeg",
+      "credit": "Thomas Lawrence, via Wikimedia Commons"
     },
     {
       "name": "Lajos Kossuth",
-      "role": "Hungarian lawyer and orator who led the April Laws, the declaration of Hungarian independence and the failed revolutionary republic"
+      "role": "Hungarian lawyer and orator who led the April Laws, the declaration of Hungarian independence and the failed revolutionary republic",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Portrait_of_Lajos_Kossuth%2C_1852.jpg/500px-Portrait_of_Lajos_Kossuth%2C_1852.jpg",
+      "credit": "Anonymous portrait, 1852, via Wikimedia Commons"
     },
     {
       "name": "Giuseppe Mazzini",
-      "role": "Italian nationalist theorist and revolutionary; triumvir of the short-lived Roman Republic of 1849"
+      "role": "Italian nationalist theorist and revolutionary; triumvir of the short-lived Roman Republic of 1849",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Giuseppe_Mazzini.jpg/500px-Giuseppe_Mazzini.jpg",
+      "credit": "Domenico Lama, via Wikimedia Commons"
     },
     {
       "name": "Giuseppe Garibaldi",
-      "role": "Guerrilla commander who defended the Roman Republic against the French army in 1849"
+      "role": "Guerrilla commander who defended the Roman Republic against the French army in 1849",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Garibaldi_%281866%29.jpg/500px-Garibaldi_%281866%29.jpg",
+      "credit": "Photograph, 1866, via Wikimedia Commons"
     },
     {
       "name": "Louis-Napoleon Bonaparte",
-      "role": "Nephew of Napoleon I, elected first president of the French Second Republic in December 1848 and later Emperor Napoleon III"
+      "role": "Nephew of Napoleon I, elected first president of the French Second Republic in December 1848 and later Emperor Napoleon III",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Alexandre_Cabanel_002.jpg/500px-Alexandre_Cabanel_002.jpg",
+      "credit": "Alexandre Cabanel, via Wikimedia Commons"
     },
     {
       "name": "Frederick William IV",
-      "role": "King of Prussia, who first paraded under the tricolour and then declined the imperial crown offered by the Frankfurt Parliament"
+      "role": "King of Prussia, who first paraded under the tricolour and then declined the imperial crown offered by the Frankfurt Parliament",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Friedrich_Wilhelm_IV_of_Prussia_%281847%29.jpg/500px-Friedrich_Wilhelm_IV_of_Prussia_%281847%29.jpg",
+      "credit": "Franz Krüger, 1847, via Wikimedia Commons"
     }
   ],
   "images": [

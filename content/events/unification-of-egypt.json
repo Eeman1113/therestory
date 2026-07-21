@@ -19,10 +19,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Narmer_Palette.jpg",
+        "caption": "The Narmer Palette, c. 3100 BCE, showing the king wearing the crowns of Upper and Lower Egypt. Egyptian Museum, Cairo.",
+        "credit": "Unknown ancient Egyptian artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg"
+      },
       "body": "The clearest surviving image of the event is the Narmer Palette, a shield-shaped slab of greywacke about 64 centimetres tall, carved in low relief and discovered in 1897 to 1898 by James Quibell and Frederick Green in the temple of Horus at Hierakonpolis. On one face Narmer wears the white crown of Upper Egypt and raises a mace to strike a kneeling northern enemy; on the reverse he wears the red crown of Lower Egypt and inspects rows of decapitated foes. It is the earliest surviving depiction of a single ruler in both crowns.\n\nWith unification the capital moved from Thinis in the south to a new foundation at Memphis, near the apex of the Delta, where north and south could be governed as one. A national administration of royal governors was appointed, and divine kingship, in which pharaoh mediated between the gods and the land, was set on the footing it would keep until the Roman conquest three thousand years later. Because so much of this transition happened before continuous written records, dates carry a margin of a century in either direction."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Narmer_Palette_smiting_side.jpg/500px-Narmer_Palette_smiting_side.jpg",
+        "caption": "Detail from the Narmer Palette showing the king in the white crown of Upper Egypt smiting a kneeling northern enemy.",
+        "credit": "Unknown ancient Egyptian artist, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette_smiting_side.jpg"
+      },
       "body": "Narmer's reign is now taken as the start of the First Dynasty and of the Early Dynastic Period, which lasted until about 2686 BCE. His successors extended royal power into the Sinai and Nubia, consolidated a professional scribal class, and developed the hieroglyphic script from the pictographic experiments visible on the palette itself.\n\nWithin a few centuries the machinery built at unification would raise the pyramids at Saqqara and Giza. The pharaonic model, one god-king, two lands, a bureaucracy of scribes, a state cult, proved so durable that even Alexander the Great and later the Ptolemies found it easier to adopt Egyptian kingship than to replace it. The unification of the Two Lands is, in that sense, the ancestor of every subsequent Egyptian regime."
     }
   ],
@@ -86,7 +100,9 @@
   "figures": [
     {
       "name": "Narmer",
-      "role": "First-Dynasty king of Egypt, most likely the historical figure behind the tradition of 'Menes' the unifier"
+      "role": "First-Dynasty king of Egypt, most likely the historical figure behind the tradition of 'Menes' the unifier",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/NarmerPalette_ROM-gamma.jpg/500px-NarmerPalette_ROM-gamma.jpg",
+      "credit": "Narmer Palette (c. 3100 BCE), Egyptian Museum, Cairo; via Wikimedia Commons"
     },
     {
       "name": "Hor-Aha",

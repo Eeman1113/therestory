@@ -1,0 +1,127 @@
+{
+  "id": "tohoku-earthquake-fukushima",
+  "slug": "tohoku-earthquake-fukushima",
+  "title": "Tōhoku earthquake and Fukushima disaster",
+  "date": {
+    "start": "2011-03-11",
+    "precision": "day",
+    "display": "11 March 2011"
+  },
+  "era": "contemporary",
+  "regions": ["east-asia"],
+  "categories": ["disaster-disease", "science-technology"],
+  "significance": 5,
+  "summary": "At 14:46:24 Japan Standard Time on Friday 11 March 2011, a magnitude 9.0 to 9.1 earthquake ruptured a roughly 500-kilometre segment of the Japan Trench offshore of Honshu, the largest ever recorded in Japan and the fourth largest instrumentally measured anywhere in the world. Within an hour, tsunami waves reaching a maximum measured run-up of 40.5 metres at Aneyoshi in Miyako, Iwate Prefecture, swept the Tohoku coastline, overtopping seawalls, flattening entire towns from Ofunato to Minamisoma, and killing, according to the Japan National Police Agency's final figures, at least 19,759 people, with 2,553 still missing and presumed dead as of 2021. The tsunami also inundated the Fukushima Daiichi Nuclear Power Plant, disabling emergency generators and, over the following four days, causing meltdowns in reactor units 1, 2, and 3 and a hydrogen explosion in unit 4's spent-fuel building. The accident, rated 7 on the International Nuclear and Radiological Event Scale (the same as Chernobyl), forced the evacuation of about 154,000 people from a 20-kilometre exclusion zone and reshaped the global nuclear-power industry. Direct economic damage was estimated by the Japanese government at 16.9 trillion yen (about 210 billion US dollars), the costliest natural disaster on record.",
+  "sections": [
+    {
+      "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/USGS-Poster-Tohoku_Earthquake-20110311.jpg",
+        "caption": "USGS poster of the 11 March 2011 magnitude 9.0 Tohoku earthquake, showing epicentre, focal mechanism, and regional context along the Japan Trench.",
+        "credit": "US Geological Survey",
+        "license": "Public domain (US federal government work)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:USGS-Poster-Tohoku_Earthquake-20110311.jpg"
+      },
+      "body": "The northeastern coast of Honshu sits on the leading edge of the Okhotsk plate, above the Japan Trench where the Pacific plate descends westward beneath the Eurasian and Okhotsk plates at about 83 millimetres per year. This is one of the most seismically active subduction zones on Earth, and the Tohoku coast has a long history of destructive earthquakes and tsunamis: the Jogan earthquake of 869 CE, whose tsunami deposits were re-examined by Japanese geologists in the 2000s, is now understood to have been a comparable magnitude-9 event; the Sanriku earthquake of 1896 killed at least 22,000 people along the same coast; the 1933 Sanriku event another 3,000. Japan's engineering response, over the twentieth century, was to build the world's most extensive network of concrete seawalls, tsunami-gate systems, and elevated-evacuation infrastructure. By 2011 more than 40 percent of the coastline had been fortified, some walls reaching 10 metres above sea level.\n\nThe Fukushima Daiichi Nuclear Power Plant, operated by the Tokyo Electric Power Company (TEPCO), had been commissioned between 1971 and 1979 on a bluff overlooking the Pacific at Okuma in Fukushima Prefecture. It contained six boiling-water reactors of General Electric Mark I design, with a combined generating capacity of 4,696 MWe. The site sat 10 metres above sea level; a 5.7-metre-high seawall protected the plant. Emergency diesel generators, cooling-water intake pumps, and switchgear were located in below-grade rooms at the base of the reactor buildings, a design vulnerability that had been flagged in internal TEPCO reviews and by regulators at the Nuclear and Industrial Safety Agency (NISA) at various points in the 2000s but never remediated. In 2008 a TEPCO internal study, later revealed by parliamentary inquiry, had estimated that a tsunami of up to 15.7 metres could strike the site; the study's recommendations for upgrading the seawall were not acted upon.\n\nJapan's political situation in early 2011 was unstable. Prime Minister Naoto Kan, leader of the Democratic Party of Japan (DPJ) that had come to power in 2009 after more than half a century of Liberal Democratic Party dominance, was serving with historically low approval ratings. His cabinet was preoccupied by post-crisis fiscal reconstruction, US-Japan security relations, and rising tensions with China. The nuclear regulatory establishment, historically close to TEPCO and other utility operators, functioned under a doctrine known within the industry as the 'nuclear safety myth' (anzen shinwa), which had inhibited candid discussion of severe-accident risk. This political and regulatory context is essential background to the events that followed."
+    },
+    {
+      "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/SendaiAirportMarch16.jpg",
+        "caption": "The tarmac at Sendai Airport, Miyagi Prefecture, littered with vehicles and debris after the tsunami. The airport was inundated to the second-storey ceiling of its passenger terminal.",
+        "credit": "US Air Force photo by Staff Sgt. Samuel Morse",
+        "license": "Public domain (US federal government work)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SendaiAirportMarch16.jpg"
+      },
+      "body": "The earthquake began at 14:46:24 local time on 11 March 2011 at a hypocentre 32 kilometres beneath the sea floor about 130 kilometres east of the Oshika peninsula in Miyagi Prefecture. Rupture propagated south and east along the Japan Trench for roughly six minutes, unzipping a fault patch some 500 kilometres long and 200 kilometres wide, with peak slip near the trench axis exceeding 50 metres. The moment magnitude of 9.0 to 9.1 was later revised upward, in some analyses, to as much as 9.1, making it the largest earthquake ever instrumentally recorded in Japan. Ground shaking exceeded 2.7 g at K-NET station MYG004 in Kurihara city, one of the highest peak ground accelerations ever recorded; strong shaking lasted for more than three minutes in the affected region.\n\nThe Japan Meteorological Agency issued its first tsunami warning within three minutes of the earthquake, initially forecasting waves of three metres on the Miyagi coast and revising upward as data came in. Tsunami arrival times ranged from 25 to 40 minutes after the earthquake depending on the coastal geography. Peak measured run-up of 40.5 metres was surveyed at the Aneyoshi fishery port on the Omoe peninsula in Miyako, Iwate Prefecture, a figure later confirmed by the joint international field survey coordinated by Nobuo Shuto, Fumihiko Imamura, and the Japan Society of Civil Engineers. In the town of Rikuzentakata, the tsunami reached a height of about 15 metres in the town centre, killing roughly 1,700 of the town's 24,000 residents; only a single pine tree survived out of 70,000 that had once lined the coast, becoming a national symbol of the disaster. In Onagawa, waves reached 43 metres, the highest recorded in Miyagi. Sendai Airport, situated on the coastal plain south of the city, was inundated to a depth of about 4.5 metres, filling the main terminal to the second-storey ceiling; images of aircraft and cars washed together on the runway became among the disaster's most widely circulated.\n\nAt Fukushima Daiichi, the earthquake triggered automatic reactor scrams: units 1, 2, and 3, which had been operating, shut down within seconds; units 4, 5, and 6 were already offline for scheduled maintenance. The plant lost external grid power in the shaking. Emergency diesel generators started as designed. Then, at 15:37, the first tsunami wave, estimated at 13 to 15 metres, overtopped the 5.7-metre seawall. Within minutes the basements housing the diesels and switchgear were flooded, all AC power was lost, and, for the following days, the plant operated in what nuclear engineers term 'station blackout'. Without cooling-water circulation, decay heat in the shut-down reactor cores drove temperatures up rapidly. Cores 1, 2, and 3 partially melted over the following seventy-two hours. Hydrogen produced by the zirconium-water reaction accumulated in the reactor buildings and, on 12 March (unit 1), 14 March (unit 3), and 15 March (unit 4), exploded. Prime Minister Naoto Kan flew to the site on 12 March; on the morning of 15 March, after TEPCO informed him that it was considering evacuating all workers from the plant, he confronted TEPCO management in Tokyo and refused permission to withdraw. About 50 workers, later joined by additional volunteers and eventually numbering more than 400 (the so-called 'Fukushima 50'), remained under plant manager Masao Yoshida's command. Yoshida made critical decisions, in some cases contrary to TEPCO headquarters' orders, including his refusal to halt seawater injection into the reactor cores. He died of oesophageal cancer in 2013, aged 58."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Appearance_of_Fukushima_I_Nuclear_Power_Plant_Unit_3_after_the_explosion_20110315.jpg",
+        "caption": "Fukushima Daiichi Unit 3 reactor building after the 14 March 2011 hydrogen explosion.",
+        "credit": "Agency for Natural Resources and Energy, Government of Japan",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appearance_of_Fukushima_I_Nuclear_Power_Plant_Unit_3_after_the_explosion_20110315.jpg"
+      },
+      "body": "The immediate response was the largest peacetime mobilisation in Japan's post-war history. The Japan Self-Defense Forces deployed at peak more than 107,000 personnel, roughly a third of their total strength. The United States military, under Operation Tomodachi, contributed more than 20 warships, 160 aircraft, and 24,000 service members. Search and rescue units from 24 nations arrived within days. In the Fukushima exclusion zone, a 20-kilometre radius formally designated on 12 March and later extended selectively to 30 kilometres, about 154,000 people were evacuated, some for many years. In areas where radioactive contamination was highest, particularly the towns of Futaba, Okuma, Namie, and Tomioka, evacuation orders remained wholly or partially in place well into the 2020s.\n\nDirect economic damage was catalogued in a June 2011 Japanese government estimate at 16.9 trillion yen (about 210 billion US dollars at then-current exchange rates), making the Tohoku event the costliest natural disaster ever recorded, ahead of Hurricane Katrina (2005). Roughly 122,000 buildings were fully destroyed and another 279,000 half-destroyed, most by the tsunami rather than the earthquake itself. Japan's economy contracted in the second quarter of 2011 and again after supply-chain disruptions rippled outward: Toyota's production fell about 40 percent in April 2011, Honda's about 65 percent. The independent Fukushima Nuclear Accident Independent Investigation Commission (NAIIC), chaired by Kiyoshi Kurokawa and reporting to the National Diet in July 2012, produced the sharpest institutional assessment. It described the accident as 'profoundly man-made', concluding that 'its fundamental causes are to be found in the ingrained conventions of Japanese culture: our reflexive obedience; our reluctance to question authority; our devotion to sticking with the programme; our groupism; and our insularity.' The report identified the regulatory capture of NISA by TEPCO and other utilities as the proximate institutional cause.\n\nGlobally, the accident reshaped the nuclear-power industry. Germany, under Chancellor Angela Merkel, announced within weeks the accelerated closure of all its nuclear power plants by 2022; the policy was carried out on schedule. Switzerland, Belgium, and Italy adopted various forms of nuclear phase-out. In Japan itself, all 54 operating reactors were progressively shut down for inspections through 2013 and 2014; only 10 had been returned to operation by 2023 under a new, more independent Nuclear Regulation Authority created in 2012. The controlled release of tritium-contaminated water accumulated at Fukushima Daiichi began in August 2023 and provoked diplomatic protest from China. Decommissioning of the site is projected to take 30 to 40 years, with molten fuel debris in units 1, 2, and 3 still being characterised as of 2024."
+    },
+    {
+      "heading": "Legacy",
+      "body": "For Japan, 11 March 2011, known simply as 3/11 in Japanese public memory, is the reference disaster of the post-war era, occupying a place in the national imagination comparable to the atomic bombings of Hiroshima and Nagasaki or the 1995 Great Hanshin earthquake, but on a still-larger scale. It was memorialised in an unusually direct way by the state: national moments of silence, an annual commemoration attended by the Emperor, and the establishment, in 2020, of a national museum at Futaba dedicated to the earthquake, tsunami, and nuclear accident. Reconstruction of the Tohoku coast has been vast and slow. Roughly 400 kilometres of coastal seawalls have been rebuilt higher and stronger, in some places 15 metres above sea level; whole neighbourhoods have been elevated by tens of metres of engineered earthwork; and low-lying coastal zones have in many towns been designated as no-build memorial parkland. Population, however, has not returned to pre-disaster levels in most affected municipalities; some smaller fishing villages have effectively been abandoned.\n\nThe scientific legacy has been substantial. Seismological analysis of the 2011 rupture forced revisions to hazard maps around Japan, particularly the reassessment of the Nankai Trough further south as capable of producing similarly outsized ruptures. The event also energised a global research programme into shallow-slip trench earthquakes, which had previously been thought incapable of releasing such large slip. Palaeotsunami work, particularly the excavation of coastal-plain sediment records, has been transformed: the identification of the Jogan 869 event's tsunami deposits as roughly comparable to 2011's has forced hazard planners in many subduction zones (including Cascadia in the Pacific Northwest of North America) to lengthen recurrence-interval horizons and design defences accordingly.\n\nFor the global nuclear industry, Fukushima remains the fault line of the twenty-first century. It confirmed, after Three Mile Island (1979) and Chernobyl (1986), that severe accidents can happen in modern reactors operated by advanced industrial societies, and that even a very small probability of catastrophic release carries political consequences vastly disproportionate to its actuarial risk. Yet, ironically, the two decades after Fukushima also produced a modest global renaissance in nuclear thinking, driven by climate change: the argument that decarbonising electricity grids at the scale required to meet Paris Agreement targets is exceedingly difficult without nuclear power gained traction with some governments and, in the United States, with parts of the environmental movement. The final judgement on the accident's legacy will therefore depend on developments a generation hence."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Naoto Kan",
+      "role": "94th Prime Minister of Japan (June 2010-September 2011); directed the whole-of-government response and personally refused TEPCO's request to withdraw workers from the Fukushima Daiichi site on 15 March 2011",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Prime_Minister_Naoto_Kan_%284795820403%29_cropped.jpg",
+      "credit": "Foreign and Commonwealth Office / OGL v1.0"
+    },
+    {
+      "name": "Masao Yoshida",
+      "role": "Site superintendent of Fukushima Daiichi Nuclear Power Plant during the accident; countermanded TEPCO headquarters' order to halt seawater injection into the reactor cores, a decision credited with limiting the release. Died of oesophageal cancer in 2013"
+    },
+    {
+      "name": "Masataka Shimizu",
+      "role": "President of Tokyo Electric Power Company (TEPCO) at the time of the accident; widely criticised for the company's opaque communication with the government and public; resigned in June 2011"
+    },
+    {
+      "name": "Kiyoshi Kurokawa",
+      "role": "Japanese medical scientist; chaired the Diet-appointed Fukushima Nuclear Accident Independent Investigation Commission (NAIIC), whose July 2012 report described the accident as 'profoundly man-made'"
+    },
+    {
+      "name": "Akihito",
+      "role": "125th Emperor of Japan; on 16 March 2011 delivered a rare televised address to the nation, the first-ever such address by a reigning emperor during a peacetime disaster"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Fukushima_I_by_Digital_Globe.jpg",
+      "caption": "Satellite image of the Fukushima Daiichi Nuclear Power Plant on 16 March 2011, showing damage to reactor units 1 through 4 (right to left) following the tsunami and hydrogen explosions.",
+      "credit": "Digital Globe",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fukushima_I_by_Digital_Globe.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/2011_Earthquake_and_Tsunami_near_Sendai%2C_Japan.jpg",
+      "caption": "NASA Earth Observing-1 satellite image, 18 March 2011, showing tsunami-flooded agricultural land between Sendai city and Sendai Bay.",
+      "credit": "Jesse Allen and Robert Simmon, NASA Earth Observatory",
+      "license": "Public domain (US federal government work)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Earthquake_and_Tsunami_near_Sendai,_Japan.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "2011 Tohoku earthquake and tsunami",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Fukushima nuclear accident",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fukushima_nuclear_accident",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Remembering 2011's Tohoku Earthquake and Tsunami",
+      "publisher": "NOAA NESDIS",
+      "url": "https://www.nesdis.noaa.gov/news/remembering-2011s-tohoku-earthquake-and-tsunami-0",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "M 9.1 - 2011 Great Tohoku Earthquake, Japan",
+      "publisher": "US Geological Survey",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/official20110311054624120_30/executive",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Fukushima Daiichi Accident",
+      "publisher": "World Nuclear Association",
+      "url": "https://world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-daiichi-accident",
+      "accessed": "2026-07-21"
+    }
+  ],
+  "disputed": false
+}

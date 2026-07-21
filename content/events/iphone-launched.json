@@ -1,0 +1,126 @@
+{
+  "id": "iphone-launched",
+  "slug": "iphone-launched",
+  "title": "Apple launches the iPhone",
+  "date": {
+    "start": "2007-06-29",
+    "precision": "day",
+    "display": "29 June 2007"
+  },
+  "era": "contemporary",
+  "regions": ["americas", "east-asia", "europe"],
+  "categories": ["science-technology", "economy-trade"],
+  "significance": 5,
+  "summary": "On the evening of Friday 29 June 2007, at 6 pm local time in each of Apple's four US time zones, the first-generation iPhone went on sale at Apple Stores, at Cingular (soon renamed AT&T) Wireless outlets, and on Apple's website. The phone had been unveiled 171 days earlier, on 9 January 2007, at the Macworld Conference and Expo in San Francisco by Steve Jobs, who introduced it as three products in one, 'a widescreen iPod with touch controls, a revolutionary mobile phone, and a breakthrough internet communicator'. Priced at 499 US dollars for the 4-gigabyte model and 599 dollars for the 8-gigabyte model, sold only on a two-year AT&T contract in the United States, the iPhone entered a global smartphone market then dominated by BlackBerry, Nokia's Symbian devices, Windows Mobile, and Palm. Its capacitive multi-touch display, absence of a physical keyboard, mobile Safari browser, and later App Store, opened in July 2008, redefined the category. By the time Apple discontinued the original model in July 2008 to make way for the iPhone 3G, some six million units had been sold. In the seventeen years that followed, Apple sold more than 2.3 billion iPhones and reshaped the global technology industry.",
+  "sections": [
+    {
+      "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg",
+        "caption": "Steve Jobs, co-founder and CEO of Apple, in 2010. Jobs personally supervised the iPhone project and delivered its unveiling at Macworld on 9 January 2007.",
+        "credit": "Matthew Yohe",
+        "license": "CC BY-SA 3.0 / GFDL",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP.jpg"
+      },
+      "body": "The smartphone market that Apple entered in the summer of 2007 was already substantial, but it was fragmented along lines that made the term 'smartphone' itself contested. Research In Motion, the Canadian company founded by Mike Lazaridis and Jim Balsillie in 1984, had made its BlackBerry the standard tool of the corporate and government email user, with hardware QWERTY keyboards, secure encrypted messaging, and long battery life; by early 2007 RIM had roughly eight million subscribers, most of them enterprise customers. Nokia of Finland, the largest handset maker in the world by unit volume, dominated the global feature-phone market and, at the high end, sold Symbian-based devices such as the N-series and E-series that offered cameras, web browsers, and third-party applications. Microsoft's Windows Mobile operating system powered smartphones from HTC, Palm, Motorola, and Samsung. Palm, once dominant in personal digital assistants, continued to sell the Treo line. In Japan and South Korea, closed-carrier ecosystems from NTT DoCoMo, KDDI, and SK Telecom had produced camera phones, mobile-payment handsets, and mobile television years before comparable capabilities appeared in Europe or North America.\n\nApple's own history in the phone market was thin and unhappy. In 2005 the company had partnered with Motorola on the ROKR E1, a phone that could sync songs from iTunes. It launched to poor reviews and worse sales, and Steve Jobs, who had disliked the compromise from the beginning, resolved that Apple would not enter the phone business by licensing its software to another manufacturer. In parallel, Apple engineers had begun exploring multi-touch displays as part of a tablet-computing project. According to internal accounts later reported by biographers, Jobs saw a demonstration of the touch technology in 2004 and directed that it be applied to a phone instead. The formal project was authorised on 7 November 2004 under the internal codename Purple, with two competing internal prototypes: a phone based on the iPod's mechanical click-wheel, developed under hardware engineer Tony Fadell, and a phone based on a full multi-touch screen, developed by a team drawing on the tablet work. The second approach won.\n\nDevelopment was carried out in extreme secrecy, in a locked area of Apple's Infinite Loop campus in Cupertino. Roughly 200 to 1,000 engineers were involved at peak, depending on how one counts. Costs later reported in the press ran to about 150 million US dollars over 30 months. Jonathan Ive's industrial-design group produced the aluminium-and-glass form factor; Scott Forstall's team wrote the software stack, a reduced and re-architected version of Apple's Mac OS X that would eventually be named iPhone OS and, in 2010, renamed iOS. Phil Schiller led marketing. Only a handful of people at Cingular Wireless, the exclusive US carrier partner, were briefed on the project before the January 2007 announcement, and no working hardware was shown outside Apple before the keynote."
+    },
+    {
+      "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Steve_Jobs_presents_iPhone.jpg",
+        "caption": "Steve Jobs unveils the iPhone at Macworld 2007 in San Francisco, 9 January 2007.",
+        "credit": "Blake Patterson",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_presents_iPhone.jpg"
+      },
+      "body": "Steve Jobs opened his Macworld keynote on the morning of Tuesday 9 January 2007 by telling the roughly 4,000 people in Moscone West that Apple was about to introduce 'three revolutionary products'. He listed them slowly, in mounting rhetorical suspense: a widescreen iPod with touch controls, a revolutionary mobile phone, a breakthrough internet communications device. He repeated the list, faster. Then he paused: 'These are not three separate devices. This is one device.' The line, delivered against a rotating on-screen graphic of an iPod, a phone, and a browser converging, has since become one of the most-analysed moments in the history of product marketing.\n\nThe hardware Jobs then unveiled was, by 2007 standards, technically audacious. The iPhone measured 115 by 61 by 11.6 millimetres and weighed 135 grams. Its 3.5-inch, 320-by-480-pixel capacitive multi-touch display, made by LG and later Samsung, was the largest and highest-resolution on any handheld device Apple had shipped. It ran on a 620 MHz Samsung-made ARM processor underclocked for battery life, had 128 megabytes of RAM, and, in its two initial configurations, either 4 or 8 gigabytes of storage. A single 2-megapixel rear camera, an accelerometer, a proximity sensor, an ambient-light sensor, and a Bluetooth radio completed the sensor package. No physical keyboard was included; text entry was carried out on an on-screen virtual keyboard whose predictive-text algorithm, still crude, was a subject of much early criticism. A single physical Home button below the screen and volume and power controls on the edges were the only buttons. Notably, the phone launched without support for third-party applications and without 3G data, running instead on the slower EDGE cellular network.\n\nThe launch itself took place on Friday 29 June 2007. Apple Stores across the United States opened at 6 pm local time; queues at the flagship Fifth Avenue store in Manhattan had begun forming several days earlier, and in San Francisco Jobs made an unannounced visit to greet the first buyers. In its opening weekend Apple and AT&T reportedly sold about 270,000 units. The one-millionth iPhone was sold 74 days after launch, in early September. On 5 September 2007 Apple cut the price of the 8-gigabyte model from 599 to 399 dollars and discontinued the 4-gigabyte model altogether, a decision that provoked such an outcry from early buyers that Jobs issued an open letter and offered them a 100-dollar Apple Store credit. International launches followed: the United Kingdom on O2 on 9 November 2007, Germany on T-Mobile on the same day, France on Orange on 29 November 2007. The original iPhone was discontinued on 15 July 2008 to make way for the iPhone 3G. Apple reported total original-iPhone sales of about 6.1 million units before the transition."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The most immediate consequence of the iPhone was competitive. Within Google, whose engineers had been developing an Android operating system originally conceived as a BlackBerry-style keyboard phone platform, the direction of the project pivoted immediately after the January 2007 keynote to a full multi-touch design. The first Android handset, the T-Mobile G1 (HTC Dream), shipped in October 2008. Within Nokia, the reaction was one of denial, then panic; Symbian's fragmented development model and Nokia's inability to build a competitive touch interface would, over the following five years, reduce the company from the world's largest handset maker to a minor player, eventually selling its handset business to Microsoft in 2014. BlackBerry's decline was even sharper: from a global market capitalisation peak of about 84 billion US dollars in June 2008 to less than 5 billion by 2013. Palm, which released the well-reviewed but under-marketed webOS-based Pre in 2009, was acquired by Hewlett-Packard in 2010 and effectively wound down.\n\nThe second-order consequences reshaped whole industries. In July 2008 Apple opened the App Store as part of the iPhone 3G launch, allowing third-party developers to write and distribute software for the platform. Within five years the store carried more than a million applications and had paid out more than 10 billion dollars to developers. Whole categories of software business, from ride-hailing (Uber launched in San Francisco in 2010, entirely as a smartphone-mediated service) to mobile gaming, image sharing (Instagram, 2010), and consumer messaging (WhatsApp, 2009), owed their form to the iPhone's screen, sensors, and app-distribution model. Digital advertising, previously dominated by desktop-browser display and search, shifted decisively toward mobile: by 2019 more than 65 percent of global online advertising spending was mobile-first.\n\nApple's own transformation was no less complete. In fiscal year 2007 Apple reported total revenue of 24.6 billion dollars, of which the iPhone accounted for a modest fraction. By fiscal year 2015, at the height of the iPhone 6 supercycle, iPhone revenue alone reached 155 billion dollars, roughly two-thirds of the company's total. Apple's market capitalisation, which stood at about 74 billion dollars on the day of the January 2007 announcement, reached 3 trillion dollars in early 2022, making it briefly the most valuable company ever traded on any exchange. The iPhone's supply chain, built out primarily through Foxconn and Pegatron assembly plants in mainland China and component suppliers across East Asia, became one of the most sophisticated and geographically consequential manufacturing systems in industrial history."
+    },
+    {
+      "heading": "Legacy",
+      "body": "The iPhone is one of the very few consumer products whose introduction can plausibly be described as a hinge point in modern social history. By making general-purpose computing effortlessly portable, always-connected, and personally intimate in a way that the desktop computer had never been, it accelerated the collapse of distinctions between the workplace and the home, between the professional and the personal, and between waking and sleeping. Fifteen years after launch, average daily smartphone use in the United States and other high-income countries had risen to roughly four to five hours a day; in low- and middle-income countries the same device had, for hundreds of millions of first-time internet users, become their sole computer, their primary camera, their principal television, and, for growing numbers, their principal source of formal-sector income.\n\nThe cultural consequences have been contested from the beginning. Reading habits, attention spans, sleep quality, and the incidence of teenage anxiety and depression have all been argued, in a large and still-growing literature, to have shifted measurably after the smartphone's mass adoption. Political consequences have been at least as significant. The Arab uprisings of 2011, the Black Lives Matter movement in the United States, the Hong Kong protests of 2019, and the many other citizen-organised movements of the 2010s were shaped in real time by smartphone video, encrypted messaging, and social-media coordination. Governments, in response, developed the mass-surveillance capabilities and content-moderation regimes that now define the political geography of the mobile internet.\n\nThe iPhone also concentrated an unprecedented share of global economic value in a small number of platform-owning corporations. Together with Google's Android, which by 2024 accounted for about 70 percent of global smartphone shipments to Apple's 30 percent, the iPhone's two-platform world made Apple and Google the effective gatekeepers of software distribution to more than five billion users. Regulatory responses, notably the European Union's Digital Markets Act (in force from March 2024) and antitrust litigation in the United States and India, will shape the platform's third decade. Whatever those political outcomes, the change begun on 29 June 2007 is now embedded in the daily habits of most of the world's adults: to reach into a pocket, to touch a piece of glass, and to speak, read, buy, work, or love through it."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Steve Jobs",
+      "role": "Co-founder and CEO of Apple; personally directed the Project Purple team and delivered the 9 January 2007 unveiling. Died of pancreatic cancer on 5 October 2011",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg",
+      "credit": "Matthew Yohe / CC BY-SA 3.0"
+    },
+    {
+      "name": "Jonathan Ive",
+      "role": "Senior Vice President of Industrial Design at Apple; led the design of the iPhone's glass-and-aluminium form and, together with his team, the physical language of every subsequent iPhone through the iPhone X",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Jonathan_Ive_%28OTRS%29.jpg",
+      "credit": "Marcus Dawes / CC BY-SA 3.0"
+    },
+    {
+      "name": "Scott Forstall",
+      "role": "Senior Vice President of iPhone Software at Apple (2007-2012); led the development of iPhone OS (later iOS) and the App Store that opened in July 2008"
+    },
+    {
+      "name": "Tony Fadell",
+      "role": "Senior Vice President of the iPod division at Apple; led the hardware engineering effort during the early Project Purple phase and championed an alternative click-wheel design that lost out to the multi-touch approach"
+    },
+    {
+      "name": "Phil Schiller",
+      "role": "Senior Vice President of Worldwide Marketing at Apple; ran the launch communications and pricing strategy for the iPhone and its major successors"
+    },
+    {
+      "name": "Tim Cook",
+      "role": "Chief Operating Officer at Apple in 2007; architected the global manufacturing and supply chain that scaled iPhone production, and succeeded Jobs as CEO on 24 August 2011"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/IPhone_First_Generation.jpg",
+      "caption": "The first-generation iPhone, released 29 June 2007, with its 3.5-inch capacitive multi-touch display and single Home button.",
+      "credit": "Carl Berkeley, via Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_First_Generation.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/First_iPhone_Macworld_2007_DSCF1283.agr.jpg",
+      "caption": "The first public showing of the iPhone at Macworld 2007 in San Francisco, 9 January 2007.",
+      "credit": "ArnoldReinhold, via Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_iPhone_Macworld_2007_DSCF1283.agr.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "IPhone (1st generation)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "History of iPhone",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_iPhone",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "The untold story: how the iPhone blew up the wireless industry",
+      "publisher": "Wired",
+      "url": "https://www.wired.com/2008/01/ff-iphone/",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Apple Reinvents the Phone with iPhone (press release, 9 January 2007)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "10 Years Ago Today, the Original iPhone Officially Launched",
+      "publisher": "MacRumors",
+      "url": "https://www.macrumors.com/2017/06/29/iphone-10-years/",
+      "accessed": "2026-07-21"
+    }
+  ],
+  "disputed": false
+}

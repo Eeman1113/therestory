@@ -15,10 +15,24 @@
   "sections": [
     {
       "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hammurabi%27s_Babylonia_1.svg/1280px-Hammurabi%27s_Babylonia_1.svg.png",
+        "caption": "Map of Hammurabi's Babylonian empire at its greatest extent, c. 1750 BCE.",
+        "credit": "MapMaster, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hammurabi%27s_Babylonia_1.svg"
+      },
       "body": "Hammurabi was the sixth king of the First Dynasty of Babylon, an Amorite line that had governed the small city on the Euphrates since around 1894 BCE. When he came to the throne in 1792 BCE (on the Middle Chronology) at the age of perhaps twenty, Babylon was one of several roughly equal states in Mesopotamia; the others included the older kingdom of Larsa in the south under Rim-Sin, Eshnunna in the Diyala valley, Mari on the middle Euphrates under Zimri-Lim, and the powerful upstart Shamshi-Adad I of Upper Mesopotamia. Hammurabi's own inscriptions and, above all, the great archive of some 25,000 clay tablets excavated by André Parrot at Mari in the 1930s allow us to watch the geopolitics of the age in unusual detail.\n\nFor his first thirty years Hammurabi was a modest player, content to build canals, restore temples, and honour his obligations to more powerful neighbours. Then, starting in his twenty-ninth regnal year (1763 BCE), he moved with extraordinary speed. He defeated Rim-Sin of Larsa and annexed the whole of southern Babylonia. Two years later he crushed a coalition of Elam, Eshnunna, and Assyria; two years after that he sacked Mari, whose great palace archives owe their preservation to the fire he set. By the end of his forty-two-year reign he ruled from the Persian Gulf to Nineveh and had reconstituted a Mesopotamian empire on a scale not seen since the Third Dynasty of Ur three centuries before.\n\nAgainst this military and administrative background, in the last decade of his reign, Hammurabi commissioned the great law-stele. He was not the first Mesopotamian king to publish a legal code. Ur-Nammu of Ur around 2100 BCE, Lipit-Ishtar of Isin around 1930 BCE, and the anonymous compilers of the Laws of Eshnunna about 1770 BCE had all produced comparable, though shorter, collections. What made Hammurabi's stele unique in its own time was its length, its physical grandeur, and the vast reach of the polity it claimed to govern."
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg",
+        "caption": "Close-up of the relief atop the stele: Hammurabi stands before the enthroned sun-god Shamash.",
+        "credit": "Mbzt, via Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg"
+      },
       "body": "The stele itself is a tapered pillar of black diorite, 2.25 metres tall, 79 centimetres wide at the base, and about 47 centimetres thick. On the upper face, in low relief, the king stands with his right hand raised in a gesture of prayer before the enthroned sun-god Shamash, patron of justice, who holds out the rod and ring that were the standard Mesopotamian symbols of legitimate rule. Below the relief the flat surfaces of the stele are covered on all four sides with about 4,130 lines of finely incised cuneiform, in vertical columns to be read from top to bottom, right to left. The language is Old Babylonian, a Semitic tongue closely related to Sargon's Akkadian but with the classic literary conventions of Hammurabi's age. Roughly a fifth of the text is prologue and epilogue; the remainder consists of approximately 282 legal provisions, though the numbering is modern and about 35 sections were later erased in antiquity where the Elamite conqueror planned, but never carried out, a fresh inscription.\n\nThe prologue traces Hammurabi's authority to the gods Anu, Enlil, and Marduk, and lists the shrines he has restored across his empire, from Nippur to Sippar to Nineveh. The laws themselves are cast in a distinctive if-then form (Akkadian summa awilum, 'if a man...'). They cover an extraordinary range: false witness, theft, the sale and rental of oxen, the rights of wives and concubines, adoption, medical malpractice, the wages of shipwrights and doctors, the responsibilities of tavern-keepers, the liabilities of builders whose houses collapse. Punishments vary sharply by social class. The stele recognises three main statuses: the awilum, a free citizen of some standing; the mushkenum, a person of intermediate rank, perhaps a dependent of the palace; and the wardum, a slave. The famous principle of lex talionis, 'an eye for an eye, a tooth for a tooth', applies among the awilum. When an awilum injures a mushkenum or a slave, the penalty is a fine paid in silver; when a slave strikes a free man, his ear is cut off.\n\nThe epilogue is a long and elaborate curse-formula against any future king who would efface Hammurabi's name from the stele or alter his laws: may Shamash break his sceptre; may Ishtar pour out his blood like water; may Nergal set the fire of pestilence in his land. Copies of the code, some of them clay-tablet extracts probably used in the training of scribes, have been recovered from a dozen sites across Mesopotamia, and it is likely that the original stele stood in the courtyard of the Ebabbar, the temple of Shamash at Sippar, where the king wished the god's justice to be seen to be done.\n\nAround 1155 BCE, more than five centuries after Hammurabi's death, the Elamite king Shutruk-Nahhunte sacked Sippar and dragged the stele back to his capital at Susa, where it stood as a war trophy in an Elamite temple until the whole city was buried under the accumulated debris of centuries. In December 1901 and January 1902 the French archaeological mission under Jacques de Morgan, digging on the acropolis at Susa, uncovered the stele in three pieces. Reassembled, it was shipped to Paris and put on public display in the Louvre, where it remains, in the Department of Near Eastern Antiquities, catalogue number Sb 8."
     },
     {
@@ -71,11 +85,15 @@
     },
     {
       "name": "Jacques de Morgan",
-      "role": "French archaeologist and director of the mission at Susa whose team uncovered the stele in three pieces in December 1901"
+      "role": "French archaeologist and director of the mission at Susa whose team uncovered the stele in three pieces in December 1901",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jacques_de_Morgan.jpg/800px-Jacques_de_Morgan.jpg",
+      "credit": "Abdullah frères, 1891 / Public domain"
     },
     {
       "name": "Vincent Scheil",
-      "role": "Dominican Assyriologist who published the first edition and French translation of the code in 1902"
+      "role": "Dominican Assyriologist who published the first edition and French translation of the code in 1902",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Jean-Vincent_Scheil.jpg",
+      "credit": "Association d'histoire et d'archeologie de Lorraine / Public domain"
     }
   ],
   "images": [

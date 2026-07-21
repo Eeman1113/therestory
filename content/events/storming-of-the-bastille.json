@@ -23,10 +23,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Prise_de_la_Bastille.jpg",
+        "caption": "The Storming of the Bastille, 14 July 1789, gouache by the eyewitness Jean-Pierre Houël.",
+        "credit": "Jean-Pierre Houël (1735 to 1813), via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg"
+      },
       "body": "On the morning of Tuesday 14 July the search for arms turned decisive. A crowd of perhaps sixty thousand marched to the Hôtel des Invalides on the Left Bank, where the aged marshal de Sombreuil surrendered the arsenal without a serious fight. Contemporary accounts credit the crowd with carrying off some thirty-two thousand muskets and twenty cannon; the muskets lacked powder and shot, which were held not at the Invalides but in the storerooms of the medieval fortress on the eastern edge of the city, the Bastille.\n\nThe Bastille was a squat, eight-towered stone rectangle built between 1370 and 1383 as part of the eastern defences of Paris. Under Louis XIV it had become the state prison for political detainees, though by 1789 its role had shrunk. On 14 July it held only seven prisoners: four forgers, two lunatics, and one aristocrat locked up at his family's request. The garrison consisted of eighty-two invalides (aged veterans) and thirty-two Swiss soldiers of the Salis-Samade Regiment who had been reinforced only a week earlier. The commander was the fifty-year-old marquis Bernard-René Jourdan de Launay, born in the fortress and now, unhappily, its governor.\n\nA delegation from the Hôtel de Ville, led by the merchant Jacques-Alexis Thuriot, arrived at the Bastille around ten in the morning to negotiate the surrender of the gunpowder stored there. De Launay received them courteously and invited them to lunch. Outside, the crowd grew impatient. Around one in the afternoon a small group cut the chains of the outer drawbridge and forced their way into the outer courtyard. De Launay's men, feeling they were under attack, opened fire; casualties mounted rapidly among the crowd, which pulled back and demanded reinforcements from the mutinying French Guards. Two detachments of the Guards arrived in the mid-afternoon under Pierre-Augustin Hulin and Jacob Élie, bringing five cannon captured from the Invalides. The guns were positioned in the outer court and pointed at the main drawbridge.\n\nBy five in the afternoon de Launay, seeing that the guns would make short work of the drawbridge chains, wrote a note offering to surrender if the garrison could march out with the honours of war. His officers refused to accept the terms; he then wrote a second note threatening to blow up the powder magazine (twenty thousand pounds of gunpowder that would have flattened much of the faubourg) unless he were allowed to leave. Neither note was accepted. Around five-thirty he ordered the drawbridge lowered and the fortress surrendered. About ninety-eight of the attackers had been killed and seventy-three wounded; the garrison had lost one killed during the fighting.\n\nDe Launay and his officers were marched under guard toward the Hôtel de Ville, protected by the French Guards who had led the assault. The crowd along the rue Saint-Antoine grew more violent; de Launay, exhausted and terrified, is said to have kicked a cook named Desnot in the groin as they neared the Place de Grève. Desnot and others fell on him with knives and bayonets. His severed head, along with those of the lieutenant-major de Losme-Salbray and three of the veteran garrison, was mounted on a pike and paraded through the streets. That evening the seven bewildered prisoners were released; the count Jourdan, the last commander of a fortress that was already being taken to pieces stone by stone, was dead."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Declaration_of_the_Rights_of_Man_and_of_the_Citizen_in_1789.jpg/960px-Declaration_of_the_Rights_of_Man_and_of_the_Citizen_in_1789.jpg",
+        "caption": "Declaration of the Rights of Man and of the Citizen, adopted by the National Assembly on 26 August 1789.",
+        "credit": "Jean-Jacques-François Le Barbier, Musée Carnavalet, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Declaration_of_the_Rights_of_Man_and_of_the_Citizen_in_1789.jpg"
+      },
       "body": "The political effect of the Bastille was immediate. On the morning of 15 July Louis XVI, without troops on which he could rely (many soldiers had already deserted), walked to the National Assembly at Versailles and announced that he had ordered the concentrated regiments withdrawn. On 16 July Jacques Necker was recalled from exile. On 17 July the king rode to the Hôtel de Ville in Paris, accepted a revolutionary tricolour cockade (adding the red and blue of Paris to the white of the Bourbons) from the mayor Jean-Sylvain Bailly, and formally recognised the new municipal government. The marquis de Lafayette, hero of the American War, was named commander of the newly formed Garde nationale, which absorbed and disciplined the militias of 12 to 14 July.\n\nOutside Paris the news detonated a summer of rural revolt known as the Great Fear. From roughly 20 July to 5 August peasants across France, spurred by wildly exaggerated rumours of aristocratic conspiracies and marauding bandits, attacked chateaux, burnt seigneurial archives, and forced local lords to renounce feudal dues. On the night of 4 August 1789, at a legendary sitting of the National Assembly, nobles rose in cascade to renounce their tithes, tax exemptions, and seigneurial rights, and by dawn the entire structure of French feudal privilege had been formally abolished. On 26 August the Assembly adopted the Declaration of the Rights of Man and of the Citizen, drafted by Lafayette in consultation with Thomas Jefferson (then American minister in Paris), which recast the state as founded on the equal rights of citizens.\n\nDemolition of the Bastille began within a week of its fall. The entrepreneur Pierre-François Palloy took the contract; over the following five months the fortress was reduced to a heap of stones. Palloy turned some of the stones into scale-model Bastilles that were sent to the eighty-three new departments as revolutionary relics, and turned others into commemorative medals and inkstands. The Place de la Bastille, empty since 1790, remained an open square; the column that stands there today commemorates a later revolution, that of July 1830.\n\nMost of the actors of 14 July had short lives. Camille Desmoulins was guillotined in 1794 during the Terror. Bailly was guillotined the same year. Necker resigned again in 1790 and retired to Switzerland. Lafayette fled France in 1792 and spent five years in Austrian prisons before returning to become a symbol of the liberal opposition under the Bourbon Restoration. Louis XVI, who had written a single word in his hunting journal for 14 July ('rien', 'nothing'), was tried by the National Convention in December 1792 and guillotined on 21 January 1793."
     },
     {
@@ -67,19 +81,27 @@
     },
     {
       "name": "Louis XVI",
-      "role": "King of France, who wrote 'rien' in his hunting journal for 14 July 1789"
+      "role": "King of France, who wrote 'rien' in his hunting journal for 14 July 1789",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Antoine-Fran%C3%A7ois_Callet_-_Louis_XVI%2C_roi_de_France_et_de_Navarre_%281754-1793%29%2C_rev%C3%AAtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg/500px-Antoine-Fran%C3%A7ois_Callet_-_Louis_XVI%2C_roi_de_France_et_de_Navarre_%281754-1793%29%2C_rev%C3%AAtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg",
+      "credit": "Antoine-François Callet, 1779, via Wikimedia Commons"
     },
     {
       "name": "Jacques Necker",
-      "role": "Genevan Protestant finance minister whose dismissal on 11 July triggered the July insurrection"
+      "role": "Genevan Protestant finance minister whose dismissal on 11 July triggered the July insurrection",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Necker%2C_Jacques_-_Duplessis.jpg/500px-Necker%2C_Jacques_-_Duplessis.jpg",
+      "credit": "Joseph Duplessis, via Wikimedia Commons"
     },
     {
       "name": "Camille Desmoulins",
-      "role": "Journalist whose call to arms at the Palais-Royal on 12 July mobilised the Parisian crowd"
+      "role": "Journalist whose call to arms at the Palais-Royal on 12 July mobilised the Parisian crowd",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Camille_Desmoulins_2.jpg/500px-Camille_Desmoulins_2.jpg",
+      "credit": "Anonymous, via Wikimedia Commons"
     },
     {
       "name": "Marquis de Lafayette",
-      "role": "Veteran of the American Revolution, appointed commander of the new Paris National Guard on 15 July"
+      "role": "Veteran of the American Revolution, appointed commander of the new Paris National Guard on 15 July",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gilbert_du_Motier_Marquis_de_Lafayette.PNG/500px-Gilbert_du_Motier_Marquis_de_Lafayette.PNG",
+      "credit": "Joseph-Désiré Court, via Wikimedia Commons"
     }
   ],
   "images": [

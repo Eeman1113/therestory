@@ -24,10 +24,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Battle_of_Lepanto_1571.jpg/1280px-Battle_of_Lepanto_1571.jpg",
+        "caption": "The Battle of Lepanto, unidentified late 16th-century painter. National Maritime Museum, Greenwich.",
+        "credit": "Unidentified late 16th-century painter, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Battle_of_Lepanto_1571.jpg"
+      },
       "body": "The battle formed up in the classic galley line: three divisions abreast, with a reserve behind. Don John commanded the Christian centre from the great galley Real; on his right was the Genoese admiral Gianandrea Doria, on his left the Venetian Agostino Barbarigo, with the Marquis of Santa Cruz commanding the reserve. Facing them, Ali Pasha took the Ottoman centre from the Sultana, with the Egyptian corsair Mehmed Sirocco on his right and the Algerian Uluç Ali (the Italian-born renegade also known as Uluj Ali or Occhiali) on his left. A tricky north wind that morning shifted in favour of the Christians and briefly becalmed the Ottoman fleet.\n\nThe six Venetian galleasses, towed into position ahead of the Christian line, opened the battle. Their broadsides tore holes in the Ottoman formation before the galleys could close; contemporary accounts credit the galleasses with sinking or crippling perhaps twenty ships in the first minutes. The lines then closed at the standard galley speed, four or five knots, and locked together in a general grappling melee that stretched for miles across the mouth of the gulf. Musketry, arquebus fire, arrows, javelins, boarding pikes, and small cannon crashed through the crowded decks. Contemporary chroniclers wrote of the sea running red with blood and littered with turbans, corpses, and shattered oars.\n\nOn the northern flank Barbarigo, fighting near the shoals of Cape Scropha, was killed by an Ottoman arrow through the eye but his division held and broke Mehmed Sirocco's line, killing the corsair in the water as he tried to swim ashore. In the centre the Real and the Sultana grappled and were boarded three times; on the fourth attempt Spanish infantry led by Don John's guards captured the Sultana, and Ali Pasha was killed, his head hoisted on a pike above the Real. His two young sons were taken prisoner, treated well by Don John, and eventually ransomed. Only Uluç Ali, on the southern flank, kept his composure. He drew Doria out of position by a feint, cut off a squadron of Maltese galleys and captured the flagship of the Knights, but seeing that the centre and north had collapsed he broke off with about thirty galleys and escaped southward.\n\nBy about five in the afternoon the fighting was over. The Ottoman fleet was destroyed: perhaps 210 of its ships were sunk, burnt, or captured, and only some 30 escaped with Uluç Ali to Constantinople. Ottoman losses in men are estimated at 20,000 to 30,000 killed and about 3,500 captured. On the Christian side about 7,500 died and 13 galleys were lost. The most consequential single figure freed that day was among the 15,000 Christian galley slaves liberated from the Ottoman rowing benches; less consequentially, a wounded twenty-four-year-old Spanish soldier named Miguel de Cervantes, aboard the galley Marquesa, took two arquebus shots to the chest and a third that permanently crippled his left hand. Cervantes, who would remember Lepanto for the rest of his life as the highest occasion 'that past or present ages have seen or that future ages may hope to see', went on to write Don Quixote."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Battle_of_Lepanto_by_Paolo_Veronese.jpeg/1280px-The_Battle_of_Lepanto_by_Paolo_Veronese.jpeg",
+        "caption": "The Battle of Lepanto (Allegory), Paolo Veronese, c. 1572. Gallerie dell'Accademia, Venice.",
+        "credit": "Paolo Veronese, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Battle_of_Lepanto_by_Paolo_Veronese.jpeg"
+      },
       "body": "The news reached Venice on 19 October and Rome on 21 October. Pope Pius V, the story goes, interrupted a meeting to say that he had had a vision of the victory; he ordered thanksgiving processions and, later, decreed a feast day of Our Lady of Victory, later renamed Our Lady of the Rosary, to be kept every 7 October, on the theory that the League's success came through the rosaries said in Rome that morning. Cities across Catholic Europe erupted in celebration. Painters and poets scrambled to record the battle. Titian, Veronese, Tintoretto, and later El Greco all produced canvases; commemorative medals, tapestries, and sermons multiplied.\n\nStrategically the victory achieved less than its symbolism suggested. Ottoman Grand Vizier Sokollu Mehmed Pasha reportedly told the Venetian envoy Marcantonio Barbaro that in taking Cyprus the Ottomans had cut off an arm from the Venetians, while at Lepanto the League had merely shaved the Ottoman beard, and beards grew back. He was largely right. Under Uluç Ali, promoted to Kapudan Pasha and given the honorific Kilic (Sword), the Ottomans rebuilt a fleet of some 250 galleys in the shipyards of the Golden Horn during the winter of 1571 to 1572. By the summer of 1572 the new fleet was cruising the Aegean again. In 1573 Venice, exhausted and financially spent, signed a separate peace ceding Cyprus formally to the Ottomans and paying an indemnity. The Holy League fell apart.\n\nThe deeper geopolitical impact was more subtle. Ottoman naval expansion into the western Mediterranean, which had seemed unstoppable in the 1560s, was checked; the sultans turned their strategic attention east toward Persia and north-east toward the Habsburg frontier in Hungary. The Habsburg-Ottoman rivalry that had shaped a century of Mediterranean warfare gradually cooled into an armed truce, and both empires increasingly outsourced their sea fighting to corsairs. The great galley battle of Lepanto, in which two hundred oared ships crashed into two hundred more in the classical Mediterranean manner, turned out to be the last of its kind. Within thirty years the sailing warships of northern Europe, the Dutch, English, and later French, would render the Mediterranean galley a museum piece."
     },
     {
@@ -64,7 +78,9 @@
   "figures": [
     {
       "name": "Don John of Austria",
-      "role": "Illegitimate half-brother of Philip II and commander-in-chief of the Holy League fleet at Lepanto"
+      "role": "Illegitimate half-brother of Philip II and commander-in-chief of the Holy League fleet at Lepanto",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Don_Juan_d%27Austria_1.JPG/800px-Don_Juan_d%27Austria_1.JPG",
+      "credit": "attr. Juan Pantoja de la Cruz, Museo del Prado / Public domain"
     },
     {
       "name": "Muezzinzade Ali Pasha",
@@ -76,7 +92,9 @@
     },
     {
       "name": "Pope Pius V",
-      "role": "Dominican pope who assembled the Holy League and instituted the feast of Our Lady of the Rosary"
+      "role": "Dominican pope who assembled the Holy League and instituted the feast of Our Lady of the Rosary",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Pope_Pius_V.jpg",
+      "credit": "Bartolomeo Passarotti / Public domain"
     },
     {
       "name": "Sebastiano Venier",

@@ -19,6 +19,13 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Shang_Bronze_Gong_%28Guang%29%2C_Fuhao_Tomb.jpg",
+        "caption": "A cast-bronze gong (guang) ritual vessel from the tomb of Fu Hao at Anyang, c. 1200 BCE.",
+        "credit": "Gary Todd, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shang_Bronze_Gong_(Guang),_Fuhao_Tomb.jpg"
+      },
       "body": "What can be said with confidence is that in the sixteenth century BCE a distinctive Bronze Age political order consolidated in the middle Yellow River basin. Its material signature is unmistakable. Piece-mould casting, a technique unique to China at this scale, produced ritual vessels of astonishing complexity: tripod ding cauldrons for cooking meat offerings, gui bowls for grain, jue cups for wine, and later the great zun animal-form vessels of the Yin period. The alloy was a hard bronze of copper, tin, and lead, cast in ceramic moulds assembled in sections around a clay core. The largest surviving Shang vessel, the Houmuwu ding (formerly called the Simuwu ding), cast around 1200 BCE for the mother of King Zu Geng, weighs 832 kilograms and is the heaviest single bronze object ever cast anywhere in the ancient world.\n\nShang capitals moved several times, whether from defensive necessity, flooding, factional politics, or dynastic renewal. Tradition names five capitals before Pan Geng, the seventeenth Shang king, moved the court to a new site he called Yin (modern Anyang, in northern Henan) around 1300 BCE. Yin remained the capital for the last nine kings, some 250 years, and it is Yin that the twentieth-century excavations at Xiaotun and the neighbouring cemeteries revealed. The city was undefended, a sprawl of palaces, workshops, and burial grounds along a bend in the Huan River. Twelve enormous royal tombs, cruciform shafts sunk more than ten metres into the loess, were built in the western cemetery at Xibeigang; most had been thoroughly looted long before excavation, but their scale (up to a thousand square metres of tomb pit, each with dozens of human sacrifices) gives some idea of the wealth of the late Shang state.\n\nThe most complete Shang royal burial ever recovered belonged to Lady Fu Hao, consort of King Wu Ding (r. c. 1250 to 1192 BCE) and, remarkably, a general who led armies of up to 13,000 troops in campaigns to the west. Her intact tomb, discovered by the archaeologist Zheng Zhenxiang at Xiaotun in 1976, contained 468 bronze objects (including 210 ritual vessels), 755 jades, nearly 7,000 cowrie shells, and 16 sacrificed human retainers. It is the only unlooted royal Shang tomb ever found.\n\nWriting appears at Yin in mature form. Some 150,000 fragments of oracle bones, mostly turtle plastrons and cattle scapulae, have been recovered. The Shang kings used them to consult the ancestors on almost every conceivable question, from the outcome of a battle to the meaning of a toothache. A specialist diviner would apply a heated point to a prepared groove on the back of the bone, producing a T-shaped crack on the front; the crack was then interpreted, and the question, answer, and often the verified outcome were engraved in short cuneiform-like graphs. Roughly 4,500 distinct characters have been catalogued, of which perhaps a third can be securely read. The script is unquestionably the ancestor of modern Chinese writing, and no plausible parallel or precursor from outside China has ever been identified."
     },
     {
@@ -27,6 +34,13 @@
     },
     {
       "heading": "Legacy",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Ancient_Chinese_Writing_on_Ox_Scapula%2C_Shang_Dynasty_Oracle_Bone%2C_Yinxu.jpg",
+        "caption": "A Shang-dynasty oracle bone: an ox scapula inscribed in early Chinese characters, from Yinxu near modern Anyang.",
+        "credit": "Gary Todd, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancient_Chinese_Writing_on_Ox_Scapula,_Shang_Dynasty_Oracle_Bone,_Yinxu.jpg"
+      },
       "body": "For subsequent Chinese tradition the Shang was always a slightly ambiguous ancestor. On the one hand, the Zhou classics castigated the last Shang king as a moral warning, and Confucius, whose own descent was traced to the Shang, treated Shang ritual with respect while placing the political ideal earlier, in the semi-mythological Xia. On the other hand, the sheer volume and sophistication of Shang bronzes and jades meant that no serious account of Chinese antiquity could dispense with them. Sima Qian's chapter on the Shang, drawing on temple records and possibly on manuscripts that no longer survive, gives a king-list that has been strikingly confirmed, though not in every detail, by the oracle bones.\n\nThe modern recovery of the Shang has been one of the great archaeological projects of the twentieth century. The Academia Sinica campaigns at Anyang from 1928 to 1937, interrupted by the Japanese invasion, established Chinese scientific archaeology as a discipline. Postwar excavations under the People's Republic have added the great Erligang wall at Zhengzhou, the fortified site of Panlongcheng in Hubei, and the extraordinary find at Sanxingdui in Sichuan (roughly contemporary with the late Shang but wholly distinct in style), which revealed that Bronze Age China was more culturally diverse than the traditional dynastic narrative had suggested.\n\nThe legacy of the Shang in modern Chinese culture is above all a legacy of script. Every Chinese character carries a genealogy that can, at least in principle, be traced back to an ancestor incised on a Shang oracle bone. The 800 million people who read Chinese today are participants in a continuous literary tradition older than any other on earth, and its earliest chapter was written on burnt bone in the courtyards of Yin."
     }
   ],
@@ -71,7 +85,9 @@
     },
     {
       "name": "Fu Hao",
-      "role": "Consort of Wu Ding and a Shang military commander, whose intact tomb at Anyang was discovered in 1976"
+      "role": "Consort of Wu Ding and a Shang military commander, whose intact tomb at Anyang was discovered in 1976",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Fu_Hao_Tomb_and_Statue%2C_c._1200_BC%2C_Reign_of_King_Wu_Ding%2C_Shang_Dynasty_%2810197821303%29.jpg/500px-Fu_Hao_Tomb_and_Statue%2C_c._1200_BC%2C_Reign_of_King_Wu_Ding%2C_Shang_Dynasty_%2810197821303%29.jpg",
+      "credit": "Statue at Fu Hao's tomb, Anyang, via Wikimedia Commons"
     },
     {
       "name": "Di Xin (Zhou Xin)",

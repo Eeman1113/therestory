@@ -23,10 +23,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Song_Taizu.jpg",
+        "caption": "Portrait of Emperor Taizu of Song, hanging scroll in ink and colours on silk. National Palace Museum, Taipei.",
+        "credit": "Anonymous, mounted Qing dynasty, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Song_Taizu.jpg"
+      },
       "body": "On the morning of the third day at Chenqiao, a delegation of soldiers burst into Zhao Kuangyin's tent, threw a yellow robe over his shoulders and proclaimed him emperor. The yellow robe was the exclusive dress of the Chinese sovereign; putting it on was, in the language of ritual, the accomplished fact. Zhao, according to the version soon canonised by his own historians, made the customary ritual protests before consenting on strict conditions. He required his officers to swear that on entering Kaifeng they would neither harm the young emperor and his family nor sack the city; that they would obey his orders like their own limbs; and that any officer breaking these terms would be executed with all his household. On these terms the army marched south.\n\nKaifeng opened its gates without a fight on the morning of 4 February 960. The palace commander Han Tong, one of the few officials disposed to resist, was killed almost immediately in the streets. The Zhou chief minister Fan Zhi acceded to the change of dynasty on the promise of no reprisals. The child emperor Chai Zongxun was demoted to the rank of Prince of Zheng and, unusually for such transitions, allowed to live in comfortable custody. Zhao Kuangyin performed the ritual sacrifice at the ancestral altars on 5 February and took the throne. He chose Song as his dynastic title, from the ancient name of his own commandery, and Jianlong, meaning Establishment of Splendour, as his reign era. History would know him as Emperor Taizu, Grand Progenitor of Song.\n\nAlmost his first act was to secure the loyalty of the very military network that had raised him. In an event that entered Chinese folklore as \"releasing military power over cups of wine\", he invited his old comrades, above all Shi Shouxin, Wang Shenqi and Gao Huaide, to a private banquet in 961. According to the Continued Zizhi Tongjian and later chronicles, he thanked them tearfully, confessed he had not slept easy since accepting the throne, and asked them how he could rest when any of them might in turn find themselves draped in a yellow robe by their own soldiers. The generals took the point. They petitioned for retirement, received generous estates, wealthy marriages between their children and the imperial family, and honorific titles emptied of real authority. The Palace Corps was reorganised under officers of lower rank rotated through frequent transfers, ensuring no single figure could again build a personal army.\n\nWith his rear secure Taizu turned to reunification. The independent kingdoms of the south, wealthy but militarily weak, were absorbed in a series of well-planned campaigns. Jingnan and Hunan fell in 963, Later Shu in Sichuan in 965, Southern Han in Guangdong in 971, and the great state of Southern Tang, ruled from Nanjing by the poet-king Li Yu, in 976 after a long siege. Only Wu-Yue was allowed to accede peacefully in 978, after Taizu's death, and only the Khitan Liao in the north and the Tangut Xi Xia in the north-west remained beyond Song control. Taizu himself died suddenly on 14 November 976, aged forty-nine, in circumstances that later gossip attributed to his younger brother Zhao Kuangyi, who succeeded him as Emperor Taizong."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/China_-_Song_Dynasty-en.svg/1280px-China_-_Song_Dynasty-en.svg.png",
+        "caption": "The Song Empire at its peak in the eleventh century, flanked by Liao in the north and Xi Xia in the north-west.",
+        "credit": "Ian Kiu, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg"
+      },
       "body": "The political shape of Song China took form quickly. In place of the semi-autonomous jiedushi that had wrecked the late Tang, Taizu installed circuit intendants and prefects appointed and rotated by the central chancellery. Local military forces were reduced to weak garrisons; the strategic reserve was concentrated in the Palace Corps around Kaifeng. To pay this professional army the government relied on a highly monetised economy, with a state-issued copper coinage, salt and iron monopolies, and by the eleventh century the world's first paper money, the jiaozi, first issued in Sichuan.\n\nCivil authority took clear precedence over the military. Taizu insisted that the highest posts of state go to scholars who had passed the imperial examinations. Under his brother and successor Taizong the number of examination graduates increased sharply, and by the end of the tenth century the exams had become the pre-eminent path to power, drawing thousands of candidates from the gentry of every province. The Song emerged over the next century as the most systematically bureaucratic and educated state in the world. Its senior officials, from the reformist chancellors Fan Zhongyan and Wang Anshi to the poet-statesman Su Shi, were public intellectuals as much as administrators, and Confucian philosophy would flower under their patronage in the neo-Confucian synthesis of Zhu Xi.\n\nEconomically the Song oversaw an unprecedented expansion. The wet-rice agriculture of the Yangtze basin, using new early-ripening Champa strains introduced from Vietnam under Taizong, doubled the empire's food supply and shifted population and wealth southward. Cities such as Kaifeng, and later Hangzhou after the loss of the north in 1127, grew to a size not seen anywhere in the world. Overseas trade with Southeast Asia, India and the Persian Gulf boomed; Chinese ships appeared regularly in Sri Lankan and East African ports. The state minted more coin annually than any previous or subsequent Chinese dynasty until the twentieth century."
     },
     {
@@ -59,7 +73,9 @@
   "figures": [
     {
       "name": "Zhao Kuangyin (Emperor Taizu of Song)",
-      "role": "Founder of the Song dynasty; commander of the Palace Corps under Later Zhou; proclaimed emperor at Chenqiao in February 960; reigned until 976"
+      "role": "Founder of the Song dynasty; commander of the Palace Corps under Later Zhou; proclaimed emperor at Chenqiao in February 960; reigned until 976",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Song_Taizu.jpg/500px-Song_Taizu.jpg",
+      "credit": "Anonymous portrait, National Palace Museum, Taipei, via Wikimedia Commons"
     },
     {
       "name": "Chai Zongxun",
@@ -67,7 +83,9 @@
     },
     {
       "name": "Zhao Kuangyi (Emperor Taizong of Song)",
-      "role": "Younger brother of Taizu; succeeded him as emperor in 976 and completed the reunification of most of Han China"
+      "role": "Younger brother of Taizu; succeeded him as emperor in 976 and completed the reunification of most of Han China",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Taizong_of_Song.jpg/500px-Taizong_of_Song.jpg",
+      "credit": "Anonymous portrait, National Palace Museum, Taipei, via Wikimedia Commons"
     },
     {
       "name": "Shi Shouxin",

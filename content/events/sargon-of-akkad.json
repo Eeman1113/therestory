@@ -19,10 +19,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Sargon_of_Akkad_%28frontal%29.jpg",
+        "caption": "The Mask of Sargon, life-size copper head from Nineveh, sometimes identified as Sargon and sometimes as Naram-Sin.",
+        "credit": "Hans Ollermann, via Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sargon_of_Akkad_(frontal).jpg"
+      },
       "body": "The chronology follows what is called the Middle Chronology, which places Sargon's reign at 2334 to 2279 BCE. Some scholars prefer a Short Chronology shifting these dates roughly a century later, and a Long Chronology placing them earlier; nothing in the argument bears on the substance.\n\nSargon's first move was to overthrow Ur-Zababa in Kish, whether by coup, assassination, or opportunism during a Sumerian invasion is unclear. He then marched south. Somewhere on the plains he confronted the army of Lugalzagesi of Uruk, defeated it, and captured the king, whom he led in a neck-stock to Nippur and dedicated as a votive offering at the temple of Enlil. Sargon's own inscriptions, preserved in later copies made by scribes in the schools of Nippur and Ur, list the cities he took: Uruk, Ur, E-Ninmar, and Umma among them, with fifty ensis defeated and their walls torn down. He then, according to his inscriptions, washed his weapons in the Persian Gulf, a formulaic way of saying that his authority reached from the mountains to the sea.\n\nHaving unified Sumer he turned outward. His annals claim campaigns into Elam in the southeast (modern Khuzestan in Iran), where he sacked Susa and other cities and installed governors; northward up the Tigris into Assyria; westward across the Jazira to the Mediterranean, where he is said to have reached the Cedar Forest of Lebanon and the Silver Mountains of the Taurus; and even, more speculatively, into Anatolia to protect Akkadian merchants at the trading colony of Purushanda. He boasted of 34 victorious battles, of ships from Meluhha (the Indus), Magan (Oman), and Dilmun (Bahrain) docking at his capital, and of ruling a domain that stretched, in the formulaic phrase, 'from the Lower Sea to the Upper Sea', from the Persian Gulf to the Mediterranean.\n\nThe capital itself, called Agade or Akkad, was Sargon's own foundation, probably somewhere on the Euphrates north of Nippur. Its precise location has never been identified; despite generations of searching, no excavation has yet produced a site that all Assyriologists agree is Agade. What is certain is that Sargon staffed his new administration with Akkadian-speaking officials and imposed Akkadian, written in cuneiform borrowed from the Sumerians, as an administrative language across the empire. To bind the still-restive Sumerian south to the new order he appointed his daughter Enheduanna as high priestess (en) of the moon-god Nanna at Ur, an office of enormous political and religious weight. The hymns she composed to Inanna, preserved in Old Babylonian scribal copies, make Enheduanna the earliest author, in any language, whose name we know."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Stele_of_Naram-Sin_of_Akkad.jpg/500px-Stele_of_Naram-Sin_of_Akkad.jpg",
+        "caption": "The Victory Stele of Naram-Sin, Sargon's grandson, wearing the horned crown of divinity. Louvre, Paris.",
+        "credit": "Rama, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0 FR",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stele_of_Naram-Sin_of_Akkad.jpg"
+      },
       "body": "Sargon reigned, if the Sumerian King List can be believed, for 56 years. His last years were marked by revolts across the empire; one text has him besieged in Agade while 'all the lands revolted against him', though he crushed the rebellion. He was succeeded by his son Rimush, who put down further Sumerian revolts with recorded casualty counts running into the tens of thousands, then by another son Manishtushu, and then by Sargon's grandson Naram-Sin, under whom the empire reached its greatest extent. Naram-Sin took the previously unthinkable step of declaring himself a god in his own lifetime, prefixing his name with the divine determinative and depicting himself on the Victory Stele of Naram-Sin (now in the Louvre) wearing the horned crown of divinity.\n\nThe Akkadian Empire lasted, in the strict sense, about a century and a half, from Sargon's accession around 2334 to the collapse under Naram-Sin's son Shar-kali-sharri around 2154 BCE. Its collapse was blamed by later Sumerian tradition, in the famous poem 'The Curse of Agade', on Naram-Sin's sacrilegious sack of the temple of Enlil at Nippur, which supposedly brought down the barbarian Gutians from the Zagros mountains as divine punishment. Modern climate proxies, including the well-known 4.2 kiloyear event of severe drought around 2200 BCE, suggest that environmental collapse in the Habur plains of northern Mesopotamia contributed to the empire's fall. Excavations by Harvey Weiss at Tell Leilan in Syria have documented the sudden abandonment of northern agricultural centres during this century.\n\nAfter a brief and disputed Gutian interlude, Sumerian rule returned under the Third Dynasty of Ur, but the model Sargon had established, of centralised bureaucratic empire administered from a single capital in Akkadian cuneiform, was never truly abandoned. It was inherited by the Old Assyrian and Old Babylonian kingdoms, then by the great Middle and Neo-Assyrian empires of Ashurnasirpal, Sennacherib, and Ashurbanipal, then by the Neo-Babylonian empire of Nebuchadnezzar, and finally by the Achaemenid Persians. In this sense every subsequent Near Eastern empire, and by extension every empire in the western Eurasian tradition, was a distant descendant of what Sargon assembled at Agade."
     },
     {
@@ -59,11 +73,15 @@
   "figures": [
     {
       "name": "Sargon of Akkad",
-      "role": "Founder of the Akkadian Empire; reigned c. 2334 to 2279 BCE"
+      "role": "Founder of the Akkadian Empire; reigned c. 2334 to 2279 BCE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Sargon_of_Akkad_%28frontal%29.jpg",
+      "credit": "Hans Ollermann, via Wikimedia Commons"
     },
     {
       "name": "Enheduanna",
-      "role": "Daughter of Sargon and high priestess of Nanna at Ur; author of the earliest hymns preserved under a named author's name"
+      "role": "Daughter of Sargon and high priestess of Nanna at Ur; author of the earliest hymns preserved under a named author's name",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Enheduanna%2C_daughter_of_Sargon_of_Akkad.jpg/500px-Enheduanna%2C_daughter_of_Sargon_of_Akkad.jpg",
+      "credit": "Disc of Enheduanna, University of Pennsylvania Museum, via Wikimedia Commons"
     },
     {
       "name": "Lugalzagesi",
@@ -71,7 +89,9 @@
     },
     {
       "name": "Naram-Sin",
-      "role": "Grandson of Sargon and greatest king of the Akkadian Empire; first Mesopotamian ruler to claim divinity in his own lifetime"
+      "role": "Grandson of Sargon and greatest king of the Akkadian Empire; first Mesopotamian ruler to claim divinity in his own lifetime",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Stele_of_Naram-Sin_of_Akkad.jpg/500px-Stele_of_Naram-Sin_of_Akkad.jpg",
+      "credit": "Victory Stele of Naram-Sin, Louvre, via Wikimedia Commons"
     },
     {
       "name": "Ur-Zababa",

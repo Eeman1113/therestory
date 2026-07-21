@@ -19,11 +19,25 @@
     },
     {
       "heading": "What happened",
-      "body": "The conquests came in swift succession: Han fell in 230 BCE, Zhao in 228, Wei in 225, the vast southern state of Chu in 223, and Yan in 226 and 222. In 221 BCE the eastern kingdom of Qi surrendered without a battle. For the first time in recorded history the Yellow and Yangtze basins were under a single ruler.\n\nKing Zheng promptly styled himself Qin Shi Huangdi, First August Emperor, a new title deliberately grander than that of any previous king. He and Li Si moved to make the unification irreversible. Aristocratic fiefs were abolished and the empire divided into thirty-six commanderies (later expanded), each run by centrally appointed civil and military officers. Weights, measures, and the diameter of chariot axles were standardised. The many regional scripts were reduced to a single small seal form. A common bronze coin, the round banliang with its square hole, replaced local currencies. Sections of northern walls built by the old states were connected and extended to guard the frontier against the Xiongnu, creating the ancestor of the Great Wall."
+      "body": "The conquests came in swift succession: Han fell in 230 BCE, Zhao in 228, Wei in 225, the vast southern state of Chu in 223, and Yan in 226 and 222. In 221 BCE the eastern kingdom of Qi surrendered without a battle. For the first time in recorded history the Yellow and Yangtze basins were under a single ruler.\n\nKing Zheng promptly styled himself Qin Shi Huangdi, First August Emperor, a new title deliberately grander than that of any previous king. He and Li Si moved to make the unification irreversible. Aristocratic fiefs were abolished and the empire divided into thirty-six commanderies (later expanded), each run by centrally appointed civil and military officers. Weights, measures, and the diameter of chariot axles were standardised. The many regional scripts were reduced to a single small seal form. A common bronze coin, the round banliang with its square hole, replaced local currencies. Sections of northern walls built by the old states were connected and extended to guard the frontier against the Xiongnu, creating the ancestor of the Great Wall.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qin_dynasty_territory.svg/1280px-Qin_dynasty_territory.svg.png",
+        "caption": "The extent of the Qin empire at its unification in 221 BCE, spanning the Yellow and Yangtze basins.",
+        "credit": "Philg88, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg"
+      }
     },
     {
       "heading": "Aftermath & consequences",
-      "body": "The Qin dynasty itself was short-lived. Qin Shi Huang died on tour in 210 BCE and his heirs proved incapable of holding the state together; peasant revolts and elite defections toppled the dynasty by 206 BCE, after barely fifteen years. But the shape of the empire endured. The Han dynasty, which emerged from the wars of succession, kept the commandery system, the standardised script, the coinage, the road network, and the ideal of a single emperor ruling All Under Heaven.\n\nThat template shaped every subsequent Chinese dynasty and, through them, the political grammar of East Asia. The vast tomb complex Qin Shi Huang built for himself outside modern Xi'an, guarded by more than six thousand life-sized terracotta soldiers rediscovered in 1974, is the most familiar physical trace of an empire that lasted only a generation but set the mould for two millennia."
+      "body": "The Qin dynasty itself was short-lived. Qin Shi Huang died on tour in 210 BCE and his heirs proved incapable of holding the state together; peasant revolts and elite defections toppled the dynasty by 206 BCE, after barely fifteen years. But the shape of the empire endured. The Han dynasty, which emerged from the wars of succession, kept the commandery system, the standardised script, the coinage, the road network, and the ideal of a single emperor ruling All Under Heaven.\n\nThat template shaped every subsequent Chinese dynasty and, through them, the political grammar of East Asia. The vast tomb complex Qin Shi Huang built for himself outside modern Xi'an, guarded by more than six thousand life-sized terracotta soldiers rediscovered in 1974, is the most familiar physical trace of an empire that lasted only a generation but set the mould for two millennia.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/51714-Terracota-Army.jpg/1280px-51714-Terracota-Army.jpg",
+        "caption": "The Terracotta Army guarding Qin Shi Huang's mausoleum outside modern Xi'an, rediscovered in 1974.",
+        "credit": "Robin Chen, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:51714-Terracota-Army.jpg"
+      }
     }
   ],
   "worldContext": [
@@ -86,7 +100,9 @@
   "figures": [
     {
       "name": "Qin Shi Huang",
-      "role": "Born Ying Zheng in 259 BCE; king of Qin from 246 BCE, First Emperor of unified China from 221 BCE until his death in 210 BCE"
+      "role": "Born Ying Zheng in 259 BCE; king of Qin from 246 BCE, First Emperor of unified China from 221 BCE until his death in 210 BCE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/QinShiHuang19century.jpg/500px-QinShiHuang19century.jpg",
+      "credit": "Nineteenth-century Chinese portrait, via Wikimedia Commons"
     },
     {
       "name": "Li Si",
@@ -94,7 +110,9 @@
     },
     {
       "name": "Shang Yang",
-      "role": "Fourth-century BCE Legalist reformer whose earlier restructuring of the Qin state made the later conquests possible"
+      "role": "Fourth-century BCE Legalist reformer whose earlier restructuring of the Qin state made the later conquests possible",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Statue_of_Shang_Yang.jpg/500px-Statue_of_Shang_Yang.jpg",
+      "credit": "Modern statue, via Wikimedia Commons"
     }
   ],
   "images": [

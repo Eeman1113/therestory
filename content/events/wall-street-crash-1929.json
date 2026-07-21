@@ -24,14 +24,35 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Crowd_outside_nyse.jpg",
+        "caption": "Crowds gathering on Wall Street outside the New York Stock Exchange during the panic of late October 1929.",
+        "credit": "US Social Security Administration History Archive, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg"
+      },
       "body": "Tuesday 29 October 1929 opened with sell orders that had built up over the weekend and Monday's rout. Investors who had bought on margin were called by their brokers to top up their collateral; when they could not, their positions were liquidated at whatever price the market offered. Blue-chip industrials, utilities, and railroad stocks alike were dumped. The ticker tape ran hours behind the actual trades, so brokers and their customers had no idea in real time what prices they were paying or receiving. Some 16.4 million shares changed hands in a session lasting only six hours, a volume record that would stand for nearly forty years. The Dow closed at 230.07, down about 12 percent from the previous day and roughly 40 percent below its September peak.\n\nThe bankers' consortium that had propped up the market on Thursday did not repeat its intervention. Rumours of suicides, some real, most exaggerated, circulated. The next day the Federal Reserve Bank of New York, without consulting the Federal Reserve Board in Washington, injected liquidity into the money market to prevent a chain of broker failures. The market briefly rallied through mid-November and then resumed its long decline. By the summer of 1932 the Dow would fall to about 41, roughly a tenth of its September 1929 peak.\n\nThe crash was tangled with a broader banking crisis. American banks had lent heavily against securities and against loans to Europe. Farm bank failures, chronic through the 1920s, spread to the cities in the winter of 1930 with the collapse of the Bank of United States in New York in December 1930, a large ethnic bank with several hundred thousand depositors. In Europe the sudden pull-back of American short-term lending, coupled with the strains of German reparations and Austrian sovereign debt, produced its own banking cascade in the spring of 1931, when the Austrian Creditanstalt failed in May and Germany's Danat-Bank in July. In September 1931 Britain abandoned the gold standard; a series of countries, including the United States in April 1933, would follow. The global system of fixed exchange rates and open trade that had underpinned prewar and 1920s prosperity broke apart."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg",
+        "caption": "Unemployed men queued outside a Chicago soup kitchen in February 1931.",
+        "credit": "US National Archives and Records Administration, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone,_02-1931_-_NARA_-_541927.jpg"
+      },
       "body": "The economic consequences unfolded over four years. In the United States real gross national product fell by roughly a third between 1929 and 1933; industrial production nearly halved; roughly nine thousand banks suspended operations, wiping out the savings of millions; and by early 1933 unemployment reached between 24 and 25 percent of the labour force, perhaps thirteen million people. Herbert Hoover's response, higher tariffs under the Smoot-Hawley Act of June 1930, a Reconstruction Finance Corporation to lend to banks and railways, and voluntary agreements to maintain wages, could not stem the slide. In November 1932 he was defeated in a landslide by the Democratic governor of New York, Franklin D. Roosevelt.\n\nRoosevelt took office on 4 March 1933 in the middle of a nationwide bank run. His first hundred days of legislation produced a national bank holiday, federal deposit insurance, farm price supports, industrial codes under the National Recovery Administration, huge public works under the Public Works Administration, and, later in the decade, Social Security, the Wagner Act on labour organising, and the Securities and Exchange Commission to regulate the markets. The New Deal did not by itself end the depression, but it stabilised the banking system and reshaped the American state.\n\nAcross the Atlantic, the collapse was politically explosive. Germany, dependent since 1924 on rolled-over American loans, saw industrial output halve and unemployment rise past six million by 1932. Elections that year turned the Nazi Party into the largest in the Reichstag; on 30 January 1933 President Hindenburg appointed Adolf Hitler chancellor. Britain, France, and much of Latin America turned to protection and imperial trade blocs; the world trading system fragmented into currency and tariff zones. Japan's civilian government fell under military pressure and the country invaded Manchuria in September 1931. The League of Nations, which had no economic instruments to speak of, could do little. Every road out of the depression tended to lead somewhere in the coming war."
     },
     {
       "heading": "Legacy",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Lange-MigrantMother02.jpg",
+        "caption": "Dorothea Lange's 'Migrant Mother' (1936), one of the defining images of the Great Depression's human cost.",
+        "credit": "Dorothea Lange, US Farm Security Administration, via Wikimedia Commons",
+        "license": "Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg"
+      },
       "body": "Black Tuesday became the standard emblem of financial catastrophe, invoked whenever markets crashed thereafter, from 19 October 1987 to the autumn of 2008. Its most enduring institutional descendants sit inside the US regulatory system: the Securities Act of 1933 and Securities Exchange Act of 1934 imposed disclosure requirements on public companies and created the Securities and Exchange Commission; the Glass-Steagall Act of 1933 separated commercial from investment banking (partially repealed in 1999); and the Federal Deposit Insurance Corporation, born the same year, still insures American bank deposits.\n\nEconomically the crash reshaped the dominant story of what governments owed their citizens. John Maynard Keynes's General Theory of Employment, Interest and Money, published in 1936, argued that governments could and should manage aggregate demand through fiscal and monetary policy; the intellectual framework of macroeconomics as taught in universities took shape in explicit dialogue with the depression. Milton Friedman and Anna Schwartz later argued in A Monetary History of the United States (1963) that the Federal Reserve's failure to prevent a collapse of the money supply had converted a bad recession into the Great Depression, a case adopted by many central bankers, including Ben Bernanke in 2008.\n\nCulturally the depression produced Steinbeck's Grapes of Wrath, Dorothea Lange's migrant-mother photographs, and the Dust Bowl documentary tradition; politically it inspired welfare states from Sweden to New Zealand and helped shape the postwar Bretton Woods system of managed exchange rates, the International Monetary Fund, the World Bank, and the GATT. The lesson many governments took away, that laissez-faire finance could produce human misery on a scale democracies could not tolerate, animated economic policy for a generation. Every deregulatory wave and every new financial crisis since has been fought partly on the ground first opened up by the events of October 1929."
     }
   ],
@@ -64,23 +85,33 @@
   "figures": [
     {
       "name": "Herbert Hoover",
-      "role": "US president from March 1929, whose voluntarist response to the crash proved politically fatal"
+      "role": "US president from March 1929, whose voluntarist response to the crash proved politically fatal",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/President_Hoover_portrait.jpg/500px-President_Hoover_portrait.jpg",
+      "credit": "Official White House portrait, via Wikimedia Commons"
     },
     {
       "name": "Franklin D. Roosevelt",
-      "role": "Democratic governor of New York who defeated Hoover in November 1932 and launched the New Deal"
+      "role": "Democratic governor of New York who defeated Hoover in November 1932 and launched the New Deal",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg/500px-FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg",
+      "credit": "Leon Perskie, FDR Presidential Library, via Wikimedia Commons"
     },
     {
       "name": "Thomas W. Lamont",
-      "role": "J. P. Morgan partner who organised the bankers' consortium during the panic of 24 October 1929"
+      "role": "J. P. Morgan partner who organised the bankers' consortium during the panic of 24 October 1929",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Thomas_William_Lamont%2C_Jr._in_1918.jpg/500px-Thomas_William_Lamont%2C_Jr._in_1918.jpg",
+      "credit": "Photograph 1918, via Wikimedia Commons"
     },
     {
       "name": "Charles E. Mitchell",
-      "role": "President of the National City Bank, prominent figure in the 1920s bull market and later senate investigation"
+      "role": "President of the National City Bank, prominent figure in the 1920s bull market and later senate investigation",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Charles_Edwin_Mitchell.png/500px-Charles_Edwin_Mitchell.png",
+      "credit": "Photograph, via Wikimedia Commons"
     },
     {
       "name": "John Maynard Keynes",
-      "role": "British economist whose response to the depression produced the General Theory of Employment, Interest and Money (1936)"
+      "role": "British economist whose response to the depression produced the General Theory of Employment, Interest and Money (1936)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/John_Maynard_Keynes_%281929%29.jpg/500px-John_Maynard_Keynes_%281929%29.jpg",
+      "credit": "Walter Stoneman, 1929, via Wikimedia Commons"
     }
   ],
   "images": [

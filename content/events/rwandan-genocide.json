@@ -28,6 +28,13 @@
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Nyamata_Memorial_Site_12.jpg",
+        "caption": "Mass graves at the Nyamata Genocide Memorial in Rwanda, one of the sites where thousands of Tutsi civilians were killed in April 1994.",
+        "credit": "Fanny Schertzer (Inisheer), via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nyamata_Memorial_Site_12.jpg"
+      },
       "body": "The scale of what had been done was, and remains, difficult to grasp. Estimates of the dead range from about 500,000 to over 800,000, with a widely cited figure of some 800,000; the government of Rwanda has since put the number at just over one million. The great majority were Tutsi; Hutu who opposed the killing or were suspected of doing so were also murdered in large numbers. The demographic destruction of a small country, with a pre-genocide population of around eight million, was almost total in some communes.\n\nAs the RPF advanced, an estimated two million Hutu, ordinary civilians mixed with genocidaires, fled westward into eastern Zaire, where cholera killed tens of thousands in refugee camps around Goma in July 1994. The camps became bases for the former regime's army and militia, whose cross-border raids destabilised the Great Lakes region for a decade. In 1996-1997 Rwanda and Uganda backed a Zairean rebellion led by Laurent-Desire Kabila that overthrew Mobutu Sese Seko, renaming the country the Democratic Republic of the Congo. The subsequent Congo Wars, of 1996-1997 and 1998-2003, drew in nine African armies and cost, by conservative estimates, several million lives.\n\nJudicial reckoning was extensive but incomplete. The UN Security Council established the International Criminal Tribunal for Rwanda (ICTR) in Arusha, Tanzania, on 8 November 1994. Over more than two decades it indicted 93 people, convicting 62, including former prime minister Jean Kambanda, who pleaded guilty in 1998 in the first such plea by a former head of government, and Colonel Bagosora, sentenced to life imprisonment in 2008. Inside Rwanda, some two million cases were processed through community-based gacaca courts between 2005 and 2012, delivering imperfect but rapid accountability.\n\nInternationally, the genocide became a byword for failure. President Bill Clinton, on a visit to Kigali in March 1998, described the failure to act as 'the deepest regret of my presidency'. UN Secretary-General Kofi Annan, who as head of peacekeeping had received Dallaire's warning cables, later commissioned an independent inquiry that concluded the UN had failed the Rwandan people. The Belgian and French governments issued qualified apologies; France's role, in particular, remained bitterly contested until a 2021 French historical commission report acknowledged 'serious and overwhelming responsibilities' short of complicity."
     },
     {
@@ -60,7 +67,9 @@
   "figures": [
     {
       "name": "Juvenal Habyarimana",
-      "role": "President of Rwanda 1973-1994; assassinated in a plane shootdown on 6 April 1994"
+      "role": "President of Rwanda 1973-1994; assassinated in a plane shootdown on 6 April 1994",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Juv%C3%A9nal_Habyarimana_%281980%29.jpg/500px-Juv%C3%A9nal_Habyarimana_%281980%29.jpg",
+      "credit": "Photograph 1980, via Wikimedia Commons"
     },
     {
       "name": "Theoneste Bagosora",
@@ -68,11 +77,15 @@
     },
     {
       "name": "Paul Kagame",
-      "role": "Commander of the Rwandan Patriotic Front; halted the genocide, later president of Rwanda"
+      "role": "Commander of the Rwandan Patriotic Front; halted the genocide, later president of Rwanda",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Paul_Kagame_2024_%28cropped%29.jpg/500px-Paul_Kagame_2024_%28cropped%29.jpg",
+      "credit": "Village de la Francophonie, 2024, via Wikimedia Commons"
     },
     {
       "name": "Romeo Dallaire",
-      "role": "Canadian lieutenant-general commanding UNAMIR; his warnings before the genocide were ignored"
+      "role": "Canadian lieutenant-general commanding UNAMIR; his warnings before the genocide were ignored",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Romeo_Dallaire_2025%28cropped%29.jpg/500px-Romeo_Dallaire_2025%28cropped%29.jpg",
+      "credit": "Photograph 2025, via Wikimedia Commons"
     },
     {
       "name": "Agathe Uwilingiyimana",

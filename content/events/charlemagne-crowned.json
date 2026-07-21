@@ -24,10 +24,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Coronation_of_Charlemagne_by_Pope_Leo_III.jpg",
+        "caption": "The Coronation of Charlemagne, Vatican fresco after Raphael, c. 1516-17.",
+        "credit": "Raphael and workshop, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coronation_of_Charlemagne_by_Pope_Leo_III.jpg"
+      },
       "body": "The Mass began at dawn in Old St Peter's, the fourth-century basilica raised by Constantine over the tomb of the apostle. Charles, in his early fifties, wore Roman patrician dress at his own preference and knelt before the confessio of St Peter to pray. The pope's contemporary biographer, in the Liber Pontificalis, records what happened next in words that are still the earliest written account: \"After these things, on the day of the Nativity of our Lord Jesus Christ, all of them being assembled in the basilica of the blessed apostle Peter, the venerable and salutary pontiff, with his own hands, crowned him with a most precious crown. Then all the faithful Romans, seeing what great defence and love he bore towards the holy Roman church and its Vicar, at the direction of God and of the blessed Peter, key-bearer of the kingdom of heaven, cried with one voice: To Charles, the most pious Augustus, crowned by God, the great and peaceful Emperor of the Romans, life and victory!\" The pope then, according to the Frankish Royal Annals, prostrated himself before the newly crowned emperor in the manner of ancient imperial protocol.\n\nCharles's own biographer Einhard, writing at Aachen a generation later, added a famous complication. According to Einhard's Vita Karoli Magni, Charles later told friends that he would never have entered the church that day had he known what Leo intended. Modern scholars have divided sharply on this claim. Some, following Louis Halphen and Peter Classen, take it as a genuine expression of the emperor's political embarrassment: the coronation might implicitly assert papal power to make and unmake emperors, and it certainly complicated relations with Constantinople. Others, notably Roger Collins, argue that Einhard's disclaimer is a literary topos of humility, and that Charles and Leo had planned the ceremony together, with the pope taking the initiative to shield his royal patron from the charge of usurpation.\n\nWhatever the truth about surprise, no one at the time was in doubt about the substance. Charles was now, in his own chancery's title of 1 January 801, \"Charles, most serene Augustus, crowned by God, great and peace-bringing emperor, governing the Roman empire, and by God's mercy king of the Franks and Lombards\". Coins from Aachen soon bore the imperial title. Ambassadors were dispatched to Constantinople, where the news was received with astonishment and offence: Byzantine officials referred to Charles thereafter with pointed courtesy as \"basileus of the Franks,\" not of the Romans. It would take twelve years, a series of embassies, and the deposition of Irene in 802, before the Byzantine emperor Michael I in 812 was willing, in exchange for the return of Venice and parts of Dalmatia, to acknowledge Charles as an emperor, though still not as emperor of the Romans."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Aix_dom_int_vue_cote.jpg/1280px-Aix_dom_int_vue_cote.jpg",
+        "caption": "Interior of the Palatine Chapel at Aachen, Charlemagne's imperial capital, modelled on San Vitale in Ravenna.",
+        "credit": "Velvet, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aix_dom_int_vue_cote.jpg"
+      },
       "body": "Charles's own reaction was to work hard to make the title mean something. He continued to reside not in Rome but at Aachen, the frontier villa in the Rhineland he had transformed into a Roman-styled capital with a great octagonal palatine chapel modelled on San Vitale in Ravenna. There he gathered a court of scholars, most famously the Northumbrian Alcuin of York, the Lombard grammarian Paul the Deacon and the Visigothic bishop Theodulf of Orléans, and set in motion what modern historians call the Carolingian Renaissance. A standardised liturgy, a corrected Vulgate Bible, a new script known as Carolingian minuscule, and copies of ancient Latin authors that survive today only because Carolingian monasteries recopied them are the enduring intellectual legacy of those years.\n\nAdministratively, Charlemagne divided his empire into some three hundred counties, each held by a count answerable to travelling inspectors called missi dominici. General assemblies met yearly to promulgate the capitularies through which he legislated. In the church, monastic and cathedral schools were reformed to produce a literate clergy capable of preaching in the vernacular. The Ordinatio Imperii of 817, issued by his son Louis the Pious, tried to fix a stable imperial succession, but the treaty of Verdun of 843, dividing the empire among the three surviving grandsons Lothair, Louis the German and Charles the Bald, effectively ended Carolingian imperial unity.\n\nThe imperial idea itself, however, proved much more durable than the Frankish state. When the Saxon king Otto I was crowned emperor by Pope John XII in 962, he explicitly presented himself as heir to Charlemagne, and the polity that emerged, the Holy Roman Empire of the German Nation, would last until 1806. Successive coronations of German kings in Rome, of the last, Charles V, in 1530 at Bologna by Clement VII, all traced their theatre back to 25 December 800. The papacy's role in that first coronation likewise anchored centuries of debate over whether the pope had the power to translate the empire from one people to another, a claim developed by canonists in the twelfth and thirteenth centuries and bitterly resisted by German emperors from Barbarossa to Frederick II."
     },
     {
@@ -95,7 +109,9 @@
   "figures": [
     {
       "name": "Charlemagne",
-      "role": "King of the Franks from 768 and of the Lombards from 774; first western emperor since 476, crowned in Rome on 25 December 800; died 814"
+      "role": "King of the Franks from 768 and of the Lombards from 774; first western emperor since 476, crowned in Rome on 25 December 800; died 814",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bust_of_Charlemagne.png/800px-Bust_of_Charlemagne.png",
+      "credit": "Reliquary bust c.1350, Aachen Cathedral Treasury / CC BY-SA 4.0"
     },
     {
       "name": "Pope Leo III",

@@ -24,10 +24,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tahrir_Square_during_8_February_2011.jpg/1280px-Tahrir_Square_during_8_February_2011.jpg",
+        "caption": "Protesters in Tahrir Square, Cairo, 8 February 2011, during the 18-day Egyptian revolution.",
+        "credit": "Mona, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tahrir_Square_during_8_February_2011.jpg"
+      },
       "body": "Bouazizi's self-immolation on 17 December 2010 was, in itself, not unusual: Tunisia had seen several such acts of protest in preceding years. What followed was. Family, friends, and other unemployed young men gathered outside the Sidi Bouzid governorate on 18 December; police attacked the crowd; a lawyer filmed the confrontation on his mobile phone and uploaded it to Facebook, whence it was picked up by Al Jazeera Mubasher and broadcast across the region. Within days protests had spread to nearby towns, Menzel Bouzaiene, where a young protester was shot dead on 24 December, Regueb, Kasserine, and Thala.\n\nAs demonstrations reached the coastal cities, the Ben Ali regime alternated between concession and repression. On 28 December the president visited Bouazizi in hospital, a photograph of the encounter distributed by state media. On 4 January 2011 Bouazizi died of his burns. His funeral drew thousands. Trade unions, especially the powerful Union Generale Tunisienne du Travail (UGTT), joined the protests. On 12 January the army chief of staff, General Rachid Ammar, reportedly refused Ben Ali's order to fire on demonstrators in central Tunis. On 13 January Ben Ali announced he would not seek re-election in 2014; on 14 January, as tens of thousands gathered on Habib Bourguiba Avenue, he and his family flew to Jeddah, Saudi Arabia. Twenty-eight days after Bouazizi's self-immolation, the first Arab head of state had been forced from power by popular protest.\n\nThe example galvanised the region. On 25 January 2011, chosen deliberately as Egyptian 'Police Day', mass protests filled Tahrir Square in Cairo. Eighteen days of demonstrations, met by regime-linked thugs on camels and by internet blackouts, ended on 11 February when Vice President Omar Suleiman announced on state television that Hosni Mubarak had resigned and handed power to the military high command. In Bahrain, a Shia-majority country ruled by the Sunni Al Khalifa dynasty, protests centred on Pearl Roundabout in Manama beginning 14 February were crushed a month later after Saudi and Emirati troops crossed the King Fahd Causeway.\n\nIn Libya, protests beginning in Benghazi on 15-17 February 2011 escalated within days into an armed uprising. Gaddafi's forces threatened to reconquer Benghazi in mid-March; on 17 March the UN Security Council passed Resolution 1973 authorising 'all necessary measures' to protect civilians, and a NATO-led air campaign began on 19 March. After seven months of civil war Tripoli fell to rebel forces on 23 August. On 20 October 2011 Gaddafi was captured in a drainage culvert near his hometown of Sirte and killed by fighters. In Yemen, sustained protests, an assassination attempt against Ali Abdullah Saleh on 3 June 2011, and Gulf-brokered mediation led to his formal departure on 27 February 2012. In Syria, protests that began on 15 March 2011 in Deraa were met with lethal force from the outset by Bashar al-Assad's regime, spiralling by 2012 into a full civil war."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Tahrir_Square_-_February_9%2C_2011.png",
+        "caption": "More than a million protesters fill Tahrir Square, Cairo, 9 February 2011, two days before Mubarak's resignation.",
+        "credit": "Jonathan Rashad, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tahrir_Square_-_February_9,_2011.png"
+      },
       "body": "The trajectories of the Arab Spring diverged sharply. Tunisia held free elections in October 2011, adopted a new constitution in January 2014, and awarded the Nobel Peace Prize to its 'National Dialogue Quartet' of civil society organisations in 2015 for negotiating a peaceful transition. It remained, for a decade, the only Arab Spring country to have consolidated a democratic system, though President Kais Saied, elected in 2019, dissolved parliament in 2021 and rewrote the constitution in 2022 in moves widely characterised as an autocratic reversal.\n\nEgypt held its first free presidential election in 2012, won by the Muslim Brotherhood's Mohamed Morsi. Deep polarisation followed. Massive protests on 30 June 2013 provided the pretext for a military coup led by Defence Minister Abdel Fattah el-Sisi on 3 July; Morsi was detained (and died in a Cairo court in 2019). The Rabaa massacre of 14 August 2013, in which security forces killed at least 800 pro-Morsi protesters in a single day, marked the definitive end of the democratic opening. Sisi has ruled since, with tens of thousands of political prisoners.\n\nLibya after Gaddafi fragmented. A civil war from 2014 pitted rival governments in Tripoli and Benghazi against one another, drawing in Turkish, Emirati, Egyptian, Russian, and other foreign forces. Yemen's transition collapsed into war after 2014, when Houthi rebels seized Sanaa; a Saudi-led coalition intervened in March 2015. By 2020 the United Nations described Yemen as the world's worst humanitarian crisis, with widespread famine and cholera.\n\nSyria's civil war became the most destructive of the twenty-first century's first two decades. By 2016 half of its pre-war population of some 22 million had been displaced; Russia intervened militarily on Assad's side in September 2015; Iran and Hezbollah backed the regime; Turkey, the Gulf, and, more ambivalently, the United States backed elements of the opposition. The Islamic State group emerged from the chaos, proclaiming a 'caliphate' across parts of Syria and Iraq in 2014. Assad regained control of most Syrian territory by 2020, but his regime unexpectedly collapsed in December 2024 under a lightning offensive by rebel forces led by Hayat Tahrir al-Sham.\n\nMore than a million people fled to Europe in the peak refugee year of 2015, most of them Syrians, contributing to the political rise of anti-immigrant parties across the continent, to the Brexit vote of 2016, and to bitter divisions inside the EU over asylum policy. The Gulf monarchies, having weathered the initial protests, entered a new phase of assertive foreign policy, especially under Saudi Arabia's Crown Prince Mohammed bin Salman from 2017."
     },
     {
@@ -64,15 +78,21 @@
     },
     {
       "name": "Zine el-Abidine Ben Ali",
-      "role": "President of Tunisia 1987-2011; fled to Saudi Arabia on 14 January 2011"
+      "role": "President of Tunisia 1987-2011; fled to Saudi Arabia on 14 January 2011",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Zine_El_Abidine_Ben_Ali.jpg",
+      "credit": "Presidencia de la Nacion Argentina / CC BY-SA 2.0"
     },
     {
       "name": "Hosni Mubarak",
-      "role": "President of Egypt 1981-2011; resigned 11 February 2011 after 18 days of protests centred on Tahrir Square"
+      "role": "President of Egypt 1981-2011; resigned 11 February 2011 after 18 days of protests centred on Tahrir Square",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Hosni_Mubarak_ritratto.jpg",
+      "credit": "Presidenza della Repubblica / Public domain"
     },
     {
       "name": "Muammar Gaddafi",
-      "role": "Libyan ruler since the 1969 coup; overthrown and killed during the 2011 civil war"
+      "role": "Libyan ruler since the 1969 coup; overthrown and killed during the 2011 civil war",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Muammar_al-Gaddafi_at_the_AU_summit.jpg/800px-Muammar_al-Gaddafi_at_the_AU_summit.jpg",
+      "credit": "US Navy / Jesse B. Awalt / Public domain"
     },
     {
       "name": "Ali Abdullah Saleh",
@@ -80,7 +100,9 @@
     },
     {
       "name": "Bashar al-Assad",
-      "role": "President of Syria since 2000; retained power through a long civil war until his regime fell in December 2024"
+      "role": "President of Syria since 2000; retained power through a long civil war until his regime fell in December 2024",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Bashar_al-Assad_%28cropped%29.jpg",
+      "credit": "Kremlin.ru / CC BY 4.0"
     }
   ],
   "images": [

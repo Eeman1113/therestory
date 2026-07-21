@@ -25,10 +25,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Atomic_cloud_over_Hiroshima_-_NARA_542192_-_Edit.jpg/1280px-Atomic_cloud_over_Hiroshima_-_NARA_542192_-_Edit.jpg",
+        "caption": "Mushroom cloud over Hiroshima from an accompanying B-29, 6 August 1945.",
+        "credit": "George R. Caron / US Army Air Forces, NARA, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atomic_cloud_over_Hiroshima_-_NARA_542192_-_Edit.jpg"
+      },
       "body": "Hiroshima in August 1945 was a city of approximately 350,000 people, home of the headquarters of the Second General Army and a major military port; some 40,000 soldiers were stationed there. Around it Japanese schoolchildren had been mobilised to demolish wooden buildings to create firebreaks against the conventional bombing that had, so far, largely spared the city. In the early hours of 6 August, from the Pacific island of Tinian, three B-29 Superfortresses of the 509th Composite Group took off: the Enola Gay, piloted by Colonel Paul Tibbets and carrying the uranium gun-type weapon codenamed Little Boy; and two accompanying aircraft carrying scientific instruments and cameras. An earlier weather-reconnaissance flight had reported clear skies over Hiroshima.\n\nAt 07:09 the air-raid sirens sounded for the weather flight and were quickly dismissed. When Tibbets's aircraft approached at 08:14, its lone contrails suggested only reconnaissance and no alarm was given. Little Boy was released from an altitude of about 9,500 metres and detonated 43 seconds later, at 08:15:17 local time, some 580 metres above the courtyard of the Shima Surgical Clinic near the T-shaped Aioi Bridge in the centre of the city. The explosion released roughly 63 terajoules of energy in a fraction of a second: an initial burst of gamma and neutron radiation, a blinding thermal flash reaching several thousand degrees Celsius at the hypocentre, and a supersonic blast wave that flattened almost everything within a radius of one and a half kilometres. A firestorm developed within twenty minutes and burned for hours. The mushroom cloud rose to a reported eighteen kilometres.\n\nEstimates of immediate deaths vary between about 60,000 and 80,000; total deaths through the end of 1945, including those from thermal and blast injuries, acute radiation sickness, and fires, are usually put at around 140,000. Among the dead were thousands of Korean forced labourers, a small number of American prisoners of war, and the schoolchildren mobilised on demolition. The wooden and paper city was reduced to a plain of ash and twisted iron around a few reinforced-concrete shells; the framework of the Prefectural Industrial Promotion Hall, later known as the Atomic Bomb Dome, still stood near the hypocentre. Truman's public statement, released while he was aboard the cruiser Augusta returning from Potsdam, announced that an atomic bomb had been dropped on 'an important Japanese Army base' and warned that a 'rain of ruin' would follow unless Japan accepted the Potsdam terms. On 9 August a plutonium implosion weapon codenamed Fat Man was dropped on Nagasaki by the B-29 Bockscar, killing an estimated 40,000 people immediately and perhaps 70,000 by year's end. The same day the Soviet Union declared war on Japan and Red Army forces invaded Japanese-held Manchuria."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/AtomicEffects-Hiroshima.jpg/1280px-AtomicEffects-Hiroshima.jpg",
+        "caption": "The ruins of Hiroshima after the bombing, with the shell of the Prefectural Industrial Promotion Hall (Atomic Bomb Dome) visible.",
+        "credit": "US Army Corps of Engineers, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:AtomicEffects-Hiroshima.jpg"
+      },
       "body": "In Tokyo the two bombings and the Soviet entry into the war overlapped inside a single week of crisis. The Japanese Supreme War Council was split three-three on whether to accept the Potsdam terms; Emperor Hirohito, in an unprecedented intervention on 10 August, told the council he wished the war to end. Attempts by militant officers to seize the imperial palace and destroy the emperor's recorded surrender speech failed. On 15 August, in the first broadcast of his voice, Hirohito told his subjects that Japan would 'endure the unendurable' and accept the Allied terms. The formal instrument of surrender was signed aboard the USS Missouri in Tokyo Bay on 2 September 1945, ending the Second World War.\n\nThe medical and social consequences of the two bombings unfolded over decades. By 1950 the Japanese government estimated that some 200,000 people in Hiroshima and 140,000 in Nagasaki had died from causes attributable to the bombings, including radiation-related cancers. The Atomic Bomb Casualty Commission, established in 1947 and later the Radiation Effects Research Foundation, followed survivors, the hibakusha, for the rest of their lives, generating some of the most important epidemiological data on radiation exposure ever produced. Discrimination against hibakusha in marriage and employment was widespread inside Japan for decades.\n\nStrategically the bombs did not end the debate that immediately opened around them. Their proponents, including President Truman and Secretary Stimson in memoirs published soon after the war, argued that they had shortened the war and saved many lives, American and Japanese, that a conventional invasion would have cost. Critics, including some of the Manhattan Project's own scientists, contemporary military figures such as Admirals William Leahy and Chester Nimitz, and later revisionist historians such as Gar Alperovitz, argued that Japan was already close to surrender in the summer of 1945, especially in the face of Soviet entry into the war, and that the bombs had a diplomatic function directed at Moscow as much as a military one against Tokyo. Mainstream scholarship treats both military and diplomatic considerations as real, and the debate remains alive."
     },
     {
@@ -107,11 +121,15 @@
   "figures": [
     {
       "name": "Harry S. Truman",
-      "role": "US president who authorised the use of atomic weapons against Japan"
+      "role": "US president who authorised the use of atomic weapons against Japan",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Harry_S._Truman_-_NARA_-_530677_%28cropped%29.jpg/800px-Harry_S._Truman_-_NARA_-_530677_%28cropped%29.jpg",
+      "credit": "US National Archives / Public domain"
     },
     {
       "name": "J. Robert Oppenheimer",
-      "role": "Scientific director of the Los Alamos Laboratory and of the Manhattan Project's weapons work"
+      "role": "Scientific director of the Los Alamos Laboratory and of the Manhattan Project's weapons work",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/JROppenheimer-LosAlamos.jpg",
+      "credit": "US Department of Energy / Public domain"
     },
     {
       "name": "Leslie R. Groves",
@@ -123,7 +141,9 @@
     },
     {
       "name": "Emperor Hirohito",
-      "role": "Emperor of Japan who intervened on 10 August 1945 to accept the Potsdam terms of surrender"
+      "role": "Emperor of Japan who intervened on 10 August 1945 to accept the Potsdam terms of surrender",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hirohito_in_dress_uniform.jpg/800px-Hirohito_in_dress_uniform.jpg",
+      "credit": "Imperial Japanese Army / Public domain"
     },
     {
       "name": "Kantaro Suzuki",

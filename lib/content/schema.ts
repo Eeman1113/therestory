@@ -103,6 +103,7 @@ export type Figure = z.infer<typeof FigureSchema>;
 export const SectionSchema = z.object({
   heading: z.string().min(1),
   body: z.string().min(1), // markdown
+  image: ImageSchema.optional(), // optional illustration to render above the body
 });
 export type Section = z.infer<typeof SectionSchema>;
 

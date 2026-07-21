@@ -19,10 +19,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Scene_of_the_Battle_of_Marathon.jpg/1280px-Scene_of_the_Battle_of_Marathon.jpg",
+        "caption": "The Battle of Marathon depicted by American artist John Steeple Davis (1900).",
+        "credit": "John Steeple Davis, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scene_of_the_Battle_of_Marathon.jpg"
+      },
       "body": "For several days the two armies faced one another without engaging. The Persians had the beach and the sea behind them; the Greeks held the higher ground of the Vrana valley to the west. Command of the Athenian army rotated daily among its ten strategoi, one per tribe, with the polemarch Callimachus of Aphidnae holding the position of ceremonial commander in chief. Miltiades, who had spent years as a client ruler under Persian suzerainty in the Chersonese and understood how a Persian army fought, is credited by Herodotus with persuading Callimachus that the Greeks should attack rather than continue to wait.\n\nOn the morning of the battle, probably 12 September 490 BCE by the modern calendar, the Athenians formed up across the plain in the usual hoplite phalanx, but with a thinned centre and reinforced wings. Their line was extended to match the wider Persian formation, so that the centre was only four ranks deep against the eight of the flanks. The Persians drew up with their best troops, Persians and Sacae, in the middle, and levy contingents on the flanks. When the Greeks were within bowshot, roughly two hundred metres, they broke into a run, a manoeuvre Herodotus says the Persians had never seen from an armoured infantry line.\n\nAt the collision the Persian centre held and drove the thin Greek middle back. But on both wings the deeper Athenian and Plataean files broke their opposite numbers. Instead of pursuing off the field, the victorious Greek wings wheeled inward against the flanks and rear of the Persian centre, which now broke in turn. What had been an orderly battle collapsed into a rout across the plain toward the ships. The fugitives were driven into the marshes at the north end of the plain, where many drowned, while others struggled aboard the beached transports. In the fight for the ships the polemarch Callimachus was killed, along with the general Stesilaus and the brother of the playwright Aeschylus, Cynegirus, whose hand, tradition says, was cut off as he clung to a Persian stern.\n\nHerodotus, writing about forty years later from the eyewitness memory of surviving veterans, records the losses as 6,400 Persian and 192 Athenian dead. The Plataean fallen, and a small number of enslaved auxiliaries who fought with the Athenians, were counted separately. The Athenian dead were cremated together on the field, and their bones placed under the burial mound, the Soros, which still stands about twelve metres high in the middle of the plain. A second, smaller mound at nearby Vrana is traditionally identified as the tomb of the Plataeans.\n\nThe surviving Persian ships did not withdraw immediately. Instead they sailed south around Cape Sounion in an attempt to reach an undefended Athens, whose army was still at Marathon. Miltiades, understanding the manoeuvre, marched his exhausted troops back to the city in a single day and drew them up before Athens in the sanctuary of Heracles at Cynosarges. When the Persian fleet arrived off Phaleron and saw the phalanx already in position, it turned about and sailed for home. The Spartans, whose two thousand hoplites had left the moment the Karneia ended, arrived a day after the battle. They walked out to Marathon, inspected the Persian dead, congratulated the Athenians, and marched back."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Helmet_of_Miltiades.jpg/1280px-Helmet_of_Miltiades.jpg",
+        "caption": "Bronze helmet dedicated by Miltiades at Olympia after the battle, inscribed 'MILTIADES'.",
+        "credit": "William Neuheisel, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helmet_of_Miltiades.jpg"
+      },
       "body": "Marathon by itself did not end the Persian threat, but it broke the psychological hold of the Achaemenid army over the Greek cities. Darius spent the next four years preparing a much larger expedition; his death in 486 BCE and revolts in Egypt delayed the return. When his son Xerxes finally invaded in 480 BCE with an army of perhaps two hundred thousand and a fleet of over a thousand ships, the Greeks, having used the intervening decade to fortify and to build up a fleet of two hundred triremes under Themistocles's ship-building programme, were ready. The Persian invasion was halted at Thermopylae, defeated at sea at Salamis in September 480 BCE, and destroyed at Plataea in August 479 BCE.\n\nWithin Athens, Marathon reshaped politics. Miltiades was hailed as saviour of the city; the following year he led a disastrous expedition against Paros, was tried on his return, and died shortly afterwards of a gangrenous wound. His son Cimon, however, became one of the leading figures of the next generation. The men who had fought as hoplites at Marathon, the Marathonomachoi, were revered for the rest of the fifth century as embodiments of Athenian courage. Aeschylus, in the epitaph he composed for his own tomb, chose not to mention the plays that had made him famous, only that he had fought at Marathon.\n\nCulturally, the battle inspired a spate of public art. The Stoa Poikile in the Athenian Agora was decorated around 460 BCE with a great painting by Polygnotus and Micon showing the moment of the Greek envelopment; ancient viewers could still identify the portraits of Miltiades and Callimachus. On the Athenian Acropolis Miltiades's helmet, dedicated after the battle, is now in the museum at Olympia, its brow inscribed simply Militiades. Athens also dedicated a new treasury at Delphi from the spoils, and Pheidias's colossal bronze Athena Promachos on the Acropolis is said to have been paid for from the Persian loot."
     },
     {
@@ -102,7 +116,9 @@
     },
     {
       "name": "Darius I",
-      "role": "Achaemenid king who ordered the punitive expedition against Athens and Eretria in retaliation for their support of the Ionian Revolt"
+      "role": "Achaemenid king who ordered the punitive expedition against Athens and Eretria in retaliation for their support of the Ionian Revolt",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Darius_In_Parse.JPG/800px-Darius_In_Parse.JPG",
+      "credit": "Persepolis relief; photo by Derfash Kaviani, CC BY-SA 3.0"
     },
     {
       "name": "Pheidippides",

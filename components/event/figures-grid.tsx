@@ -1,5 +1,6 @@
 import { MicroCaps } from "@/components/common/micro-caps";
 import { HairlineRule } from "@/components/common/hairline-rule";
+import { SafeImage } from "@/components/common/safe-image";
 import type { Figure } from "@/lib/content/schema";
 
 export function FiguresGrid({ figures }: { figures: Figure[] }) {
@@ -14,14 +15,16 @@ export function FiguresGrid({ figures }: { figures: Figure[] }) {
           <li key={f.name} className="border-b border-rule py-6">
             <div className="flex items-start gap-4">
               {f.imageUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <SafeImage
                   src={f.imageUrl}
                   alt={f.name}
-                  className="h-14 w-14 shrink-0 border border-rule object-cover grayscale"
+                  className="h-16 w-16 shrink-0 border border-rule object-cover grayscale"
                 />
               ) : (
-                <div className="h-14 w-14 shrink-0 border border-rule bg-surface" aria-hidden />
+                <div
+                  className="h-16 w-16 shrink-0 border border-rule bg-surface"
+                  aria-hidden
+                />
               )}
               <div>
                 <p className="text-base leading-6 text-ink">{f.name}</p>

@@ -19,14 +19,35 @@
   "sections": [
     {
       "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Apollo_11_Crew.jpg/1280px-Apollo_11_Crew.jpg",
+        "caption": "The Apollo 11 crew, 14 April 1969: Armstrong (commander), Collins (CM pilot), Aldrin (LM pilot).",
+        "credit": "NASA, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_11_Crew.jpg"
+      },
       "body": "The mission grew out of a superpower contest. After the Soviet Union placed the first satellite, the first man, and the first woman in orbit, President John F. Kennedy told a joint session of Congress in May 1961 that the United States should commit itself, before the decade was out, to landing a man on the Moon and returning him safely. NASA's Apollo programme spent roughly 25 billion dollars of 1960s money and at its peak employed some 400,000 people across industry, universities, and government.\n\nThe hardware, the giant Saturn V rocket, the command and service module, and the two-stage lunar module, was proved in the Apollo 7 through Apollo 10 flights of 1968 and early 1969. The crew of Apollo 11 was announced in January 1969: Neil Armstrong, a former naval aviator and X-15 test pilot who had commanded Gemini 8, as mission commander; Air Force colonel Edwin 'Buzz' Aldrin, an MIT-trained orbital rendezvous specialist and Gemini 12 spacewalker, as lunar module pilot; and Michael Collins, veteran of Gemini 10, as command module pilot."
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Apollo_11_Launch_-_GPN-2000-000630.jpg/1280px-Apollo_11_Launch_-_GPN-2000-000630.jpg",
+        "caption": "Saturn V lifts off from Launch Complex 39A carrying Apollo 11, 16 July 1969, 13:32 UTC.",
+        "credit": "NASA, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg"
+      },
       "body": "Apollo 11 lifted off from Launch Complex 39A at the Kennedy Space Center in Florida on 16 July 1969 at 13:32 UTC, watched by an estimated one million people along the Florida coast and hundreds of millions on television. After a translunar coast of some seventy-six hours the craft entered lunar orbit on 19 July.\n\nOn 20 July Armstrong and Aldrin transferred to the lunar module Eagle, undocked, and began their descent while Collins remained aboard the command module Columbia. The landing was not routine: an overloaded guidance computer flashed alarm codes, and Armstrong took manual control to steer past a boulder-strewn crater. Eagle touched down at 20:17 UTC in a flat basaltic plain in the Mare Tranquillitatis, with, by later estimates, less than thirty seconds of descent fuel remaining. Armstrong radioed, 'Houston, Tranquility Base here, the Eagle has landed.'\n\nAt 02:56 UTC on 21 July, some six and a half hours after touchdown, Armstrong climbed down the ladder and set his left boot in the lunar dust, saying, 'That's one small step for [a] man, one giant leap for mankind.' Aldrin joined him nineteen minutes later. Together they spent about two hours and thirty-one minutes outside, planting an American flag and a plaque, deploying instruments including a seismometer and a laser retroreflector, and collecting about 21.5 kilograms of lunar rock and soil. President Richard Nixon spoke to them by telephone from the White House."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/1280px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg",
+        "caption": "Buzz Aldrin on the lunar surface, photographed by Neil Armstrong, 20 July 1969. Armstrong is visible in the visor reflection.",
+        "credit": "Neil Armstrong / NASA, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg"
+      },
       "body": "Eagle's ascent stage lifted off from the Moon on 21 July, rejoined Columbia, and the reunited spacecraft returned to Earth. The command module splashed down in the North Pacific on 24 July 1969 at 16:50 UTC and was recovered by the USS Hornet. The three astronauts spent three weeks in quarantine, then were greeted with parades on three continents.\n\nApollo 11 was followed by five further successful lunar landings through 1972, delivering ten more Americans to the surface and returning several hundred kilograms of samples that reshaped planetary science. But public and political appetite for the programme faded quickly. No human being has returned to the Moon since the crew of Apollo 17 left it in December 1972.\n\nBeyond the geopolitical victory, the mission left cultural artefacts that endure: the photograph of Aldrin standing on the plain with Armstrong reflected in his visor; the earthrise-and-flag television footage; the plaque left behind on the descent stage, reading 'We came in peace for all mankind.' It remains the clearest single moment in which a national project became, however briefly, a human one."
     }
   ],
@@ -90,15 +111,21 @@
   "figures": [
     {
       "name": "Neil Armstrong",
-      "role": "Mission commander; first human to walk on the Moon"
+      "role": "Mission commander; first human to walk on the Moon",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/800px-Neil_Armstrong_pose.jpg",
+      "credit": "NASA / Public domain"
     },
     {
       "name": "Buzz Aldrin",
-      "role": "Lunar module pilot; second human to walk on the Moon"
+      "role": "Lunar module pilot; second human to walk on the Moon",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Buzz_Aldrin.jpg/800px-Buzz_Aldrin.jpg",
+      "credit": "NASA / Public domain"
     },
     {
       "name": "Michael Collins",
-      "role": "Command module pilot; remained in lunar orbit aboard Columbia while Armstrong and Aldrin descended"
+      "role": "Command module pilot; remained in lunar orbit aboard Columbia while Armstrong and Aldrin descended",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Michael_Collins_%28S69-31742%29.jpg/800px-Michael_Collins_%28S69-31742%29.jpg",
+      "credit": "NASA / Public domain"
     }
   ],
   "images": [

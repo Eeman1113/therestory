@@ -25,10 +25,24 @@
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/National_Park_Service_9-11_Statue_of_Liberty_and_WTC_fire.jpg",
+        "caption": "The burning twin towers of the World Trade Center seen across New York harbour from the Statue of Liberty, 11 September 2001.",
+        "credit": "US National Park Service, via Wikimedia Commons",
+        "license": "Public Domain (US federal work)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Park_Service_9-11_Statue_of_Liberty_and_WTC_fire.jpg"
+      },
       "body": "American Airlines Flight 11, a Boeing 767 bound from Boston to Los Angeles, departed Logan International Airport at 07:59 Eastern Daylight Time with 92 people aboard. Around fifteen minutes into the flight the five hijackers, led by Mohamed Atta, killed at least one flight attendant, forced their way into the cockpit, and turned the aircraft south toward New York. At 08:46:40 Flight 11 struck the north face of the North Tower of the World Trade Center between the 93rd and 99th floors at some 750 kilometres per hour. All aboard, and an unknown number of workers in the impact zone, were killed instantly.\n\nUnited Airlines Flight 175, another 767, departed Logan for Los Angeles at 08:14. It was hijacked in similar fashion by a team led by Marwan al-Shehhi. At 09:03:02, live on the television cameras that had converged on the burning North Tower, Flight 175 banked steeply into the South Tower, striking floors 77 to 85 and killing all 65 aboard. Within minutes it was clear the United States was under coordinated attack.\n\nAmerican Airlines Flight 77, a Boeing 757 bound from Washington Dulles to Los Angeles, was hijacked between 08:51 and 08:54; at 09:37:46 it flew into the west face of the Pentagon at ground level, killing all 64 aboard and 125 people inside the building. The Federal Aviation Administration ordered a nationwide ground stop of all civil aviation at 09:42, the first in American history.\n\nUnited Airlines Flight 93, a 757 bound from Newark to San Francisco, took off 41 minutes late at 08:42 and was hijacked around 09:28. Its passengers, learning by air-phone of the earlier crashes, stormed the cockpit. At 10:03:11 Flight 93 dived into a reclaimed strip mine near Shanksville, in western Pennsylvania, killing all 44 aboard. The 9/11 Commission concluded that the intended target had been the US Capitol or the White House.\n\nIn New York the fires ignited by the impacts weakened the steel frames of the twin towers. The South Tower collapsed at 09:59, fifty-six minutes after being hit; the North Tower followed at 10:28. Vast clouds of pulverised concrete swept through lower Manhattan; the streets were coated in white ash. At 17:20 the 47-storey 7 World Trade Center, damaged by falling debris and fires no longer fought by an overwhelmed fire department, also collapsed. In total 2,977 people from more than ninety countries were killed, along with the 19 hijackers. Among the dead were 343 members of the New York Fire Department and 71 law-enforcement officers. The material damage in New York alone was later estimated at over 10 billion dollars."
     },
     {
       "heading": "Aftermath & consequences",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Aerial_view_of_the_Pentagon_during_rescue_operations_post-September_11_attack.JPEG",
+        "caption": "The Pentagon in Arlington, Virginia, showing the collapsed west facade struck by American Airlines Flight 77.",
+        "credit": "TSGT Cedric H. Rudisill / US Air Force, via Wikimedia Commons",
+        "license": "Public Domain (US federal work)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Pentagon_during_rescue_operations_post-September_11_attack.JPEG"
+      },
       "body": "President George W. Bush, in Sarasota, Florida, that morning for a school visit, was taken aboard Air Force One and flown, via bases in Louisiana and Nebraska, back to Washington. Addressing the nation from the Oval Office that evening, he declared, 'We will make no distinction between the terrorists who committed these acts and those who harbor them.' The following days brought a global outpouring of sympathy: 'Nous sommes tous americains' ran the front page of Le Monde; NATO invoked its Article 5 collective-defence clause for the first time on 12 September; the UN Security Council passed Resolution 1368.\n\nWithin weeks the Bush administration had presented an ultimatum to the Taliban regime in Kabul demanding that it hand over bin Laden. When it refused, the United States, joined by Britain and the Afghan Northern Alliance, began the war in Afghanistan on 7 October 2001. Kabul fell in November; the Taliban were driven from power by December; bin Laden escaped into Pakistan. The US Congress passed the Authorization for Use of Military Force on 14 September and, on 26 October, the USA PATRIOT Act, dramatically expanding surveillance powers. The Department of Homeland Security was created in 2002. A prison for suspected terrorists was opened at the US naval base at Guantanamo Bay in Cuba on 11 January 2002, holding hundreds without trial.\n\nIn March 2003 the Bush administration, with British support, invaded Iraq on the grounds that Saddam Hussein was developing weapons of mass destruction and had links to al-Qaeda. Neither claim proved substantiated. The war overthrew Saddam within weeks but triggered a long insurgency, sectarian civil war, and ultimately the emergence of the Islamic State group. The 'war on terror' also involved extraordinary rendition, secret CIA 'black sites' where prisoners were tortured, drone strikes across Pakistan, Yemen, and Somalia, and mass electronic surveillance of American and foreign communications, revealed by Edward Snowden in 2013.\n\nBin Laden himself was killed by US Navy SEALs in a raid on a compound in Abbottabad, Pakistan, on 2 May 2011, almost a decade after the attacks. The war in Afghanistan continued, however, until the Taliban's return to Kabul on 15 August 2021 amid the chaotic American withdrawal ordered by President Joe Biden.\n\nAt Ground Zero in New York, cleanup took eight months and removed 1.8 million tons of debris. The National September 11 Memorial, twin reflecting pools set in the footprints of the fallen towers with the names of all victims inscribed around their rims, opened on the tenth anniversary in 2011; the accompanying museum opened in 2014. The 541-metre One World Trade Center, deliberately built to a symbolic height of 1,776 feet, opened for occupancy in 2014."
     },
     {
@@ -96,23 +110,33 @@
   "figures": [
     {
       "name": "Osama bin Laden",
-      "role": "Founder and leader of al-Qaeda; approved and financed the September 11 plot; killed by US forces in Pakistan on 2 May 2011"
+      "role": "Founder and leader of al-Qaeda; approved and financed the September 11 plot; killed by US forces in Pakistan on 2 May 2011",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osama_bin_Laden_portrait.jpg/500px-Osama_bin_Laden_portrait.jpg",
+      "credit": "Hamid Mir, via Wikimedia Commons"
     },
     {
       "name": "Khalid Sheikh Mohammed",
-      "role": "Chief operational architect of the September 11 plot; captured in Pakistan in 2003, held at Guantanamo Bay"
+      "role": "Chief operational architect of the September 11 plot; captured in Pakistan in 2003, held at Guantanamo Bay",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Khalid_Sheikh_Mohammed_2022.jpg/500px-Khalid_Sheikh_Mohammed_2022.jpg",
+      "credit": "US Department of Defense, via Wikimedia Commons"
     },
     {
       "name": "Mohamed Atta",
-      "role": "Lead hijacker; piloted American Airlines Flight 11 into the North Tower of the World Trade Center"
+      "role": "Lead hijacker; piloted American Airlines Flight 11 into the North Tower of the World Trade Center",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mohamed_Atta_5-2-01_HQ.jpg/500px-Mohamed_Atta_5-2-01_HQ.jpg",
+      "credit": "US federal government, via Wikimedia Commons"
     },
     {
       "name": "George W. Bush",
-      "role": "43rd President of the United States; declared the 'war on terror' in response to the attacks"
+      "role": "43rd President of the United States; declared the 'war on terror' in response to the attacks",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/George-W-Bush_%28cropped_2%29.jpeg/500px-George-W-Bush_%28cropped_2%29.jpeg",
+      "credit": "Eric Draper, White House, via Wikimedia Commons"
     },
     {
       "name": "Rudy Giuliani",
-      "role": "Mayor of New York City on 11 September 2001; led the immediate municipal response"
+      "role": "Mayor of New York City on 11 September 2001; led the immediate municipal response",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rudy_Giuliani_%2849279859833%29_%28cropped%29.jpg/500px-Rudy_Giuliani_%2849279859833%29_%28cropped%29.jpg",
+      "credit": "Gage Skidmore, via Wikimedia Commons"
     }
   ],
   "images": [

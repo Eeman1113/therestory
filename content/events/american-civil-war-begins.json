@@ -19,10 +19,24 @@
   "sections": [
     {
       "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fort_Sumter_storm_flag_1861.jpg",
+        "caption": "The storm flag that flew over Fort Sumter during the bombardment of April 1861, now at the Fort Sumter National Monument.",
+        "credit": "US National Park Service, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fort_Sumter_storm_flag_1861.jpg"
+      },
       "body": "The election of Abraham Lincoln, the Republican candidate opposed to the extension of slavery into the territories, on 6 November 1860 was received in the Deep South as an unbearable threat. South Carolina, whose planters had led every previous secession crisis from the nullification controversy of 1832 onward, called a state convention that voted unanimously on 20 December 1860 to secede from the Union. Mississippi, Florida, Alabama, Georgia, Louisiana and Texas followed by 1 February 1861; delegates met at Montgomery, Alabama, on 4 February, adopted a provisional constitution and inaugurated the former United States senator Jefferson Davis as president of the Confederate States of America on 18 February. The Confederacy claimed all federal property within its borders.\n\nMost of that property surrendered without a struggle. Federal customs houses, arsenals, post offices, forts and navy yards from Charleston to Galveston were seized by state militias, often with the connivance of the outgoing James Buchanan administration. Only a handful of coastal forts held out, most importantly Fort Pickens at Pensacola in Florida and Fort Sumter at Charleston. Sumter was a five-sided brick fortress on an artificial granite island in the middle of the harbor, planned to mount 135 guns and hold a garrison of 650 but still ninety per cent complete when the crisis broke. Its commander, Major Robert Anderson, a Kentuckian by birth and slaveholder by inheritance but a career United States army officer, held it with two artillery companies, a band of musicians and forty-three civilian workmen, in all around 127 men.\n\nOn the night of 26 December 1860, six days after South Carolina's secession, Anderson had moved his garrison in rowboats from the vulnerable Fort Moultrie on Sullivan's Island to the stronger position of Sumter, spiking Moultrie's guns behind him. Carolinian authorities protested that Buchanan had promised to leave Sumter unoccupied. Buchanan, weakly, sent the unarmed merchant steamer Star of the West with two hundred reinforcements on 5 January 1861. Confederate batteries in the harbor fired on her from Morris Island on 9 January and she withdrew without landing troops. Anderson, having no orders to fire, held his ground. Through the winter South Carolina and after March the Confederate government built rings of batteries on Sullivan's Island, Morris Island, James Island and Fort Johnson, mounting some forty-three guns and mortars trained on the fort. By early April Confederate general Pierre Gustave Toutant de Beauregard, a former engineer officer and former pupil of Anderson at West Point, commanded around six thousand troops around the harbor. Anderson's supplies dwindled to a few weeks."
     },
     {
       "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Bombardment_of_Fort_Sumter.jpg/1280px-Bombardment_of_Fort_Sumter.jpg",
+        "caption": "Bombardment of Fort Sumter, Charleston Harbor, 12-13 April 1861. Currier and Ives lithograph.",
+        "credit": "Currier and Ives, via Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bombardment_of_Fort_Sumter.jpg"
+      },
       "body": "Lincoln, inaugurated on 4 March 1861, had promised in his address to 'hold, occupy and possess' federal property but not to invade the seceded states. On 4 April he ordered a relief expedition under Captain Gustavus Vasa Fox to sail from New York with provisions but no reinforcements. On 6 April he formally notified South Carolina Governor Francis Pickens by a State Department messenger that the fort would be provisioned only, with no additional men or arms landed unless the resupply was resisted. The decision transferred the moral choice of aggression to the Confederacy. Jefferson Davis's cabinet met at Montgomery on 9 April; only Secretary of State Robert Toombs objected, warning that firing on the fort would be 'suicide, murder, and will lose us every friend at the North'. Davis nevertheless ordered Beauregard to demand the fort's surrender before Fox's ships arrived.\n\nAt 3:45 on the afternoon of 11 April three Confederate aides, including former US senator James Chesnut, arrived by boat at Sumter and delivered Beauregard's ultimatum. Anderson refused but remarked that he would be starved out within a few days in any case. His comment was relayed to Beauregard, who around midnight sent his aides back to negotiate a peaceful evacuation date. Anderson agreed to leave the fort by noon on 15 April unless he received new orders or supplies. Chesnut, judging the answer inadequate given the imminent arrival of the relief fleet, wrote out on the spot at 3:20 in the morning of 12 April that Beauregard's batteries would open fire in one hour.\n\nAt 4:30 a.m. a signal mortar shell was fired from Fort Johnson on James Island. It burst above Sumter. The Iron Battery on Morris Island fired the first shotted gun; a Virginia secessionist named Edmund Ruffin, aged sixty-seven, was permitted the honour of pulling the lanyard. The ring of batteries opened in a counterclockwise sequence at two-minute intervals to conserve ammunition. Anderson did not return fire for two and a half hours, waiting for daylight. When Captain Abner Doubleday fired the first Union shot at seven a.m., manpower shortages, damaged casemates and a shortage of cloth cartridge bags reduced the fort to firing only six of its guns. Confederate hot shot, iron balls heated red in furnaces on the shore, set the fort's wooden buildings ablaze on the afternoon of 12 April. Rain during the night doused the fires. Fox's relief ships, arriving offshore on 12 April, could not cross the bar in the heavy swell and remained spectators.\n\nOn 13 April fires broke out again, the main gate burned, the flagpole was cut down by a Confederate shot at one p.m. and rehoisted on a jury-rigged mast. At two p.m. former Texas senator Louis T. Wigfall, acting on his own initiative, rowed under a white flag from Morris Island and negotiated a suspension of firing. Formal terms were signed that afternoon. On the morning of Sunday 14 April, Anderson's garrison assembled on the parade ground for a fifty-gun salute to the Stars and Stripes. Halfway through the salute a pile of cartridges exploded, killing Private Daniel Hough of the 1st US Artillery outright and mortally wounding Private Edward Galloway. They were the first military dead of the American Civil War. The garrison then marched out with colours flying to the tune of 'Yankee Doodle' and boarded the steamer Isabel for the North."
     },
     {
@@ -63,19 +77,27 @@
   "figures": [
     {
       "name": "Abraham Lincoln",
-      "role": "Sixteenth president of the United States, inaugurated on 4 March 1861; issued the call for 75,000 volunteers after Sumter's fall"
+      "role": "Sixteenth president of the United States, inaugurated on 4 March 1861; issued the call for 75,000 volunteers after Sumter's fall",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/800px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+      "credit": "Alexander Gardner, 1863 / Public domain"
     },
     {
       "name": "Jefferson Davis",
-      "role": "President of the Confederate States of America who authorised the demand for Sumter's surrender"
+      "role": "President of the Confederate States of America who authorised the demand for Sumter's surrender",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Jefferson_Davis_-_NARA_-_528293_restored.jpg/800px-Jefferson_Davis_-_NARA_-_528293_restored.jpg",
+      "credit": "US National Archives / Public domain"
     },
     {
       "name": "Major Robert Anderson",
-      "role": "United States army officer commanding the Union garrison at Fort Sumter"
+      "role": "United States army officer commanding the Union garrison at Fort Sumter",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Major_Robert_Anderson_by_Mathew_Brady.jpg/800px-Major_Robert_Anderson_by_Mathew_Brady.jpg",
+      "credit": "Mathew Brady / Public domain"
     },
     {
       "name": "P.G.T. Beauregard",
-      "role": "Confederate general commanding the batteries around Charleston Harbor and directing the bombardment"
+      "role": "Confederate general commanding the batteries around Charleston Harbor and directing the bombardment",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Gen._Pierre_Gustave_Toutant_de_Beauregard%2C_C.S.A_-_NARA_-_528596.jpg/800px-Gen._Pierre_Gustave_Toutant_de_Beauregard%2C_C.S.A_-_NARA_-_528596.jpg",
+      "credit": "Mathew Brady, c. 1860-65 / US National Archives / Public domain"
     },
     {
       "name": "Edmund Ruffin",

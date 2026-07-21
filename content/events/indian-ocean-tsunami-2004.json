@@ -1,0 +1,126 @@
+{
+  "id": "indian-ocean-tsunami-2004",
+  "slug": "indian-ocean-tsunami-2004",
+  "title": "The Indian Ocean tsunami",
+  "date": {
+    "start": "2004-12-26",
+    "precision": "day",
+    "display": "26 December 2004"
+  },
+  "era": "contemporary",
+  "regions": ["south-central-asia", "east-asia", "africa"],
+  "categories": ["disaster-disease"],
+  "significance": 5,
+  "summary": "At 07:58:53 local time on the morning of Sunday 26 December 2004, a rupture some 1,300 kilometres long along the Sunda megathrust off the west coast of northern Sumatra released a magnitude 9.1 to 9.3 earthquake, the third largest ever recorded by modern seismographs. The Indian plate, driving northeast beneath the Burma plate at roughly six centimetres a year, slipped as much as fifteen metres in about ten minutes of ground motion, displacing an immense column of ocean water. Within twenty minutes waves up to fifty metres high crashed onto the Aceh coast; within two hours they reached Thailand, Sri Lanka and India; within seven hours they had swept the beaches of Somalia and Kenya, more than 4,500 kilometres away. According to the final UN Office for the Coordination of Humanitarian Affairs (OCHA) tally, roughly 227,000 people died across fourteen countries, more than 1.7 million were displaced, and international donors pledged some 13.5 billion US dollars in aid. It remains the deadliest tsunami in recorded history and among the ten deadliest natural disasters of the twentieth or twenty-first centuries.",
+  "sections": [
+    {
+      "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/2004_Indian_Ocean_earthquake.svg",
+        "caption": "Map of the 26 December 2004 Sumatra-Andaman earthquake showing the epicentre off the west coast of northern Sumatra and the aftershock sequence along the rupture zone.",
+        "credit": "Phoenix7777, via Wikimedia Commons (based on USGS data)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Indian_Ocean_earthquake.svg"
+      },
+      "body": "The eastern Indian Ocean is bounded on the north and east by one of the great tectonic collision zones of the planet. Along the Sunda Trench, the Indo-Australian plate descends beneath the Burma micro-plate and the larger Sunda plate at a rate of about 60 to 70 millimetres a year, dragging the overriding plate downward and eastward until periodic ruptures release the accumulated strain. Historic ruptures along different segments of this megathrust had produced the destructive Sumatran earthquakes of 1797, 1833, and 1861, but no event in the instrumental record had come close to the size of what was to occur on the morning of 26 December 2004.\n\nUnlike the Pacific basin, which had been ringed with sea-level tide gauges and connected tsunami-warning centres since the 1960s under the leadership of the Pacific Tsunami Warning Center in Ewa Beach, Hawaii, the Indian Ocean had no dedicated tsunami-warning system. Tsunamis were understood by seismologists to be possible; the historical record contained several destructive Indian Ocean waves, most notably the 1883 Krakatoa event, which killed some 36,000 people around the Sunda Strait. But such waves were sufficiently rare that governments in the coastal states had not invested in the deep-ocean pressure sensors, seismic stations, and satellite communications infrastructure that Japan and the west coast of the Americas relied on. Public awareness of tsunami risk in coastal communities from Aceh to Tamil Nadu was near zero.\n\nCoastal geography compounded the danger. The northern Sumatran city of Banda Aceh, population around 265,000 in 2004, sat on a broad, low-elevation coastal plain, its historic waterfront neighbourhoods only two or three metres above sea level. The Thai resorts of Phuket, Khao Lak, and Phi Phi, developed during the 1980s and 1990s tourism boom, sat directly on open Andaman-facing beaches. Sri Lanka's southern and eastern shores, densely populated with fishing villages, had almost no natural barriers. In India, the temple town of Nagapattinam and the port of Cuddalore in Tamil Nadu, and the Andaman and Nicobar archipelago, faced the ocean without seawalls or elevated ground. The Maldives, an atoll nation whose highest natural elevation is only 2.4 metres, was entirely exposed."
+    },
+    {
+      "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2004-tsunami.jpg",
+        "caption": "The tsunami wave surges ashore at Ao Nang beach, Krabi Province, Thailand, on the morning of 26 December 2004. Photograph taken by David Rydevik, later placed in the public domain and among the most widely reproduced images of the disaster.",
+        "credit": "David Rydevik, Stockholm, Sweden",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004-tsunami.jpg"
+      },
+      "body": "The earthquake struck at 00:58:53 UTC on 26 December 2004, or 07:58:53 local time in Aceh (UTC+7). Its epicentre lay at 3.316 degrees north, 95.854 degrees east, some 160 kilometres off the western coast of Sumatra and at a shallow focal depth of about 30 kilometres. Later analysis of seismic waves at global stations and of subsequent GPS displacements showed that the rupture had propagated northward along the Sunda megathrust for about eight minutes, unzipping some 1,300 kilometres of fault from off Simeulue Island in the south to the Andaman archipelago in the north. Slip averaged about 15 metres and reached as much as 25 to 30 metres in the highest-slip patches off Aceh. In the process the sea floor was pushed vertically upward by as much as five metres in a strip several tens of kilometres wide, transferring an enormous volume of water into the ocean above.\n\nThe first wave reached the west coast of Aceh at about 08:15 local time. Survivors described a sudden retreat of the sea by several hundred metres, followed within minutes by an advancing wall of dark water. Field surveys by teams from the International Tsunami Survey Team, coordinated by the US Geological Survey, later measured maximum run-up heights of about 30 metres along stretches of the Aceh coast and a single anomalous run-up of some 51 metres at Labuhan on the west coast, the highest reliably measured tsunami height ever recorded. In Banda Aceh, the water reached about 9 metres in the city centre and pushed inland as far as 4 kilometres, destroying whole neighbourhoods and leaving isolated concrete mosques standing amid an otherwise obliterated urban landscape. Roughly 130,000 to 170,000 people died in Aceh alone; estimates for Indonesia as a whole reached 167,540 according to the Indonesian national disaster agency.\n\nAt around 09:30 local time, waves 5 to 10 metres high struck the Thai Andaman coast at Khao Lak, Phuket, and Phi Phi Islands, killing about 8,200 people, of whom roughly half were foreign tourists. Sri Lanka's eastern and southern coasts were struck at about 09:00 to 09:45, killing at least 35,000 and destroying the passenger train Samudra Devi (the 'Queen of the Sea') north of Colombo with about 1,700 passengers aboard, one of the largest single-transport disasters in modern history. In India's Tamil Nadu state and the Andaman and Nicobar Islands, the toll reached about 16,400. The Maldives lost 82 confirmed dead across its atolls. Seven hours after the earthquake, at about 08:00 local time, the wave reached the horn of Africa, killing about 300 in Somalia and smaller numbers in Kenya, Tanzania, the Seychelles, and even, at greatly diminished amplitude, on the coasts of South Africa and Antarctica. The final UN-coordinated death toll settled at about 227,898 across fourteen countries, though estimates vary from around 225,000 to over 280,000 depending on methodology and treatment of missing persons."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The scale of the disaster prompted what was, at the time, the largest civilian humanitarian response in history. Within a week, more than sixty national governments and dozens of intergovernmental and non-governmental organisations had committed personnel, aircraft, ships, and cash. The US Navy diverted the USS Abraham Lincoln carrier strike group from a scheduled port visit in Hong Kong; its helicopters flew relief missions along the Aceh coast within days. Australia, Japan, and India dispatched military hospital ships and transport aircraft. The UN Office for the Coordination of Humanitarian Affairs, under Under-Secretary-General Jan Egeland, coordinated a flash appeal. By 2007 total international pledges had reached about 13.5 billion US dollars, of which some 6.25 billion was actually disbursed. Former US presidents George H. W. Bush and Bill Clinton were named by President George W. Bush to lead a parallel private-sector fundraising effort in the United States. In Indonesia, the newly elected president Susilo Bambang Yudhoyono, sworn in just two months before the disaster, coordinated the national response and used the crisis to open long-delayed peace negotiations with the Free Aceh Movement (GAM), which had been fighting a separatist insurgency in the province since 1976. The August 2005 Helsinki Memorandum of Understanding ended the conflict, one of the disaster's few unambiguously positive political consequences.\n\nReconstruction proved slower and more contested. In Aceh, the Indonesian government's Rehabilitation and Reconstruction Agency (BRR) supervised the rebuilding of some 140,000 houses, 3,000 kilometres of roads, and 300 bridges by the time it was dissolved in 2009. In Sri Lanka, the buffer-zone policy initially imposed by the government banning reconstruction within 100 to 200 metres of the shoreline was resisted by displaced fishing communities and eventually rolled back. In Thailand, restoration of the tourism economy was rapid, but the exposure of illegal shore-line hotel construction and the disproportionate burden borne by Burmese migrant workers on the Andaman coast prompted persistent criticism. Across all affected countries, questions were raised about the accountability of aid flows and about the extent to which large international NGOs displaced local relief efforts.\n\nThe scientific and technical response was more clearly successful. Within weeks of the disaster, the UNESCO Intergovernmental Oceanographic Commission convened work on an Indian Ocean Tsunami Warning and Mitigation System, which became formally operational in 2011 with regional centres in Australia, India, and Indonesia. Deep-ocean pressure sensors (DART buoys) were deployed along the Sunda Trench and elsewhere. Global seismology also benefited: the 2004 event's extraordinarily large moment release forced revisions to the way rupture models were constructed, and the concept of 'unexpectedly large' subduction earthquakes returned to the research agenda in ways that would inform interpretation of the 2011 Tohoku event and hazard assessments for Cascadia and other subduction margins."
+    },
+    {
+      "heading": "Legacy",
+      "body": "The 2004 Indian Ocean tsunami changed the way the world thought about natural-disaster risk. For the first time, a single geophysical event killed more than a quarter of a million people across a dozen countries and was witnessed, in real time or near-real time, by a global television audience of billions. The disaster arrived at the beginning of the era of consumer digital video: home camcorder and, in a few cases, early mobile-phone footage of the wave surging ashore in Thailand, Sri Lanka, and Indonesia circulated more widely and more quickly than images from any previous natural catastrophe. This unprecedented visual record has itself become an object of study, and versions of the amateur video shot by tourists on Patong Beach in Phuket or by locals in Aceh continue to be re-edited into educational and commemorative material two decades later.\n\nInstitutionally, the response accelerated the humanitarian sector's professionalisation, prompted a major review of the UN's coordinating mechanisms, and gave rise to the modern 'cluster system' for disaster response formally adopted in 2005. It also embedded tsunami-awareness education into school curricula and coastal-management planning in dozens of countries, including places where the risk had never previously been salient, such as the eastern seaboard of the United States and northwestern Europe. Community-level warning systems, from the traditional smong warning of the Simeulue islanders (whose oral tradition of the 1907 tsunami had saved most of the island's population in 2004) to the network of loudspeaker towers now spanning the Andaman and southern Thai coasts, are direct legacies of the event.\n\nMemorials to the disaster now dot the shorelines of every affected country. In Banda Aceh, the Tsunami Museum, opened in 2009 and designed by the Indonesian architect Ridwan Kamil, incorporates a 30-metre-long dark passage lined with water walls that recreates the sensory experience of the wave; adjacent to the museum, the 2,600-tonne PLTD Apung 1 electric-generation ship, carried more than four kilometres inland by the water, has been preserved in situ as a monument. In Khao Lak, Thailand, a police patrol boat swept 1.5 kilometres inland stands where it came to rest. Perhaps the most far-reaching legacy, however, is intellectual: the recognition, embedded in twenty years of subsequent public policy, that the boundary between geological time and human time is far shorter than modern industrial civilisation had assumed."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Susilo Bambang Yudhoyono",
+      "role": "6th President of Indonesia; sworn in October 2004, coordinated the national response in Aceh and later negotiated the 2005 Helsinki peace agreement with GAM that ended the Aceh insurgency",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Susilo_Bambang_Yudhoyono%2C_official_presidential_portrait_%282009%29.jpg",
+      "credit": "Government of Indonesia / Public domain"
+    },
+    {
+      "name": "Kofi Annan",
+      "role": "UN Secretary-General; convened the January 2005 emergency donors' conference in Jakarta that consolidated the international response",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kofi_Annan.jpg",
+      "credit": "Ricardo Stuckert / ABr / CC BY 3.0 BR"
+    },
+    {
+      "name": "Jan Egeland",
+      "role": "Norwegian diplomat; UN Under-Secretary-General for Humanitarian Affairs and Emergency Relief Coordinator, who led the OCHA response and coined the phrase 'stingy' in a widely reported remark about initial Western pledges"
+    },
+    {
+      "name": "Bill Clinton",
+      "role": "Former US president; named UN special envoy for tsunami recovery in February 2005, tasked with sustaining international attention on reconstruction over the medium term"
+    },
+    {
+      "name": "Thorne Lay",
+      "role": "Seismologist at the University of California, Santa Cruz; lead author of the widely cited May 2005 Science paper 'The Great Sumatra-Andaman Earthquake of 26 December 2004' that established the rupture length, slip distribution, and moment magnitude of the event"
+    },
+    {
+      "name": "Kerry Sieh",
+      "role": "Paleoseismologist then at Caltech; used coral microatolls off Sumatra to reconstruct the historical earthquake record of the Sunda megathrust and mapped post-2004 co-seismic uplift with GPS surveys"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Aceh_2004_tsunami_standing_mosque_USGS.jpg",
+      "caption": "A concrete mosque stands amid the rubble of Banda Aceh, January 2005. The tsunami levelled most residential neighbourhoods but left reinforced-concrete mosques and government buildings substantially intact.",
+      "credit": "US Geological Survey",
+      "license": "Public domain (US federal government work)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aceh_2004_tsunami_standing_mosque_USGS.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Bodies_in_Banda_Aceh_after_2004_tsunami_DD-SD-06-07373.JPEG",
+      "caption": "Shrouded bodies in a street of downtown Banda Aceh, days after the tsunami. Roughly 130,000 to 170,000 people died in Aceh province alone.",
+      "credit": "Michael L. Bak / US Department of Defense",
+      "license": "Public domain (US federal government work)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bodies_in_Banda_Aceh_after_2004_tsunami_DD-SD-06-07373.JPEG"
+    }
+  ],
+  "sources": [
+    {
+      "title": "2004 Indian Ocean earthquake and tsunami",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "How the deadly 2004 Indian Ocean tsunami unfolded",
+      "publisher": "National Geographic",
+      "url": "https://www.nationalgeographic.com/environment/article/tsunami-indian-ocean",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "M 9.1 - 2004 Sumatra-Andaman Earthquake",
+      "publisher": "US Geological Survey",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/official20041226005853450_30/executive",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Reflecting on 20 years of the Aceh tsunami: from 'megathrust' threat to disaster mitigation",
+      "publisher": "The Conversation",
+      "url": "https://theconversation.com/reflecting-on-20-years-of-the-aceh-tsunami-from-megathrust-threat-to-disaster-mitigation-245142",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Mourners mark 20 years since Indian Ocean tsunami that killed some 230,000 people",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2024/12/26/nx-s1-5239822/tsunami-indian-ocean-20-anniversary",
+      "accessed": "2026-07-21"
+    }
+  ],
+  "disputed": false
+}

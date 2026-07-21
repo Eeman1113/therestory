@@ -1,0 +1,119 @@
+{
+  "id": "chatgpt-launched",
+  "slug": "chatgpt-launched",
+  "title": "OpenAI releases ChatGPT",
+  "date": {
+    "start": "2022-11-30",
+    "precision": "day",
+    "display": "30 November 2022"
+  },
+  "era": "contemporary",
+  "regions": ["americas", "europe", "east-asia", "south-central-asia"],
+  "categories": ["science-technology", "economy-trade"],
+  "significance": 5,
+  "summary": "On Wednesday 30 November 2022, at about 1 pm Pacific Time, the San Francisco-based artificial-intelligence laboratory OpenAI published a blog post announcing what its authors described as a 'research preview' of a conversational agent called ChatGPT. Built on a fine-tuned variant of the company's existing GPT-3.5 series of large language models (specifically the text-davinci-003 family, further tuned with reinforcement learning from human feedback), the service was made available free of charge on chat.openai.com. Within five days it had reached one million users; within two months an estimated 100 million monthly active users, at the time the fastest consumer-product adoption ever measured. Chief executive Sam Altman, chief technology officer Mira Murati, chief scientist Ilya Sutskever, and co-founder and president Greg Brockman formed the OpenAI leadership team at launch. Two months later, on 23 January 2023, Microsoft announced a multibillion-dollar investment in OpenAI, reported at about 10 billion US dollars, marking the third phase of the two companies' partnership. ChatGPT's release triggered a wave of competitive AI product launches, a global policy debate about generative-AI regulation, and the return of foundational-model artificial intelligence to the centre of the technology industry after roughly a decade of quieter progress.",
+  "sections": [
+    {
+      "heading": "Background",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sam_Altman_CropEdit_James_Tamim.jpg",
+        "caption": "Sam Altman, CEO of OpenAI, speaking at TechCrunch Disrupt in San Francisco, 2019. Altman was the public face of the ChatGPT launch three years later.",
+        "credit": "Steve Jennings, cropped by James Tamim",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_CropEdit_James_Tamim.jpg"
+      },
+      "body": "OpenAI had been founded in December 2015 as a non-profit research laboratory in San Francisco, with an initial 1-billion-dollar funding commitment from a group of Silicon Valley figures including Sam Altman (then president of the Y Combinator startup accelerator), Elon Musk, LinkedIn co-founder Reid Hoffman, PayPal co-founder Peter Thiel, and Amazon Web Services. Its founding charter declared the goal of ensuring 'that artificial general intelligence benefits all of humanity', a mission articulated at least in part in response to concerns about the concentration of AI capability inside Google DeepMind, which had been acquired by Google in 2014. Ilya Sutskever, a Toronto-trained deep-learning researcher and co-author of the seminal 2012 AlexNet paper that had launched the modern deep-learning boom, joined as chief scientist. Greg Brockman, a former Stripe engineer, became CTO and later president.\n\nThe modern trajectory of large language models had begun in 2017, when a team at Google Research (Ashish Vaswani, Noam Shazeer, and colleagues) published 'Attention Is All You Need', describing the Transformer architecture. OpenAI adopted the Transformer for a series of language models called Generative Pre-trained Transformers: GPT (2018), GPT-2 (February 2019, initially withheld out of concern about misuse), and GPT-3 (June 2020, at 175 billion parameters then the largest publicly known language model). GPT-3 was made available to third-party developers via an application-programming interface in the summer of 2020 and, over the following two years, was integrated into a variety of applications including GitHub Copilot (a code-completion tool built by Microsoft's GitHub subsidiary in partnership with OpenAI, launched in June 2021).\n\nIn 2019 OpenAI's non-profit foundation established a 'capped-profit' commercial subsidiary, OpenAI LP, in order to raise capital on a scale the pure non-profit could not sustain. Microsoft made an initial 1-billion-dollar investment that same year, coupled with an exclusive Azure cloud-computing partnership. By late 2022, when internal work on what would become ChatGPT was under way, OpenAI's product portfolio included GPT-3 and its InstructGPT variants (fine-tuned to follow user instructions using reinforcement learning from human feedback, or RLHF, a technique introduced in 2022), the DALL-E and DALL-E 2 image generators (April 2022), and the Whisper speech-recognition model. GPT-4 was already in advanced training. The immediate origin of ChatGPT was a proposal, from within OpenAI's applied team, to release a low-friction conversational front-end to the GPT-3.5 series as a means of gathering broader user feedback in advance of a planned GPT-4 launch. Company sources have said that ChatGPT was internally regarded as a modest research preview rather than a major product release, and that no one at OpenAI expected the response it received."
+    },
+    {
+      "heading": "What happened",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg",
+        "caption": "The ChatGPT logo, adopted by OpenAI for the product at its November 2022 launch.",
+        "credit": "OpenAI (via Wikimedia Commons)",
+        "license": "Public domain (below threshold of originality)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.svg"
+      },
+      "body": "The launch itself was strikingly low-key. On the afternoon of 30 November 2022 (a Wednesday), Greg Brockman published a short thread on Twitter, and OpenAI posted a blog entry titled 'ChatGPT: Optimizing Language Models for Dialogue'. The post described a model that could 'answer follow-up questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests', built on a variant of GPT-3.5 further trained with reinforcement learning from human feedback. The service was made available at no cost at chat.openai.com; users needed only an email address and a phone number to register. The blog post explicitly framed the release as a 'research preview' and invited feedback.\n\nAdoption was almost immediately viral. Sam Altman reported on 5 December 2022 that ChatGPT had crossed one million users five days after launch. Screenshots and shared conversations spread rapidly on Twitter, Reddit, and LinkedIn: the model wrote software code, drafted emails, generated marketing copy, produced college essays, composed limericks, explained quantum mechanics to eight-year-olds, and did all of it in fluent English, competent Spanish, French, German, Mandarin, and dozens of other languages. Reactions ranged from awe (Vinod Khosla, an early Silicon Valley investor, called it 'the largest technology advancement of my lifetime') to institutional alarm (New York City schools, Los Angeles Unified, and several other US school districts blocked ChatGPT on district networks within weeks over concerns about student plagiarism). By early February 2023, an analysis by the Swiss bank UBS estimated ChatGPT's monthly active user base at about 100 million, calling it 'the fastest-growing consumer application in history', a claim that outstripped both TikTok (nine months to 100 million) and Instagram (two and a half years).\n\nThe institutional response was almost as rapid. On 23 January 2023 Microsoft announced what it described as 'the third phase' of its OpenAI partnership: a multibillion-dollar investment, widely reported at 10 billion US dollars, structured to give Microsoft a large share of OpenAI's future profits until the investment was recouped. On 7 February 2023 Microsoft integrated a GPT-based chat interface into its Bing search engine and Edge browser; the following day Google, in response, announced its own conversational AI, Bard, in a widely criticised launch demonstration during which the model produced a factual error about the James Webb Space Telescope, contributing to a same-day 100-billion-dollar decline in Alphabet's market capitalisation. On 14 March 2023 OpenAI released GPT-4, a multimodal model capable of accepting image as well as text input, integrated into ChatGPT for paying subscribers to a new ChatGPT Plus service (20 dollars per month) launched in February. In November 2023 the OpenAI board briefly removed Sam Altman as CEO in a governance crisis that resolved, within five days, with Altman's reinstatement and the departure of several board members; the episode drew unprecedented public attention to the internal governance of a private AI laboratory."
+    },
+    {
+      "heading": "Aftermath & consequences",
+      "body": "The eighteen months following ChatGPT's launch saw an investment surge in generative artificial intelligence comparable in scale to the late-1990s internet boom. Anthropic, a rival laboratory founded in 2021 by former OpenAI researchers Dario and Daniela Amodei, raised more than 7 billion US dollars from Google and Amazon in 2023 and 2024 for its Claude family of models. Meta released its LLaMA open-weight models in February 2023 (LLaMA 1) and July 2023 (LLaMA 2), inaugurating a serious open-source strand of the field. Mistral, xAI (founded by Elon Musk in 2023), Cohere, and Inflection joined the front rank of language-model developers. Nvidia, whose H100 graphics-processing-unit accelerators were the effective hardware substrate of the entire training and inference stack, saw its market capitalisation rise from about 400 billion US dollars at the end of 2022 to more than 3 trillion by mid-2024, briefly making it the most valuable public company in the world.\n\nRegulatory and political responses varied by region. On 13 March 2024 the European Parliament approved the EU Artificial Intelligence Act, the world's first comprehensive AI regulation, which entered into force in August 2024 with a phased implementation running through 2026. In the United States, the Biden administration issued Executive Order 14110 on 'Safe, Secure, and Trustworthy Artificial Intelligence' on 30 October 2023; the order was rescinded by President Donald Trump on 20 January 2025 as part of a policy pivot toward what the new administration described as a lighter-touch American AI industrial strategy. China's Cyberspace Administration issued generative-AI regulations that took effect on 15 August 2023, requiring registration and content moderation of consumer-facing services. In India, the electronics ministry issued advisory notices in early 2024 requiring approval for the release of unreliable generative AI models before withdrawing the requirement under industry pressure.\n\nLabour-market impacts became a subject of intense but methodologically difficult research. A March 2023 working paper co-authored by OpenAI and University of Pennsylvania researchers estimated that around 80 percent of the US workforce could have at least 10 percent of their work tasks affected by GPT-family models, though direct displacement effects proved harder to identify. Software engineering, customer service, journalism, marketing, translation, and paralegal work saw the earliest documented productivity gains and, in a smaller number of cases, workforce reductions. The May 2023 strike by the Writers Guild of America against major Hollywood studios, which produced a first-in-industry contract regulating AI use in scriptwriting, was widely understood as an early instance of organised labour negotiating explicitly against generative-AI substitution. In education, initial bans gave way, within roughly eighteen months, to more nuanced policy responses in most large school systems in the United States, the United Kingdom, and parts of continental Europe."
+    },
+    {
+      "heading": "Legacy",
+      "body": "In the roughly three and a half years since ChatGPT's release, the product has become the fifth-most-visited website on the internet, with weekly active users passing 500 million in early 2025, and has spawned a subscription tier (ChatGPT Plus, later ChatGPT Team, and ChatGPT Enterprise) that had, by the end of 2024, contributed to OpenAI's transition to an annualised revenue run-rate above 4 billion US dollars. Its user interface, a plain white text-input box beneath a scrolling conversational history, has become the dominant user-interface paradigm for consumer artificial intelligence, imitated by Google's Gemini (renamed from Bard in February 2024), Anthropic's Claude, Microsoft's Copilot, and dozens of smaller entrants. In China, where OpenAI's services are not available, Baidu's Ernie Bot, ByteDance's Doubao, and DeepSeek have adopted almost identical conversational interfaces.\n\nThe intellectual and cultural legacy is likely to prove more consequential still. ChatGPT was for very many people the first artificial system that produced responses feeling recognisably like conversation with a knowledgeable human interlocutor. Its release re-opened, in a new key, philosophical questions about the nature of intelligence, understanding, and consciousness that had been largely dormant in mainstream discussion since the collapse of the classical symbolic-AI research programme in the 1980s. The 2023 open letter co-signed by more than a thousand technologists including Elon Musk and the historian Yuval Noah Harari, calling for a six-month pause in the training of models more powerful than GPT-4, marked one pole of a debate about existential risk from advanced AI systems that continues, without evident resolution, into 2026.\n\nWhether the specific product ChatGPT is remembered a generation from now, or subsumed into a more general category of conversational AI assistant, its date of release is likely to be regarded as one of the hinge points of the early twenty-first century. Comparable in some respects to the September 1993 opening of the Mosaic web browser to general use, or to the January 2007 unveiling of the iPhone, ChatGPT's launch was the moment at which a specialised research technology became a mass consumer experience, and, in so doing, redirected the priorities, investment flows, and political attention of the global technology industry. The full consequences of that redirection remain, in mid-2026, still emerging."
+    }
+  ],
+  "figures": [
+    {
+      "name": "Sam Altman",
+      "role": "Co-founder and CEO of OpenAI (2019-present, with a brief removal and reinstatement in November 2023); former president of the Y Combinator accelerator; public face of the ChatGPT launch and of OpenAI's engagement with governments worldwide",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sam_Altman_CropEdit_James_Tamim.jpg",
+      "credit": "Steve Jennings, cropped by James Tamim / CC BY 2.0"
+    },
+    {
+      "name": "Greg Brockman",
+      "role": "Co-founder and President of OpenAI; former Stripe CTO; announced the ChatGPT launch on Twitter on 30 November 2022 and remained the company's public technical spokesperson through the 2023 governance crisis",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Greg_Brockman%2C_2019.jpg",
+      "credit": "Simulation (YouTube), via INS Pirat / CC BY 3.0"
+    },
+    {
+      "name": "Ilya Sutskever",
+      "role": "Co-founder and Chief Scientist of OpenAI at the time of the launch; co-author of the 2012 AlexNet paper that catalysed the modern deep-learning era. Departed OpenAI in May 2024 to found Safe Superintelligence Inc."
+    },
+    {
+      "name": "Mira Murati",
+      "role": "Chief Technology Officer of OpenAI (May 2022 to September 2024); led the applied-research team that shipped ChatGPT, GPT-4, and DALL-E; briefly served as interim CEO during the November 2023 Altman removal"
+    },
+    {
+      "name": "Satya Nadella",
+      "role": "Chief Executive Officer of Microsoft; authorised the multibillion-dollar January 2023 investment in OpenAI and the integration of GPT models into Bing, Office, and other Microsoft products"
+    },
+    {
+      "name": "Dario Amodei",
+      "role": "Former OpenAI VP of Research; departed with sister Daniela Amodei and colleagues in 2021 to co-found the rival AI safety laboratory Anthropic, whose Claude family of models emerged as ChatGPT's principal competitor"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg",
+      "caption": "The ChatGPT logo, adopted by OpenAI at the product's November 2022 launch and now recognised by hundreds of millions of users worldwide.",
+      "credit": "OpenAI, via Wikimedia Commons",
+      "license": "Public domain (below threshold of originality)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.svg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "OpenAI",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "Microsoft announces new multibillion-dollar investment in ChatGPT-maker OpenAI",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2023/01/23/microsoft-announces-multibillion-dollar-investment-in-chatgpt-maker-openai.html",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "ChatGPT reaches 100 million users two months after launch",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/technology/2023/feb/02/chatgpt-100-million-users-open-ai-fastest-growing-app",
+      "accessed": "2026-07-21"
+    },
+    {
+      "title": "ChatGPT: Optimizing Language Models for Dialogue (30 November 2022)",
+      "publisher": "OpenAI (via Internet Archive)",
+      "url": "https://web.archive.org/web/2022/https://openai.com/blog/chatgpt/",
+      "accessed": "2026-07-21"
+    }
+  ],
+  "disputed": false
+}
