@@ -178,6 +178,14 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 --------------------------------------------------------------------------- */
 
 function baseChartOptions(tokens: ThemeTokens, height: number): Highcharts.Options {
+  const m = tokens.isMobile;
+  // Side spacing must exceed half the label width so the leftmost / rightmost
+  // labels don't clip against the container. Labels are ~100 (mobile) / ~150
+  // (desktop) wide, so ~50px on mobile and ~90px on desktop cover half a
+  // label plus the callout tail. Extra margin also prevents the last era
+  // label ("Contemporary · 18 events") from getting cropped by the container
+  // on a 375px viewport.
+  const sideSpacing = m ? 55 : 90;
   return {
     chart: {
       backgroundColor: "transparent",
@@ -185,7 +193,7 @@ function baseChartOptions(tokens: ThemeTokens, height: number): Highcharts.Optio
         fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
         color: tokens.ink,
       },
-      spacing: [12, 170, 12, 170],
+      spacing: [12, sideSpacing, 12, sideSpacing],
       animation: { duration: 220 },
       height,
     },
@@ -195,6 +203,19 @@ function baseChartOptions(tokens: ThemeTokens, height: number): Highcharts.Optio
     legend: { enabled: false },
     accessibility: { enabled: false },
   } as Highcharts.Options;
+}
+
+/**
+ * Shortens a title so it fits neatly inside a fixed-width callout. Word-aware,
+ * uses a single-character ellipsis. Full title always remains available in the
+ * hover tooltip.
+ */
+function truncateLabel(s: string, max: number): string {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  const base = lastSpace > max * 0.55 ? cut.slice(0, lastSpace) : cut;
+  return base.trimEnd() + "…";
 }
 
 /* ---------------------------------------------------------------------------
@@ -207,27 +228,95 @@ export function buildErasOptions(
   tokens: ThemeTokens,
 ): Highcharts.Options {
   const m = tokens.isMobile;
-  const base = baseChartOptions(tokens, m ? 360 : 460);
+  const base = baseChartOptions(tokens, m ? 440 : 460);
+  // 4-lane label placement so 8 era labels never overlap on any viewport,
+  // especially mobile where the ribbon is only ~340px wide.
+  const farPush = m ? 60 : 90;
   return {
     ...base,
     chart: {
       ...base.chart,
       type: "timeline",
       events: {
-        // Wire clicks on data-label boxes to fire the point's click handler,
-        // so the label acts as a click target for the era (not just the tiny
-        // dot on the ribbon).
         render: function () {
           const chart = this as unknown as {
-            series: Array<{ points: Array<{ dataLabel?: { element?: HTMLElement }; firePointEvent: (name: string) => void }> }>;
+            series: Array<{
+              points: Array<{
+                dataLabel?: {
+                  element?: SVGGraphicsElement;
+                  attr: (o: Record<string, unknown>) => void;
+                  translateX?: number;
+                  translateY?: number;
+                  width?: number;
+                  height?: number;
+                  connector?: {
+                    element?: SVGPathElement;
+                    attr: (o: Record<string, unknown>) => void;
+                  };
+                };
+                options: { __laneIdx?: number };
+                firePointEvent: (name: string) => void;
+                plotX?: number;
+                plotY?: number;
+              }>;
+            }>;
           };
+
+          const applyLaneShift = () => {
+            if (!chart || !chart.series) return;
+            for (const s of chart.series) {
+              if (!s || !s.points) continue;
+              for (const p of s.points) {
+                const dl = p.dataLabel;
+                if (!dl || !dl.element) continue;
+
+                const laneIdx = (p.options as { __laneIdx?: number }).__laneIdx ?? 0;
+                const isFar = laneIdx >= 2;
+                if (!isFar) continue;
+
+                const currentY = dl.translateY ?? 0;
+                const currentX = dl.translateX ?? 0;
+                const markerY = p.plotY ?? 0;
+                const isBelow = currentY > markerY;
+                const delta = isBelow ? farPush : -farPush;
+                const newY = currentY + delta;
+                dl.attr({ y: newY });
+                (dl.element as SVGGraphicsElement).style.opacity = "1";
+                dl.element.setAttribute("opacity", "1");
+
+                if (dl.connector && dl.connector.element) {
+                  const markerX = p.plotX ?? 0;
+                  const w = dl.width ?? dl.element.getBBox().width;
+                  const h = dl.height ?? dl.element.getBBox().height;
+                  const relStartX = markerX - currentX;
+                  const relStartY = markerY - newY;
+                  const relEndX = w / 2;
+                  const relEndY = isBelow ? 0 : h;
+                  const path = `M ${relStartX} ${relStartY} L ${relEndX} ${relEndY}`;
+                  dl.connector.attr({ d: path });
+                  (dl.connector.element as SVGPathElement).style.opacity = "1";
+                }
+              }
+            }
+          };
+          if (typeof window !== "undefined" && window.requestAnimationFrame) {
+            window.requestAnimationFrame(applyLaneShift);
+          } else {
+            applyLaneShift();
+          }
+
+          // Click passthrough — label boxes are the primary click target for
+          // opening an era (the ribbon dot is very small).
           for (const s of chart.series) {
+            if (!s || !s.points) continue;
             for (const p of s.points) {
-              const el = p.dataLabel?.element;
-              if (el && !(el as unknown as { __wired?: boolean }).__wired) {
+              const el = p.dataLabel?.element as unknown as
+                | (HTMLElement & { __wired?: boolean })
+                | undefined;
+              if (el && !el.__wired) {
                 el.style.cursor = "pointer";
                 el.addEventListener("click", () => p.firePointEvent("click"));
-                (el as unknown as { __wired?: boolean }).__wired = true;
+                el.__wired = true;
               }
             }
           }
@@ -290,7 +379,7 @@ export function buildErasOptions(
         dataLabels: {
           allowOverlap: false,
           shape: "callout",
-          connectorWidth: 1.25,
+          connectorWidth: 1.5,
           connectorColor: tokens.isDark ? "#8A8478" : "#6B655A",
           crop: false,
           overflow: "allow",
@@ -298,27 +387,31 @@ export function buildErasOptions(
           borderWidth: 1,
           borderColor: tokens.rule,
           borderRadius: 4,
-          padding: m ? 7 : 10,
-          distance: m ? 60 : 110,
-          width: m ? 140 : 210,
+          padding: m ? 6 : 10,
+          // Fallback distance — the near lane. Far-lane offset is applied
+          // per-point in the chart render callback.
+          distance: m ? 40 : 90,
+          width: m ? 100 : 180,
+          useHTML: false,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
             fontWeight: "500",
-            fontSize: m ? "11px" : "12.5px",
+            fontSize: m ? "10px" : "12.5px",
             textOutline: "none",
             color: tokens.isDark ? "#EDE7D6" : "#000",
             opacity: 1,
+            wordBreak: "break-word",
           },
           format:
             '<span style="color:{point.color}">●</span> <b style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + '">{point.label}</b><br/>' +
-            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:' + (m ? "10px" : "11px") + '">{point.description}</span>',
+            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:' + (m ? "9px" : "11px") + '">{point.description}</span>',
         },
       },
     },
     series: [
       {
         type: "timeline",
-        data: eras.map((era) => {
+        data: eras.map((era, i) => {
           const range =
             (era.startYear < 0 ? `${-era.startYear} BCE` : `${era.startYear}`) +
             " – " +
@@ -333,6 +426,11 @@ export function buildErasOptions(
             description: `${range} · ${count} event${count === 1 ? "" : "s"}`,
             color,
             eraId: era.id,
+            // Rotate through 4 lanes so 8 era labels never collide
+            // horizontally on any viewport (near-above / near-below / far-
+            // above / far-below in ABCD alternation). Actual placement
+            // happens in the chart `render` handler above.
+            __laneIdx: i % 4,
           };
         }),
       },
@@ -349,19 +447,49 @@ export function buildEraTimelineOptions(
   tokens: ThemeTokens,
 ): Highcharts.Options {
   const m = tokens.isMobile;
-  const base = baseChartOptions(tokens, m ? 380 : 500);
+  // Extra height accommodates 4 label lanes (2 above ribbon + 2 below).
+  const base = baseChartOptions(tokens, m ? 460 : 560);
+
+  // 4-lane label placement so adjacent labels never overlap horizontally.
+  // Timeline auto-alternates above/below; we augment that with two distances
+  // per side so consecutive labels visit different rows in ABCD order.
+  // On mobile the density (up to 18 events in a ~300px ribbon) forces a lot
+  // of labels to hide via allowOverlap:false — tooltips still surface them.
+  const laneDistances = m
+    ? [40, 40, 78, 78]
+    : [60, 60, 108, 108];
+
+  // Truncate visible title so labels stay narrow. Full title is preserved in
+  // the tooltip (`tooltipHTML` reads `event.title`).
+  const maxTitleChars = m ? 24 : 34;
+
+  // Push distance for the "far" lane (labels every 4th index pushed further
+  // from the ribbon). The near/far distinction only matters at high density —
+  // it's what stops "Death of Alexander" and "Qin unification" from touching.
+  const farPushDesktop = 90;
+  const farPushMobile = 55;
 
   const data = events.map((event, i) => {
     const cat = event.categories[0];
     const color = pickColor(cat, tokens.isDark);
     const year = parseStartYear(event.date.start);
+    const shortTitle = truncateLabel(event.title, maxTitleChars);
     return {
+      // `name` is what Highcharts uses in default templates + accessibility;
+      // include the year so any fallback text stays informative.
       name: `${fmtYear(year)}: ${event.title}`,
-      label: event.title,
+      label: shortTitle,
+      yearLabel: fmtYear(year),
       description: event.summary,
       color,
       slug: event.slug,
       eventIndex: i,
+      __laneIdx: i % 4, // 0,1 = near; 2,3 = far (post-render sees this)
+      // Per-point label distance — cycles through 4 lanes. HC's timeline
+      // renderer largely ignores this at layout time (it packs into 2 rows
+      // regardless), so the real per-point offset is applied post-render in
+      // the chart `render` event handler below.
+      dataLabels: { distance: laneDistances[i % laneDistances.length] },
     };
   });
 
@@ -373,15 +501,113 @@ export function buildEraTimelineOptions(
       events: {
         render: function () {
           const chart = this as unknown as {
-            series: Array<{ points: Array<{ dataLabel?: { element?: HTMLElement }; firePointEvent: (name: string) => void }> }>;
+            series: Array<{
+              points: Array<{
+                dataLabel?: {
+                  element?: SVGGraphicsElement;
+                  attr: (o: Record<string, unknown>) => void;
+                  translateX?: number;
+                  translateY?: number;
+                  connector?: {
+                    element?: SVGPathElement;
+                    attr: (o: Record<string, unknown>) => void;
+                  };
+                };
+                options: { __laneIdx?: number };
+                firePointEvent: (name: string) => void;
+                plotX?: number;
+                plotY?: number;
+              }>;
+            }>;
           };
+          const push = m ? farPushMobile : farPushDesktop;
+
+          // Highcharts's timeline runs its own label layout inside redraw,
+          // so any positional changes we make DURING the render event get
+          // undone by a subsequent layout pass. Defer the shift + connector
+          // redraw to the next frame so it happens after HC's final pass.
+          const applyLaneShift = () => {
+            // Chart may have been destroyed between render and rAF (e.g.
+            // user clicked another era). Guard against a dead reference.
+            if (!chart || !chart.series) return;
+            for (const s of chart.series) {
+              if (!s || !s.points) continue;
+              for (const p of s.points) {
+                const dl = p.dataLabel as unknown as {
+                  element?: SVGGraphicsElement;
+                  attr: (o: Record<string, unknown>) => void;
+                  translateX?: number;
+                  translateY?: number;
+                  width?: number;
+                  height?: number;
+                  connector?: {
+                    element?: SVGPathElement;
+                    attr: (o: Record<string, unknown>) => void;
+                  };
+                } | undefined;
+                if (!dl || !dl.element) continue;
+
+                const laneIdx = (p.options as { __laneIdx?: number }).__laneIdx ?? 0;
+                const isFar = laneIdx >= 2;
+                if (!isFar) continue;
+
+                const currentY = dl.translateY ?? 0;
+                const currentX = dl.translateX ?? 0;
+                const markerY = p.plotY ?? 0;
+                const isBelow = currentY > markerY;
+                const delta = isBelow ? push : -push;
+                const newY = currentY + delta;
+                dl.attr({ y: newY });
+                // Force the label group to be visible in case HC marked it
+                // hidden during its own collision pass.
+                (dl.element as SVGGraphicsElement).style.opacity = "1";
+                dl.element.setAttribute("opacity", "1");
+
+                // Redraw connector so it reaches the near edge of the
+                // newly-positioned label box, keeping every point visibly
+                // tied back to its marker on the ribbon. The connector's
+                // parent <g> is translated by (translateX, translateY), so
+                // path coordinates must be expressed relative to that group,
+                // not in absolute chart space.
+                if (dl.connector && dl.connector.element) {
+                  const markerX = p.plotX ?? 0;
+                  const w = dl.width ?? dl.element.getBBox().width;
+                  const h = dl.height ?? dl.element.getBBox().height;
+                  // Relative coordinates: subtract the group's translate.
+                  const relStartX = markerX - currentX;
+                  const relStartY = markerY - newY;
+                  const relEndX = w / 2;
+                  const relEndY = isBelow ? 0 : h;
+                  const path = `M ${relStartX} ${relStartY} L ${relEndX} ${relEndY}`;
+                  dl.connector.attr({ d: path });
+                  // Highcharts sets opacity:0 on connectors it thinks are
+                  // "hidden" (its own alignment heuristic disagrees with our
+                  // manual placement). Force it visible since we've placed
+                  // the label ourselves and want the connector to show.
+                  (dl.connector.element as SVGPathElement).style.opacity = "1";
+                }
+              }
+            }
+          };
+          // rAF ensures we run *after* Highcharts's own post-render layout,
+          // which would otherwise re-place labels in the default 2 rows.
+          if (typeof window !== "undefined" && window.requestAnimationFrame) {
+            window.requestAnimationFrame(applyLaneShift);
+          } else {
+            applyLaneShift();
+          }
+
+          // Click passthrough (this part can run synchronously — HC doesn't
+          // touch the listeners).
           for (const s of chart.series) {
             for (const p of s.points) {
-              const el = p.dataLabel?.element;
-              if (el && !(el as unknown as { __wired?: boolean }).__wired) {
-                el.style.cursor = "pointer";
-                el.addEventListener("click", () => p.firePointEvent("click"));
-                (el as unknown as { __wired?: boolean }).__wired = true;
+              const clickEl = p.dataLabel?.element as unknown as
+                | (HTMLElement & { __wired?: boolean })
+                | undefined;
+              if (clickEl && !clickEl.__wired) {
+                clickEl.style.cursor = "pointer";
+                clickEl.addEventListener("click", () => p.firePointEvent("click"));
+                clickEl.__wired = true;
               }
             }
           }
@@ -429,7 +655,7 @@ export function buildEraTimelineOptions(
         dataLabels: {
           allowOverlap: false,
           shape: "callout",
-          connectorWidth: 1.25,
+          connectorWidth: 1.5,
           connectorColor: tokens.isDark ? "#8A8478" : "#6B655A",
           crop: false,
           overflow: "allow",
@@ -437,20 +663,26 @@ export function buildEraTimelineOptions(
           borderWidth: 1,
           borderColor: tokens.rule,
           borderRadius: 4,
-          padding: m ? 7 : 10,
-          distance: m ? 60 : 110,
-          width: m ? 140 : 200,
+          padding: m ? 6 : 9,
+          // Fallback distance so any label that somehow doesn't get the
+          // per-point override still gets a visible connector line.
+          distance: m ? 40 : 60,
+          width: m ? 120 : 150,
+          useHTML: false,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
             fontWeight: "500",
-            fontSize: m ? "11px" : "12.5px",
+            fontSize: m ? "10.5px" : "12px",
             textOutline: "none",
             color: tokens.isDark ? "#EDE7D6" : "#000",
             opacity: 1,
+            // Prevent an overly-long single word blowing out the width — long
+            // titles are already truncated but hyphens still need wrapping.
+            wordBreak: "break-word",
           },
           format:
             '<span style="color:{point.color}">●</span> <b style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + '">{point.label}</b><br/>' +
-            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:' + (m ? "10px" : "11px") + '">{point.name}</span>',
+            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:' + (m ? "9.5px" : "10.5px") + '">{point.yearLabel}</span>',
         },
       },
     },
