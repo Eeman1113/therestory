@@ -283,7 +283,7 @@ export function buildErasOptions(
         },
         states: {
           hover: { animation: { duration: 0 }, halo: { size: 0 } },
-          inactive: { animation: { duration: 0 } },
+          inactive: { animation: { duration: 0 }, opacity: 1 },
         },
         dataLabels: {
           allowOverlap: false,
@@ -294,16 +294,19 @@ export function buildErasOptions(
           borderColor: tokens.rule,
           borderRadius: 4,
           padding: 10,
+          distance: 64,
+          width: 210,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
             fontWeight: "500",
             fontSize: "12.5px",
             textOutline: "none",
-            color: tokens.ink,
+            color: tokens.isDark ? "#EDE7D6" : "#000",
+            opacity: 1,
           },
           format:
-            '<span style="color:{point.color}">●</span> <b>{point.label}</b><br/>' +
-            '<span style="color:' + tokens.inkMuted + ';font-weight:400;font-size:11px">{point.description}</span>',
+            '<span style="color:{point.color}">●</span> <b style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + '">{point.label}</b><br/>' +
+            '<span style="color:' + (tokens.isDark ? "#EDE7D6" : "#000") + ';font-weight:400;font-size:11px">{point.description}</span>',
         },
       },
     },
@@ -426,7 +429,7 @@ export function buildEraTimelineOptions(
           borderColor: tokens.rule,
           borderRadius: 4,
           padding: 10,
-          distance: 32,
+          distance: 64,
           width: 200,
           style: {
             fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
