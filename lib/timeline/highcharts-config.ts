@@ -289,6 +289,7 @@ export function buildErasOptions(
         },
         dataLabels: {
           allowOverlap: false,
+          shape: "callout",
           connectorWidth: 1.25,
           connectorColor: tokens.isDark ? "#8A8478" : "#6B655A",
           crop: false,
@@ -427,6 +428,7 @@ export function buildEraTimelineOptions(
         },
         dataLabels: {
           allowOverlap: false,
+          shape: "callout",
           connectorWidth: 1.25,
           connectorColor: tokens.isDark ? "#8A8478" : "#6B655A",
           crop: false,
