@@ -185,7 +185,7 @@ function baseChartOptions(tokens: ThemeTokens, height: number): Highcharts.Optio
         fontFamily: 'var(--font-sans), ui-sans-serif, system-ui, sans-serif',
         color: tokens.ink,
       },
-      spacing: [12, 8, 12, 8],
+      spacing: [12, 120, 12, 120],
       animation: { duration: 220 },
       height,
     },
