@@ -1,11 +1,11 @@
 "use client";
 
 /**
- * TimelineCanvas — the interactive timeline hero, rebuilt to match the
- * "You are here" reference mockup: italic-serif year header, filter chips,
- * tinted era zones, axis at the bottom with three above-axis lanes for
- * event dots, a plumb line marking the current view centre, and a
- * tint-strip hover card with a serif year watermark.
+ * TimelineCanvas — the interactive timeline hero: italic-serif year header,
+ * filter chips, tinted era zones, axis at the bottom with three above-axis
+ * lanes for event dots, and a hover card with hero image + serif year
+ * watermark. The most recent event at or before initialYear is subtly
+ * highlighted as the default focus.
  */
 
 import {
@@ -29,11 +29,12 @@ import { CATEGORY_COLORS, markerColor } from "@/lib/timeline/categories";
 /* ---------------------------------------------------------------------------
    Layout constants (px)
 --------------------------------------------------------------------------- */
-const TRACK_H = 560;
-const TRACK_H_MOBILE = 500;
-const AXIS_BOTTOM = 66;
-const LANES = [54, 96, 138]; // stem heights above axis for the three lanes
-const TICK_BOTTOM = 40;
+const TRACK_H = 220;
+const TRACK_H_MOBILE = 200;
+const AXIS_BOTTOM = 50;
+const LANES = [28, 58, 88]; // stem heights above axis for the three lanes
+const TICK_BOTTOM = 30;
+const CARD_W = 320;
 const ZOOMS = [1, 1.35, 1.8, 2.4];
 
 /* ---------------------------------------------------------------------------
@@ -118,9 +119,9 @@ interface Props {
 
 export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props) {
   const router = useRouter();
+  const sectionRef = useRef<HTMLElement>(null);
   const vpRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
 
   const [zi, setZi] = useState(0);
   const [vpPx, setVpPx] = useState(0);
@@ -175,7 +176,7 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
     didInitialCentre.current = true;
   }, [trackPx, vpPx, initialYear]);
 
-  /* --- update the "you are here" year as user pans --- */
+  /* --- update the "you are here" year + card position as user pans --- */
   const handleScroll = useCallback(() => {
     const vp = vpRef.current;
     if (!vp || trackPx === 0) return;
@@ -295,12 +296,75 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
     pinnedIndex != null ? eventsByYear[pinnedIndex] : hoveredIndex != null ? eventsByYear[hoveredIndex] : null;
   const shownIdx = pinnedIndex ?? hoveredIndex;
 
+  // Default subtle highlight — the most recent event at or before initialYear.
+  // Only used when nothing is hovered or pinned.
+  const defaultIdx = useMemo(() => {
+    if (eventsByYear.length === 0) return null;
+    let best = -1;
+    for (let i = 0; i < eventsByYear.length; i++) {
+      if (parseStartYear(eventsByYear[i].date.start) <= initialYear) best = i;
+      else break;
+    }
+    return best === -1 ? eventsByYear.length - 1 : best;
+  }, [eventsByYear, initialYear]);
+
+  const highlightIdx = shownIdx ?? defaultIdx;
+
   const visibleCount = activeCat
     ? eventsByYear.filter((e) => e.categories.includes(activeCat)).length
     : eventsByYear.length;
 
+  /* --- portalled card position: computed from marker DOM rect --- */
+  const [cardBox, setCardBox] = useState<{ x: number; y: number } | null>(null);
+
+  const updateCardBox = useCallback(() => {
+    if (shownIdx == null || !sectionRef.current || !vpRef.current) {
+      setCardBox(null);
+      return;
+    }
+    const marker = vpRef.current.querySelector<HTMLElement>(
+      `[data-marker-idx="${shownIdx}"]`,
+    );
+    if (!marker) {
+      setCardBox(null);
+      return;
+    }
+    const rect = marker.getBoundingClientRect();
+    const vpRect = vpRef.current.getBoundingClientRect();
+    if (rect.right < vpRect.left - 4 || rect.left > vpRect.right + 4) {
+      setCardBox(null);
+      return;
+    }
+    const sectionRect = sectionRef.current.getBoundingClientRect();
+    setCardBox({
+      x: rect.left + rect.width / 2 - sectionRect.left,
+      y: rect.top - sectionRect.top - 14,
+    });
+  }, [shownIdx]);
+
+  useEffect(() => {
+    updateCardBox();
+  }, [shownIdx, updateCardBox]);
+
+  useEffect(() => {
+    const vp = vpRef.current;
+    const ro = new ResizeObserver(updateCardBox);
+    if (vp) {
+      ro.observe(vp);
+      vp.addEventListener("scroll", updateCardBox, { passive: true });
+    }
+    window.addEventListener("resize", updateCardBox);
+    window.addEventListener("scroll", updateCardBox, { passive: true });
+    return () => {
+      ro.disconnect();
+      if (vp) vp.removeEventListener("scroll", updateCardBox);
+      window.removeEventListener("resize", updateCardBox);
+      window.removeEventListener("scroll", updateCardBox);
+    };
+  }, [updateCardBox]);
+
   return (
-    <section className="not-prose">
+    <section ref={sectionRef} className="not-prose relative">
       {/* Header row — "You are here" + zoom controls */}
       <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:mb-8 sm:flex-row sm:items-end">
         <div>
@@ -394,7 +458,10 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
                 )}
                 style={{ left: `${left}%`, width: `${width}%` }}
               >
-                <span className="absolute left-3 top-4 whitespace-nowrap font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-ink-muted/70">
+                <span
+                  className="absolute left-3 whitespace-nowrap font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-ink-muted/70"
+                  style={{ bottom: AXIS_BOTTOM + LANES[2] + 16 }}
+                >
                   {era.label}
                 </span>
               </div>
@@ -431,34 +498,6 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
             );
           })}
 
-          {/* "You are here" plumb line — pinned to viewport centre */}
-          {trackPx > 0 && (
-            <div
-              className="pointer-events-none absolute w-0 border-l border-dashed border-accent/60"
-              style={{
-                left: `${xOf(currentYear)}%`,
-                bottom: AXIS_BOTTOM,
-                top: 46,
-              }}
-              aria-hidden
-            >
-              <span
-                className="absolute font-mono text-[10px] font-medium tracking-[0.2em] text-accent"
-                style={{ top: -26, left: 0, transform: "translateX(-50%)" }}
-              >
-                {fmtYear(currentYear)}
-              </span>
-              <span
-                className="absolute rounded-full bg-accent"
-                style={{ bottom: -4, left: -4.5, width: 8, height: 8 }}
-              />
-              <span
-                className="absolute rounded-full border border-accent/70 [animation:tl-ping_2.8s_ease-out_infinite] motion-reduce:hidden"
-                style={{ bottom: -9, left: -9.5, width: 18, height: 18 }}
-              />
-            </div>
-          )}
-
           {/* Events */}
           {sortedEvents.map((event, i) => {
             const year = parseStartYear(event.date.start);
@@ -466,7 +505,7 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
             const laneH = LANES[i % 3];
             const isDimmed =
               activeCat != null && !event.categories.includes(activeCat);
-            const isActive = shownIdx === i;
+            const isActive = highlightIdx === i;
             return (
               <div
                 key={event.id}
@@ -484,12 +523,13 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
                 <span
                   className={cn(
                     "absolute bottom-0 left-0 h-full w-px bg-current transition-opacity duration-200",
-                    isActive ? "opacity-70" : "opacity-25",
+                    isActive ? "opacity-60" : "opacity-25",
                   )}
                 />
                 <button
                   type="button"
                   data-marker
+                  data-marker-idx={i}
                   aria-label={`${event.title}, ${event.date.display ?? fmtYear(year)}`}
                   onMouseEnter={() => {
                     if (pinnedIndex == null) setHoveredIndex(i);
@@ -509,39 +549,54 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
                     "absolute rounded-full bg-current outline-none transition-transform duration-200",
                     "cursor-pointer",
                     isActive
-                      ? "scale-[1.55]"
-                      : "hover:scale-[1.55] focus-visible:scale-[1.55]",
+                      ? "scale-[1.3]"
+                      : "hover:scale-[1.3] focus-visible:scale-[1.3]",
                   )}
                   style={{
                     top: -4,
                     left: -4,
                     width: 8,
                     height: 8,
-                    boxShadow: "0 0 0 3px var(--bg)",
+                    boxShadow: isActive
+                      ? "0 0 0 3px var(--bg), 0 0 0 5px color-mix(in oklab, currentColor 45%, transparent)"
+                      : "0 0 0 3px var(--bg)",
                   }}
                 />
               </div>
             );
           })}
 
-          {/* Hover / pinned card */}
-          {shownEvent && shownIdx != null && trackPx > 0 && (
-            <HoverCard
-              ref={cardRef}
-              event={shownEvent}
-              laneH={LANES[shownIdx % 3]}
-              xPercent={xOf(parseStartYear(shownEvent.date.start))}
-              trackPx={trackPx}
-              pinned={pinnedIndex === shownIdx}
-              onClose={() => {
-                setPinnedIndex(null);
-                setHoveredIndex(null);
-              }}
-              onNavigate={(slug) => router.push(`/event/${slug}`)}
-            />
-          )}
         </div>
       </div>
+
+      {/* Portalled hover / pinned card — positioned via marker DOM rect,
+          so it floats above the (short) viewport without being clipped. */}
+      {shownEvent && shownIdx != null && cardBox && (
+        <div
+          className="pointer-events-none absolute z-30"
+          style={{
+            left: Math.max(
+              10,
+              Math.min(
+                cardBox.x - CARD_W / 2,
+                (sectionRef.current?.clientWidth ?? 0) - CARD_W - 10,
+              ),
+            ),
+            top: cardBox.y,
+            transform: "translateY(-100%)",
+          }}
+        >
+          <HoverCard
+            event={shownEvent}
+            pinned={pinnedIndex === shownIdx}
+            onClose={() => {
+              setPinnedIndex(null);
+              setHoveredIndex(null);
+            }}
+            onNavigate={(slug) => router.push(`/event/${slug}`)}
+          />
+        </div>
+      )}
 
       {/* Hints */}
       <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink-muted">
@@ -580,9 +635,6 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
 
 interface HoverCardProps {
   event: EventDoc;
-  laneH: number;
-  xPercent: number;
-  trackPx: number;
   pinned: boolean;
   onClose: () => void;
   onNavigate: (slug: string) => void;
@@ -590,17 +642,11 @@ interface HoverCardProps {
 
 const HoverCard = ({
   event,
-  laneH,
-  xPercent,
-  trackPx,
   pinned,
   onClose,
   onNavigate,
-}: HoverCardProps & { ref?: React.Ref<HTMLDivElement> }) => {
+}: HoverCardProps) => {
   const cat = markerColor(event.categories);
-  const CARD_W = 320;
-  const px = (trackPx * xPercent) / 100;
-  const left = Math.max(10, Math.min(px - CARD_W / 2, trackPx - CARD_W - 10));
   const hero = event.images[0];
 
   return (
@@ -612,16 +658,12 @@ const HoverCard = ({
       }}
       data-card
       className={cn(
-        "pointer-events-auto absolute z-20 block overflow-hidden rounded-2xl border border-rule bg-surface",
+        "pointer-events-auto block overflow-hidden rounded-2xl border border-rule bg-surface",
         "shadow-[0_14px_34px_rgb(0_0_0_/_0.09),0_2px_6px_rgb(0_0_0_/_0.05)]",
         "transition-[transform,box-shadow] duration-200",
         "hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgb(0_0_0_/_0.12),0_2px_6px_rgb(0_0_0_/_0.06)]",
       )}
-      style={{
-        left,
-        width: CARD_W,
-        bottom: AXIS_BOTTOM + laneH + 18,
-      }}
+      style={{ width: CARD_W }}
     >
       {/* Hero image with italic-serif year watermark overlaid */}
       {hero ? (

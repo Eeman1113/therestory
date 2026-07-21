@@ -111,3 +111,9 @@ Format:
 - Lifted accent from muddy oxidized-iron to ai-iro indigo — refined light/dark tokens in `globals.css`.
 - Bumped timeline `TRACK_H` 404→560 and mobile 372→500 so the top-lane hover card (with hero image) no longer gets clipped by the viewport's overflow-y-hidden.
 
+## 2026-07-21 — Timeline: remove plumb line, portal the hover card, default-highlight 2026
+- Removed the dashed "you are here" plumb line.
+- Subtler marker highlight (scale 1.55→1.3) + soft outer ring in the category colour via color-mix.
+- Latest event ≤ 2026 gets the default highlight on load, so the timeline lands with a 2026 event pre-selected.
+- Portalled the hover card out of the scroll viewport: position derived from the marker's DOMRect, card floats above the section instead of living inside the overflow-y-hidden track. Track height dropped 500→220 (mobile 200), era labels now sit right above the top-lane dots — eliminates the empty vertical band the tall track had introduced.
+
