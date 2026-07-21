@@ -310,7 +310,13 @@ export function buildErasOptions(
             }
           };
           if (typeof window !== "undefined" && window.requestAnimationFrame) {
-            window.requestAnimationFrame(applyLaneShift);
+            // Double-RAF so we run after Highcharts has attached
+            // connectors on the very first paint (they don't exist yet
+            // during the initial render event firing).
+            window.requestAnimationFrame(() => {
+              applyLaneShift();
+              window.requestAnimationFrame(applyLaneShift);
+            });
           } else {
             applyLaneShift();
           }
@@ -612,7 +618,13 @@ export function buildEraTimelineOptions(
           // rAF ensures we run *after* Highcharts's own post-render layout,
           // which would otherwise re-place labels in the default 2 rows.
           if (typeof window !== "undefined" && window.requestAnimationFrame) {
-            window.requestAnimationFrame(applyLaneShift);
+            // Double-RAF so we run after Highcharts has attached
+            // connectors on the very first paint (they don't exist yet
+            // during the initial render event firing).
+            window.requestAnimationFrame(() => {
+              applyLaneShift();
+              window.requestAnimationFrame(applyLaneShift);
+            });
           } else {
             applyLaneShift();
           }
