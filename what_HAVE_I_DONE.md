@@ -117,3 +117,8 @@ Format:
 - Latest event ≤ 2026 gets the default highlight on load, so the timeline lands with a 2026 event pre-selected.
 - Portalled the hover card out of the scroll viewport: position derived from the marker's DOMRect, card floats above the section instead of living inside the overflow-y-hidden track. Track height dropped 500→220 (mobile 200), era labels now sit right above the top-lane dots — eliminates the empty vertical band the tall track had introduced.
 
+## 2026-07-21 — Timeline: magnetic snap to nearest dot + bigger hit target
+- Enlarged marker hit target from 8×8 to 24×24 (visible 8px dot remains centred inside via inner span). Adjacent lanes stay non-overlapping.
+- Added magnetic snap on pointer-move over the viewport: precomputed marker X positions, RAF-throttled nearest-marker search, snaps hover state within a 36px radius. Skips filtered-out categories.
+- Cursor switches to `pointer` when snapped to a dot; falls back to `grab` in dead space. Snap state clears on pointer-leave and on drag start.
+

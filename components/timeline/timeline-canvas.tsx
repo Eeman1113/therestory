@@ -130,6 +130,7 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [pinnedIndex, setPinnedIndex] = useState<number | null>(null);
   const [currentYear, setCurrentYear] = useState<number>(initialYear);
+  const [snapCursor, setSnapCursor] = useState(false);
 
   // Sort events chronologically so lane assignment (index % 3) is stable.
   const sortedEvents = useMemo(
@@ -193,8 +194,59 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
     return () => vp.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
-  /* --- pointer-drag pan --- */
+  /* --- precomputed marker X positions in track coords (for snap) --- */
+  const markerXs = useMemo(
+    () =>
+      sortedEvents.map(
+        (e) => (xOf(parseStartYear(e.date.start)) / 100) * trackPx,
+      ),
+    [sortedEvents, trackPx],
+  );
+
+  /* --- pointer-drag pan + magnetic snap to nearest marker --- */
   const drag = useRef<{ startX: number; scrollLeft: number; moved: boolean } | null>(null);
+  const snapRaf = useRef<number | null>(null);
+
+  const performSnap = useCallback(
+    (clientX: number, clientY: number) => {
+      const vp = vpRef.current;
+      if (!vp || markerXs.length === 0) return;
+      const rect = vp.getBoundingClientRect();
+      const xInTrack = clientX - rect.left + vp.scrollLeft;
+      const yInVp = clientY - rect.top;
+      const vpH = rect.height;
+
+      let bestIdx = -1;
+      let bestDist = Infinity;
+      for (let i = 0; i < markerXs.length; i++) {
+        if (activeCat && !sortedEvents[i].categories.includes(activeCat)) continue;
+        const dx = markerXs[i] - xInTrack;
+        const laneH = LANES[i % 3];
+        const markerY = vpH - AXIS_BOTTOM - laneH;
+        const dy = markerY - yInVp;
+        const d2 = dx * dx + dy * dy;
+        if (d2 < bestDist) {
+          bestDist = d2;
+          bestIdx = i;
+        }
+      }
+
+      const SNAP_R2 = 36 * 36;
+      if (bestIdx >= 0 && bestDist < SNAP_R2) {
+        if (pinnedIndex == null) {
+          setHoveredIndex((cur) => (cur === bestIdx ? cur : bestIdx));
+        }
+        setSnapCursor((s) => (s ? s : true));
+      } else {
+        setSnapCursor((s) => (s ? false : s));
+        if (pinnedIndex == null) {
+          setHoveredIndex((cur) => (cur == null ? cur : null));
+        }
+      }
+    },
+    [activeCat, markerXs, pinnedIndex, sortedEvents],
+  );
+
   const onPointerDown = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
     const target = e.target as HTMLElement;
     if (target.closest("[data-marker]") || target.closest("[data-card]") || target.closest("button")) {
@@ -205,19 +257,45 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
     drag.current = { startX: e.clientX, scrollLeft: vp.scrollLeft, moved: false };
     vp.setPointerCapture(e.pointerId);
     vp.classList.add("cursor-grabbing");
+    setSnapCursor(false); // let cursor-grabbing take over during drag
   }, []);
-  const onPointerMove = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
-    const d = drag.current;
-    const vp = vpRef.current;
-    if (!d || !vp) return;
-    const dx = e.clientX - d.startX;
-    if (Math.abs(dx) > 4) d.moved = true;
-    vp.scrollLeft = d.scrollLeft - dx;
-  }, []);
+
+  const onPointerMove = useCallback(
+    (e: React.PointerEvent<HTMLDivElement>) => {
+      const d = drag.current;
+      const vp = vpRef.current;
+      if (!vp) return;
+
+      if (d) {
+        const dx = e.clientX - d.startX;
+        if (Math.abs(dx) > 4) d.moved = true;
+        vp.scrollLeft = d.scrollLeft - dx;
+        return;
+      }
+
+      // No active drag → magnetic snap
+      const cx = e.clientX;
+      const cy = e.clientY;
+      if (snapRaf.current !== null) cancelAnimationFrame(snapRaf.current);
+      snapRaf.current = requestAnimationFrame(() => {
+        snapRaf.current = null;
+        performSnap(cx, cy);
+      });
+    },
+    [performSnap],
+  );
+
   const endDrag = useCallback(() => {
     drag.current = null;
     vpRef.current?.classList.remove("cursor-grabbing");
   }, []);
+
+  const onPointerLeaveVp = useCallback(() => {
+    setSnapCursor(false);
+    if (pinnedIndex == null) {
+      setHoveredIndex((cur) => (cur == null ? cur : null));
+    }
+  }, [pinnedIndex]);
 
   /* --- keyboard nav --- */
   const eventsByYear = sortedEvents;
@@ -429,11 +507,12 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
         role="region"
         aria-label="Timeline — drag to pan, arrow keys to browse events"
         className="relative select-none overflow-x-auto overflow-y-hidden border-y border-rule outline-none cursor-grab focus-visible:shadow-[inset_0_0_0_2px_var(--accent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        style={{ touchAction: "pan-x" }}
+        style={{ touchAction: "pan-x", cursor: snapCursor ? "pointer" : undefined }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={endDrag}
         onPointerCancel={endDrag}
+        onPointerLeave={onPointerLeaveVp}
         onKeyDown={onKeyDown}
       >
         <div
@@ -531,12 +610,6 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
                   data-marker
                   data-marker-idx={i}
                   aria-label={`${event.title}, ${event.date.display ?? fmtYear(year)}`}
-                  onMouseEnter={() => {
-                    if (pinnedIndex == null) setHoveredIndex(i);
-                  }}
-                  onMouseLeave={() => {
-                    if (pinnedIndex == null) setHoveredIndex((cur) => (cur === i ? null : cur));
-                  }}
                   onFocus={() => setHoveredIndex(i)}
                   onClick={(evt) => {
                     if (drag.current?.moved) {
@@ -545,23 +618,28 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
                     }
                     router.push(`/event/${event.slug}`);
                   }}
-                  className={cn(
-                    "absolute rounded-full bg-current outline-none transition-transform duration-200",
-                    "cursor-pointer",
-                    isActive
-                      ? "scale-[1.3]"
-                      : "hover:scale-[1.3] focus-visible:scale-[1.3]",
-                  )}
+                  className="absolute flex items-center justify-center rounded-full bg-transparent outline-none cursor-pointer"
                   style={{
-                    top: -4,
-                    left: -4,
-                    width: 8,
-                    height: 8,
-                    boxShadow: isActive
-                      ? "0 0 0 3px var(--bg), 0 0 0 5px color-mix(in oklab, currentColor 45%, transparent)"
-                      : "0 0 0 3px var(--bg)",
+                    top: -12,
+                    left: -12,
+                    width: 24,
+                    height: 24,
+                    padding: 0,
+                    border: "none",
                   }}
-                />
+                >
+                  <span
+                    className="block rounded-full bg-current transition-transform duration-200"
+                    style={{
+                      width: 8,
+                      height: 8,
+                      transform: isActive ? "scale(1.35)" : "scale(1)",
+                      boxShadow: isActive
+                        ? "0 0 0 3px var(--bg), 0 0 0 6px color-mix(in oklab, currentColor 60%, transparent)"
+                        : "0 0 0 3px var(--bg)",
+                    }}
+                  />
+                </button>
               </div>
             );
           })}
