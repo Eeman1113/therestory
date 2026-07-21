@@ -121,4 +121,5 @@ Format:
 - Enlarged marker hit target from 8×8 to 24×24 (visible 8px dot remains centred inside via inner span). Adjacent lanes stay non-overlapping.
 - Added magnetic snap on pointer-move over the viewport: precomputed marker X positions, RAF-throttled nearest-marker search, snaps hover state within a 36px radius. Skips filtered-out categories.
 - Cursor switches to `pointer` when snapped to a dot; falls back to `grab` in dead space. Snap state clears on pointer-leave and on drag start.
+- "You are here" header now tracks the highlighted event (snapped/hovered/pinned/default), falling back to scroll-centre year when nothing is highlighted. Lands on the auto-selected latest event (~2020) and updates the moment snap picks up a new marker.
 

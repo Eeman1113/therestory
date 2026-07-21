@@ -388,6 +388,13 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
 
   const highlightIdx = shownIdx ?? defaultIdx;
 
+  // Header year reflects the highlighted event when one is set (snapped or
+  // pinned or default), otherwise it tracks the scroll-centre year.
+  const headerYear =
+    highlightIdx != null
+      ? parseStartYear(eventsByYear[highlightIdx].date.start)
+      : currentYear;
+
   const visibleCount = activeCat
     ? eventsByYear.filter((e) => e.categories.includes(activeCat)).length
     : eventsByYear.length;
@@ -443,7 +450,9 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
 
   return (
     <section ref={sectionRef} className="not-prose relative">
-      {/* Header row — "You are here" + zoom controls */}
+      {/* Header row — "You are here" + zoom controls.
+          Year tracks the highlighted event (snapped/hovered/pinned/default);
+          falls back to the scroll-centre year when nothing is highlighted. */}
       <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:mb-8 sm:flex-row sm:items-end">
         <div>
           <p className="font-mono text-[11px] font-medium uppercase tracking-[0.24em] text-ink-muted">
@@ -451,10 +460,10 @@ export function TimelineCanvas({ events, categories, initialYear = 2026 }: Props
           </p>
           <div className="mt-2 flex items-baseline gap-4">
             <h2 className="font-serif text-[56px] italic leading-[0.88] tracking-[-0.015em] text-ink sm:text-[78px]">
-              {fmtYear(currentYear)}
+              {fmtYear(headerYear)}
             </h2>
             <span className="inline-block rounded-full border border-rule/80 bg-surface/50 px-3 py-1.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.18em] text-ink-muted">
-              {eraOf(currentYear)}
+              {eraOf(headerYear)}
             </span>
           </div>
         </div>
