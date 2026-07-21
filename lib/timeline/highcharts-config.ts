@@ -272,16 +272,6 @@ export function buildErasOptions(
 
                 const laneIdx = (p.options as { __laneIdx?: number }).__laneIdx ?? 0;
                 const isFar = laneIdx >= 2;
-                // Force connector + label visibility on ALL points —
-                // Highcharts likes to hide connectors it thinks are too
-                // short or overlap-adjacent, but we want every point
-                // tied to its ribbon marker.
-                if (dl.connector && dl.connector.element) {
-                  (dl.connector.element as SVGPathElement).style.opacity = "1";
-                  dl.connector.element.setAttribute("opacity", "1");
-                }
-                (dl.element as SVGGraphicsElement).style.opacity = "1";
-                dl.element.setAttribute("opacity", "1");
                 if (!isFar) continue;
 
                 const currentY = dl.translateY ?? 0;
@@ -310,13 +300,7 @@ export function buildErasOptions(
             }
           };
           if (typeof window !== "undefined" && window.requestAnimationFrame) {
-            // Double-RAF so we run after Highcharts has attached
-            // connectors on the very first paint (they don't exist yet
-            // during the initial render event firing).
-            window.requestAnimationFrame(() => {
-              applyLaneShift();
-              window.requestAnimationFrame(applyLaneShift);
-            });
+            window.requestAnimationFrame(applyLaneShift);
           } else {
             applyLaneShift();
           }
@@ -565,16 +549,6 @@ export function buildEraTimelineOptions(
 
                 const laneIdx = (p.options as { __laneIdx?: number }).__laneIdx ?? 0;
                 const isFar = laneIdx >= 2;
-                // Force connector + label visibility on ALL points —
-                // Highcharts likes to hide connectors it thinks are too
-                // short or overlap-adjacent, but we want every point
-                // tied to its ribbon marker.
-                if (dl.connector && dl.connector.element) {
-                  (dl.connector.element as SVGPathElement).style.opacity = "1";
-                  dl.connector.element.setAttribute("opacity", "1");
-                }
-                (dl.element as SVGGraphicsElement).style.opacity = "1";
-                dl.element.setAttribute("opacity", "1");
                 if (!isFar) continue;
 
                 const currentY = dl.translateY ?? 0;
@@ -618,13 +592,7 @@ export function buildEraTimelineOptions(
           // rAF ensures we run *after* Highcharts's own post-render layout,
           // which would otherwise re-place labels in the default 2 rows.
           if (typeof window !== "undefined" && window.requestAnimationFrame) {
-            // Double-RAF so we run after Highcharts has attached
-            // connectors on the very first paint (they don't exist yet
-            // during the initial render event firing).
-            window.requestAnimationFrame(() => {
-              applyLaneShift();
-              window.requestAnimationFrame(applyLaneShift);
-            });
+            window.requestAnimationFrame(applyLaneShift);
           } else {
             applyLaneShift();
           }
