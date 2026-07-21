@@ -106,3 +106,8 @@ Format:
 - Header nav now includes Events + Eras + About.
 - `npm run build` generates 106 static pages cleanly.
 
+## 2026-07-21 — Zen Japanese palette + timeline card headroom
+- Rewrote category colours around traditional Japanese pigment names: enji (politics), sumi (war), hanada (science), shion (religion), yamabuki (art), matcha (economy), asagi (exploration), shu (disaster).
+- Lifted accent from muddy oxidized-iron to ai-iro indigo — refined light/dark tokens in `globals.css`.
+- Bumped timeline `TRACK_H` 404→560 and mobile 372→500 so the top-lane hover card (with hero image) no longer gets clipped by the viewport's overflow-y-hidden.
+

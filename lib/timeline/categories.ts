@@ -1,19 +1,20 @@
 /**
- * Softer, museum-plaque category palette. Warm terracottas, sage blues,
- * olive greens, muted purples, gold ochres. Each hue carries a semantic
- * association intended to be readable at a glance:
+ * Japanese Zen category palette. Each entry is drawn from traditional
+ * pigment names — the kind you'd find on a shoji-lit museum plaque —
+ * refined for Apple-clean legibility on the warm paper background.
  *
- *   politics  → warm terracotta
- *   war       → deep near-black
- *   science   → sage blue
- *   religion  → muted purple
- *   culture   → gold ochre
- *   economy   → olive green
- *   exploration → prussian teal
- *   disaster  → burnt sienna
+ *   politics-empires    → enji-iro    (臙脂色)  imperial crimson
+ *   war-conflict        → sumi-iro    (墨色)   warm charcoal ink
+ *   science-technology  → hanada-iro  (縹色)   traditional deep blue
+ *   religion-ideas      → shion-iro   (紫苑色)  aster purple
+ *   art-culture         → yamabuki-iro(山吹色) kerria gold
+ *   economy-trade       → matcha-iro  (抹茶色)  powdered green tea
+ *   exploration         → asagi-iro   (浅葱色)  pale-scallion teal
+ *   disaster-disease    → shu-iro     (朱色)   vermillion
  *
- * Each entry now also carries a `tint` (very pale fill for hover-card strips
- * and category pills) and a `deep` (darker version for pill text on tint bg).
+ * Each entry carries `light` and `dark` (main colour per theme), plus
+ * `tint` (very pale fill for card strips + pills) and `deep` (darker
+ * variant for pill text on the tint background).
  */
 
 import type { Category } from "@/lib/content/schema";
@@ -26,14 +27,14 @@ export interface CategoryColor {
 }
 
 export const CATEGORY_COLORS: Record<Category, CategoryColor> = {
-  "politics-empires":   { light: "#A9634D", dark: "#D08D75", tint: "#F4E7E1", deep: "#7A4232" },
-  "war-conflict":       { light: "#2A2622", dark: "#7A7268", tint: "#E4E1DA", deep: "#1A1815" },
-  "science-technology": { light: "#5D7F9E", dark: "#8FAAC2", tint: "#E5EDF3", deep: "#3D5B75" },
-  "religion-ideas":     { light: "#97739F", dark: "#B99DC0", tint: "#F0E8F1", deep: "#644A6B" },
-  "art-culture":        { light: "#B98F4A", dark: "#D6B27B", tint: "#F5ECDA", deep: "#7C5D22" },
-  "economy-trade":      { light: "#6E8F74", dark: "#9BB9A0", tint: "#E7EFE8", deep: "#455F4B" },
-  "exploration":        { light: "#5D8A8A", dark: "#8FB1B1", tint: "#E4EEEE", deep: "#3B6363" },
-  "disaster-disease":   { light: "#A87050", dark: "#CC957A", tint: "#F1E4DA", deep: "#764A2E" },
+  "politics-empires":   { light: "#B0343B", dark: "#E58085", tint: "#F8E5E6", deep: "#7A1F25" },
+  "war-conflict":       { light: "#2B2724", dark: "#8A8074", tint: "#E5E1D8", deep: "#161412" },
+  "science-technology": { light: "#245F87", dark: "#8ABFDC", tint: "#E1ECF4", deep: "#123F5B" },
+  "religion-ideas":     { light: "#7C4FA4", dark: "#C4A5D8", tint: "#EEE5F3", deep: "#4A2A66" },
+  "art-culture":        { light: "#C58721", dark: "#F0C378", tint: "#F8ECD3", deep: "#7A5210" },
+  "economy-trade":      { light: "#5F8A55", dark: "#A9CFA0", tint: "#E6F0E1", deep: "#385430" },
+  "exploration":        { light: "#2E8A96", dark: "#8CC7CF", tint: "#DEEEF0", deep: "#1B5A63" },
+  "disaster-disease":   { light: "#CE5A2E", dark: "#F49269", tint: "#F7E2D4", deep: "#7A2F13" },
 };
 
 /**

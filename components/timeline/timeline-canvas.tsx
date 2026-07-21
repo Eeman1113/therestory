@@ -29,8 +29,8 @@ import { CATEGORY_COLORS, markerColor } from "@/lib/timeline/categories";
 /* ---------------------------------------------------------------------------
    Layout constants (px)
 --------------------------------------------------------------------------- */
-const TRACK_H = 404;
-const TRACK_H_MOBILE = 372;
+const TRACK_H = 560;
+const TRACK_H_MOBILE = 500;
 const AXIS_BOTTOM = 66;
 const LANES = [54, 96, 138]; // stem heights above axis for the three lanes
 const TICK_BOTTOM = 40;

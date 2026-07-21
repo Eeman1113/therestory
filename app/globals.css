@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 /* --- Paper / Ink design tokens --------------------------------------------
-   Light theme is "Paper": warm bone, near-black ink, hairline rules, oxidized
-   iron-blue accent. Dark theme is "Ink": deep near-black, warm bone ink.
-   Colors expressed as OKLCH for perceptual consistency.
+   Light theme is "Paper": warm bone, near-black ink, hairline rules, and an
+   ai-iro (Japanese indigo) accent. Dark theme is "Ink": deep near-black,
+   warm bone ink. Colors expressed as OKLCH for perceptual consistency.
 ---------------------------------------------------------------------------- */
 :root {
   --bg: oklch(0.955 0.012 85);       /* #F6F3EC — warm bone paper */
@@ -11,7 +11,7 @@
   --ink: oklch(0.180 0.008 60);      /* #1A1815 — warm near-black */
   --ink-muted: oklch(0.500 0.012 70);/* #6B655A */
   --rule: oklch(0.865 0.014 85);     /* #DDD7C7 — hairline */
-  --accent: oklch(0.365 0.045 240);  /* #2E4057 — oxidized iron blue */
+  --accent: oklch(0.380 0.088 252);  /* ~#2A487A — ai-iro indigo */
   --accent-ink: oklch(0.975 0.010 85);
 }
 
@@ -21,7 +21,7 @@
   --ink: oklch(0.910 0.014 85);      /* #EDE7D6 */
   --ink-muted: oklch(0.605 0.012 70);/* #8A8478 */
   --rule: oklch(0.245 0.008 60);     /* #2A2622 */
-  --accent: oklch(0.680 0.070 240);  /* #7E9FBD — softer iron blue for dark */
+  --accent: oklch(0.720 0.100 252);  /* softer ai-iro for dark */
   --accent-ink: oklch(0.155 0.006 60);
 }
 
